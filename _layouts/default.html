@@ -1,0 +1,109 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>{{ page.title }}</title>
+    <meta name="author" content="Brad Westness" />
+    <meta name="description" content="A simple man in complex times." />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="content/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="content/font-awesome.min.css" />
+    <link rel="stylesheet" href="content/prism.css" />
+    <link rel="stylesheet" href="content/site.css" />
+
+    <link rel="me" type="text/html" href="http://www.bradwestness.com" />
+    <link rel="me" type="text/html" href="http://twitter.com/bradwestness" />
+    <link rel="me" type="text/html" href="http://github.com/bradwestness" />
+</head>
+<body>
+    <div class="container body-content">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="http://www.bradwestness.com" class="navbar-brand">Brad Westness.com</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="~/#about"><i class="fa fa-question"></i> About</a></li>
+                        <li><a href="~/#archive"><i class="fa fa-calendar"></i> Archive</a></li>
+                        <li><a href="~/#rss" target="_blank"><i class="fa fa-rss"></i> RSS</a></li>
+                    </ul>
+                    <form method="get" action="~/#search" class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" id="keywords" class="form-control" placeholder="Search..." />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3 hidden-xs hidden-print">
+                <div class="sidebar">
+                    <p><a href="http://www.bradwestness.com"><img src="/content/images/avatar_color.jpg" class="img-circle img-responsive" alt="Brad Westness" /></a></p>
+                    <p class="lead text-muted">A simple man in complex times.</p>
+                    <ul class="list-inline">
+                        <li><a class="btn btn-link btn-sm" href="https://www.twitter.com/bradwestness" title="Twitter" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <li><a class="btn btn-link btn-sm" href="https://www.github.com/bradwestness" title="Github" target="_blank"><i class="fa fa-github"></i> Github</a></li>
+                        <li><a class="btn btn-link btn-sm" href="mailto:brad.westness@outlook.com" title="Email"><i class="fa fa-envelope"></i> Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8 col-sm-9 col-xs-12">
+                {{ content }}
+                <hr />
+                <footer>
+                    <p class="text-muted small">
+                        &copy;
+                        <script type="text/javascript" async="async" defer="defer">document.write(new Date().getFullYear());</script>
+                        Brad Westness.com
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" async="async" defer="defer">
+        var disqus_shortname = "bradwestness";
+
+        (function () {
+
+            var countScript = document.createElement("script");
+            countScript.type = "text/javascript";
+            countScript.async = true;
+            countScript.src = "http://" + disqus_shortname + ".disqus.com/count.js";
+            (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(countScript);
+        }());
+    </script>
+
+    <script type="text/javascript" async="async" defer="defer">
+        var google_analytics_id = "UA-43759416-1";
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', google_analytics_id, 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script type="text/javascript" src="scripts/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/respond.min.js"></script>
+    <script type="text/javascript" src="scripts/prism.js"></script>
+    <script type="text/javascript" src="scripts/site.js"></script>
+</body>
+</html>

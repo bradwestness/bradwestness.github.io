@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<article>
+    <h1 class="post-title">{{page.title}}</h1>
+
+    <section class="post-content">{{content}}</section>
+
+    <footer class="post-footer">
+        <div class="clearfix">
+            <section class="author pull-left">
+                <h4>Brad Westness</h4>
+                <p class="text-muted">
+                    <em>
+                        <time datetime="{{ date }}">
+                            {{ post.date | date_to_string }}
+                        </time>
+                    </em>
+                </p>
+            </section>
+
+            <section class="share pull-right">
+                <h4>Share this post</h4>
+                <ul class="list-inline">
+                    <li>
+                        <a class="btn btn-link btn-sm" href="http://twitter.com/share?text=@titleUrlEncoded&url={{ url }}"
+                           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">
+                            <i class="fa fa-twitter"></i> Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn btn-link btn-sm" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}"
+                           onclick="window.open(this.href, 'facebook-share','width=580,height=296'); return false;">
+                            <i class="fa fa-facebook"></i> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn btn-link btn-sm" href="https://plus.google.com/share?url={{ url }}"
+                           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530'); return false;">
+                            <i class="fa fa-google-plus"></i> Google+
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</article>

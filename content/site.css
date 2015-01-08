@@ -1,0 +1,59 @@
+﻿
+/* Set padding to keep content from hitting the edges */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Theme customizations */
+.sidebar {
+    padding: 2em;
+}
+
+.post-footer section {
+    padding-bottom: 2em;
+}
+
+.post-item-title a, .post-title a {
+    color: #fefefe;
+}
+
+.post-item-excerpt {
+    line-height: 1.5em;
+}
+
+.page-content, .post-content, .post-item-excerpt {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+    .post-content > p:first-child {
+        margin-top: 1.6em;
+    }
+
+    .post-content p, .post-content blockquote, .post-content ul, .post-content ol {
+        margin-bottom: 1.6em;
+    }
+
+        .post-content blockquote p {
+            margin: 0;
+        }
+
+    .post-content img {
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 320px;
+    }
