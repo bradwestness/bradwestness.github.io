@@ -4,7 +4,7 @@ title: A simple man in complex times.
 ---
 
 <section class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <article itemscope="" itemtype="http://schema.org/BlogPosting" role="article" class="post-item post">
         <header class="post-item-header">
             <h2 itemprop="name" class="post-item-title">
@@ -20,7 +20,7 @@ title: A simple man in complex times.
                     <em>{{ post.date | date_to_string }}</em>
                 </li>
                 <li class="post-item-meta-item">
-                    <a class="btn btn-link" itemprop="url" title="{{ post.title }}" href="{{ post.url + "#disqus_thread" }}">Comments</a>
+                    <a class="btn btn-link" itemprop="url" title="{{ post.title }}" href="{{ post.url | append "#disqus_thread" }}">Comments</a>
                 </li>
             </ul>
         </footer>
