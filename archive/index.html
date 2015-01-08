@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Brad Westness.com | A simple man in complex times.
+title: Brad Westness.com | Archive
 ---
 
 <section class="post-list">
@@ -28,8 +28,14 @@ title: Brad Westness.com | A simple man in complex times.
     {% endfor %}
 </section>
 
-{% if paginator.next_page %}
-<li class="previous">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Older Posts</a>
-</li>
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Older Posts</a>
+    {% endif %}
+
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer Posts &raquo;</a>
+    {% endif %}
+</ul>
 {% endif %}

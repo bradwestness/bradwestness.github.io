@@ -24,19 +24,19 @@ layout: default
                 <h4>Share this post</h4>
                 <ul class="list-inline">
                     <li>
-                        <a class="btn btn-link btn-sm" href="http://twitter.com/share?text=@titleUrlEncoded&url={{ url }}"
+                        <a class="btn btn-link btn-sm" href="http://twitter.com/share?text=@titleUrlEncoded&url={{ url | prepend: site.baseurl }}"
                            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">
                             <i class="fa fa-twitter"></i> Twitter
                         </a>
                     </li>
                     <li>
-                        <a class="btn btn-link btn-sm" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}"
+                        <a class="btn btn-link btn-sm" href="https://www.facebook.com/sharer/sharer.php?u={{ url | prepend: site.baseurl }}"
                            onclick="window.open(this.href, 'facebook-share','width=580,height=296'); return false;">
                             <i class="fa fa-facebook"></i> Facebook
                         </a>
                     </li>
                     <li>
-                        <a class="btn btn-link btn-sm" href="https://plus.google.com/share?url={{ url }}"
+                        <a class="btn btn-link btn-sm" href="https://plus.google.com/share?url={{ url | prepend: site.baseurl }}"
                            onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530'); return false;">
                             <i class="fa fa-google-plus"></i> Google+
                         </a>
