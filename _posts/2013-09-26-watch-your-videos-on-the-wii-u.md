@@ -1,5 +1,7 @@
-Title: Watch Your Videos On the Wii U  
-Published: 2013-09-26 13:18:57Z 
+--
+template: post
+title: Watch Your Videos On the Wii U  
+---
   
 The Wii U doesn't have any means to connect to a shared folder to view your personal media files - and you can't watch videos stored on an SD card or a USB drive connected to the system.
 
