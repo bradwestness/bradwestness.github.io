@@ -1,5 +1,7 @@
-Title: Not Invented Here Mechanic  
-Published: 2014-12-05 10:49:00Z  
+---
+layout: post
+title: Not Invented Here Mechanic  
+---
   
 Here's a little thought experiment: **What if industries other than software development
 suffered from '[Not Invented Here](http://en.wikipedia.org/wiki/Not_invented_here)' as much as we do*?**
