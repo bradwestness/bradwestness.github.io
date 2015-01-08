@@ -1,5 +1,7 @@
-Title: An Open Letter to People Who Quote the Old Testament  
-Published: 2012-02-22 10:15:40Z 
+--
+template: post
+title: An Open Letter to People Who Quote the Old Testament  
+---
   
 ![](../content/images/new_dead_sea_scrolls_theory_24016_600x450.jpg)
 

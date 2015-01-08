@@ -1,5 +1,7 @@
-Title: 10 Worst Christmas Songs  
-Published: 2012-11-23 11:30:49Z 
+--
+template: post
+title: 10 Worst Christmas Songs  
+---
   
 ![](../content/Images/Kenny_Rogers_and_Dolly_Parton_A_Christmas_to_Remember1.jpg)
 
