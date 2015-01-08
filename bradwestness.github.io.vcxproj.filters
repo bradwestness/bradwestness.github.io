@@ -17,5 +17,6 @@
   <ItemGroup>
     <None Include="CNAME" />
     <None Include="index.html" />
+    <None Include="about.html" />
   </ItemGroup>
 </Project>
