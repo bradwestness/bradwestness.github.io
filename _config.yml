@@ -4,6 +4,7 @@ port:        4000
 highligher:  true
 markdown:    rdiscount
 permalink:   pretty
+baseurl: http://www.bradwestness.com/
 paginate: 3
 paginate_path: "archive/page:num/"
 rdiscount:
