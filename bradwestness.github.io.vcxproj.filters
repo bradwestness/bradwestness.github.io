@@ -18,6 +18,6 @@
     <None Include="CNAME" />
     <None Include="index.html" />
     <None Include="about.html" />
-    <None Include="page\index.html" />
+    <None Include="archive\index.html" />
   </ItemGroup>
 </Project>
