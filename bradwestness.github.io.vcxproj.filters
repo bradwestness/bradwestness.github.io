@@ -17,7 +17,7 @@
   <ItemGroup>
     <None Include="CNAME" />
     <None Include="index.html" />
-    <None Include="about.html" />
     <None Include="archive\index.html" />
+    <None Include="about\index.html" />
   </ItemGroup>
 </Project>
