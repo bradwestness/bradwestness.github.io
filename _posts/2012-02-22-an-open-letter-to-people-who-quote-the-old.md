@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: An Open Letter to People Who Quote the Old Testament  
 ---
