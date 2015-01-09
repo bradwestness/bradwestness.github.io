@@ -3,8 +3,10 @@ layout: default
 title: A simple man in complex times.
 ---
 
+{% assign index = true %}
 <section class="post-list" itemscope="" itemtype="http://schema.org/Blog">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
+    {% assign content = post.content %}
     <article itemscope="" itemtype="http://schema.org/BlogPosting" role="article" class="post-item post">
         <header class="post-item-header">
             <h2 itemprop="name" class="post-item-title">
@@ -12,7 +14,11 @@ title: A simple man in complex times.
             </h2>
         </header>
         <section itemprop="description" class="post-item-exceprt text-justify">
-            {{ post.excerpt | strip_html }}
+            {{ content | excerpt }}
+            {% capture excerpted %}{{ content | has_excerpt}}{% endcapture %}
+            {% if excerpted == 'true' %}
+            <a href="{{ post.url}}">{{ site.excerpt_link }}</a>
+            {% endif %}
         </section>
         <footer class="post-item-footer">
             <ul class="post-item-meta-list list-inline">
