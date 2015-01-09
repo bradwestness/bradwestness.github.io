@@ -14,11 +14,7 @@ title: A simple man in complex times.
             </h2>
         </header>
         <section itemprop="description" class="post-item-exceprt text-justify">
-            {{ content | excerpt }}
-            {% capture excerpted %}{{ content | has_excerpt}}{% endcapture %}
-            {% if excerpted == 'true' %}
-            <a href="{{ post.url}}">{{ site.excerpt_link }}</a>
-            {% endif %}
+            {{ post.excerpt | strip_html }}
         </section>
         <footer class="post-item-footer">
             <ul class="post-item-meta-list list-inline">
@@ -36,6 +32,6 @@ title: A simple man in complex times.
 
 {% if paginator.next_page %}
 <li class="previous">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Older Posts</a>
+    <a href="{{ paginator.next_page_path }}">&laquo; Older Posts</a>
 </li>
 {% endif %}
