@@ -1,5 +1,5 @@
 --
-template: post
+layout: post
 title: AngularJS and the Post Graceful Degradation Era  
 ---
   

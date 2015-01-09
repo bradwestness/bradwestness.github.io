@@ -1,5 +1,5 @@
 --
-template: post
+layout: post
 title: 10 Worst Christmas Songs  
 ---
   

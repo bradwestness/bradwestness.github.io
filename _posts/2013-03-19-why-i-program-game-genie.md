@@ -1,5 +1,5 @@
 --
-template: post
+layout: post
 title: Why I Program - Game Genie  
 --
 
