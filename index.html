@@ -31,7 +31,9 @@ title: A simple man in complex times.
 </section>
 
 {% if paginator.next_page %}
-<li class="previous">
-    <a href="{{ paginator.next_page_path }}">&laquo; Older Posts</a>
-</li>
+<ul class="pager">
+    <li class="previous">
+        <a href="{{ paginator.next_page_path }}">&laquo; Older Posts</a>
+    </li>
+</ul>
 {% endif %}
