@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why I Program - Game Genie  
+title: "Why I Program - Game Genie"  
 ---
 
 ![]({{ site.baseurl }}content/images/GameGenie_SNES_e1363739370973.jpg)

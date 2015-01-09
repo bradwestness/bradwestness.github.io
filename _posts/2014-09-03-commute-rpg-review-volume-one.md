@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: Commute RPG Review - Volume One  
+title: "Commute RPG Review - Volume One"  
 ---
 
 Earlier this year, I purchased my first real smartphone, a [Lumia 928](http://www.nokia.com/us-en/phones/phone/lumia928/). It's a solid phone and takes great photos, and I really like the Windows Phone 8 operating system. It's nice that by enrolling in the Preview for Developers program, I can get new versions of the OS as Microsoft releases them, rather than whenever Verizon feels like releasing them (which they have very little motivation to do for devices that are already sold).
