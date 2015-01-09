@@ -1,5 +1,7 @@
-Title: Ayn Rand Was a Not a Republican  
-Published: 2012-08-14 19:02:33Z 
+---
+layout: post
+title: Ayn Rand Was a Not a Republican  
+---
   
 ![](../content/images/rand_2.jpg)
 
