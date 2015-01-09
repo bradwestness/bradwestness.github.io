@@ -11,13 +11,13 @@ Having read [Jeffrey Palermo's excellent blog series on what he calls Onion Arch
 
 I began to wonder what a better real-world example of the sort of layering that should be done might be, when I stumbled across this graphic on the [Wikipedia entry for Business Logic](http://en.wikipedia.org/wiki/Business_logic):
 
-![http://en.wikipedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg](../content/images/business_logic.png)
+![http://en.wikipedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg]({{ site.baseurl }}content/images/business_logic.png)
 
 I really like the idea of the "three tier" architecture, since it is a more concrete example than just saying "use multiple tiers" and gives you an idea of what belongs in each, and I like the way this diagram shows how each layer sits on top of the one below it, but can't immediately see what lies beyond the next layer boundary in either direction.
 
 So what real-world example fits along with this pattern? You may have guessed from the article's title:
 
-![peach and earth](../content/images/peach_earth.jpg)
+![peach and earth]({{ site.baseurl }}content/images/peach_earth.jpg)
 
 I like the way that these examples map to a piece of software. The crust (or skin, or peel, or whatever) is the UI, visible to the outside world. The mantle (or 'inner peach,' a.k.a. the meat of the fruit) is the business logic layer, which is where the majority of your application's code belongs. The "outer core" or the peach pit, is the persistence layer. The earth diagram has an extra layer, the inner core, which corresponds to the "Storage" item in the Wikipedia diagram above. This is the actual disk-based storage the database uses, which your application doesn't really need to care about.
 

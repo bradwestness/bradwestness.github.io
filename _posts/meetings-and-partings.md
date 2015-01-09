@@ -1,7 +1,7 @@
 Title: Meetings and Partings  
 Published: 2013-07-12 15:50:34Z 
   
-![](../content/images/whitewater.jpg)
+![]({{ site.baseurl }}content/images/whitewater.jpg)
 
 > Life is made up of meetings and partings. That is the way of it.
 > - Bob Cratchit, A Christmas Carol

@@ -7,7 +7,7 @@ I measured the number of inches above my desk that my wrist rests at when standi
 
 Then, it was just a matter of trucking my "adapter" in and setting everything up.
 
-![](../content/images/standing_desk.jpg)
+![]({{ site.baseurl }}content/images/standing_desk.jpg)
 
 Seems pretty good so far, but I definitely need one of those "anti-fatigue" mats for standing in one place for prolonged periods of time. Also my monitors seem just a touch wobbly (likely due to the somewhat flexible plastic stands they are on extending off the back of the adapter a bit).
 

@@ -1,7 +1,7 @@
 Title: Put a Feed On It  
 Published: 2012-08-30 13:56:10Z 
   
-![](../content/images/imgres.jpg)
+![]({{ site.baseurl }}content/images/imgres.jpg)
 
 > Did you see this bag before? I didn't. Now there's a bird on it. It's flying, it's free!
 > 

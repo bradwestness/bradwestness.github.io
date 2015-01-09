@@ -15,7 +15,7 @@ Load up IIS Manager on the server and click on the server node in the tree view 
 
 Switch to the <strong>Details</strong> tab and note the <em>Subject</em>. We'll use this as a key to load the certificate dynamically from within your application. You don't need the whole thing, just a portion of it that will allow you to find it uniquely.
 
-![](../content/images/certificate_details.png)
+![]({{ site.baseurl }}content/images/certificate_details.png)
 
 ### Find and Load the Certificate
 

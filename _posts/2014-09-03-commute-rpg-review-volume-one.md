@@ -15,7 +15,7 @@ Therefore, there are only a few types of games that I can play halfway decently 
 
 This one is a bit of a cheat since I owned it for the SNES, bought it on the Wii virtual console, and have beaten at least a dozen times. Still, it's a favorite, so I gave it a run-through on the phone mostly to see how the emulator performed.
 
-![Super Mario RPG](../content/images/mario_rpg.jpg)
+![Super Mario RPG]({{ site.baseurl }}content/images/mario_rpg.jpg)
 
 **Writing:** 9/10. The focus on funny, interesting characters is really what makes this game shine. Nintendo has gone back to this well a handful of times now, but this was the first time that a bigger threat than Bowser was introduced to the Mushroom Kingdom, and teaming up with Bowser to defeat the giant weapon-monsters unleashed by Smithy remains exhilirating for the longtime Nintendo fanboy.
 
@@ -29,7 +29,7 @@ This one is a bit of a cheat since I owned it for the SNES, bought it on the Wii
 
 This is the first game which I had never played before. I loved this game, the open-ended story and resonant characterizations made it feel much less linear than a lot of other RPGs, and like Super Mario RPG, there are no random battles (though usually you must fight enemies in order to move past them, you can't often dodge past like you can in Mario RPG).
 
-![Chrono Trigger](../content/images/chrono_trigger.gif)
+![Chrono Trigger]({{ site.baseurl }}content/images/chrono_trigger.gif)
 
 **Writing:** 9/10. The large cast of characters all have well-defined personalities and play off each other in interesting, believable ways. The dialogue is interesting and engaging without being overbearing. Plus, the main storyline involves time travel and a giant, world-destroying Lovecraftian god-beast, so what's not to like? There's a little more melodrama and dorm-room philosophising than is probably necessary, but it has a sense of humor and the scale is so epic and strange that it stays fun throughout.
 
@@ -47,7 +47,7 @@ I attempted to play this one, but it turned out that the more action-oriented, Z
 
 This game was really funny, with probably the best writing of any of the games I've played so far, I enjoyed the elastic reality of the game's world, and especially the super-trippy final section.
 
-![Earthbound](../content/images/earthbound.png)
+![Earthbound]({{ site.baseurl }}content/images/earthbound.png)
 
 **Writing:** 10/10. Definitely the high point of the game, and clearly its main reason for existence. Playing through this game is kind of like reading a really well written choose-your-own-adventure novel, you just want dog-ear every branching point in the story to make sure you experience every possible bit of dialog with every NPC because they're all so goofy and fun to read.
 

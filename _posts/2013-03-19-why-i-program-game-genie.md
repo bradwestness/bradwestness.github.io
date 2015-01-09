@@ -3,7 +3,7 @@ layout: post
 title: Why I Program - Game Genie  
 ---
 
-![](../content/images/GameGenie_SNES_e1363739370973.jpg)
+![]({{ site.baseurl }}content/images/GameGenie_SNES_e1363739370973.jpg)
 
 
 You can ask anyone who knew me when I was little, I was very obsessed with the NES. My childhood reaction to receiving one for Christmas is the sort of thing that your family likes to bring up to embarrass you in front of girls.
@@ -13,7 +13,7 @@ But, my fascination was always deeper than just playing the games. The very *ide
 Nothing solidified that concept in my young brain as much as the **Game Genie**, the dongle that allowed you to enter your own secret codes that would alter the fabric of the game as you played it.
 
 
-![](../content/images/Game_Genie_BIOS_U_v2_0_Unl.png)
+![]({{ site.baseurl }}content/images/Game_Genie_BIOS_U_v2_0_Unl.png)
 
 
 The only game I recall actually using it to cheat on was *The Legend of Zelda: Link's Awakening* for the SNES. Infinite hearts allowed my ten-year-old self to get past the difficult boss fights and go dungeon-crawling to solve the puzzles I loved without having to worry about a game over.
@@ -21,7 +21,7 @@ The only game I recall actually using it to cheat on was *The Legend of Zelda: L
 Mostly I loved the Game Genie for it's other purpose: altering the game in ways the developers never intended, to often hilarious results. Moon Jump. Color palate switches. Debug levels. You were essentially altering the game memory at load-time and could cause all kinds of crazy side-effects.
 
 
-![](../content/images/0.jpg)
+![]({{ site.baseurl }}content/images/0.jpg)
 
 
 ZSNES, a Super Nintendo emulator for the PC, even let you pause your game, take note of various memory values that had changed since your last pause, and generate you own Game Genie codes.

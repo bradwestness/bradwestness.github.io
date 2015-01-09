@@ -1,7 +1,7 @@
 Title: The New Segregation  
 Published: 2012-05-10 10:02:53Z 
   
-![](../content/images/0e351.jpg)
+![]({{ site.baseurl }}content/images/0e351.jpg)
 
 As you've probably heard by now, President Obama <a href="http://online.wsj.com/article/SB10001424052702304070304577394332545729926.html" target="_blank">publicly announced his support for gay marriage</a> yesterday. To me, this is akin to the Lyndon Johnson <a href="http://en.wikipedia.org/wiki/Jim_Crow_laws#End_of_de_jure_segregation" target="_blank">calling for the abolishment of the Jim Crow laws in the 1964 State of the Union address</a>. Future generations will look back at our generation with the same kind of scoffing disbelief that we today have toward segregation.
 

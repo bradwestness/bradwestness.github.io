@@ -3,7 +3,7 @@ layout: post
 title: 10 Worst Christmas Songs  
 ---
   
-![](../content/Images/Kenny_Rogers_and_Dolly_Parton_A_Christmas_to_Remember1.jpg)
+![]({{ site.baseurl }}content/Images/Kenny_Rogers_and_Dolly_Parton_A_Christmas_to_Remember1.jpg)
 
 It's Black Friday, so in lieu of  waiting in line outside Best Buy for six hours, I thought I'd post my annual list of Worst Christmas Songs.
 

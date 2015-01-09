@@ -1,7 +1,7 @@
 Title: First Impressions of The Hobbit - An Unexpected Journey  
 Published: 2012-12-17 11:05:22Z 
   
-![](../content/images/Tolkiens_illustration_of_008.jpg)
+![]({{ site.baseurl }}content/images/Tolkiens_illustration_of_008.jpg)
 
 We saw the first of Peter Jackson's The Hobbit movies last night in 3D at 48 frames per second. Normally I'm not a fan of 3D movies because the 3D glasses make the picture darker and the 3D effects tend to make high-action sequences look blurry and hard to follow. However, I thought it was worth checking out the 48 frames per second version of the film since this is the first movie ever to be released in that format and its unlikely that the 48 frames per second version will ever be available on home video (at least for the foreseeable future).
 

@@ -1,7 +1,7 @@
 Title: Heroes and Villains–Which Are You?  
 Published: 2011-12-05 10:40:58Z 
   
-![](../content/images/Lionel_Barrymore_Mr_Potter.jpg)
+![]({{ site.baseurl }}content/images/Lionel_Barrymore_Mr_Potter.jpg)
 
 We’re living in a time in our country where every issue is completely divisive and polarizing. You’re either for us or against us, and many people vote entirely on single issues, regardless of the actual policies enforced by their leaders.
 

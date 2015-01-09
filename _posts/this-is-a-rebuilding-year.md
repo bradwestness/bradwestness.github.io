@@ -1,7 +1,7 @@
 Title: This is a Rebuilding Year  
 Published: 2012-01-01 14:58:15Z 
   
-![](../content/images/rebuilding.jpg)
+![]({{ site.baseurl }}content/images/rebuilding.jpg)
 
 In the last 12 months, I did the following:
 
