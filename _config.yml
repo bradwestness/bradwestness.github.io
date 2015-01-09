@@ -1,12 +1,15 @@
+#
+# Blog settings
+#
 baseurl: http://www.bradwestness.com/
 description: A simple man in complex times.
-destination: ./_site
-lsi:         false
-port:        4000
-highligher:  true
-markdown:    rdiscount
+
+#
+# Jekyll settings
+#
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
 permalink:   pretty
 paginate: 3
 paginate_path: "page/:num"
-rdiscount:
-  extensions: [smart]
