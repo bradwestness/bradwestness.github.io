@@ -3,9 +3,9 @@ lsi:         false
 port:        4000
 highligher:  true
 markdown:    rdiscount
-permalink:   /:year/:month/:day/:title/
+permalink:   pretty
 baseurl: http://www.bradwestness.com/
 paginate: 3
-paginate_path: "/archive/:num/"
+paginate_path: "page/:num"
 rdiscount:
   extensions: [smart]
