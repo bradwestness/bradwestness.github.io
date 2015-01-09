@@ -1,5 +1,7 @@
-Title: Please Learn to Do It Yourself  
-Published: 2012-05-16 12:06:05Z 
+---
+layout: post
+title: Please Learn to Do It Yourself  
+---
   
 ![]({{ site.baseurl }}content/images/Rosie_the_Riveter.jpg)
 

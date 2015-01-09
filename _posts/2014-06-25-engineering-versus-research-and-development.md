@@ -1,5 +1,7 @@
-Title: Engineering versus Research and Development  
-Published: 2014-06-25 09:31:08Z 
+---
+layout: post
+title: Engineering versus Research and Development  
+---
   
 While listening to [an episode of the *.NET Rocks* podcast](http://www.dotnetrocks.com/default.aspx?showNum=996) on my commute, as is my wont, something that guest [Doc Norton](http://www.docondev.com/) said really resonated wtih me.
 

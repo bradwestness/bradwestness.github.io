@@ -1,5 +1,7 @@
-Title: Put a Feed On It  
-Published: 2012-08-30 13:56:10Z 
+---
+layout: post
+title: Put a Feed On It  
+---
   
 ![]({{ site.baseurl }}content/images/imgres.jpg)
 

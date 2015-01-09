@@ -1,5 +1,7 @@
-Title: Inversion of Control is an Anti-Pattern  
-Published: 2014-03-04 22:49:38Z 
+---
+layout: post
+title: Inversion of Control is an Anti-Pattern  
+---
   
 I'm calling you out, <a href="http://docs.structuremap.net/" target="_blank">StructureMap</a>. And you too, <a href="http://www.ninject.org/" target="_blank">Ninject</a>. Here's the thing: Inversion of Control (or Dependency Injection if you're nasty) is a powerful tool that can be used to great effect in large projects to keep the various pieces of the project loosely coupled. However, it is very easy to get subtly wrong in a way that is harmful to the testability of your application and causes you to spend more time mucking with IoC configuration* than whatever is saved in future maintainability.
 

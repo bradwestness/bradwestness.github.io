@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Client-side File Upload Size Validation in ASP.NET MVC
-published: 2014-09-24
+title: "Client-side File Upload Size Validation in ASP.NET MVC"
 ---
   
 Here's a little ASP.NET MVC validation attribute you might find useful: file size validation, complete with client-side validation using the [HTML5 File API](). We're using bytes for the file size, just for simplicity's sake.

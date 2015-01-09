@@ -1,5 +1,7 @@
-Title: First Impressions of The Hobbit - An Unexpected Journey  
-Published: 2012-12-17 11:05:22Z 
+---
+layout: post
+title: First Impressions of The Hobbit - An Unexpected Journey  
+---
   
 ![]({{ site.baseurl }}content/images/Tolkiens_illustration_of_008.jpg)
 

@@ -1,5 +1,7 @@
-Title: Synchronicity: Brandy, Quick Change, and Kurtwood Smith  
-Published: 2014-03-07 21:10:10Z 
+---
+layout: post
+title: "Synchronicity: Brandy, Quick Change, and Kurtwood Smith"
+---
   
 So this is a crazy bit of synchronicity.
 

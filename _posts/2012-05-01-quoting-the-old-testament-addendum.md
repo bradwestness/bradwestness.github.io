@@ -1,5 +1,7 @@
-Title: Quoting the Old Testament - Addendum  
-Published: 2012-05-01 18:52:12Z 
+---
+layout: post
+title: "Quoting the Old Testament - Addendum"
+---
   
 It seems I may have been beaten to the punch with <a title="An Open Letter to People Who Quote the Old Testament" href="/2012/02/an-open-letter-to-people-who-quote-the-old">my rant about quoting the old testament</a>:
 

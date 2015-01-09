@@ -1,5 +1,7 @@
-Title: Meetings and Partings  
-Published: 2013-07-12 15:50:34Z 
+---
+layout: post
+title: Meetings and Partings  
+---
   
 ![]({{ site.baseurl }}content/images/whitewater.jpg)
 

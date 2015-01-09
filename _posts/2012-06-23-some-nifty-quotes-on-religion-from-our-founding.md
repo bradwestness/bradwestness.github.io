@@ -1,5 +1,7 @@
-Title: Some Nifty Quotes on Religion from Our Founding Fathers  
-Published: 2012-06-23 21:34:29Z 
+---
+layout: post
+title: Some Nifty Quotes on Religion from Our Founding Fathers  
+---
   
 ![]({{ site.baseurl }}content/images/founding_fathers.jpg)
 

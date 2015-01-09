@@ -1,5 +1,7 @@
-Title: Heroes and Villains–Which Are You?  
-Published: 2011-12-05 10:40:58Z 
+---
+layout: post
+title: "Heroes and Villains–Which Are You?"
+---
   
 ![]({{ site.baseurl }}content/images/Lionel_Barrymore_Mr_Potter.jpg)
 

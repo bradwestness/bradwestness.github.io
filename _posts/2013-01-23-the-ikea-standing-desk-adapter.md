@@ -1,5 +1,7 @@
-Title: The IKEA Standing Desk Adapter  
-Published: 2013-01-23 08:41:46Z 
+---
+layout: post
+title: The IKEA Standing Desk Adapter  
+---
   
 I've been reading about <a href="http://www.wired.com/gadgetlab/2012/05/ditch-your-office-chair-for-a-new-standing-desk/">standing desks</a> for a while now because <a href="http://www.medicalbillingandcoding.org/sitting-kills/">sitting is killing me</a>, and trying to figure out an inexpensive way to set one up for myself at work. I settled on making a "standing desk adapter" out of an <a href="http://www.ikea.com/us/en/catalog/products/00095036/">IKEA <em>LACK</em> coffee table</a> which only set me back twenty bucks.
 

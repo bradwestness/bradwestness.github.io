@@ -1,5 +1,7 @@
-Title: "Muppets Most Wanted" - Now We're Here and There's No Need Remembering When  
-Published: 2014-03-22 22:15:24Z  
+---
+layout: post
+title: "Muppets Most Wanted - Now We're Here and There's No Need Remembering When"
+---
   
 ![]({{ site.baseurl }}content/images/Muppets_Most_Wanted_Poster.jpg)
 

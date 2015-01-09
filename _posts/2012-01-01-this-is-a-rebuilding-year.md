@@ -1,5 +1,7 @@
-Title: This is a Rebuilding Year  
-Published: 2012-01-01 14:58:15Z 
+---
+layout: post
+title: This is a Rebuilding Year  
+---
   
 ![]({{ site.baseurl }}content/images/rebuilding.jpg)
 

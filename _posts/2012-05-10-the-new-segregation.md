@@ -1,5 +1,7 @@
-Title: The New Segregation  
-Published: 2012-05-10 10:02:53Z 
+---
+layout: post
+title: The New Segregation  
+---
   
 ![]({{ site.baseurl }}content/images/0e351.jpg)
 

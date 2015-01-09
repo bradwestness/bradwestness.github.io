@@ -1,5 +1,7 @@
-Title: The Dumbest Parts of 'Elysium'  
-Published: 2013-08-12 23:51:04Z 
+---
+layout: post
+title: "The Dumbest Parts of 'Elysium'"  
+---
   
 ![]({{ site.baseurl }}content/images/elysium.jpg)
 

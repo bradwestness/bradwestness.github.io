@@ -1,5 +1,7 @@
-Title: Signing and Encoding iOS Configuration Profiles with C#  
-Published: 2013-01-17 10:43:49Z 
+---
+layout: post
+title: Signing and Encoding iOS Configuration Profiles with C#  
+---
   
 I'm currently in the process of developing a Mobile Device Management web application for <a href="http://www.uww.edu">UW-Whitewater</a>, which has been largely an exercise in trial and error due to the cryptic nature of <a href="http://www.apple.com/support/iphone/enterprise/">Apple's documentation on the subject</a> (which assume you're developing on Mac OS and running a Mac OS server) and the dearth of information available from other sources.
 

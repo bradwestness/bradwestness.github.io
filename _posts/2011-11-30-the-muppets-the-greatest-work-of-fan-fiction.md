@@ -1,5 +1,7 @@
-Title: "The Muppets" - The Greatest Work of Fan Fiction Ever Made  
-Published: 2011-11-30 12:58:16Z 
+---
+layout: post
+title: "'The Muppets' - The Greatest Work of Fan Fiction Ever Made"  
+---
   
 ![]({{ site.baseurl }}content/images/The_Muppets_movie_poster.jpg)
 
