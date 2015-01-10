@@ -3,9 +3,9 @@ layout: post
 title: First Impressions of The Hobbit - An Unexpected Journey  
 ---
   
-![]({{ site.baseurl }}content/images/Tolkiens_illustration_of_008.jpg)
-
 We saw the first of Peter Jackson's The Hobbit movies last night in 3D at 48 frames per second. Normally I'm not a fan of 3D movies because the 3D glasses make the picture darker and the 3D effects tend to make high-action sequences look blurry and hard to follow. However, I thought it was worth checking out the 48 frames per second version of the film since this is the first movie ever to be released in that format and its unlikely that the 48 frames per second version will ever be available on home video (at least for the foreseeable future).
+
+![]({{ site.baseurl }}content/images/Tolkiens_illustration_of_008.jpg)
 
 Nearly every review or reaction to the film that I had read online was pretty harshly negative to the 48 frames per second version of the film. <a href="http://www.avclub.com/articles/the-hobbit-an-unexpected-journey,89816/" target="_blank">The AV Club said</a> "the technique sharpens the picture while producing images that look remarkably video-like and unreal" and "the higher frame rate has a flattening effect that makes everything look shallower, more pixelated, and more artificial." A lot of people are saying it makes the movie look like a cheaply made soap opera rather than the epic-scaled film it is meant to be.
 
