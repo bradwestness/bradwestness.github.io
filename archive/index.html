@@ -12,7 +12,7 @@ title: Archive
       {% unless forloop.first %}
         </ul>
       {% endunless %}
-      <h2 class="year">{{ date + date: "%Y" }}</h2>
+      <h2 class="year">{{ date | date: "%Y" }}</h2>
         <ul>
     {% endunless %}
         <li>
