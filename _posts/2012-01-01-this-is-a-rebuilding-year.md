@@ -3,8 +3,6 @@ layout: post
 title: This is a Rebuilding Year  
 ---
   
-![]({{ site.baseurl }}content/images/rebuilding.jpg)
-
 In the last 12 months, I did the following:
 
 1. Took my first "real" full-time job at the University of Wisconsin-Whitewater
@@ -16,6 +14,8 @@ In the last 12 months, I did the following:
 7. Was the best man in my best friend's wedding
 
 I think it's going to be a while before I beat 2011 on the eventfulness front. That's why, as you've heard so many sports coaches do before me, I'm declaring this a <strong>rebuilding year</strong>.
+
+![]({{ site.baseurl }}content/images/rebuilding.jpg)
 
 What I mean is that, while Mary and I want to start our family sooner rather than later (since we'd like to be less than a million years old when our kids graduate high school), we're barely scraping by as it is due to student loan payments and paying back money we spent on stuff for the wedding.
 
