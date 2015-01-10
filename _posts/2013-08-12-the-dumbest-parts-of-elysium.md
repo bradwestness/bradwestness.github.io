@@ -3,9 +3,9 @@ layout: post
 title: "The Dumbest Parts of 'Elysium'"  
 ---
   
-![]({{ site.baseurl }}content/images/elysium.jpg)
-
 <a href="https://twitter.com/NeillBlomkamp">Neil Blomkamp's</a> follow up to the excellent <a href="http://www.d-9.com/"><em>District 9</em></a> came out this past weekend and <a href="http://www.avclub.com/articles/weekend-box-office-elysium-comes-out-on-top-despit,101480/">has already made roughly a zillion dollars at the box office</a>.
+
+![]({{ site.baseurl }}content/images/elysium.jpg)
 
 A lot of times, in big-budget Hollywood films, there are dumb elements that make you wonder how none of the hundreds of people involved in making the film pointed out what a bad idea they were.
 
