@@ -3,9 +3,9 @@ layout: post
 title: Some Nifty Quotes on Religion from Our Founding Fathers  
 ---
   
-![]({{ site.baseurl }}content/images/founding_fathers.jpg)
-
 Here are a few nifty quotes regarding Christianity from our God-fearing-slave-owning-only-white-males-may-vote founding fathers:
+
+![]({{ site.baseurl }}content/images/founding_fathers.jpg)
 
 > The Government of the United States is in no sense founded on the Christian religion.
 > 
