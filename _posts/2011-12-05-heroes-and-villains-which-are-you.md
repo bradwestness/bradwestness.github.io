@@ -3,9 +3,9 @@ layout: post
 title: "Heroes and Villains–Which Are You?"
 ---
   
-![]({{ site.baseurl }}content/images/Lionel_Barrymore_Mr_Potter.jpg)
-
 We’re living in a time in our country where every issue is completely divisive and polarizing. You’re either for us or against us, and many people vote entirely on single issues, regardless of the actual policies enforced by their leaders.
+
+![]({{ site.baseurl }}content/images/Lionel_Barrymore_Mr_Potter.jpg)
 
 What I have to say is this: whether you’re a conservative or a liberal, a Republican, a Democrat or an Independent, take a moment to ask yourself whether you want to be seen by future generations as a hero or a villain.
 
