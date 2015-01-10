@@ -6,7 +6,7 @@ title: Archive
 <section class="post-list">
     {% for post in site.posts reverse %}
     {% capture date %}{{ post.date }}{% endcapture %}
-    {% capture this_year % }{{ date | date: "%Y" }}{% endcapture %}
+    {% capture this_year %}{{ date | date: "%Y" }}{% endcapture %}
     {% unless year == this_year %}
       {% assign year = this_year %}
       {% unless forloop.first %}
@@ -21,4 +21,5 @@ title: Archive
             </h2>
         </li>
     {% endfor %}
+    </ul>
 </section>
