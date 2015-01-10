@@ -24,7 +24,7 @@ Here's the crazy part: <em>the next day, </em>March 7th, 2014, The A.V. Club pu
 
 Spooky!
 
-  [1]: ../../content/images/looking_glass.png (Looking Glass)
+  [1]: {{ site.baseurl }}content/images/looking_glass.png (Looking Glass)
   [2]: https://twitter.com/BradWestness/status/437950143946452993
-  [3]: ../../content/images/quick_change.png (Quick Change)
+  [3]: {{ site.baseurl }}content/images/quick_change.png (Quick Change)
   [4]: https://twitter.com/BradWestness/status/441701407809220608
