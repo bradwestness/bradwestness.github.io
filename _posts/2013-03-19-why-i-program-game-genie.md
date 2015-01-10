@@ -3,12 +3,11 @@ layout: post
 title: "Why I Program - Game Genie"  
 ---
 
-![]({{ site.baseurl }}content/images/GameGenie_SNES_e1363739370973.jpg)
-
-
 You can ask anyone who knew me when I was little, I was very obsessed with the NES. My childhood reaction to receiving one for Christmas is the sort of thing that your family likes to bring up to embarrass you in front of girls.
 
 But, my fascination was always deeper than just playing the games. The very *idea* that somewhere inside that cartridge was magic code that made Mario jump and Bowser throw fireballs was a big part of what drew me into playing the games as often as I did.
+
+![]({{ site.baseurl }}content/images/GameGenie_SNES_e1363739370973.jpg)
 
 Nothing solidified that concept in my young brain as much as the **Game Genie**, the dongle that allowed you to enter your own secret codes that would alter the fabric of the game as you played it.
 
