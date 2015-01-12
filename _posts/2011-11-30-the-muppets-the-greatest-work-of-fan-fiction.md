@@ -3,9 +3,9 @@ layout: post
 title: "'The Muppets' - The Greatest Work of Fan Fiction Ever Made"  
 ---
   
-![]({{ site.baseurl }}content/images/The_Muppets_movie_poster.jpg)
-
 I was excited, but also trepidatious, when I heard they were making a new Muppet movie. I love the first two movies, **The Muppet Movie** and **The Great Muppet Caper** -- the former has been my answer to "What's your favorite movie?" for a couple decades now, and the latter has the distinction of being perhaps the most worn-out VHS tape in my parents' basement. Additionally, the **Muppet Christmas Carol** is still my favorite (and, if you ask me, the most true to the novel) version of **A Christmas Carol**, and I own all the (released) DVDs of **The Muppet Show**.
+
+![]({{ site.baseurl }}content/images/The_Muppets_movie_poster.jpg)
 
 So, I have a reputation as "the guy who likes the Muppets" among family, friends and co-workers. Naturally, I was asked by essentially everyone who knows me whether I was excited about the new movie. I was, because I heard Jason Segel was writing it, and if you've seen the finale of his **Forgetting Sarah Marshall**, you know he gets the sense of humor that makes the Muppets so inherently funny and enduring.
 

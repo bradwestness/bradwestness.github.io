@@ -3,9 +3,9 @@ layout: post
 title: "Muppets Most Wanted - Now We're Here and There's No Need Remembering When"
 ---
   
-![]({{ site.baseurl }}content/images/Muppets_Most_Wanted_Poster.jpg)
-
 Compare the poster for the newly released <em>Muppets Most Wanted</em> to the <a href="/2011/11/the-muppets-the-greatest-work-of-fan-fiction">poster for 2011's <em>The Muppets</em></a> and you may notice something telling: while similar in design, the former features Muppets front and center with the human characters in the rear, and the latter is the opposite. This is just one indicator that the focus of the movie is back where it should be in any Muppet vehicle: on the Muppets themselves.
+
+![]({{ site.baseurl }}content/images/Muppets_Most_Wanted_Poster.jpg)
 
 While I thought the 2011 film was well done, funny and generally well intended, I felt that it focused too much on mourning the lost glory days of the Jim Henson era movies instead of simply attempting to recapture what made those films special. Don't tell me these characters used to be great, show me they're great <em>today</em>.
 

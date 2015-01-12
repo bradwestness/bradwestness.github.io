@@ -3,9 +3,9 @@ layout: post
 title: Ayn Rand Was a Not a Republican  
 ---
   
-![]({{ site.baseurl }}content/images/rand_2.jpg)
-
 In the coming months, you're sure to be hearing a lot about the tea party's golden boy, Paul Ryan, who was just announced as the Republican candidate for vice-president.
+
+![]({{ site.baseurl }}content/images/rand_2.jpg)
 
 He is on record as stating that Ayn Rand is the the <a href="http://www.cnn.com/2012/08/14/opinion/weiss-ryan-rand/index.html" target="_blank">reason he got involved in public service</a>. Although he's more recently <a href="http://articles.latimes.com/2012/aug/12/news/la-pn-vp-paul-ryan-ayn-rand-20120811" target="_blank">renounced his love of Rand</a>, he's still on record with the following quote:
 

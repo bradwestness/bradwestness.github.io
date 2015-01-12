@@ -3,15 +3,13 @@ layout: post
 title: Put a Feed On It  
 ---
   
-![]({{ site.baseurl }}content/images/imgres.jpg)
-
 > Did you see this bag before? I didn't. Now there's a bird on it. It's flying, it's free!
 > 
 > -Lisa Eversman, *"Put a Bird on It"*
 
-If you're making a webapp that deals with public data, especially timestamped records that are for public display, here's a good rule of thumb to follow: <strong><em>put a feed on it</em></strong>. At some point, you're going to want to pull that data into another place and display it as part of some landing page or aggregate it into some 3rd party service.
+![]({{ site.baseurl }}content/images/imgres.jpg)
 
-<!--more-->
+If you're making a webapp that deals with public data, especially timestamped records that are for public display, here's a good rule of thumb to follow: <strong><em>put a feed on it</em></strong>. At some point, you're going to want to pull that data into another place and display it as part of some landing page or aggregate it into some 3rd party service.
 
 If you work in a large enough organization, somebody's eventually going to want to pull in your data. If you've exposed a feed, you control the business logic of what gets shown. If you don't expose a feed, someone's eventually going to find a way to pull the data directly from your database, probably without your knowing anything about it, and who knows if they're respecting the intended design of your models, which they've probably had to reverse engineer by guess.
 

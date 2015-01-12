@@ -3,9 +3,9 @@ layout: post
 title: The New Segregation  
 ---
   
-![]({{ site.baseurl }}content/images/0e351.jpg)
-
 As you've probably heard by now, President Obama <a href="http://online.wsj.com/article/SB10001424052702304070304577394332545729926.html" target="_blank">publicly announced his support for gay marriage</a> yesterday. To me, this is akin to the Lyndon Johnson <a href="http://en.wikipedia.org/wiki/Jim_Crow_laws#End_of_de_jure_segregation" target="_blank">calling for the abolishment of the Jim Crow laws in the 1964 State of the Union address</a>. Future generations will look back at our generation with the same kind of scoffing disbelief that we today have toward segregation.
+
+![]({{ site.baseurl }}content/images/0e351.jpg)
 
 Why would anybody have thought that black people didn't deserve the same rights as white people? What difference does the color of your skin make on what drinking fountain you can use? How could that ever be the <em>majority's viewpoint</em>? It all seems rather absurd to our "enlightened" sensibilities today, and we like to pat ourselves on the back for being so egalitarian compared to previous generations.
 
