@@ -19,5 +19,6 @@
     <None Include="index.html" />
     <None Include="archive\index.html" />
     <None Include="about\index.html" />
+    <None Include="_posts\2015-02-04-jquery-validation-foundation.md" />
   </ItemGroup>
 </Project>
