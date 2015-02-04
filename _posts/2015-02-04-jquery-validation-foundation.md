@@ -1,7 +1,7 @@
---
+---
 layout: post
 title: jQuery Unobtrusive Validation for Foundation CSS Framework
---
+---
 
 I had previously used the [jQuery Validation for Bootstrap](https://www.nuget.org/packages/jquery.validate.unobtrusive.bootstrap3/) integration 
 in order to enable my [ASP.NET MVC](http://www.asp.net/mvc) web-apps to take advantage of [Bootstrap's input validation states](http://getbootstrap.com/css/#forms-control-validation), 
