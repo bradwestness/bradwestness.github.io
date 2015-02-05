@@ -70,9 +70,6 @@
       <DeploymentContent>true</DeploymentContent>
     </None>
     <None Include="index.html" />
-    <None Include="_posts\2015-02-04-jquery-validation-foundation.md">
-      <DeploymentContent>true</DeploymentContent>
-    </None>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
