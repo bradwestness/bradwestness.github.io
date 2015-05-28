@@ -21,9 +21,11 @@ and
 
 > tuscon az 53715
 
-These are really the same address, despite the cosmetic differences. What Kip noticed is that people tend to get the numbers right, all the weird inconsitenceis are with the punctuation, abbreviations and spelling (notice how Tucson is spelled in the second address).
+Despite the cosmetic differences, if you mailed a letter to both of these addresses they would wind up in the same place. So how do you programmatically detect that they're equivalent?
 
-With that in mind, he decided to strip out all the problematic data and distill the address down to it's "Roodian value." To do so, you use the following steps:
+What Kip noticed is that people tend to get the numbers right, all the weird inconsitenceis are usually with the punctuation, abbreviations and spelling (notice how Tucson is spelled in the second address). With that in mind, he decided to strip out all the problematic data and distill the address down to it's "Roodian value."
+
+To do so, you use the following steps:
 
 1. Replace all line breaks, punctuation and non-alphanumeric characters with a single space
 2. If an alphabetical (non-numeric) section is only one letter, discard it
