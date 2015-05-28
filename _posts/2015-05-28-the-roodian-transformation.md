@@ -5,7 +5,7 @@ title: The Roodian Transformation
 
 It's easy to wind up with redundant address data when operating a web application: people register more than once with different e-mail addresses, they register for other users and don't have all their information correct, they make a typo or use an abbreviation in their billing address but spell their home address out completely.
 
-There are many approaches to attemp to "fuzzy match" address data, this one is named for one of my co-workers, Kip Rood, who came up with it. 
+There are many approaches to attemp to "[fuzzy match](http://en.wikipedia.org/w/index.php?title=Record_linkage&redirect=no#Probabilistic_record_linkage)" address data, this one is named for one of my co-workers, [Kip Rood](http://www.kiprood.com/), who came up with it. 
 
 Take two addresses:
 
@@ -23,7 +23,7 @@ and
 
 These are really the same address, despite the cosmetic differences. What Kip noticed is that people tend to get the numbers right, all the weird inconsitenceis are with the punctuation, abbreviations and spelling (notice how Tucson is spelled in the second address).
 
-With that in mind, he decided to strip out all the problematic data and distill the address down to it's "Roodian value". To do so, you use the following steps:
+With that in mind, he decided to strip out all the problematic data and distill the address down to it's "Roodian value." To do so, you use the following steps:
 
 1. Replace all line breaks, punctuation and non-alphanumeric characters with a single space
 2. If an alphabetical (non-numeric) section is only one letter, discard it
@@ -110,7 +110,8 @@ public static class Roodian
     }
 
     /// <summary>
-    /// Convenience method to get the Roodian value of a collection of fields (i.e. Address1, Address2, City, State, etc)
+    /// Convenience method to get the Roodian value of a
+    /// collection of fields (i.e. Address1, Address2, City, State, etc)
     /// </summary>
     public static string Get(params string[] fields)
     {
