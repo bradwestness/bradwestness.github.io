@@ -10,12 +10,15 @@ There are many approaches to attemp to "fuzzy match" address data, this one is n
 Take two addresses:
 
 > 1301 Kinnickinnic Road
+
 > Apartment #2
+
 > Tucson, AZ 53715
 
 and
 
 > 1301 kk rd apt 2
+
 > tuscon az 53715
 
 These are really the same address, despite the cosmetic differences. What Kip noticed is that people tend to get the numbers right, all the weird inconsitenceis are with the punctuation, abbreviations and spelling (notice how Tucson is spelled in the second address).
