@@ -23,7 +23,7 @@ and
 
 Despite the cosmetic differences, if you mailed a letter to both of these addresses they would wind up in the same place. So how do you programmatically detect that they're equivalent?
 
-What Kip noticed is that people tend to get the numbers right, all the weird inconsitenceis are usually with the punctuation, abbreviations and spelling (notice how Tucson is spelled in the second address). With that in mind, he decided to strip out all the problematic data and distill the address down to it's "Roodian value."
+What Kip noticed is that people tend to get the numbers right, all the weird inconsitenceis are usually with the punctuation, abbreviations, and spelling (notice how Tucson is spelled in the second address). With that in mind, he decided to strip out all the problematic data and distill the address down to it's "Roodian value."
 
 To do so, you use the following steps:
 
