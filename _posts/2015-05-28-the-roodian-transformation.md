@@ -3,7 +3,7 @@ layout: post
 title: The Roodian Transformation
 ---
 
-It's easy to wind up with redundant address data when operating a web application: people register more than once with different e-mail addresses, they register for other users and don't have all their information correct, they make a typo or use an abbreviation in their billing address but spell their home address out completely.
+It's easy to wind up with redundant address data when operating institutional systems: people register more than once with different e-mail addresses, they register for other users and don't have all their information correct, they make a typo or use an abbreviation in their billing address but spell their home address out completely.
 
 There are many approaches to attemp to "[fuzzy match](http://en.wikipedia.org/w/index.php?title=Record_linkage&redirect=no#Probabilistic_record_linkage)" address data, this one is named for one of my co-workers, [Kip Rood](http://www.kiprood.com/), who came up with it. 
 
