@@ -34,23 +34,23 @@ To do so, you use the following steps:
 
 So, with our example addresses above:
 
-### 1. Replace all line breaks, punctuation and non-alphanumeric characters with a single space
+#### 1. Replace all line breaks, punctuation and non-alphanumeric characters with a single space
 
 > 1301 Kinnickinnic Road Apartment 2 Tucson AZ 53715
 
 > 1301 kk rd apt 2 tucson az 53715
 
-### 2. If an alphabetical (non-numeric) section is only one letter, discard it
+#### 2. If an alphabetical (non-numeric) section is only one letter, discard it
 
 > No change for this example (this step is primarily to get rid of "P.O. Box" spelling inconsistencies)
 
-### 3. If an alphabetical (non-numeric) section is multiple letters long, keep only the first letter
+#### 3. If an alphabetical (non-numeric) section is multiple letters long, keep only the first letter
 
 > 1301 K R A 2 T A 53715
 
 > 1301 k r a 2 t a 53715
 
-### 4. Remove all spaces and make everything uppercase
+#### 4. Remove all spaces and make everything uppercase
 
 > 1301KRA2TA53715
 
