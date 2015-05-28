@@ -38,7 +38,7 @@ So, with our example addresses above:
 
 > 1301 Kinnickinnic Road Apartment 2 Tucson AZ 53715
 
-> 1301 kk rd apt 2 tucson az 53715
+> 1301 kk rd apt 2 tuscon az 53715
 
 #### 2. If an alphabetical (non-numeric) section is only one letter, discard it
 
