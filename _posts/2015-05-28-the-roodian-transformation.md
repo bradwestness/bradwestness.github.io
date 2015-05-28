@@ -87,7 +87,7 @@ public static class Roodian
     public static string Get(string address)
     {
         var roodian = new StringBuilder();
-        var tokens = Cleanse(address).Split(' ');
+        var tokens = Cleanse(address).Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
         foreach (var token in tokens)
         {
