@@ -73,7 +73,7 @@ public static class Roodian
 {
     #region Constants
 
-    private static readonly Regex _cleanser = new Regex(@"[^A-Z0-9]", RegexOptions.Compiled | RegexOptions.Multiline);
+    private static readonly Regex _cleanser = new Regex(@"[^A-Z0-9 ]", RegexOptions.Compiled | RegexOptions.Multiline);
 
     private static readonly Regex _numeric = new Regex(@"^\d+$", RegexOptions.Compiled);
 
