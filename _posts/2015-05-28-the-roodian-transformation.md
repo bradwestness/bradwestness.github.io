@@ -127,16 +127,16 @@ public static class Roodian
         return Get(address);
     }
 
-        #endregion
+    #endregion
 
-        #region Private Methods
+    #region Private Methods
 
-        private static string Cleanse(string input)
-        {
-            var output = _cleanser.Replace((input ?? string.Empty).ToUpperInvariant(), " ").Trim();
-            return output;
-        }
+    private static string Cleanse(string input)
+    {
+        var output = _cleanser.Replace((input ?? string.Empty).ToUpperInvariant(), " ").Trim();
+        return output;
+    }
 
-        #endregion
+    #endregion
 }
 </code></pre>
