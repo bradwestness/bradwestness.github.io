@@ -136,9 +136,9 @@ which is meant to be funny):
 <iframe width="560" height="315" src="https://www.youtube.com/embed/i-QadwBCqQw" frameborder="0" allowfullscreen></iframe>
 
 Ad Rock is undeniably a better rapper than I am. Brad Bird is 
-un-deniably a better filmmaker than the vast majority of humanity. 
-Bob Parr is undeniably stronger than pretty much everyone in the 
-world of *The Incredibles*, and Dash is faster. 
+undeniably a better filmmaker than the vast majority of humanity. 
+Bob Parr is undeniably stronger than everyone in the real world, 
+and Dash is faster. 
 
 Are they special? Yes, but not all in the same way. They don't have 
 to hide their abilities and pretend to be average in every respect. 
