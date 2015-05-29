@@ -26,7 +26,7 @@ Objectivist or Libertarian or whatever seems to have just become
 an accepted fact in the court of public opinion. It's not. The 
 characters espouse some of those views at the beginning of the film 
 because their entire arc in the movie is that their opinions on these 
-matters evolves to become more nuanced.
+matters evolves to become more nuanced. 
 
 You can have a character bring up an idea (even the protagonist) in 
 a work of fiction without that idea necessarily being the moral of 
@@ -107,7 +107,7 @@ talent. Think of all the hyper-technically skilled session musicians
 who will never write a song as beloved as 
 *[Louie Louie](https://www.youtube.com/watch?v=qCzgK_DoKB4).* 
 
-Brad Bird sent his first animated film to Disney when he was 14. 
+[Brad Bird](http://en.wikipedia.org/wiki/Brad_Bird) sent his first animated film to Disney when he was 14. 
 He was awarded a scholarship to CalArts and studied under Milt Kahl 
 (one of Disney's legendary "nine old men"). I'm sure Bird put aspects 
 of himself into Dash and Bob. But he also put aspects of himself into 
@@ -140,4 +140,9 @@ Are they special? Yes, but not all in the same way. They don't have
 to hide their abilities and pretend to be average in every respect. 
 but having a special talent doesn't make them inherently 
 *better people*, or entitle them to act purely out of self-interest. 
-This is the true moral of the film, and I don't think it's a bad one. 
+
+This is the true moral of the film, and it's pretty much the 
+opposite of [Objectivism](http://en.wikipedia.org/wiki/Objectivism_(Ayn_Rand)) (which says that it's immorral to act out 
+of anything *other than* pure self-interest). 
+
+I don't think it's a bad one. 
