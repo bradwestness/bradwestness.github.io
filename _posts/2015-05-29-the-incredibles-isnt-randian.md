@@ -30,7 +30,7 @@ matters evolves to become more nuanced.
 
 You can have a character bring up an idea (even the protagonist) in 
 a work of fiction without that idea necessarily being the moral of 
-the film. That should be obvious, but it's something the people who 
+the thing. That should be obvious, but it's something the people who 
 want to frame Bird's work as some kind of insidious fascist 
 rhetoric can't seem to grasp. 
 
@@ -73,9 +73,9 @@ completely.
 
 Her arc is more along the lines of learning not to "hide your lamp 
 under a bushel." And while it's true that while both sides of the 
-argument (Dash and Bob vs. Helen) move toward the middle by the end 
+argument move toward the middle by the end 
 of the film, I think Dash and Bob have moved more than halfway toward 
-Helen's side. I'd call it 60/40. 
+Helen's side. I'd call it 70/30. 
 
 Syndrome also espouses a plan to make "no one special" by selling 
 gadgets that replicate superhero abilities, so it's again tempting 
@@ -92,19 +92,20 @@ Mr. Incredible, effectively *created* Syndrome by denying Buddy's
 abilities and rejecting his help because Buddy's super-power is 
 intelligence, rather than something physical. 
 
-What rankles people, I think, is that the film obviously does believe 
-that some people have innate talents that are the result of genetics 
-or chance or something other than practice and hard work (despite 
-Mr. Incredible's "getting in shape" montage &mdash; he does have to 
-work at it somewhat, like the rest of us, but nobody else is going 
-to be able to lift a traincar no matter how much we work out). 
+What trips people up, I think, is that the film obviously *does* 
+believe that some people have innate talents that are the result of 
+genetics or chance or something other than practice and hard work 
+(despite Mr. Incredible's "getting in shape" montage &mdash; he does 
+have to work at it somewhat, like the rest of us, but nobody else is 
+going to be able to lift a traincar no matter how much we work out). 
 
 I don't know that this is an especially controversial viewpoint, 
 though, it's more just a fact. Life isn't fair.  There are child 
 prodigies. There are people who practice dilligently at things but 
 just never achieve the heights of others who have an intuitive 
-talent. Think of all the hyper-technically skilled session musicians 
-who will never write a song as beloved as 
+talent, or are just in the right place at the right time. 
+Think of all the hyper-technically skilled session musicians 
+who will nevertheless not write a piece as immortal and beloved as 
 *[Louie Louie](https://www.youtube.com/watch?v=qCzgK_DoKB4).* 
 
 [Brad Bird](http://en.wikipedia.org/wiki/Brad_Bird) sent his first animated film to Disney when he was 14. 
