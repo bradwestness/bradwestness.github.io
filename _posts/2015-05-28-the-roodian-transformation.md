@@ -86,6 +86,8 @@ public static class Roodian
 
     private static readonly Regex _alpha = new Regex(@"^[A-Z]{2,}$", RegexOptions.Compiled);
 
+    private static readonly Regex _endsWithZipPlusFour = new Regex(@"\d{9}$", RegexOptions.Compiled);
+
     #endregion
 
     #region Public Methods
@@ -115,7 +117,14 @@ public static class Roodian
             }
         }
 
-        return roodian.ToString();
+        var output = roodian.ToString();
+
+        if (_endsWithZipPlusFour.IsMatch(output))
+        {
+            output = output.Substring(0, output.Length - 4);
+        }
+
+        return output;
     }
 
     /// <summary>
