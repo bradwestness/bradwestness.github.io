@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Roodian Transformation
+title: The Roodian Transformation - One Simple Trick for Comparing Addresses Programmatically
 ---
 
 It's easy to wind up with redundant address data when operating institutional systems: people register more than once with different e-mail addresses, they register for other users and don't have all their information correct, they make a typo or use an abbreviation in their billing address but spell their home address out completely.
