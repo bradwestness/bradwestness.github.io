@@ -5,10 +5,13 @@ title: The Incredibles isn't Fascist or Objectivist or Whatever
 
 Popular consensus seems to have settled on the idea that 
 *The Incredibles* (along with most of Brad Bird's other films) 
-espouses Ayn Rand-ian politics, by depicting the protagonists 
+espouses 
+[Ayn Rand-ian politics](http://www.bradwestness.com/2012/08/14/ayn-rand-was-a-not-a-republican/), 
+by depicting the protagonists 
 as inherently special (and therefore "greater than" everyone else) 
-and decrying "participation trophy" culture and "everyone is special" 
-philosophising.
+and decrying 
+["participation trophy" culture](http://www.bradwestness.com/2012/05/23/generation-gap/) 
+and "everyone is special" philosophising.
 
 The problem is that those arguments, while present in the movie, 
 are all spoken by characters who are misguided and later reverse 
