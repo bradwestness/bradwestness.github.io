@@ -145,5 +145,3 @@ but having a special talent doesn't make them inherently
 This is the true moral of the film, and it's pretty much the 
 opposite of [Objectivism](http://en.wikipedia.org/wiki/Objectivism_(Ayn_Rand)) (which says that it's immorral to act out 
 of anything *other than* pure self-interest). 
-
-I don't think it's a bad one. 
