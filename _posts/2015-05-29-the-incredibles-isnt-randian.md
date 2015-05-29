@@ -10,7 +10,7 @@ as inherently special (and therefore "greater than" everyone else)
 and decrying "participation trophy" culture and "everyone is special" 
 philosophising.
 
-The problem is, that those arguments, while present in the movie, 
+The problem is that those arguments, while present in the movie, 
 are all spoken by characters who are misguided and later reverse 
 those views. It's one thing to have Bob Parr complain that an 
 elementary school graduation ceremony is "psychotic" and "celebrating 
@@ -21,7 +21,7 @@ endangering their secret identities to feel good about himself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/p7c1HDUHlJo" frameborder="0" allowfullscreen></iframe>
 
-The thing that rankles me is the way that The Incredibles being 
+The thing that rankles me is the way that *The Incredibles* being 
 Objectivist or Libertarian or whatever seems to have just become 
 an accepted fact in the court of public opinion. It's not. The 
 characters espouse some of those views at the beginning of the film 
@@ -32,11 +32,11 @@ You can have a character bring up an idea (even the protagonist) in
 a work of fiction without that idea necessarily being the moral of 
 the film. That should be obvious, but it's something the people who 
 want to frame Bird's work as some kind of insidious fascist 
-rhetoric can't seem to grasp.
+rhetoric can't seem to grasp. 
 
 The other scene people use to support this argument is Dash 
 complaining about how calling everyone special is "another way of 
-saying no-one is."
+saying no-one is." 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1E9pKU_N15A" frameborder="0" allowfullscreen></iframe>
 
@@ -51,12 +51,12 @@ naturally to him.
 Calling everyone special doesn't mean no one is, it's an acceptance 
 of uniqueness and recognition that everyone has their own strengths 
 and value to provide in different situations. This is an idea the 
-film embodies most explicitly with the other Incredible, Violet, 
+film embodies most explicitly with the other *Incredible*, Violet, 
 who doesn't think she has anything to offer but winds up directly 
 saving the lives of the entire family on multiple occasions. 
 
 If I had to guess, I'd say that Brad Bird's ideology is really 
-closest to Mrs. Incredible. The complaints of Bob and Dash represent 
+closest to Helen Parr's. The complaints of Bob and Dash represent 
 his own most selfish impulses. We've all had moments where we've 
 given in to our own hype, and that's what Dash and Bob represent at 
 the start of the film. 
@@ -66,10 +66,12 @@ that even if you have a unique talent or special ability, that
 doesn't give you license to be selfish or entitled. You can use it 
 to help people rather than just using it for attention and fame. 
 
-Helen has a character arc over the course of the movie to &mdash; 
+Helen has a character arc over the course of the movie too &mdash; 
 she starts on the opposite end of the spectrum, being so overly- 
-protective of their own special abilities as to deny them completely. 
-Her arc is more along the lines of learning "not to hide your lamp 
+protective of her family's normalcy as to deny their specialness 
+completely. 
+
+Her arc is more along the lines of learning not to "hide your lamp 
 under a bushel." And while it's true that while both sides of the 
 argument (Dash and Bob vs. Helen) move toward the middle by the end 
 of the film, I think Dash and Bob have moved more than halfway toward 
@@ -84,8 +86,8 @@ this is again wilfully ignoring the details.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iRlh_w6uRds" frameborder="0" allowfullscreen></iframe>
 
 Syndrome plans to "keep the best inventions for himself" so, once 
-again, he can get attention and praise for being the "most special," 
-sound familiar? Also important is the fact that our hero, 
+again, he can get attention and praise for being the "most special." 
+Sound familiar? Also important is the fact that our hero, 
 Mr. Incredible, effectively *created* Syndrome by denying Buddy's 
 abilities and rejecting his help because Buddy's super-power is 
 intelligence, rather than something physical. 
@@ -98,11 +100,11 @@ work at it somewhat, like the rest of us, but nobody else is going
 to be able to lift a traincar no matter how much we work out). 
 
 I don't know that this is an especially controversial viewpoint, 
-though, it's more just a fact. There are child prodigies. There are 
-people who practice dilligently at things but just never achieve 
-the heights of others who have an intuitive talent. Think of all 
-the hyper-technically skilled session musicians who will never 
-write a song as beloved as 
+though, it's more just a fact. Life isn't fair.  There are child 
+prodigies. There are people who practice dilligently at things but 
+just never achieve the heights of others who have an intuitive 
+talent. Think of all the hyper-technically skilled session musicians 
+who will never write a song as beloved as 
 *[Louie Louie](https://www.youtube.com/watch?v=qCzgK_DoKB4).* 
 
 Brad Bird sent his first animated film to Disney when he was 14. 
@@ -129,12 +131,13 @@ which is meant to be funny):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/i-QadwBCqQw" frameborder="0" allowfullscreen></iframe>
 
-Ad Rock is undeniably a better rapper than I am. Brad Bird is un- 
-deniably a better filmmaker than the vast majority of humanity. 
+Ad Rock is undeniably a better rapper than I am. Brad Bird is 
+un-deniably a better filmmaker than the vast majority of humanity. 
 Bob Parr is undeniably stronger than pretty much everyone in the 
 world of *The Incredibles*, and Dash is faster. 
 
 Are they special? Yes, but not all in the same way. They don't have 
-to hide their abilities and pretend to be average in every respect, 
+to hide their abilities and pretend to be average in every respect. 
 but having a special talent doesn't make them inherently 
-*better people*.
+*better people*, or entitle them to act purely out of self-interest. 
+This is the true moral of the film, and I don't think it's a bad one. 
