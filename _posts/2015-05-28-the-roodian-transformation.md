@@ -13,13 +13,13 @@ Take two addresses:
 
 > Apartment #2
 
-> Tucson, AZ 53715
+> Tucson, AZ 85757-9530
 
 and
 
 > 1301 kk rd apt 2
 
-> tuscon az 53715
+> tuscon az 85757
 
 Despite the cosmetic differences, if you mailed a letter to both of these addresses they would wind up in the same place. So how do you programmatically detect that they're equivalent?
 
@@ -31,14 +31,15 @@ To do so, you use the following steps:
 2. If an alphabetical (non-numeric) section is only one letter, discard it
 3. If an alphabetical (non-numeric) section is multiple letters long, keep only the first letter
 4. Remove all spaces and make everything uppercase
+5. If the result ends with 9 digits, assume it's a "[zip+4](http://en.wikipedia.org/wiki/ZIP_code#ZIP.2B4)" and strip off the "+4"
 
 So, with our example addresses above:
 
 #### 1. Replace all line breaks, punctuation and non-alphanumeric characters with a single space
 
-> 1301 Kinnickinnic Road Apartment 2 Tucson AZ 53715
+> 1301 Kinnickinnic Road Apartment 2 Tucson AZ 85757 9530
 
-> 1301 kk rd apt 2 tuscon az 53715
+> 1301 kk rd apt 2 tuscon az 85757
 
 #### 2. If an alphabetical (non-numeric) section is only one letter, discard it
 
@@ -46,19 +47,25 @@ So, with our example addresses above:
 
 #### 3. If an alphabetical (non-numeric) section is multiple letters long, keep only the first letter
 
-> 1301 K R A 2 T A 53715
+> 1301 K R A 2 T A 85757 9530
 
-> 1301 k r a 2 t a 53715
+> 1301 k r a 2 t a 85757
 
 #### 4. Remove all spaces and make everything uppercase
 
-> 1301KRA2TA53715
+> 1301KRA2TA857579530
 
-> 1301KRA2TA53715
+> 1301KRA2TA85757
+
+#### 5. If the result ends with nine digits, remove the last four
+
+> 1301KRA2TA85757
+
+> 1301KRA2TA85757
 
 ---
 
-As you can see, by step 3 our two values are already equivalent (barring case sensitivity). There are obviously a lot of other edge cases and address weirdnesses you could potentially account for, but this simple method will get you 90% of the way there, without too much complexity.
+There are obviously a lot of other edge cases and address weirdnesses you could potentially account for, but this simple method will get you 90% of the way there, without too much complexity.
 
 The nice thing with this method is that once you generate the "Roodian" value of an address, you can easily throw that into a column in your database along with the rest of the address info. That column can then be indexed, so you have a really performant way to check if an address already exists when saving a new one, or to weed out duplicates that are already in the system.
 
