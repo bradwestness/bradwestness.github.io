@@ -20,9 +20,4 @@
     <None Include="archive\index.html" />
     <None Include="about\index.html" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="_posts\2015-06-05-mad-men-is-exhausting.md">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
 </Project>
