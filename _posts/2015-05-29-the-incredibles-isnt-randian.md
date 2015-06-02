@@ -22,7 +22,10 @@ on the fact that he's just using that argument to justify his own
 lack of involvement in his children's lives while selfishly 
 endangering their secret identities to feel good about himself. 
 
+
+<div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/p7c1HDUHlJo" frameborder="0" allowfullscreen></iframe>
+</div>
 
 The thing that rankles me is the way that *The Incredibles* being 
 Objectivist or Libertarian or whatever seems to have just become 
@@ -41,7 +44,9 @@ The other scene people use to support this argument is Dash
 complaining about how calling everyone special is "another way of 
 saying no-one is." 
 
+<div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1E9pKU_N15A" frameborder="0" allowfullscreen></iframe>
+</div>
 
 What people seem to miss is that Mrs. Incredible is the voice of 
 reason in both of these scenes, calling out Bob and Dash for the 
@@ -86,7 +91,9 @@ to think that "making everyone equal is bad" is the film's ethos
 &mdash; it's the vilain's plan, for crying out loud &mdash; 
 this is again wilfully ignoring the details. 
 
+<div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iRlh_w6uRds" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Syndrome plans to "keep the best inventions for himself" so, once 
 again, he can get attention and praise for being the "most special." 
@@ -133,7 +140,9 @@ which is meant to be funny):
 
 > Except when I rap so I guess it ain't true 
 
+<div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/i-QadwBCqQw" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Ad Rock is undeniably a better rapper than I am. Brad Bird is 
 undeniably a better filmmaker than the vast majority of humanity. 
