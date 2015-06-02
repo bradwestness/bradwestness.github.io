@@ -35,4 +35,6 @@ Obviously, there are other examples that work as well. This three-tier archetect
 
 In this case, I think that three really is magic. In fact, I'm not alone.
 
+<div class="embed-responsive embed-responsive-4by3">
 <iframe width="420" height="315" src="//www.youtube.com/embed/aU4pyiB-kq0" frameborder="0" allowfullscreen></iframe>
+</div>

@@ -58,6 +58,7 @@ textarea {
         max-height: 320px;
     }
 
+    .post-content div.embed-responsive,
     .post-content iframe {
         margin-bottom: 1.6em;
     }
