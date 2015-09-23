@@ -11,12 +11,12 @@ Yesterday saw the premiere episode of the new *The Muppets* TV series on ABC.
 
 ![Promotional image courtesy of the American Broadcasting Company.](http://www.bradwestness.com/content/images/the_muppets.jpg)
 
-There were a few major "selling points" for this show in the advertising leading up to
+There were a few major selling points for this show in the advertising leading up to
 the premiere, designed to garner interest in the show and drum up curiosity:
 
 1. Kermit and Miss Piggy have broken up in the world of this show.
 2. Kermit is now dating a new character (also a pig) named Denise.
-3. The show has a "more adult" tone/racier jokes than previous *Muppets* films or shows (including more references to the character's romantic lives, i.e. "Fozzie is dating a human woman!").
+3. The show has a "more adult" tone (racier jokes than previous *Muppets* films or shows), including more references to the character's romantic lives, i.e. "Fozzie is dating a human woman!"
 4. The talking-head style mockumentary format, following in the recent footsteps of *The Office*, *Parks and Recreation* and *Modern Family*.
 
 How successful were each of these things? Let's break them down:
@@ -26,7 +26,7 @@ How successful were each of these things? Let's break them down:
 This doesn't really bother me seeing as the two have a pretty flexible relationship that is
 generally just adapted to fit whatever story the given film/show is telling. They have been, at
 various times: dating, semi-dating, fighting, platonic friends, and married. Whether or not they're
-actively "dating" doesn't really matter all that much, so long as their interactions feel genuine
+actively dating doesn't really matter all that much, so long as their interactions feel genuine
 to the established personalities which everyone who loves these characters is familiar with.
 
 This seemed like mostly a "fun" way to try to drum up press for the show before it hit the air by 
@@ -44,17 +44,21 @@ keeps going back to it but there's just not enough material there to make it a b
 This is probably my biggest gripe with the show, mostly just because the Denise character is just not
 very well thought out. Her entire character is "sexy rival for Miss Piggy to be
 jealous of," which isn't exactly a compelling use of a new Muppet. Additionally, her voice is
-grating, trying too hard to be "sexy," and the design of the puppet, as 
+grating with a faux-southern accent which tries too hard to be "sexy." She even refers to herself
+in the third person!
+
+And the design of the puppet, as 
 [the A.V. Club's Erik Adams astutely put it](http://www.avclub.com/review/its-emotions-not-humor-makes-muppets-adult-225635),
 is "upsettingly inexpressive." All of the most iconic muppets have incredibly maleable faces which
-are capable of a wide range of expressions, as well as just looking funny.
-
-Miss Piggy is capable of wordlessly portraying happiness, anger, jealousy, frustration, etc. just by
+are capable of a wide range of expressions, which also means they're capable of funny reactions. Miss Piggy can wordlessly portray happiness, anger, jealousy, frustration, etc. just by
 the puppeteer scrunching up her face in different ways. By contrast, Denise looks like an overly-botoxed
 "Real Housewife" who can no longer manage any expression other than faint bemusement.
 
 Here's hoping Denise is de-emphasized and potentially written off the show relatively quickly. I don't
-think the character has enough personality or an interesting enough design to be worth salvaging.
+think the character has enough personality or an interesting enough design to be worth salvaging. It's a shame,
+because if anything, The Muppets could use a few more female characters. But introducing female
+characters whose only function is to be romantic interests for male characters is the worst way
+to achieve that.
 
 ### 3. The "More Adult Tone"
 
@@ -62,7 +66,7 @@ This one was probably the most alarm-bell raising for Muppets fans. However, I c
 that the show is pretty good at staying in the general zone of most of the classic Muppet outings.
 Lest we forget, there are some pretty racy jokes snuck into *The Muppet Movie,* *The Great Muppet Caper*,
 and even going back to *The Muppet Show* (the first pilot of which was called "Sex and Violence," for
-chrissakes, and the whole of The Electric Mayhem is pretty obviously stoned at all times).
+Pete's sake, and the whole of The Electric Mayhem is pretty obviously stoned at all times).
 
 Nobody wants these characters to talk explicity about sex acts or whatever, but a few double-entendres
 are far from unprecedented. The show didn't really go any further in this regard that where the lines
@@ -76,10 +80,10 @@ but again this isn't exactly new territory for the Muppets when you consider tha
 has always been yelling "WOMAN! WOMAN!" and chasing human women around, even on *The Muppet Show*, and
 there are countless other examples.
 
-Here it's not really used for racy humor, but rather for a *Who's Coming to Dinner* spoof, only with the
+Fozzie's plotline is not really used for racy humor, but rather for a *Who's Coming to Dinner* spoof, only with the
 boyfriend being a different species rather than a different race or creed. That stuff mostly works pretty well
-on account of being well observed (the mother's questioning of what Fozzie eats reminds me of David Cross'
-routine about friends parents condescending about whether "his people" could eat oatmeal),
+on account of being well observed (the mother's questioning of what Fozzie eats reminds me of 
+[David Cross' routine about friends' parents condescending about whether "his people" could eat oatmeal](https://www.youtube.com/watch?v=z09So1j4kpk#t=08m02s)),
 and Fozzie's complaint that his online dating profile got a lot of unexpected responses due to listing
 himself as a "bear" is the right kind of "adult" joke, allowing the viewer to click together the
 implication mentally while keeping the character's innocense intact.
