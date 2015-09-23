@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "The Muppets" TV Series Initial Reaction
+title: "*The Muppets* TV Series Initial Reaction"
 ---
+  
 
 Time for a new installment in my series of Muppets-related reviews and reactions! 
 To sum up: I [liked the 2011 *The Muppets* film](http://www.bradwestness.com/2011/11/30/the-muppets-the-greatest-work-of-fan-fiction/),
