@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Revisiting The Phantom Menace
+title: In Defense of The Phantom Menace
 ---
   
 ![Promotional image courtesy of Lucasfilm.](http://www.bradwestness.com/content/images/ep1duel.jpg)
@@ -34,9 +34,10 @@ a [critique of the U.S.'s involvement in the Vietnam War](http://nypost.com/2014
 
 I'm not going to say Jar-Jar is a great character, but for all the high-minded political stuff 
 going on, there needed to be some comedic releif to keep the younger people in the audience 
-interested. I realize it's a bit of damnig with faint praise, but Jar-Jar is really hardly 
-in the movie, and it's pretty easy to just ignore him if you don't think he's funny. I don't think
-he's really any more distracting or annoying than C3P0's constant naysaying in *The Empire
+interested. I realize I'm damning with faint praise, but Jar-Jar is really hardly 
+in the movie, and it's pretty easy to just ignore him if you don't think he's funny. 
+
+I don't think he's really any more distracting or annoying than C3P0's constant naysaying in *The Empire
 Strikes Back*, and similarly, most of  the comedy really comes from how even the characters 
 in the movie don't really like him, much like Han's antagonism toward the  C3P0 in that film. 
 
@@ -54,7 +55,8 @@ great piece of orchestral music.
 
 All the lightsaber duels in the original trilogy are more just about brute-force hacking,
 and the ones in the other prequels (especially *Episode II*) involve one of the participants
-being CGI (Yoda, Darth Sidious) or are again just two poeple hacking at each other. 
+being CGI (Yoda vs. Count Dooku, Obi Wan vs. Darth Sidious) or are again just two poeple 
+hacking at each other (Anakin vs. Obi Wan). 
 
 I love the moment in the Darth Maul fight where all three participants are stuck between those
 blast-shield gate things and forced to pace back and forth waiting for thae gates to open,
