@@ -2,14 +2,14 @@
 layout: post
 title: In Defense of The Phantom Menace
 ---
-  
-![Promotional image courtesy of Lucasfilm.](http://www.bradwestness.com/content/images/ep1duel.jpg)
 
 I've been working my way through the *Star Wars* films in a modified [Machete Order](http://www.nomachetejuggling.com/2011/11/11/the-star-wars-saga-suggested-viewing-order/) to
 prepare for the release of *Episode VII* next month. The true Machete Order dictates to
 skip *Episode I* entirely, but my modified version retains the order but keeps all six films,
 because I'm a completist. I also think *Episode I* gets an unfairly bad reputation and has
 a lot of good to offer.
+
+![Promotional image courtesy of Lucasfilm.](http://www.bradwestness.com/content/images/ep1duel.jpg)
 
 ### The Trade Dispute
 
