@@ -65,7 +65,7 @@ able to see each other but unable to do anything. It's such a great, unexpected 
 ---
 
 All in all, I think *The Phantom Menace* is undeserving of it's negative reputation, and it stands
-comfortably alongside the other movies in the series. It may not be as good as the original or *Empire
+comfortably alongside the other movies in the series. It may not be quite as good as the original or *Empire
 Strikes Back*, but I think it's at least as good as *Return of the Jedi*, and if you follow the "true"
 Machete Order and skip it, I think you're missing out on a lot of the political groundwork which
 actually gives the series weight, and also one of the very best action sequences in the whole saga.
