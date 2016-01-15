@@ -3,14 +3,17 @@ layout: post
 title: Working in the Problem Domain
 ---
 
-### In Software
-
 There's a general guideline in software development that states you should always work at
 the highest level of abstraction you can, so that as much of your time is spent as possible
-"living in the [problem domain](https://en.wikipedia.org/wiki/Problem_domain)." This is a 
-jargon-y way of saying that if you're writing an e-commerce web app, for example, 
-you want to be thinking about customers and products and orders, not reading bytes from a 
-disk and parsing HTML and constructing TCP packets and the like.
+"living in the [problem domain](https://en.wikipedia.org/wiki/Problem_domain)." I wanted 
+to look at how this could be applied in life as well as software.
+
+### In Software
+
+"Live in the Problem Domain" is a jargon-y way of saying that if you're writing an 
+e-commerce web app, for example, you want to be thinking about customers and products 
+and orders, not reading bytes from a disk and parsing HTML and constructing TCP packets 
+and the like.
 
 This guideline is why software engineers love "frameworks" so much. You have a server-side
 framework like ASP.NET to handle the nitty-gritty details of working with HTTP connections.
