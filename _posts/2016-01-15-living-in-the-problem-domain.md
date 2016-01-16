@@ -31,7 +31,7 @@ can focus on just the things that are unique to the specific problem you're tryi
 If this principle of "living in the problem domain" works so well for developing software,
 I thought, how can I apply it to my career in general?
 
-For me, this meant switching jobs. Writing software is the only real career I've ever wanted,
+For me, this meant switching jobs. [Writing software is the only real career I've ever wanted](http://www.bradwestness.com/2013/03/19/why-i-program-game-genie/),
 the only answer I've ever had for "what do you want to be when you grow up" after I accepted
 that "baseball playing astronaut" wasn't a realistic option. At both of my previous "real" jobs 
 in software development I functioned as an internal consultant to a larger organization. I 
