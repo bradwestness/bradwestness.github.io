@@ -84,5 +84,6 @@ I had read previously about how, as a software develolper, you want to be in a
 "[cost center](https://en.wikipedia.org/wiki/Cost_centre_(business)),"
 which is true. But going even further than that, you want to be in a position
 where you spend the majority of your time doing the thing you enjoy and are skilled at rather than
-spending your days worrying about organizational problems that you can't control. You waht to
-live in the problem domain.
+spending your days worrying about organizational problems that you can't control. 
+
+You want to live in the problem domain.
