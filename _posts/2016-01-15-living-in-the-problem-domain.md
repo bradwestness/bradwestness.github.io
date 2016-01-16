@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working in the Problem Domain
+title: Living in the Problem Domain
 ---
 
 There's a general guideline in software development that states you should always work at
@@ -78,4 +78,4 @@ much overhead to spend time setting up niceties like
 actually ensuring quality in the software you create because you have hundreds of separate, 
 small projects.
 
-You're not working in the problem domain.
+You're not living in the problem domain.
