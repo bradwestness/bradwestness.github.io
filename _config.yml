@@ -13,3 +13,7 @@ redcarpet:
 permalink: pretty
 paginate: 3
 paginate_path: "page/:num"
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
