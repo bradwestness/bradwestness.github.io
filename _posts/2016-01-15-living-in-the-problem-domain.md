@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working in the Problem Domain
+title: Living in the Problem Domain
 ---
 
 There's a general guideline in software development that states you should always work at
@@ -28,12 +28,12 @@ can focus on just the things that are unique to the specific problem you're tryi
 
 ### In Life
 
-If this principle of "living in the problem domain" works so well for developing software, 
-can we apply it to our career in general?
+If this principle of "living in the problem domain" works so well for developing software,
+I thought, how can I apply it to my career in general?
 
-For me, this meant switching jobs. Writing software is the only "real" career I've ever wanted,
-the only answer I've ever had for "what do you want to be when you grow up?" (after I accepted
-that "baseball playing astronaut" wasn't a realistic option). At both of my previous "real" jobs 
+For me, this meant switching jobs. [Writing software is the only real career I've ever wanted](http://www.bradwestness.com/2013/03/19/why-i-program-game-genie/),
+the only answer I've ever had for "what do you want to be when you grow up" after I accepted
+that "baseball playing astronaut" wasn't a realistic option. At both of my previous "real" jobs 
 in software development I functioned as an internal consultant to a larger organization. I 
 supported dozens of individual software applications for various other departments throughout the 
 organization. 
@@ -63,19 +63,27 @@ the software I am helping to create, is a night and day difference. There is a s
 that a whole team is helping to develop, rather than each developer having a dozen or more applications
 they support pretty much on their own. Granted, the application is much larger and more complex than
 any of the applications I supported in my previous jobs, but the majority of my day is spent thinking 
-about software development, rather than on organizational and administrative work.
+about software development, rather than on organizational and administrative issues.
 
 I don't think I would ever go back to a consultancy or sub-contracting type position. You spend too
 much of your time working on problems that have nothing to do with developing software. All of the
-challenges in my previous jobs weren't "how do we make our product(s) better," or "how do we implement
-some bit of functionality," they were "how do we keep our group functioning because we have way too 
+biggest challenges in my previous jobs weren't "how do we make our product(s) better," or "how do 
+we implement feature x," they were "how do we keep our group functioning because we have way too 
 many things to support." You inevitably build up a huge backlog of 
 [technical debt](https://en.wikipedia.org/wiki/Technical_debt) 
 when you work in that fashion because you never have time to do anything the "right" way. There's too
-much overhead to spend time setting up niceties like 
+much overhead and too many projects to spend time setting up niceties like 
 [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) and 
 [automated testing](https://en.wikipedia.org/wiki/Test_automation) and
 actually ensuring quality in the software you create because you have hundreds of separate, 
-small projects.
+small projects. You spend all your time thinking about things that aren't really related to software
+development.
 
-You're not working in the problem domain.
+I had read previously about how, as a software develolper, you want to be in a 
+"[profit center](https://en.wikipedia.org/wiki/Profit_center)," and not a 
+"[cost center](https://en.wikipedia.org/wiki/Cost_centre_(business)),"
+which is true. But going even further than that, you want to be in a position
+where you spend the majority of your time doing the thing you enjoy and are skilled at rather than
+spending your days worrying about organizational problems that you can't control. 
+
+You want to live in the problem domain.
