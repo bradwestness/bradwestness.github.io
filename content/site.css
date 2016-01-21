@@ -27,7 +27,7 @@ textarea {
 }
 
 .post-item-title a, .post-title a {
-    /*color: #fefefe;*/
+    color: inherit;
 }
 
 .post-item-excerpt {
