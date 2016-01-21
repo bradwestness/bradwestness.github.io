@@ -35,7 +35,8 @@ textarea {
 }
 
 .text-muted {
-    color: #596a7b;
+    color: inherit;
+    opacity: .5;
 }
 
 .page-content, .post-content, .post-item-excerpt {
