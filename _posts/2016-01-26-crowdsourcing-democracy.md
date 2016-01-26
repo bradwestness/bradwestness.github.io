@@ -24,7 +24,7 @@ office is really the problem.
 
 However, Congress' approval rating is [currently about 16%](http://www.gallup.com/poll/1600/Congress-Public.aspx). 
 In 2008 it was approximately 20%, and during the Clinton presidency it hovered around 50%. It's
-Congress that the american people are dissatisfied with, not the office of the president. We need
+Congress that the American people are dissatisfied with, not the office of the president. We need
 a figurehead to meet with other national leaders and represent us on the world stage. But do we
 *need* Congress?
 
@@ -36,7 +36,7 @@ best interest of their constituents. This is done primarily because it is imprac
 a direct popular vote on every issue that requires deliberation. A government in which every
 issue is voted on directly by popular vote is known as a "direct" or "pure democracy."
 
-## Taxation Without Representation ## 
+## Taxation Without Representation ##
 
 It's not practical to hold a vote on every issue because, prior to the advent of the internet,
 doing so is unfeasibly expensive and time consuming. That was true 240 years ago when our country
@@ -58,12 +58,14 @@ Anyone who was a legally registered voter could then log in and vote via a web b
 who don't have access to the internet at home could vote in public libraries or other "polling places."
 
 We could get rid of congress altogether. Think of how much taxpayer money is spent just on payroll
-for our representatives in the house and senate. They all have six figure salaires, not to mention aides, 
+for our representatives in the house and senate. They all have six figure salaires, not to mention: aides, 
 offices, health benefits, and retirement packages. Yet many of them don't show up for votes (especially
-those who spend the majority of their terms campaigning for other offices). This leads to voters feeling
-disenfranchised and participating even less, which means our democracy has failed them. 
+those who spend the majority of their terms campaigning for other offices), and when they do vote,
+oftentimes they are swayed by wealthy campaign donors to vote against the desires of their electors. 
+This leads to voters feeling disenfranchised and participating even less, which means our democracy has failed them. 
 
-That can all go away. We still need "checks and balances" of course, and the president would still have
-veto power over frivolous or impossible-to-implement bills. But I think technology has progressed
+With a direct vote, that all goes away. We still need "checks and balances" of course, and the president 
+would still have veto power over frivolous or impossible-to-implement bills, and the Supreme Court could still
+review the constitutionality of any bills that pass. But I think technology has progressed
 enough in the last century that we should seriously re-evaluate whether a direct democracy is actually
 as impractical now as it was 240 years ago.
