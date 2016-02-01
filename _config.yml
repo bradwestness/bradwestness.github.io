@@ -7,9 +7,6 @@ description: A simple man in complex times.
 #
 # Jekyll settings
 #
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables"]
 permalink: pretty
 paginate: 3
 paginate_path: "page/:num"
