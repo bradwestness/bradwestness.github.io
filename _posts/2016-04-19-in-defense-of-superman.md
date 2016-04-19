@@ -60,3 +60,8 @@ those things, but then they don't actually watch them because they already know 
 what the contents are. They just want to take comfort in knowing that somewhere on their
 cable dial (or Netflix queue) these things exist, being completely unchallenging and 
 re-affirming something they liked in childhood.
+
+By the end of the Snyder Superman series, I expect he will have become the symbol
+of truth and justice that we all know him to be, and it will be all the more powerful
+for having watched the character's journey, rather than simply starting out
+good and staying good. 
