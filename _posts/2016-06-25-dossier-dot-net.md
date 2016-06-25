@@ -58,19 +58,22 @@ and give you the option to commit or roll back your changes. The syntax should
 look very familiar for anyone familiar with Entity Framework:
 
 ```csharp
-using(var trx = new Dossier.FileSystemContext().BeginTransaction())
+using(var fsContext = new Dossier.FileSystemContext())
 {
-    try
+    using(var trx = fsContext.BeginTransaction())
     {
-        trx.CreateDirectory(".\\my-cool-folder");
-        trx.WriteFile(".\\my-cool-folder\\hello-world.txt", "Hello world!");
-        trx.MoveFile(".\\my-cool-folder\\hello-world.txt", ".\\another-folder\\hello-world.txt");
+        try
+        {
+            fsContext.CreateDirectory(".\\my-cool-folder");
+            fsContext.WriteFile(".\\my-cool-folder\\hello-world.txt", "Hello world!");
+            fsContext.MoveFile(".\\my-cool-folder\\hello-world.txt", ".\\another-folder\\hello-world.txt");
 
-        trx.Commit();
-    }
-    catch(Exception)
-    {
-        trx.Rollback();
+            trx.Commit();
+        }
+        catch(Exception)
+        {
+            trx.Rollback();
+        }
     }
 }
 ```  
