@@ -227,7 +227,7 @@ to the project's `.csproj` file. This requires opening the file in a text editor
 some commented-out sample `UsingTask` statements. Here's the final configuration I wound
 up with:
 
-```xml
+```xsd
 <UsingTask TaskName="MyWebApp.MinifyWebAssets" AssemblyFile="bin\MyWebApp.dll" />
 <Target Name="AfterCompile">
   <MinifyWebAssets ContinueOnError="WarnAndContinue" />
@@ -254,7 +254,7 @@ during an msdeploy (although I don't think it's really specific to MVC at all).
 To do that, I needed to add another bit of XML to the end of my application's
 `.csproj` file, again using Notepad or VS Code.
 
-```XML
+```xsd
 <Target Name="CustomCollectFiles">
     <ItemGroup>
         <_CustomFiles Include="**\*.build.min.*" Exclude="bin\**\*.build.min.*;obj\**\*.build.min.*" /> 
