@@ -254,7 +254,7 @@ during an msdeploy (although I don't think it's really specific to MVC at all).
 To do that, I needed to add another bit of XML to the end of my application's
 `.csproj` file, again using Notepad or VS Code.
 
-```xml
+```XML
 <Target Name="CustomCollectFiles">
     <ItemGroup>
         <_CustomFiles Include="**\*.build.min.*" Exclude="bin\**\*.build.min.*;obj\**\*.build.min.*" /> 
