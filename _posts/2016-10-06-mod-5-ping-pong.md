@@ -3,7 +3,7 @@ layout: post
 title: Introducing Mod 5 - A Table Tennis Game
 ---
 
-Mod 5 is a game for 3 or more people that can be played using standard
+**Mod 5** is a game for 3 or more people that can be played using standard
 table tennis  equipment. It is a variant of
 [Cutthroat](https://www.youtube.com/watch?v=OlJOICX_B7M), but with different scoring.
 
