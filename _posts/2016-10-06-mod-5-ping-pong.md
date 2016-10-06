@@ -8,9 +8,9 @@ table tennis  equipment. It is a variant of
 [Cutthroat](https://www.youtube.com/watch?v=OlJOICX_B7M), but with different scoring.
 
 ## The Game ##
-In Cutthroat, each player makes a shot and then rotates to the opposite side
+In **Cutthroat**, each player makes a shot and then rotates to the opposite side
 of the table. If you miss a shot, you get a point, and the first player to reach
-five points is eliminated. The last player standing wins. Points are "bad" and you
+five points is eliminated. The last player standing wins. Points are *bad* and you
 want your score to remain as low as possible.
 
 The problem with this is that it encourages conservative play because missing a shot
@@ -18,7 +18,7 @@ is punished. It also enables you to tee up big softballs to the player opposite 
 in order to get the person behind you out, rather than actually earning the victory
 for yourself.
 
-In Mod 5, instead of getting a "bad" point when you miss a shot, you get a "good" point
+In **Mod 5**, instead of getting a *bad* point when you miss a shot, you get a *good* point
 when you force someone else to miss. So whenever a player misses, the person who made
 the previous shot gets a point. So the object of the game is to make shots that are hard
 to return, as you are rewarded for making other people miss.
