@@ -41,10 +41,12 @@ six and one has three, they play to 10 and the first person who reaches 10 wins.
 ## The Name ##
 The game gets its name from the [modulo operator](https://en.wikipedia.org/wiki/Modulo_operation) in
 computer programming, which is used to calculate whether one number is divisible by another.
+
 ```javascript
 function isDivisibleByFive(number) {
     return number % 5 === 0;
 } 
 ```
+
 So whenever a player reaches a score that would result in zero if "mod five" was applied, people get
 eliminated.
