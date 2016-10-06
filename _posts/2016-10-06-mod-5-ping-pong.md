@@ -26,7 +26,7 @@ to return, as you are rewarded for making other people miss.
 Here's where the "mod 5" bit comes in - every time a player reaches a multiple of 5,
 the player(s) with the lowest score(s) are eliminated. So if one player reaches five and the
 others have 3, 2, 1, and 0, the player with 0 is eliminated. The next time someone reaches 5
-the next lowest score is eliminated, and so on.
+the next lowest score is eliminated, and so on. Players cannot eliminate themselves.
 
 Whenever a player misses a shot, they must restart the action by serving. If they miss their serve,
 they *lose a point*, and can go negative. However, each player can only hit a given "mod 5" score
