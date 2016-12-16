@@ -15,7 +15,7 @@ purveyors of propaganda that are currently flooding the site with "fake news"
 (a term I have issue with, because it sounds overly quaint; we are not talking about
 bogus celebrity gossip, but political propaganda, plain and simple).
 
-Facebook has now [http://newsroom.fb.com/news/2016/12/news-feed-fyi-addressing-hoaxes-and-fake-news/](released a statement aknowledging that)
+Facebook has now [released a statement aknowledging that](http://newsroom.fb.com/news/2016/12/news-feed-fyi-addressing-hoaxes-and-fake-news/)
 the propaganda problem exists, and is taking real steps to mitigate it. Stories that
 are "contested by a third party source" (such as politifact, snopes, etc) will have
 a big red label informing the reader of this. That's great, as I said in the past,
