@@ -32,7 +32,7 @@ connected to the *real* UWCU website.
 ![An untrustworthy website]({{ site.baseurl }}content/images/website_untrustworthy.png)
 
 Contrast that with what the browser does with an *un-trustworthy* website. The whole 
-viewport goes red wiht a stern warning that you probably don't want to trust this site.
+viewport goes red with a stern warning that you probably shouldn't trust this site.
 Rather than a green padlock in the address bar, there is an icon denoting *danger* and the
 **https** portion of the URL is struck out.
 
@@ -57,14 +57,14 @@ that it's legitimate news. Older users especially may not be used to the idea th
 sites, while they may *look* official, simply do not have any accountability for the 
 accuracy of what they publish in the same way that traditional media does.
 
-Extra kudos to Facebook for (in their words) "disrupting financial incentives for spammers,"
-many of these illegitimate news stories are simply clickbait using whatever inflammatory
-headline the publisher thinks will generate interest, in order to get views of their site
-which is undoubtedly slathered in advertisements. This is a big step that I frankly did
+Extra kudos to Facebook for (in their words) "disrupting financial incentives for spammers."
+Many of these illegitimate news stories are simply clickbait using whatever inflammatory
+headline the publisher thinks will generate interest, in order to get pageviews on their site
+(which is undoubtedly slathered in advertisements). This is a big step that I frankly did
 not expect Facebook to take, as it will cut into the number of ads that these sites buy
 on Facebook, and thus hurt Facebook's own profits.
 
 I didn't feel that I could participate in a social media platform that refused to admit
-that it was becoming a platform for the dissemination of propaganda (often essentially
-libel) while profiting from it. Now that Facebook has taken these steps, I feel that I can
+that it was becoming complicit in the dissemination of propaganda (often essentially
+libel) and simultaneously profiting from it. Now that Facebook has taken these steps, I feel that I can
 once again participate with a clear conscience.
