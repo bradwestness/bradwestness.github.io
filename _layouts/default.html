@@ -9,6 +9,15 @@
     {% capture description %}
     {% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}
     {% endcapture %}
+    <meta property="og:image" content="{{ site.baseurl }}content/images/schoolbus.jpg" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:url" content="{{ site.baseurl }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:image" content="{{ site.baseurl }}content/images/schoolbus.jpg" />
+    <meta property="twitter:title" content="{{ page.title }}" />
+    <meta property="twitter:description" content="{{ description }}" />
+
     <meta name="description" content="{{ description }}">
 
     <meta name="HandheldFriendly" content="True" />
