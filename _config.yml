@@ -1,6 +1,7 @@
 #
 # Blog settings
 #
+sitename: Brad Westness.com
 baseurl: http://www.bradwestness.com/
 description: A simple man in complex times.
 
