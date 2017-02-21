@@ -9,6 +9,18 @@
     {% capture description %}
     {% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}
     {% endcapture %}
+    
+    <meta property="og:site_name" content="{{ site.sitename }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="{{ site.baseurl }}content/images/schoolbus.jpg" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:url" content="http://www.bradwestness.com{{ page.url }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:image" content="{{ site.baseurl }}content/images/schoolbus.jpg" />
+    <meta property="twitter:title" content="{{ page.title }}" />
+    <meta property="twitter:description" content="{{ description }}" />
+
     <meta name="description" content="{{ description }}">
 
     <meta name="HandheldFriendly" content="True" />
@@ -99,14 +111,14 @@
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', google_analytics_id, 'auto');
         ga('send', 'pageview');
     </script>
 
-    <script type="text/javascript" src="{{ site.baseurl }}scripts/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}scripts/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}scripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}scripts/respond.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}scripts/prism.js"></script>
