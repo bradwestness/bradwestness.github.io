@@ -3,7 +3,7 @@ layout: post
 title: Nintendo Switch First Impressions, Part 2
 ---
 
-In [Part 1](http://www.bradwestness.com/2017/03/20/nintendo-switch-first-impressions-part-1) of this series, I talked about my overall impressions of the Switch and it's
+In [Part 1](http://www.bradwestness.com/2017/03/19/nintendo-switch-first-impressions-part-1) of this series, I talked about my overall impressions of the Switch and it's
 place in the spectrum of "home console" versus "handheld" gaming system. In this
 part I will focus more on the hardware and different "modes" of play, including
 the various ways the Joy Con can be used and the Pro Controller.
