@@ -44,7 +44,7 @@ a little extra ergonomics to give them a more robust feel.
 
 ![Joy Con in grip mode]({{ site.baseurl }}content/images/joy_con_grip.jpg)
 
-I haven't played this way much, since I've mostly been using the Pro Controller when playing on the TV, but I think I prefer the disconnected mode anyway. The grip feels slightly flimsy,and it feels more natural to hold the Joy Con in your palms versus the angle the sticks wind up being at in the grip.
+I haven't played this way much, since I've mostly been using the Pro Controller when playing on the TV, but I think I prefer the disconnected mode anyway. The grip feels slightly flimsy, and it feels more natural to hold the Joy Con in your palms versus the angle the sticks wind up being at in the grip.
 
 Note: There is also a "charging grip" accessory that Nintendo sells separately, which I would
 recommend against buying. It's effectively the same as the "comfort grip," except it has a USB-C connector on the bottom, meaning you can plug it in. It does not have it's own battery
@@ -99,7 +99,7 @@ that way if needed (though I'm not sure how the motion controls would work in th
 I assume you'd just tilt one or the other Joy Con but I don't know which).
 
 Still, that's not to say that I have buyer's remorse. It's definitely the most hefty and heavy-duty controller available for the system, and comfortable for longer stretches. It'll also be nice once games that support over 2 players start coming out, since someone can use
-the Pro Controller while two others use a Joy Con for Mario Kart, for example.
+the Pro Controller while two others use a Joy Con apiece (for Mario Kart, for example).
 
 It'll probably also be preferrable for *Mario Odyssey,* which I imagine will require much more
 precise controls for jumping and running than Zelda, where you can pretty easily get by with
