@@ -29,7 +29,7 @@ accessories for each. I did this before Christmas in anticipation of the Switch,
 get better prices selling them during the holiday gift-buying season versus afterward. For the
 first time since I was approximately six years old, I owned no Nintendo systems or games. Dark times.
 
-![Nintendo Switch console]({{ site.baseurl }}content/images/nintendo_switch_console)
+![Nintendo Switch console]({{ site.baseurl }}content/images/nintendo_switch_console.jpg)
 
 The Switch itself is a sort of hybrid console/portable system. It's not quite as portable as
 a true handheld, like the various GameBoy and DS iterations over the years: the battery only
