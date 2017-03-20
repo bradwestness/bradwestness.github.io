@@ -31,7 +31,7 @@ original Wii. This is a surprisingly comfortable way to play.
 
 ![Joy Con in disconnected mode]({{ site.baseurl }}content/images/joy_con_disconnected.jpg)
 
-Holding the Joy Con in your palms takes away some of the "too small" feeling that you can otherwise get while they're connected if you have bigger hands like I do, since they fit snugly in your palms. The sticks feel better when used this way, too, since you can hold the controllers at a more natural angle, the slightly limited range of motion of the sticks feels less noticeable.
+Holding the Joy Con in your palms takes away some of the "too small" feeling that you can otherwise get while they're connected if you have bigger hands like I do, since they fit snugly in your palms (note: the person in the photo above has very small hands). The sticks feel better when used this way, too, since you can hold the controllers at a more natural angle, the slightly limited range of motion of the sticks feels less noticeable.
 
 I purchased the Pro Controller along with my Switch, but if I hadn't I'd favor this
 mode for games like Zelda.
