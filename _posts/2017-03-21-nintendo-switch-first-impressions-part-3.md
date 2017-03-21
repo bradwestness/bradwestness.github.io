@@ -53,7 +53,7 @@ The real problem is that *1-2-Switch* is a full price game, and should really ju
 
 ![1-2-Switch]({{ site.baseurl }}content/images/snipperclips.jpg)
 
-The main mode consists of a series of 1 or 2 player co-operative puzzles (if playing alone you simply switch between the two characters). Each puzzle is a single "screen" and you must figure out how to acheive some deceptively simple goal by "snipping" your characters into various shapes to form tools (like a basket to convey eggs or other objects around the stage), or simply match the shape of your characters to a dotted outline.
+The main mode consists of a series of 1 or 2 player co-operative puzzles (if playing alone you simply switch between the two characters). Each puzzle is a single "screen" and you must figure out how to acheive some deceptively simple goal by "snipping" your characters into various shapes to form tools (like a gear to turn a crank, or a basket to convey eggs or other objects around the stage), or simply match the shape of your characters to a dotted outline.
 
 There are also multiplayer modes including a battle mode where you attempt to "snip" the other players before they get you. It's a cool little game and a great example of an indie title that probably never would have been distributed due to the prohibitive cost of manufacturing physical copies, but was made possible by the advent of the eShop.
 
