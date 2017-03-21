@@ -69,6 +69,6 @@ I have not experienced this at all. None of the controllers (left Joy Con, right
 
 This is pretty anecdotal of course, but my Switch has zero dead pixels. I would like to believe Nintendo would replace the unit at no cost if you get one that has several, but I've had mine for three weeks now and there are still zero.
 
-### The Dock Scratches the Screen
+### Screen Scratching
 
 I think this one is probably the worst offender in terms of exaggeration. Nintendo's hardware is generally pretty indestructable. I did purchase some of those "tempered glass screen protectors" you can find on Amazon due to reports of this issue, but I don't think they are actually necessary at all. I'm sure if you smash the Switch into the dock really violently you could get the screen to scratch, but if you treat it with even a modicum of gentility I think you will be fine. I'd be more worried about messing up the USB-C jack on the bottom (or the connector on the dock) if you're that hard on it.
