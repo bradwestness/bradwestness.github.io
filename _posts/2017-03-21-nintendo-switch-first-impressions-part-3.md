@@ -51,7 +51,7 @@ The real problem is that *1-2-Switch* is a full price game, and should really ju
 
 *Snipperclips* is sort of the opposite of *1-2-Switch*, it's a really fun and effective way to show off the switch, and it comes at a reduced price ($20), due to being available strictly as a digital download in the eShop. It's a fun and surprisingly deep little puzzle game, and since the main game is cooperative, it's a good way to show off the console to casual gamers and friends.
 
-![1-2-Switch]({{ site.baseurl }}content/images/1-2-Switch.jpg)
+![1-2-Switch]({{ site.baseurl }}content/images/snipperclips.jpg)
 
 The main mode consists of a series of 1 or 2 player co-operative puzzles (if playing alone you simply switch between the two characters). Each puzzle is a single "screen" and you must figure out how to acheive some deceptively simple goal by "snipping" your characters into various shapes to form tools (like a basket to convey eggs or other objects around the stage), or simply match the shape of your characters to a dotted outline.
 
