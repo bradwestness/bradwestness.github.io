@@ -49,7 +49,7 @@ The real problem is that *1-2-Switch* is a full price game, and should really ju
 
 ### Snipperclips
 
-*Snipperclips* is sort of the opposite of *1-2-Switch*, it's a really fun and effective way to show off the switch, and it comes at a reduced price ($20), due to being available strictly as a digital download in the eShop. It's a fun and surprisingly deep little puzzle game, and since the main game is cooperative, it's a good way to show off the console to casual gamers and friends.
+*Snipperclips* is sort of the opposite of *1-2-Switch*, it's a really fun and effective way to show off the Switch, and it comes at a reduced price ($20), due to being available strictly as a digital download in the eShop. It's a fun and surprisingly deep little puzzle game, and since the main game is cooperative, it's a good way to show off the console to casual gamers and friends.
 
 ![1-2-Switch]({{ site.baseurl }}content/images/snipperclips.jpg)
 
