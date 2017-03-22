@@ -10,7 +10,7 @@ place in the spectrum of "home console" versus "handheld" gaming system. [Part 2
 
 From the first moments of *Breath of the Wild*, one thing is abundantly clear: this is a Great game. Great with a capital G. It's clearly the result of dozens of incredibly talented artists working at the peak of their abilities. Every aspect of the game seems like it has been thoughtfully considered and fussed over. The sheer joy in playing it feels sort of similar to the way it felt to run around the castle courtyard in *Super Mario 64*. It was an entirely new **kind** of game, and as a player you just wanted to breathe it in.
 
-![The Master Sword]({{ site.baseurl }})content/images/botw_master_sword.jpg)
+![The Master Sword]({{ site.baseurl }}content/images/botw_master_sword.jpg)
 
 It is a beautifully rendered game. Nintendo have long been skeptical of the hardware rat race that other consoles have long been participating in, choosing as far back as the GameCube to intentionally use less powerful hardware that instead enabled interesting scenarios. As far as the Switch's graphics processing horsepower is concerned, it's very similar to the Wii U. It represents a tiny step forward, but of course it's in a *much* smaller, portable form factor that also includes a touchscreen and a battery and whatnot. Which is to say that, while *Breath of the Wild* isn't about to set any records for highest polygon count or 4K resolution textures, it is nevertheless an incredibly eye-pleasing game. The above image of the master sword is not a pre-rendered promotional still. It is not from a cutscene. It's just a screenshot I took (using the Switch's built-in screenshot functionality) during normal gameplay.
 
@@ -20,7 +20,7 @@ The game uses a cel-shading technique sort of like *Wind Waker*, but the body ty
 
 The really amazing thing about the graphics is not the characters, it's the environment. As the title implies, the real star of this game is "the wild." Getting from Kakariko Villiage to Zora's Domain is as much a "level" as any of the actual dungeons you must complete. This is driven home by the incredible draw distance of the environment.
 
-![Draw Distance]({{ site.baseurl }})content/images/botw_draw_distance.jpg)
+![Draw Distance]({{ site.baseurl }}content/images/botw_draw_distance.jpg)
 
 Each time you venture to a new region of the overworld, you must navigate by climbing to high places (the *Shiekah Towers* scattered throughout the game) and surveying your whereabouts. You can literally see for *dozens of miles* when atop one of these towers. It's an open-world game, so once you complete the small introductory segment at the beginning, there's nothing stopping you from running off to the edge of the continent in any given direction, which could take hours. 
 
