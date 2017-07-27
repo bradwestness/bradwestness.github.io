@@ -39,7 +39,7 @@ public static void RegisterRoutes(RouteCollection routes)
 
 That's it! You should now be able to hit the URL configured in your web.config for the HTTP Handler above. This will give you a nice UI for testing your WebAPI controllers and actions:
 
-![WebAPI Test-O-Matic screenshot](https://raw.githubusercontent.com/bradwestness/WebApiTestOMatic/master/assets/screenshot.png "WebAPI Test-O-Matic Screenshot")
+[![WebAPI Test-O-Matic screenshot](https://raw.githubusercontent.com/bradwestness/WebApiTestOMatic/master/assets/screenshot.png "WebAPI Test-O-Matic Screenshot")](https://raw.githubusercontent.com/bradwestness/WebApiTestOMatic/master/assets/screenshot.png)
 
 The HTTP handler is entirely self-contained, so you don't need to include any other files in your project other than the DLL. It does include client-side references to [Bootstrap](http://getbootstrap.com/) and [jQuery](http://jquery.com/) from the [Microsoft Ajax Content Delivery Network](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview), which keeps the DLL really small as I don't have to bundle those in.
 
