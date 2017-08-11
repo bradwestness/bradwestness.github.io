@@ -1,5 +1,5 @@
 ﻿(function ($) {
 
-    $(".post-content img").addClass("img-responsive");
+    $(".post-content img").addClass("img-fluid");
 
 })(window.jQuery);
