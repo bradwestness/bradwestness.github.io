@@ -42,7 +42,6 @@ textarea {
 .page-content, .post-content, .post-item-excerpt {
     font-size: 1.2em;
     line-height: 1.6em;
-    /*font-family: Georgia, "Times New Roman", Times, serif;*/
 }
 
     .post-content > p:first-child {
@@ -66,4 +65,14 @@ textarea {
     .post-content div.embed-responsive,
     .post-content iframe {
         margin-bottom: 1.6em;
+    }
+
+    @media (max-width: 576px) {
+        #sidebar-column { display: none; }
+        #about-photo { display: block; }
+    }
+
+    @media (min-width: 576px) {
+        #sidebar-column { display: block; }
+        #about-photo { display: none; }
     }
