@@ -64,13 +64,3 @@ textarea {
     .post-content iframe {
         margin-bottom: 1.6em;
     }
-
-    @media (max-width: 576px) {
-        #sidebar-column { display: none; }
-        #about-photo { display: block; }
-    }
-
-    @media (min-width: 576px) {
-        #sidebar-column { display: block; }
-        #about-photo { display: none; }
-    }
