@@ -31,13 +31,17 @@ title: A simple man in complex times.
 </section>
 
 {% if paginator.total_pages > 1 %}
-<ul class="pager">
+<ul class="pagination">
     {% if paginator.next_page %}
-    <li class="previous"><a href="{{ paginator.next_page_path }}">&laquo; Older Posts</a></li>
+    <li class="page-item">
+        <a class="page-link" href="{{ paginator.next_page_path }}">&laquo; Older Posts</a>
+    </li>
     {% endif %}
 
     {% if paginator.previous_page %}
-    <li class="next"><a href="{{ paginator.previous_page_path }}">Newer Posts &raquo;</a></li>
+    <li class="page-item">
+        <a class="page-link" href="{{ paginator.previous_page_path }}">Newer Posts &raquo;</a>
+    </li>
     {% endif %}
 </ul>
 {% endif %}
