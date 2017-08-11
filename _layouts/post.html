@@ -45,13 +45,21 @@ single: true
         </div>
 
         {% if page.previous.url || page.next.url %}
-        <ul class="pager">
+        <ul class="pagination">
             {% if page.previous.url %}
-            <li class="previous"><a href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a></li>
+            <li class="page-item">
+                <a class="page-link" href="{{ page.previous.url }}" aria-label="Previous">
+                    &laquo; {{ page.previous.title }}
+                </a>
+            </li>
             {% endif %}
 
             {% if page.next.url %}
-            <li class="next"><a href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a></li>
+            <li class="page-item">
+                <a class="page-link" href="{{ page.next.url }}" aria-label="Next">
+                    {{ page.next.title }} &raquo;
+                </a>
+            </li>
             {% endif %}
         </ul>
         {% endif %}
