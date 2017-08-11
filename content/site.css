@@ -1,12 +1,13 @@
 ﻿
 /* Set padding to keep content from hitting the edges */
 body {
-    padding-bottom: 20px;
+    padding-bottom: 2em;
 }
 
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -18,7 +19,8 @@ textarea {
 
 /* Theme customizations */
 .sidebar {
-    padding: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
 }
 
 .post-footer section {
