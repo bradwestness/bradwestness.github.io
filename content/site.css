@@ -67,9 +67,3 @@ textarea {
     .post-content iframe {
         margin-bottom: 1.6em;
     }
-
-@media (max-width: 576px) {
-    .d-sm-none {
-        display: none!important;
-    }
-}
