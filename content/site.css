@@ -69,10 +69,10 @@ textarea {
 
     @media (max-width: 576px) {
         #sidebar-column { display: none; }
-        #about-photo { display: block; }
+        #about-photo { display: auto; }
     }
 
     @media (min-width: 576px) {
-        #sidebar-column { display: block; }
+        #sidebar-column { display: auto; }
         #about-photo { display: none; }
     }
