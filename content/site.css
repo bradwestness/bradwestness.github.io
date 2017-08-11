@@ -1,16 +1,4 @@
-﻿
-/* Set padding to keep content from hitting the edges */
-body {
-    padding-bottom: 1em;
-}
-
-.body-content {
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
+﻿/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
@@ -69,10 +57,10 @@ textarea {
 
     @media (max-width: 576px) {
         #sidebar-column { display: none; }
-        #about-photo { display: auto; }
+        #about-photo { display: block; }
     }
 
     @media (min-width: 576px) {
-        #sidebar-column { display: auto; }
+        #sidebar-column { display: block; }
         #about-photo { display: none; }
     }
