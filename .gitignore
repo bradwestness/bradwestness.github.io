@@ -3,3 +3,5 @@
 *.opensdf
 *.db
 *.opendb
+.vs
+.vs/**
