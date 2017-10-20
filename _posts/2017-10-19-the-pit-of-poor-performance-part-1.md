@@ -173,12 +173,12 @@ private string GetAttributeSetHash(IDictionary<string, string> attributeSet)
 
     foreach(var item in attributeSet)
     {
-        sb.Add(item.Key);
-        sb.Add(item.Value);        
+        sb.Append(item.Key);
+        sb.Append(item.Value);        
     }
 
-    var md5 = System.Security.Cryptography.MD5.Create();
-    var hash = md5.ComputeHash(System.Text.Encoding.Default.GetBytes(sb.ToString()));
+    var md5 = Security.Cryptography.MD5.Create();
+    var hash = md5.ComputeHash(Encoding.Default.GetBytes(sb.ToString()));
     sb.Clear();
 
     for(int i = 0; i < hash.Length; i++)
