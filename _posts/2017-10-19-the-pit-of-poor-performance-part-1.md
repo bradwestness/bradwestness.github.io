@@ -9,7 +9,7 @@ This is a story about some code I recently refactored at work, which resulted in
 
 For the sake of this post, I'll try to keep things as generic as possible. The essence of the problem that we were trying to solve was resolving links between two publications, which happen to be XML-based documents which contain schemata for airplane engines. 
 
-As you can imagine, these manuals are *huge* (like, they have hundreds of thousands of *chapters*). The links between them use a custom scheme by which the link element (think of it as an &laguo;a&raquo; tag in HTML) contains a bunch of attributes which describe the target publication and section to which the link is supposed to point.
+As you can imagine, these manuals are *huge* (like, they have hundreds of thousands of *chapters*). The links between them use a custom scheme by which the link element (think of it as an `<a>` tag in HTML) contains a bunch of attributes which describe the target publication and section to which the link is supposed to point.
 
 Let's say the link looks something like this:
 
