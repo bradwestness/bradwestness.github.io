@@ -3,7 +3,7 @@ layout: post
 title: The Pit of Poor Performance - Part 2
 ---
 
-In the first part of this post, I laid out the problem at hand and the code for some of the more high-level business logic. I left off by mentioning that the calls to the "repository" classes were hiding complexity which resulted in disastrously poor performance. In this post, I'll dig into those methods and how I ultimately refactored them to increase the performance by over an order of magnitude.
+In the [first part](http://www.bradwestness.com/2017/10/19/the-pit-of-poor-performance-part-1/) of this post, I laid out the problem at hand and the code for some of the more high-level business logic. I left off by mentioning that the calls to the "repository" classes were hiding complexity which resulted in disastrously poor performance. In this post, I'll dig into those methods and how I ultimately refactored them to increase the performance by over an order of magnitude.
 
 ## The Problem
 
@@ -111,7 +111,7 @@ So basically the tool was more of a hinderance than a help in this instance, as 
 
 As the old saying goes, only a poor craftsman blames his tools, but the other old aphorism which applies here is that when all you have is a hammer, everything looks like a nail. 
 
-That is to say, using an O/RM as a convenience is perfectly fine, but don't become convinced that just because you use an O/RM, you *must* do all data reading and writing through the O/RM. Some times you need to  [look past the abstraction](https://www.hanselman.com/blog/PleaseLearnToThinkAboutAbstractions.aspx) and get at the plumbing under the sink in order to do a job the right way.
+That is to say, using an ORM as a convenience is perfectly fine, but don't become convinced that just because you use an ORM, you *must* do all data reading and writing through the ORM. Some times you need to  [look past the abstraction](https://www.hanselman.com/blog/PleaseLearnToThinkAboutAbstractions.aspx) and get at the plumbing under the sink in order to do a job the right way.
 
 ## Bonus - The Solution
 
