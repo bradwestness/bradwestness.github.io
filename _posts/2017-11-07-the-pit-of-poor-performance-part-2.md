@@ -103,7 +103,7 @@ Similar to the concept of the "[pit of success](https://blog.codinghorror.com/fa
 
 The only way to solve this particular problem in a way that isn't horrible for performance with large datasets that I can think of involves constructing a rather gnarly ad-hoc SQL query which does intersects among a bunch of subqueries, which is definitely not something that ORMs tend to excel at. 
 
-_* (Entity Framework in this case, but it would've been true for any of them)_
+_* Entity Framework in this case, but it would've been true for any of them._
 
 ## Lessons Learned
 
