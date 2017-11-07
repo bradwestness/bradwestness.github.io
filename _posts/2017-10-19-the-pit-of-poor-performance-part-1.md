@@ -190,4 +190,4 @@ private string GetAttributeSetHash(IDictionary<string, string> attributeSet)
 }
 ```
 
-Now we're storing the database results in a pair of dictionaries as we loop through the sections, this way we don't go to the database to do the same lookup thousands of times. There's still a lot of complexity hidden in those repository calls though, which we'll step through in the next part.
+Now we're storing the database results in a pair of dictionaries as we loop through the sections, this way we don't go to the database to do the same lookup thousands of times. There's still a lot of complexity hidden in those repository calls though, which we'll step through in [the next part](http://www.bradwestness.com/2017/11/07/the-pit-of-poor-performance-part-2/).
