@@ -97,13 +97,13 @@ Now, you can probably see the performance hit here. We go to the database once f
 
 This is where we finally get to the title of this post. The reason these methods were written this way is because it was the most obvious and straightforward way to solve this problem using the tools at hand. 
 
-The O/RM* did not provide any other way to do this sort of lookup-by-matching-a-set-of-attributes operation, and so this one was used even though it's pretty obviously going ot cause performance problems with large datasets.
+The object/relational mapper (or ORM)* did not provide any other way to do this sort of lookup-by-matching-a-set-of-attributes operation, and so this one was used even though it's pretty obviously going to cause performance problems with large datasets.
 
-Similar to the concept of the ["pit of success,"](https://blog.codinghorror.com/falling-into-the-pit-of-success/) this is a "pit of poor performance" that many O/RMs and other tools can cause developers to fall into. The tool doesn't provide a good way to do something, so you do it in a bad way because it's the most obvious.
+Similar to the concept of the "[pit of success](https://blog.codinghorror.com/falling-into-the-pit-of-success/)," this is a "pit of poor performance" that many ORMs and other tools can cause developers to fall into. The tool doesn't provide a good way to do something, so you do it in a bad way because it's the most obvious.
 
-The only way to solve this particular problem in a way that isn't horrible for performance with large datasets that I can think of involves constructing a rather gnarly ad-hoc SQL query which does intersects among a bunch of subqueries, which is definitely not something that O/RMs tend to excel at. 
+The only way to solve this particular problem in a way that isn't horrible for performance with large datasets that I can think of involves constructing a rather gnarly ad-hoc SQL query which does intersects among a bunch of subqueries, which is definitely not something that ORMs tend to excel at. 
 
-* *(Entity Framework in this case, but it would've been true for any of them)*
+_* (Entity Framework in this case, but it would've been true for any of them)_
 
 ## Lessons Learned
 
@@ -144,8 +144,8 @@ select top 1 [SectionId] from (
 
     select distinct [SectionId] from [dbo].[SectionAttribute]
     where [PublicationId] = @publicationId
-    and [AttributeKey] = @sectionAttributeKey1
-    and [AttributeValue] = @sectionAttributeValue1
+    and [AttributeKey] = @sectionAttributeKey2
+    and [AttributeValue] = @sectionAttributeValue2
 
     -- repeat for however many section attributes there are
 )
