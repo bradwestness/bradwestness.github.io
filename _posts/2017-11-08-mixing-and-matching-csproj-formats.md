@@ -25,7 +25,7 @@ Copy from "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Comm
 
 The build scripts need to perform two different methods of NuGet Restore for the different project types.
 
-````
+````csharp
 rem *********************************************************************
 rem Restore NuGet Packages 1 - Use MSBuild with /t:restore switch for projects that use the new .csproj format
 rem *********************************************************************
