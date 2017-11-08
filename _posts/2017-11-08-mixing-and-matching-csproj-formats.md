@@ -23,7 +23,7 @@ Copy from "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Comm
 
 ## NuGet Restore
 
-The build scripts need to perform two different methods of NuGet Restore for the different project types.
+The build scripts need to perform two different methods of NuGet Restore for the different project types. 
 
 ````csharp
 rem *********************************************************************
@@ -36,5 +36,11 @@ rem Restore NuGet Packages 2 - Use NuGet.exe for old-style .csproj projects
 rem *********************************************************************
 .nuget\nuget.exe restore MySolution.sln -PackagesDirectory packages -nocache -configfile .nuget\nuget.config -verbosity detailed
 ````
+
+Obviously, these commands assume the solution has a ".nuget" folder containing the nuget.exe executable and a "nuget.config" file, and an "%MSBUILD% environment variable that points to the location of the msbuild executable installed above. For us it points to:
+
+C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\msbuild.exe
+
+## Safety Not Guaranteed
 
 I can't guarantee these steps will work for everyone, but they have the "Works on My Machine" guarantee, so I'm providing them here for posterity in case anyone else is looking to do this.
