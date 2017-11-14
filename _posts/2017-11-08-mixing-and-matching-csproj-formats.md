@@ -21,6 +21,12 @@ Copy from "C:\Program Files\dotnet\sdk\2.0.0\" to "C:\Program Files(x86)\Microso
 ### Copy the NuGet Targets folder from a machine that has the full VS 15.3 (or later) IDE installed on it
 Copy from "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\" to "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\Common7\IDE\CommonExtensions\Microsoft\"
 
+### Update - Visual Studio Build Tools 15.4.1 (and later)
+
+It seems as though the Build Tools installer now includes an option to install the required NuGet targets and project dependencies required to build both types of .csproj formats as of version 15.4.1. There's now an option for "NuGet targets and build tasks" that can be selected in the installer, which should obviate the need for this step.
+
+[![NuGet targets and build tasks](http://www.bradwestness.com/content/images/build_tools_nuget_targets.PNG "NuGet targets and build tasks")](http://www.bradwestness.com/content/images/build_tools_nuget_targets.PNG)
+
 ## NuGet Restore
 
 The build scripts need to perform two different methods of NuGet Restore for the different project types. 
