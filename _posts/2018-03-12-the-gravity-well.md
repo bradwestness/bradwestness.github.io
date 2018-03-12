@@ -40,10 +40,10 @@ You know who doesn't spend all day wondering when the next time they can get a d
 
 The problem came on my wedding anniversary, when I convinced myself that it would be fine to have a glass of wine
 or two -- it was a special occasion, after all! But the result was what you might expect; by putting my quarter back
-down that chute, I had given myself permission to drink again, and the process had begun until about a year and a 
-half later when the bottom fell out again, after several weeks of getting blackout drink three or four nights a week.
+down that chute, I had given myself permission to drink again, and the process had begun. About a year and a 
+half later when the bottom fell out again, after several weeks of getting blackout drunk three or four nights a week.
 
-The mistake I'd made in the past was that I kept these issues private. My wife and one close friend were
+The mistake I'd made in the past was that I kept these issues private. My wife and one close friend were pretty much
 the only people who ever knew about it in the past. That meant that when I decided I had the problem "under control"
 and it was safe to drink again, there wasn't a lot of accountability. 
 
