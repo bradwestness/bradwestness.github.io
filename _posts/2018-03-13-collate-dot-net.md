@@ -4,7 +4,7 @@ title: Introducing Collate.NET - A Filtering Sorting and Paging Library
 ---
 
 Here's a new project I finally got put up on NuGet which is a more generalized
-version of a set of extension methods that I helpred write for a project at work (note:
+version of a set of extension methods that I helped write for a project at work (note:
 this is all new code as the stuff for work was highly coupled to our code base).
 
 Why "Collate"? Let's ask Mirriam-Webster:
@@ -88,7 +88,7 @@ public ActionResult GetCustomers(GetCustomersRequest request)
 }
 ```
 
-Now, I'm sure you can imagine how quickly that can become painful and
+Now, I'm sure you can imagine how quickly it can become painful and
 time consuming to write that kind of code for every field on every endpoint
 in your application. And what happens if you want to filter by multiple fields
 at the same time, or apply sorting by multiple fields at the same time?
