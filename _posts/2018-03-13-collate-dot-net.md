@@ -9,13 +9,13 @@ this is all new code as the stuff for work was highly coupled to our code base).
 
 Why "Collate"? Let's ask Mirriam-Webster:
 
-&gt; ## col·late
-&gt; 
-&gt; transitive verb
-&gt; 
-&gt; to collect, compare carefully in order to verify, and often to integrate or arrange in order
-&gt; 
-&gt; *collated the data for publication*
+> ## colÂ·late
+>
+> transitive verb
+> 
+> to collect, compare carefully in order to verify, and often to integrate or arrange in order
+> 
+> *collated the data for publication*
 
 When working on a data-intensive project, you will often find yourself implementing
 pages that use grid controls like [Telerik's Kendo UI Grid](https://demos.telerik.com/kendo-ui/grid/index)
@@ -42,7 +42,7 @@ public class GetCustomersRequest
 [HttpPost]
 public ActionResult GetCustomers(GetCustomersRequest request)
 {
-    IEnumerable&lt;Customer&gt; data = null;
+    IEnumerable<Customer> data = null;
 
     using (var dbContext = MyDataContext())
     {
@@ -51,11 +51,11 @@ public ActionResult GetCustomers(GetCustomersRequest request)
         switch (request.FilterField)
         {
             case "FirstName":
-                customers = customers.Where(x =&gt; x.FirstName.Contains(request.FilterValue));
+                customers = customers.Where(x => x.FirstName.Contains(request.FilterValue));
                 break;
 
             case "LastName":
-                customers = customers.Where(x =&gt; x.LastName.Contains(request.FilterValue));
+                customers = customers.Where(x => x.LastName.Contains(request.FilterValue));
                 break;
 
             // repeat for every field that you want to filter by
@@ -65,14 +65,14 @@ public ActionResult GetCustomers(GetCustomersRequest request)
         {
             case "FirstName":                
                 customers = requst.SortDirection == "asc"
-                    ? customers.OrderBy(x =&gt; x.FirstName)
-                    : customers.OrderByDescending(x =&gt; x.FirstName);
+                    ? customers.OrderBy(x => x.FirstName)
+                    : customers.OrderByDescending(x => x.FirstName);
                 break;
 
             case "LastName":
                 customers = request.SortDirection == "asc"
-                    ? customers.OrderBy(x =&gt; x.LastName)
-                    : customers.OrderByDescending(x =&gt; x.LastName);
+                    ? customers.OrderBy(x => x.LastName)
+                    : customers.OrderByDescending(x => x.LastName);
                 break;
 
             // repeat for every field that you want to sort by
@@ -99,7 +99,7 @@ Now, if you use Collate.NET, you can write the same endpoint like this:
 [HttpPost]
 public ActionResult GetCustomers(Collate.Implementation.PageAndFilterAndSortRequest request)
 {
-    IEnumerable&lt;Customer&gt; data = null;
+    IEnumerable<Customer> data = null;
 
     using (var dbContext = new MyDbContext())
     {
