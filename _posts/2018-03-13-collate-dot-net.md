@@ -4,9 +4,8 @@ title: Introducing Collate.NET - A Filtering Sorting and Paging Library
 ---
 
 Here's a new project I finally got put up on NuGet which is a more generalized
-version of a set of extension methods that I wrote for a project at work (note:
-this is all new code as the stuff I wrote for work was highly specialized to a 
-particular use-case).
+version of a set of extension methods that I helpred write for a project at work (note:
+this is all new code as the stuff for work was highly coupled to our code base).
 
 Why "Collate"? Let's ask Mirriam-Webster:
 
