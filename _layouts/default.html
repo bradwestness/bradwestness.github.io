@@ -17,7 +17,7 @@
     <meta property="og:url" content="http://www.bradwestness.com{{ page.url }}" />
     <meta property="og:description" content="{{ description }}" />
     <meta property="twitter:card" content="summary" />
-    <meta property="twitter:image" content="{{ site.baseurl }}content/images/bowling.jpg" />
+    <meta property="twitter:image" content="{{ site.baseurl }}{{ site.logo }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
     <meta property="twitter:description" content="{{ description }}" />
 
@@ -46,7 +46,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{{ site.baseurl }}">Brad Westness.com</a>
+        <a class="navbar-brand" href="{{ site.baseurl }}">{{ site.sitename }}</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -93,7 +93,7 @@
                     <p class="text-secondary small">
                         &copy;
                         <script type="text/javascript" async="async" defer="defer">document.write(new Date().getFullYear());</script>
-                        Brad Westness.com
+                        {{ site.sitename }}
                     </p>
                 </footer>
             </div>
