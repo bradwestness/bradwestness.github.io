@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/bradwestness
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://bradwestness.com
+  * I am bradwestness (https://keybase.io/bradwestness) on keybase.
+  * I have a public key ASCHUCzoW2XvJ19mHfuPQz1R9AtIJ37ciBCr3ZYnwlkDJgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012087502ce85b65ef275f661dfb8f433d51f40b48277edc8810abdd9627c25903260a",
+      "host": "keybase.io",
+      "kid": "012087502ce85b65ef275f661dfb8f433d51f40b48277edc8810abdd9627c25903260a",
+      "uid": "15ef8bc554334d3e166c49772b02f119",
+      "username": "bradwestness"
+    },
+    "merkle_root": {
+      "ctime": 1534653941,
+      "hash": "075c0ff23eadf603642cfe6580982026ac396a908c01f248ea4c215080719d2dcbd7062e26b1b6cafe66fd86352c127d142e152615b73cc30a392480020e8f1f",
+      "hash_meta": "11a003bcf2a2ad985816128a235dc4fd84f0f3c05030c8d7037544d76a282046",
+      "seqno": 3476716
+    },
+    "service": {
+      "entropy": "9Td1WGTWgEZxaq/ZP+lliw5I",
+      "hostname": "bradwestness.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.5.0"
+  },
+  "ctime": 1534653952,
+  "expire_in": 504576000,
+  "prev": "d2c12c84967538e860adf853d64cd55c8a9cb203c8962c64adb06ae0bca7e5e6",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgh1As6Ftl7ydfZh37j0M9UfQLSCd+3IgQq92WJ8JZAyYKp3BheWxvYWTESpcCBsQg0sEshJZ1OOhgrfhT1kzVXIqcsgPIlixkrbBq4Lyn5ebEIO9jlHeUErV9QipbeUU5I87mblysEBYGuhmeuphlSBljAgHCo3NpZ8RACH/reIuF7waIiTqIjgh3CT0vLlwZhwQv34pBkAe8PYgGz2TcyEEtkoRkB/jQ0ED69oZsVeQ5biLUZipxpHweCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEICZuAUIyyhkbNwJ15aOaI/XMJ+It/s4KDMBWlx2g1j6yo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bradwestness
+
+==================================================================
