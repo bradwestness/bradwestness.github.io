@@ -7,8 +7,10 @@
     <meta name="author" content="Brad Westness" />
 
     {% capture description %}
-        {% if  if post.excerpt %}
+        {% if post.excerpt %}
             {{- post.excerpt | strip_html -}}
+        {% else if post.description %}
+            {{- post.description -}}
         {% else if page.description %}
             {{- page.description -}}
         {% else %}
