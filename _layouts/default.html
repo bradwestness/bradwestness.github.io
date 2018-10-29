@@ -11,7 +11,7 @@
             {{- post.excerpt | strip_html -}}
         {% else if page.description %}
             {{- page.description -}}
-        {% else
+        {% else %}
             {{- site.description -}}
         {% endif %}
     {% endcapture %}
