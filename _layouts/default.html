@@ -19,9 +19,9 @@
 
     {%- capture keywords -%}
         {%- if post and post.categories -%}
-            {{- post.categories | join: ', ' -}}
+            {{- post.categories | join: ',' -}}
         {%- elsif page and page.categories -%}
-            {{- page.categories | join: ', ' -}}
+            {{- page.categories | join: ',' -}}
         {%- else -%}
             {{- site.keywords -}}
         {%- endif -%}
