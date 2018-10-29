@@ -7,7 +7,13 @@
     <meta name="author" content="Brad Westness" />
 
     {% capture description %}
-    {% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}
+        {% if page.description %}
+            {{ page.description }}
+        {% else if post.excerpt %}
+            {{ post.excerpt | strip_html }}
+        {% else %}
+            {{ site.description }}
+        {% endif %}
     {% endcapture %}
     
     <meta property="og:site_name" content="{{ site.sitename }}" />
