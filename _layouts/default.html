@@ -5,27 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>{{ page.title }} | Brad Westness.com</title>
 
-    {% capture description %}
-        {% if post and post.excerpt %}
+    {%- capture description -%}
+        {%- if post and post.excerpt -%}
             {{- post.excerpt | strip_html -}}
-        {% elsif post and post.description %}
+        {%- elsif post and post.description -%}
             {{- post.description -}}
-        {% elsif page and page.description %}
+        {%- elsif page and page.description -%}
             {{- page.description -}}
-        {% else %}
+        {%- else -%}
             {{- site.description -}}
-        {% endif %}
-    {% endcapture %}
+        {%- endif -%}
+    {%- endcapture -%}
 
-    {% capture keywords %}
-        {% if post and post.categories %}
-            {{- post.categories | join: ', ' }}
-        {% elsif page and page.categories %}
-            {{- page.categories | join: ', ' }}
-        {% else %}
+    {%- capture keywords -%}
+        {%- if post and post.categories -%}
+            {{- post.categories | join: ', ' -}}
+        {%- elsif page and page.categories -%}
+            {{- page.categories | join: ', ' -}}
+        {%- else -%}
             {{- site.keywords -}}
-        {% endif %}
-    {% endcapture %}
+        {%- endif -%}
+    {%- endcapture -%}
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
