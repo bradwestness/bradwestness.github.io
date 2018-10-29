@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Mondays with Bernie No. 1 - Postseason Postmortem
+categories: [mondays-with-bernie]
 ---
 
 Welcome to _Mondays with Bernie_, my new Brewers-themed baseball
