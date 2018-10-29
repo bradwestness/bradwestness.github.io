@@ -10,7 +10,7 @@ single: true
     {% else %}
         {% assign categories = page.categories %}
     {% endif %}
-    {% if categories %}
+    {% if categories and categories.size > 0 %}
         <div class="meta">
             <div class="tags">
                 <i class="fa fa-tags"></i>
