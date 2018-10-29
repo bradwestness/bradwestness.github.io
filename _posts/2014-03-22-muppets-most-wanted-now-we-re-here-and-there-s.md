@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Muppets Most Wanted - Now We're Here and There's No Need Remembering When"
+categories: [Movies]
 ---
   
 Compare the poster for the newly released <em>Muppets Most Wanted</em> to the <a href="/2011/11/the-muppets-the-greatest-work-of-fan-fiction">poster for 2011's <em>The Muppets</em></a> and you may notice something telling: while similar in design, the former features Muppets front and center with the human characters in the rear, and the latter is the opposite. This is just one indicator that the focus of the movie is back where it should be in any Muppet vehicle: on the Muppets themselves.

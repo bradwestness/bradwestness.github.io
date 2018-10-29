@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introducing Collate.NET - A Filtering Sorting and Paging Library
+categories: [Software, .NET, Programming]
 ---
 
 Here's a new project I finally got put up on NuGet which is a more generalized

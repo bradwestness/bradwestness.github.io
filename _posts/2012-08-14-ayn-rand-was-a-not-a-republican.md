@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ayn Rand Was a Not a Republican  
+categories: [Politics]
 ---
   
 In the coming months, you're sure to be hearing a lot about the tea party's golden boy, Paul Ryan, who was just announced as the Republican candidate for vice-president.

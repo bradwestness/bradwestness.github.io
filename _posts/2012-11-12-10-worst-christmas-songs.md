@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 10 Worst Christmas Songs  
+categories: [Music]
 ---
   
 It's Black Friday, so in lieu of  waiting in line outside Best Buy for six hours, I thought I'd post my annual list of Worst Christmas Songs.

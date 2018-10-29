@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Not Invented Here Mechanic  
+categories: [Software, Programming]
 ---
   
 Here's a little thought experiment: **What if industries other than software development

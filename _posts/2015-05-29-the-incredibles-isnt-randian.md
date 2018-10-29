@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Incredibles isn't Fascist or Objectivist or Whatever
+categories: [Movies, Politics]
 ---
 
 Popular consensus seems to have settled on the idea that 

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "'The Muppets' - The Greatest Work of Fan Fiction Ever Made"  
+title: "'The Muppets' - The Greatest Work of Fan Fiction Ever Made"
+categories: [Movies] 
 ---
   
 I was excited, but also trepidatious, when I heard they were making a new Muppet movie. I love the first two movies, **The Muppet Movie** and **The Great Muppet Caper** -- the former has been my answer to "What's your favorite movie?" for a couple decades now, and the latter has the distinction of being perhaps the most worn-out VHS tape in my parents' basement. Additionally, the **Muppet Christmas Carol** is still my favorite (and, if you ask me, the most true to the novel) version of **A Christmas Carol**, and I own all the (released) DVDs of **The Muppet Show**.

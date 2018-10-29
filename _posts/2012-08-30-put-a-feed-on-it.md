@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Put a Feed On It  
+categories: [Software, .NET, Programming]
 ---
   
 > Did you see this bag before? I didn't. Now there's a bird on it. It's flying, it's free!

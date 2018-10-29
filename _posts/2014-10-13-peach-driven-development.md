@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Peach Driven Development
+categories: [Software, Programming]
 ---
   
 There's a virtually infinite number of ways to structure projects when working in an IDE like Visual Studio. Lately I've been thinking a lot about how I structure my solutions, and I'd like to establish a convention that I can use when beginning a new project that helps do the following:

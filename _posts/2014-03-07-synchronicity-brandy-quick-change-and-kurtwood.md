@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Synchronicity: Brandy, Quick Change, and Kurtwood Smith"
+categories: [Personal, Music, Movies]
 ---
   
 So this is a crazy bit of synchronicity.

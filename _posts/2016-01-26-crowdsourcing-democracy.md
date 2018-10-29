@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Fire Congress and Crowdsource Our Democracy
+categories: [Politics]
 ---
 
 Dilbert creator Scott Adams has been writing an [interesting series of posts](http://blog.dilbert.com/tagged/Trump)

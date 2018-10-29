@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Gravity Well
+categories: [Personal]
 ---
 
 Confession time. My whole adult life, I've had problems with binge drinking. For whatever reason,

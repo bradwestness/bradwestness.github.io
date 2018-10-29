@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Pit of Poor Performance - Part 1
+categories: [Software, .NET, Programming]
 ---
 
 This is a story about some code I recently refactored at work, which resulted in a process that previously took double-digit numbers of hours down to about 20 minutes. I think it's an interesting case because it was such a dramatic performance increase, and the root cause for the performance problem was something I think software developers run into a lot.

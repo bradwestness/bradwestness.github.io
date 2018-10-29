@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dan Harmon on Dog Ownership  
+categories: [Personal]
 ---
   
 Listening to <a href="https://twitter.com/danharmon" target="_blank">Dan Harmon</a>'s (the creator of NBC's <a href="http://www.nbc.com/community/" target="_blank"><em>Community</em></a>) new podcast "<a href="http://podbay.fm/show/542228532" target="_blank">Harmontown</a>," and I thought I'd share this particularly funny quote on dog ownership:

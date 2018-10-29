@@ -1,6 +1,7 @@
 ---
 layout: post
 title: WebAPI Test-O-Matic
+categories: [Software, .NET, Programming]
 ---
 
 While investigating migrating the API code in our application at work from the nearly-abandoned [Jayrock RPC](https://code.google.com/archive/p/jayrock/) framework to the more widespread and well-supported [ASP.NET WebAPI](https://www.asp.net/web-api), I noticed that there was one nice-to-have that Jayrock enjoyed over WebAPI -- it has a built-in automated tester which enables you to compose and submit AJAX requests to your API endpoints.

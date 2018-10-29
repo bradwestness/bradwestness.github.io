@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Generation Gap  
+categories: [Politics, Personal]
 ---
   
 I recently read a post that was listed on Hacker News titled <a href="http://www.articulateventures.com/articulate-blog/category/how-to-tell-a-youngish-person-their-behavior-is-inappropriate-at-work#comment-905293932">How to tell a young(ish) person their behavior is inappropriate at work</a>, and I got into it a bit in the comments with the author of the post.

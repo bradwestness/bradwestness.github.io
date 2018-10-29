@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Gift of Honesty  
+categories: [Personal]
 ---
   
 > Does not Dionysius seem to have made it sufficiently clear that there can be nothing happy for the person over whom some fear always looms?

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: One Weird SEO Trick Guaranteed to Increase Traffic
+categories: [Software, Programming]
 ---
   
 The title of this blog is a good example of dumb keyword bait. Personally I'm a fan of tried-and-true techniques to legitimately garner more visitors, as told in <a href="http://www.youtube.com/watch?v=fnSJBpB_OKQ">Charles Lewis' Page Rank Rap</a>:

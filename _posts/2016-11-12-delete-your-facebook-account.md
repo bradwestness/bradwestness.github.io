@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Delete Your Facebook Account
+categories: [Personal, Politics]
 ---
 
 In addition to being a huge time-sink, since allowing anyone to join

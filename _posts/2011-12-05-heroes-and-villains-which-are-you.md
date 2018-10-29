@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Heroes and Villains–Which Are You?"
+categories: [Personal, Politics]
 ---
   
 We’re living in a time in our country where every issue is completely divisive and polarizing. You’re either for us or against us, and many people vote entirely on single issues, regardless of the actual policies enforced by their leaders.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Mixing and Matching .csproj Formats
+categories: [Software, .NET, Programming]
 ---
 
 The Visual Studio Build Tools 15.x installers do not include all the necessary dependencies to build a solution containing projects using both the classic "Full Framework" .csproj format and the new "VS 2017" .csproj format out of the box.

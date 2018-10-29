@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Some Nifty Quotes on Religion from Our Founding Fathers  
+categories: [Politics]
 ---
   
 Here are a few nifty quotes regarding Christianity from our God-fearing-slave-owning-only-white-males-may-vote founding fathers:

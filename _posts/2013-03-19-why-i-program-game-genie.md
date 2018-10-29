@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why I Program - Game Genie"  
+categories: [Software, Personal, Programming]
 ---
 
 You can ask anyone who knew me when I was little, I was very obsessed with the NES. My childhood reaction to receiving one for Christmas is the sort of thing that your family likes to bring up to embarrass you in front of girls.

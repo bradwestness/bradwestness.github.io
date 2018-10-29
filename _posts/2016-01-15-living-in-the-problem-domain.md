@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Living in the Problem Domain
+categories: [Software, Programming]
 ---
 
 There's a general guideline in software development that states you should always work at

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introducing Dossier.NET - A Transactional File Manipulation Library
+categories: [Software, .NET, Programming]
 ---
 
 Here's a new project I just started over the weekend that I'm

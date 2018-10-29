@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Please Learn to Do It Yourself  
+categories: [Software, Programming, Personal]
 ---
   
 There's been a recent spate of controversial articles online lately suggesting that everyone should learn to program ("<a href="http://sachagreif.com/please-learn-to-code/" target="_blank">Please Learn to Code</a>"), or that no-one should learn to program ("<a href="http://www.codinghorror.com/blog/2012/05/please-dont-learn-to-code.html" target="_blank">Please Don't Learn to Code</a>"), or that everyone should learn to be a plumber, or a writer, or something ("<a href="http://www.randsinrepose.com/archives/2012/05/16/please_learn_to_write.html" target="_blank">Please Learn to Write</a>"), or nobody should learn anything ("<a href="http://learncodethehardway.org/blog/MAY_15_2012.html" target="_blank">Please Don't Become Anything, Especially Not A Programmer</a>"), or what have you.

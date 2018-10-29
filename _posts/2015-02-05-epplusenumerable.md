@@ -1,6 +1,7 @@
 ---
 layout: post
 title: EPPlusEnumerable - Easily Create Multi-Worksheet Excel Spreadsheets from any .NET object collection
+categories: [Software, .NET, Programming]
 ---
 
 Let's say you're working on an ASP.NET web app and want to create a report of all users and orders. I created a little utility built on top of the excellent (and open source) [EPPlus](http://epplus.codeplex.com/) to make this as easy as possible.

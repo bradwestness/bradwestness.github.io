@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Dumbest Parts of 'Elysium'"  
+categories: [Movies]
 ---
   
 <a href="https://twitter.com/NeillBlomkamp">Neil Blomkamp's</a> follow up to the excellent <a href="http://www.d-9.com/"><em>District 9</em></a> came out this past weekend and <a href="http://www.avclub.com/articles/weekend-box-office-elysium-comes-out-on-top-despit,101480/">has already made roughly a zillion dollars at the box office</a>.

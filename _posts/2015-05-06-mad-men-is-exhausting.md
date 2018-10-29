@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Mad Men is Exhausting
+categories: [TV]
 ---
 
 AMC's *Mad Men* is a great show. As it winds down it's final season, one thing strikes me: it can be an exhausting watch at times.

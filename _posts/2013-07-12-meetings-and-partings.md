@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Meetings and Partings  
+categories: [Personal]
 ---
   
 > Life is made up of meetings and partings. That is the way of it.

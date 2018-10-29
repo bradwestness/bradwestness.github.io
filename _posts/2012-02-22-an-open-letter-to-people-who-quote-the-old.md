@@ -1,6 +1,7 @@
 ---
 layout: post
 title: An Open Letter to People Who Quote the Old Testament  
+categories: [Politics]
 ---
   
 Next time somebody (like say, <a href="http://blog.spreadingsantorum.com/" target="_blank">a Republican presidential candidate</a>) refers to Chapter 18 of the book of Leviticus saying that "the bible says homosexuality is an abomination," I'm going to show them this passage, from a few chapters earlier in the same book:
