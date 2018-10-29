@@ -4,7 +4,7 @@ title: Mondays with Bernie No. 1 - Postseason Postmortem
 ---
 
 Welcome to _Mondays with Bernie_, my new Brewers-themed baseball
-blog series. My plan is to do one a week, each Monday, for the duration of the 2019 season, at least.
+blog series. My plan is to do one a week for the duration of the 2019 season, at least.
 
 Starting a weekly blog series about the Brewers the last week of the season
 in which they did not participate in the World Series might seem a little strange,
@@ -38,12 +38,12 @@ in Milwaukee, and Walker Buehler in Los Angeles. To me, the crux of the series w
 in LA, in which the Brewers offense only came up with 1 run despite the defense keeping the Dodgers off the
 board for 11 consecutive innings. 
 
-We needed to win that game, which would've put the Brewers up 3-1 on the series with only one road game remaining.
+Brewers needed to win that game, which would've put the them up 3-1 on the series with only one road game remaining.
 As it stood, they came back to Milwaukee trailing 2-3, and needed to win out in order to take the series. They were
 able to force a game seven due to an offensive bust-out in game six after being mostly silent the previous two
 road games, but came up short in game 7. 
 
-The common theme in my mind of the NLCS games the Brewers lost wasn't Jeffress' struggles or not having enough starters go 7 complete innings, it's that in the 3 of the 4 games we lost, we only scored 1 or 2 runs. You just can't realistically expect to win a championship series with a bunch of 1-0 games.
+The common theme in my mind of the NLCS games the Brewers lost wasn't Jeffress' struggles or not having enough starters go 7 complete innings, it's that in the 3 of the 4 games they lost, they only scored 1 or 2 runs. You just can't realistically expect to win a championship series with a bunch of 1-0 games.
 
 ## The Road Ahead
 
@@ -63,10 +63,10 @@ their starting rotation with all the high dollar guys who had a great season las
 understand this, and I believe they did a phenominal job of managing the team that the Brewers are, and not pretending
 that they can win by doing the same things that the Red Sox or the Dodgers or Yankees would do in a given situation.
 
-_* In hindsight, thank Uecker we didn't sign Machado, both from an offensive production perspective (or near-total lack thereof), as well as the fact that he's
+_* In hindsight, thank Uecker the Brewers didn't sign Machado, both from an offensive production perspective (or near-total lack thereof), as well as the fact that he's
 obviously a preening jackass who is clubhouse poison._
 
-I'm excited for next year. We've got a lot of our core guys coming back. Cain, Yelich, Aguilar, Jeffress, Braun, Hader, 
+I'm excited for next year. The Brewers have got a lot of their core guys coming back. Cain, Yelich, Aguilar, Jeffress, Braun, Hader, 
 Woodruff, Burnes, and more will all be back for sure. News should start coming out over the next few weeks of who else
 of the arbitration-eligible guys are getting resigned or not. 
 
