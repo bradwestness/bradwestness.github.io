@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Brad Westness.com | {{ page.title }}</title>
-    <meta name="author" content="Brad Westness" />
+    <title>{{ page.title }} | Brad Westness.com</title>
 
     {% capture description %}
         {% if post and post.excerpt %}
@@ -17,30 +16,43 @@
             {{- site.description -}}
         {% endif %}
     {% endcapture %}
+
+    {% capture keywords %}
+        {% if post and post.categories %}
+            {{- post.categories | join: ', ' }}
+        {% elsif page and page.categories %}
+            {{- page.categories | join: ', ' }}
+        {% else %}
+            {{- site.keywords -}}
+        {% endif %}
+    {% endcapture %}
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <meta name="author" content="Brad Westness" />
+    <meta name="copyright" content="Brad Westness" />
+    <meta name="description" content="{{- description -}}" />
+    <meta name="keywords" content="{{- keywords -}}" />
     
     <meta property="og:site_name" content="{{ site.sitename }}" />
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content="blog" />
     <meta property="og:image" content="{{ site.baseurl }}{{ site.logo }}" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:url" content="http://www.bradwestness.com{{ page.url }}" />
     <meta property="og:description" content="{{- description -}}" />
     <meta property="twitter:card" content="summary" />
+    <meta property="twitter:creator" content="bradwestness" />
     <meta property="twitter:image" content="{{ site.baseurl }}{{ site.logo }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
     <meta property="twitter:description" content="{{- description -}}" />
-
-    <meta name="description" content="{{- description -}}">
-
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="theme-color" content="#ffffff" />
 
     <link rel="alternate" type="application/atom+xml" href="{{ site.baseurl }}atom.xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}content/bootstrap-theme.min.css" />
