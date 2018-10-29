@@ -5,17 +5,19 @@ single: true
 
 <article>
     <h1 class="post-title">{{ page.title }}</h1>
-    {% if page.categories || post.categories %}
-        {% if post %}
-            {% assign categories = post.categories %}
-        {% else %}
-            {% assign categories = page.categories %}
-        {% endif %}
+    {% if post %}
+        {% assign categories = post.categories %}
+    {% else %}
+        {% assign categories = page.categories %}
+    {% endif %}
+    {% if categories %}
         <div class="meta">
             <div class="tags">
                 <i class="fa fa-tags"></i>
                 {% for category in categories %}
-                <a href="{{site.baseurl}}/categories/#{{ category | slugize }}">{{category}}</a>
+                <span class="badge">
+                    <a href="{{ site.baseurl }}/categories/#{{ category | slugize }}">{{ category }}</a>
+                </span>
                 {% endfor %}
             </div>
         </div>
