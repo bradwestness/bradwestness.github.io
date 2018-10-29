@@ -7,12 +7,12 @@
     <meta name="author" content="Brad Westness" />
 
     {% capture description %}
-        {% if page.description %}
-            {{ page.description }}
-        {% else if post.excerpt %}
-            {{ post.excerpt | strip_html }}
-        {% else %}
-            {{ site.description }}
+        {% if  if post.excerpt %}
+            {{- post.excerpt | strip_html -}}
+        {% else if page.description %}
+            {{- page.description -}}
+        {% else
+            {{- site.description -}}
         {% endif %}
     {% endcapture %}
     
@@ -25,9 +25,9 @@
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:image" content="{{ site.baseurl }}{{ site.logo }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
-    <meta property="twitter:description" content="{{ description }}" />
+    <meta property="twitter:description" content="{{- description -}}" />
 
-    <meta name="description" content="{{ description }}">
+    <meta name="description" content="{{- description -}}">
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
