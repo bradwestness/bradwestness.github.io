@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Mondays with Bernie No. 1 - Postseason Postmortem
+title: Tuesdays with Bernie No. 1 - Postseason Postmortem
 categories: [Mondays with Bernie, Brewers, Baseball]
 ---
 
-Welcome to _Mondays with Bernie_, my new Brewers-themed baseball
+Welcome to _Tuesdays with Bernie_, my new Brewers-themed baseball
 blog series. My plan is to do one a week for the duration of the 2019 season, at least.
 
 Starting a weekly blog series about the Brewers the last week of the season
