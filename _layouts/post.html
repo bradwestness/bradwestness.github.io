@@ -7,7 +7,7 @@ single: true
     <h1 class="post-title">{{ page.title }}</h1>
     {% if page.categories || post.categories %}
     <div class="meta">
-        <span class="tags">{{ page.categories | join: ', ' }}{{ post.categories | join: ', ' }}</span>
+        <span class="tags"><i class="fa fa-tags"></i>{{ page.categories | join: ', ' }}{{ post.categories | join: ', ' }}</span>
     </div>
     {% endif %}
     <section class="post-content">{{ content }}</section>
