@@ -16,7 +16,7 @@ single: true
                 <i class="fa fa-tags"></i>
                 {% for category in categories %}
                 <span class="badge">
-                    <a href="{{ site.baseurl }}/categories/#{{ category | slugize }}">{{ category }}</a>
+                    <a href="{{ site.baseurl }}/categories/#{{ category | slugify }}">{{ category }}</a>
                 </span>
                 {% endfor %}
             </div>
