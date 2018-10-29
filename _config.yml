@@ -9,7 +9,7 @@ description: Brewers baseball, .NET software development, pop culture, etc.
 #
 # Jekyll settings
 #
-permalink: pretty
+permalink: /:year-:month-:day-:title
 paginate: 3
 paginate_path: "page/:num"
 category_dir: categories
