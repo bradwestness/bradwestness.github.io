@@ -11,7 +11,12 @@ Starting a weekly blog series about the Brewers the last week of the season
 in which they did not participate in the World Series might seem a little strange,
 and it probably is, but it was such a great season, and set us up so well for
 2019 to be a truly spectacular year, that I thought it would be fun to track
-the entire thing a week at a time.
+the entire thing a week at a time. 
+
+I'm also planning to do some posts during the off season about baseball and the Brewers in general,
+and what they've meant to me at various points in my life, so I'm actually looking forward
+to there being a couple slow news weeks during hte off season. I'll talk about the various
+roster moves and stuff the team makes leading up to the 2019 season as well.
 
 ## Postseason Recap
 
