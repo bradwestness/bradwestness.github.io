@@ -25,7 +25,8 @@ First things first, let's talk about the Brewers postseason highlights from this
 ### Game 163
 
 The Brewers went from 6 games back from the Cubs on August 28, to forcing a tie-breaker
-game 163, which they won by utilizing five different pitchers, a common theme for the season.
+game 163, which they won by utilizing five different pitchers, a common theme for the season. With the
+game 163 victory, the regular season record was finalized at 96-67, tieing the franchise record for most wins in a season.
 
 ### Sweeping the NLDS
 
@@ -76,4 +77,8 @@ I'm excited for next year. The Brewers have got a lot of their core guys coming 
 Woodruff, Burnes, and more will all be back for sure. News should start coming out over the next few weeks of who else
 of the arbitration-eligible guys are getting resigned or not. 
 
-It's an exciting time to be a Brewers fan!
+It's a great time to be a Brewers fan!
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Au_DTS4Ksjo" frameborder="0" allowfullscreen></iframe>
+</div>
