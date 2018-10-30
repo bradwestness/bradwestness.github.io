@@ -82,3 +82,6 @@ It's a great time to be a Brewers fan!
 <div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Au_DTS4Ksjo" frameborder="0" allowfullscreen></iframe>
 </div>
+
+Next week we'll look at the various awards the 2018 team won, which we should know definitively by then, along with
+a look at how the various players up for free agency panned out.
