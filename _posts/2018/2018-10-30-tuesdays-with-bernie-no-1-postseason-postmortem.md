@@ -11,7 +11,12 @@ Starting a weekly blog series about the Brewers the last week of the season
 in which they did not participate in the World Series might seem a little strange,
 and it probably is, but it was such a great season, and set us up so well for
 2019 to be a truly spectacular year, that I thought it would be fun to track
-the entire thing a week at a time.
+the entire thing a week at a time. 
+
+I'm also planning to do some posts during the off season about baseball and the Brewers in general,
+and what they've meant to me at various points in my life, so I'm actually looking forward
+to there being a couple slow news weeks during hte off season. I'll talk about the various
+roster moves and stuff the team makes leading up to the 2019 season as well.
 
 ## Postseason Recap
 
@@ -20,7 +25,8 @@ First things first, let's talk about the Brewers postseason highlights from this
 ### Game 163
 
 The Brewers went from 6 games back from the Cubs on August 28, to forcing a tie-breaker
-game 163, which they won by utilizing five different pitchers, a common theme for the season.
+game 163, which they won by utilizing five different pitchers, a common theme for the season. With the
+game 163 victory, the regular season record was finalized at 96-67, tieing the franchise record for most wins in a season.
 
 ### Sweeping the NLDS
 
@@ -71,4 +77,11 @@ I'm excited for next year. The Brewers have got a lot of their core guys coming 
 Woodruff, Burnes, and more will all be back for sure. News should start coming out over the next few weeks of who else
 of the arbitration-eligible guys are getting resigned or not. 
 
-It's an exciting time to be a Brewers fan!
+It's a great time to be a Brewers fan!
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Au_DTS4Ksjo" frameborder="0" allowfullscreen></iframe>
+</div>
+
+Next week we'll look at the various awards the 2018 team won, which we should know definitively by then, along with
+a look at how the various players up for free agency panned out.
