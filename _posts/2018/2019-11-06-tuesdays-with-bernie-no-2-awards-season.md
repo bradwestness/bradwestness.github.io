@@ -53,10 +53,25 @@ There have been a few awards announced since the World Series ended, in addition
 * Christian Yelich won the [Hank Aaron Award](https://www.mlb.com/brewers/video/yelich-on-hank-aaron-award/c-2517826583)
 * Lorenzo Cain won the [Fielding Bible Award for center field](https://www.mlb.com/brewers/news/2018-fielding-bible-awards-honor-first-timers/c-299949832)
 
-Also, in addition to the MVP, the 2018 Brewers have four (!) [finalists for the Gold Glove](https://www.mlb.com/brewers/news/gold-glove-award-finalists-named/c-299683866):
+Also, in addition to the MVP, the 2018 Brewers had four (!) [Gold Glove finalists](https://www.mlb.com/brewers/news/gold-glove-award-finalists-named/c-299683866):
 
 * Manny Pina (C)
 * Travis Shaw (3B)
 * Christian Yelich (LF)
 * Lorenzo Cain (CF)
 
+Sadly, none of them actually went on to win the award at their position (personally I think Cain and Pina in particular got snubbed).
+
+## Manager of the Year
+
+Lastly, [Craig Counsell is a finalist for Manager of the Year](https://www.mlb.com/brewers/news/yelich-counsell-up-for-nl-mvp-manager-awards/c-300269562). I think he deserves it, he took the team with the lowest payroll the farthest of any in the league. In the 2018 postseason, only the Oakland Athletics ahd a lower payroll (they were 28th out of the 30 MLB teams), and they got eliminated in the Wild Card round. 
+
+The Brewers were 22nd out of 30 in payroll, and they beat the Cubs (1st highest payroll) in game 163, and the Rockies (13th highest payroll) in the divisional round. The Dodgers and the Red Sox had the 2nd and 3rd highest payrolls, respectively. 
+
+So I think it's pretty obvious that Counsell had the hardest job to do of all the postseason teams to make it to at least the divisional round, and he employed more out-of-the-box strategy of any of the managers in the postseason. 
+
+Be it agressive shifting, use of bullpen games, or perhaps greatest of all, the unprecidented "fake start" by Wade Miley in game 5 of the NLCS, Counsell was the most inventive and resourceful manager of the 2018 season and was able to take his team farther than anyone outside of die-hard Brewers fans expected. He deserves the award.
+
+## Post Script
+
+Speaking of winning... today also happens to be the most important midterm election in American history. [Vote! Save America!](https://votesaveamerica.com/ballot)
