@@ -4,10 +4,9 @@ title: Tuesdays with Bernie No. 2 - Awards Season
 categories: [Tuesdays with Bernie, Brewers, Baseball]
 ---
 
-# Roster Moves
+Despite being first week of the off-season, there's actually been quite a bit of team news over the last week!
 
-Despite being first week of the off-season, there's actually been quite a bit
-of team news over the last week!
+# Roster Moves
 
 ## Jeffress Re-signed
 
@@ -72,6 +71,6 @@ So I think it's pretty obvious that Counsell had the hardest job to do of all th
 
 Be it agressive shifting, use of bullpen games, or perhaps greatest of all, the unprecidented "fake start" by Wade Miley in game 5 of the NLCS, Counsell was the most inventive and resourceful manager of the 2018 season and was able to take his team farther than anyone outside of die-hard Brewers fans expected. He deserves the award.
 
-## Post Script
+# Post Script
 
 Speaking of winning... today also happens to be the most important midterm election in American history. [Vote! Save America!](https://votesaveamerica.com/ballot)
