@@ -18,9 +18,7 @@ since the real problem with the games where he gave up runs was that the offense
 only put 1 or 2 runs on the board. You can't expect to win games with that little
 offense. 
 
-He's had troubles with addiction, and seems to struggle everywhere else he's played,
-while thriving in Milwaukee. He also seems like a great, even-keeled presence in the
-clubhouse. I, for one, am really glad he'll be back.
+He's had troubles with addiction, [which I know something about](http://www.bradwestness.com/2018/03/12/the-gravity-well/). But he's in recovery, and seems to struggle everywhere else he's played while thriving in Milwaukee. So he's really easy to root for. He also seems like a great, even-keeled presence in the clubhouse. I, for one, am really glad he'll be back.
 
 ## Moustakas, Soria are Free Agents
 
