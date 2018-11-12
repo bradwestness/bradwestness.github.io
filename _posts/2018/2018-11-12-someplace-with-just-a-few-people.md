@@ -6,7 +6,7 @@ categories: [Personal]
 
 When I was first starting college, my grandmother told me that I should "Get in someplace with just a few people, and do computers."
 
-At the time, my siblings and I laughed this off as useless, out-of-touch advice from an elderly person who doesn't understand the technology industry.
+At the time, my siblings and I laughed this off as useless, out-of-touch advice from an elderly person who doesn't understand the technology industry. Another one of her pseudo southern-fried (by way of southern Illinois) colloquialisms, like "Warsh yins hands before supper."
 
 However, just the other day I was having a conversation with my brother, and we were talking about how we'd both observed that communication tends to break down in an organization once it grows past a certain size. He was talking about how there's always miscommunication and crossed wires when one organization has to talk to another. 
 
