@@ -10,7 +10,7 @@ At the time, my siblings and I laughed this off as useless, out-of-touch advice 
 
 However, just the other day I was having a conversation with my brother, a sheriff's deputy, and we were talking about how we'd both observed that communication tends to break down when one organization needs to communicate with another. There's always miscommunication and crossed wires.
 
-I think it can also happen internally in a single organization, when there are too many separate teams that have complicated structural heirarchies and chains of command. I began my career in hte world of higher education, where decision making was often distributed among a bunch of different people, deans and chancellors and department heads and division heads and the like. 
+I think it can also happen internally in a single organization, when there are too many separate teams that have complicated structural heirarchies and chains of command. I began my career in the world of higher education, where decision making was often distributed among a bunch of different people, deans and chancellors and department heads and division heads and the like. 
 
 On certain projects, something as simple as increasing a column in a database table from 50 to 100 characters required submitting a change request form, which then had to be routed to multiple people for approval, and could take months due to inter-department jockeying and miscommunication.
 
