@@ -6,11 +6,11 @@ categories: [Personal]
 
 When I was first starting college, my grandmother told me that I should "Get in someplace with just a few people, and do computers."
 
-At the time, my siblings and I laughed this off as useless, out-of-touch advice from an elderly person who doesn't understand the technology industry. Another one of her pseudo southern-fried (by way of southern Illinois) colloquialisms, like "Warsh yins hands before supper."
+At the time, my siblings and I laughed this off as useless, out-of-touch advice from an elderly person who didn't understand technology. Another one of her pseudo southern-fried (by way of southern Illinois) colloquialisms, like "Warsh yins hands before supper."
 
-However, just the other day I was having a conversation with my brother, and we were talking about how we'd both observed that communication tends to break down in an organization once it grows past a certain size. He was talking about how there's always miscommunication and crossed wires when one organization has to talk to another. 
+However, just the other day I was having a conversation with my brother, a sherrif's deputy, and we were talking about how we'd both observed that communication tends to break down in an organization once it grows past a certain size. He was talking about how there's always miscommunication and crossed wires when one organization has to talk to another. 
 
-I think it can also happen in one organization when there are too many separate teams that have complicated structural heirarchies and chains of command. I had experienced this in the world of higher education, where decision making was often distributed among a bunch of different people, deans and chancellors and department heads and division heads and the like. 
+I think it can also happen in one organization when there are too many separate teams that have complicated structural heirarchies and chains of command. I began my career in hte world of higher education, where I experienced, where decision making was often distributed among a bunch of different people, deans and chancellors and department heads and division heads and the like. 
 
 On certain projects, something as simple as increasing a column in a database table from 50 to 100 characters required submitting a change request form, which then had to be routed to multiple people for approval, and could take months due to inter-department jockeying and miscommunication.
 
