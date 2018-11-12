@@ -8,7 +8,7 @@ When I was first starting college, my grandmother told me that I should "Get in 
 
 At the time, my siblings and I laughed this off as useless, out-of-touch advice from an elderly person who didn't understand technology. Another one of her pseudo southern-fried (by way of southern Illinois) colloquialisms, like "Warsh yins hands before supper."
 
-However, just the other day I was having a conversation with my brother, a sheriff's deputy, and we were talking about how we'd both observed that communication tends to break down when one organization needs to communicate with another. There's always miscommunication and crossed wires 
+However, just the other day I was having a conversation with my brother, a sheriff's deputy, and we were talking about how we'd both observed that communication tends to break down when one organization needs to communicate with another. There's always miscommunication and crossed wires.
 
 I think it can also happen internally in a single organization, when there are too many separate teams that have complicated structural heirarchies and chains of command. I began my career in hte world of higher education, where I experienced, where decision making was often distributed among a bunch of different people, deans and chancellors and department heads and division heads and the like. 
 
