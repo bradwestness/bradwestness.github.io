@@ -8,9 +8,9 @@ Pretty slow news week this week. In official team news, it's mostly just been up
 
 When I started this blog series, I was actually sort of excited for the slow news weeks of the off-season, because I wanted to use them as an opportunity to talk about some more general baseball topics, as opposed to just dryly recounting team news or speculating about potential trades, which I don't really find that interesting.
 
-# Unrequested Permission
+# Little Brother Syndrome
 
-One of the first topics I wanted to discuss was what I'll call *Unrequested Permission*, which is something I feel that Brewers fans (especially if you live close to the state line) had to contend with, coming from the surplus of Cubs fans who also live in the area, especially in the years since the Cubs won the World Series in 2016.
+One of the first topics I wanted to discuss was what I'll call *Little Brother Syndrome*, which is something I feel that Brewers fans (especially if you live close to the state line) had to contend with, coming from the surplus of Cubs fans who also live in the area, especially in the years since the Cubs won the World Series in 2016.
 
 ## 2016 Flashback
 
