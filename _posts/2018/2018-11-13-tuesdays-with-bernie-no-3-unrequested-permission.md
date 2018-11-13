@@ -44,7 +44,7 @@ The thing that didn't sit right with me that I mentioned at the top, was that Cu
 * I don't like Ryan Braun
 * But I guess I'll grudgingly *allow* you to enjoy this rare postseason appearance by your favorite team.
 
-I'd always just comiserate that I've also never really liked Ryan Braun, personally - he seems like a meathead and [sells ugly Ed Hardy shirts](https://raw.githubusercontent.com/bradwestness/bradwestness.github.io/master/content/images/braun_shirt.PNG) and [gave that horrendous press conference where he acted like a victim for what turned out to be a legitimate accusation of PED use](http://larrybrownsports.com/baseball/ryan-braun-lies-ped-use/197593). 
+I'd always just comiserate that I've also never really liked Ryan Braun, personally - he seems like a meathead and [sells ugly Ed Hardy shirts](https://raw.githubusercontent.com/bradwestness/bradwestness.github.io/master/content/images/braun_shirts.jpg) and [gave that horrendous press conference where he acted like a victim for what turned out to be a legitimate accusation of PED use](http://larrybrownsports.com/baseball/ryan-braun-lies-ped-use/197593). 
 
 That said, he served his 65 game suspension. Not to mention how absurdly hypocritical it is for a fan of the team that Sammy Sosa played for when he broke the Roger Maris single-season home run record to suddenly be a rigidly intolerant about PEDs. Sosa just happened to play at a time when the league was "looking the other way," and tacitly supporting the usage of PEDs due to the breathless media coverage and skyrocketing ticket sales that the home run race created.
 
