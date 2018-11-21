@@ -22,4 +22,6 @@ Maybe it's because I'm a middle child. My older brother is the oldest. My sister
 
 They also have a pretty good track record of not having a lot of hateable players. Aside from Ryan Braun's PED suspension, they're not a team that tends to play dirty. Even under several different managers and owners, I've never seen the Brewers be the type of team that intentionally throws at hitters for breaking some unwritten rule of "how the game should be played" or any of that stupid nonsense.
 
-So I think that might be part of what I like about the Brewers. They're not the oldest team - established as the Seattle Pilots in 1969, and moved to Milwaukee in 1970 after the Braves moved back to the east coast in 1966. With a single World Series appearance in 1982, they're not the winningest team, but they're also not the worst, having only finished in last place in their division 3 times since moving to the NL. They're the "middle child" of MLB franchises.
+So I think that might be part of what I like about the Brewers. They're not the oldest team - established as the Seattle Pilots in 1969, and moved to Milwaukee in 1970 after the Braves moved back to the east coast in 1966. With a single World Series appearance in 1982, they're not the winningest team, but they're also not the worst, having only finished in last place in their division 3 times since moving to the NL. 
+
+They're the "middle child" of MLB franchises. And that's something I can root for.
