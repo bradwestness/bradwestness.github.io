@@ -9,11 +9,15 @@
         {%- if post and post.excerpt -%}
             {{- post.excerpt | strip_html -}}
         {%- elsif post and post.description -%}
-            {{- post.description -}}
+            {{- post.description | strip_html -}}
+        {%- elsif post and post.content -%}
+            {{- post.content | strip_html | truncatewords: 50 -}}
         {%- elsif page and page.description -%}
-            {{- page.description -}}
+            {{- page.description | strip_html -}}
+        {%- elsif page and page.content -%}
+            {{- page.content | strip_html | truncatewords: 50 -}}
         {%- else -%}
-            {{- site.description -}}
+            {{- site.description | strip_html -}}
         {%- endif -%}
     {%- endcapture -%}
 
