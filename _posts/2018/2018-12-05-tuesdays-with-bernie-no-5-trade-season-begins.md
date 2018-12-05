@@ -8,7 +8,7 @@ A little bit of team news this week as we get into the off-season trade period.
 
 ## Meetings
 
-The Brewers [extended contract extensions](https://www.mlb.com/brewers/news/brewers-non-tender-jonathan-schoop-2-others/c-301303452) to the following players:
+The Brewers [tendered contract extensions](https://www.mlb.com/brewers/news/brewers-non-tender-jonathan-schoop-2-others/c-301303452) to the following players:
 
 ### Hernan Perez
 
