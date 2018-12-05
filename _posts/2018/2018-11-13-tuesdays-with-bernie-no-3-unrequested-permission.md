@@ -2,6 +2,7 @@
 layout: post
 title: Tuesdays with Bernie No. 3 - Unrequested Permission
 categories: [Tuesdays with Bernie, Brewers, Baseball]
+image: content/images/braun_shirts.jpg
 ---
 
 Pretty slow news week this week. In official team news, it's mostly just been updates about prospect [Kenston Hiura having some pretty good success in the Arizona Fall Leagues](https://www.mlb.com/brewers/news/arizona-fall-league-roundup-for-november-10/c-300542384), as well as [Christian Yelich winning his second Silver Slugger award](https://www.mlb.com/brewers/news/silver-slugger-award-winners-announced/c-300459892), in addition to his [Hank Aaron award for 2018](http://www.bradwestness.com/2019/11/06/tuesdays-with-bernie-no-2-awards-season/). 
@@ -44,7 +45,7 @@ The thing that didn't sit right with me that I mentioned at the top, was that Cu
 * I don't like Ryan Braun
 * But I guess I'll grudgingly *allow* you to enjoy this rare postseason appearance by your favorite team.
 
-I'd always just comiserate that I've also never really liked Ryan Braun, personally - he seems like a meathead and [sells ugly Ed Hardy shirts](https://raw.githubusercontent.com/bradwestness/bradwestness.github.io/master/content/images/braun_shirts.jpg) and [gave that horrendous press conference where he acted like a victim for what turned out to be a legitimate accusation of PED use](http://larrybrownsports.com/baseball/ryan-braun-lies-ped-use/197593). 
+I'd always just comiserate that I've also never really liked Ryan Braun, personally - he seems like a meathead and [sells ugly Ed Hardy shirts](/content/images/braun_shirts.jpg) and [gave that horrendous press conference where he acted like a victim for what turned out to be a legitimate accusation of PED use](http://larrybrownsports.com/baseball/ryan-braun-lies-ped-use/197593). 
 
 That said, he served his 65 game suspension. Not to mention how absurdly hypocritical it is for a fan of the team that Sammy Sosa played for when he broke the Roger Maris single-season home run record to suddenly be a rigidly intolerant about PEDs. Sosa just happened to play at a time when the league was "looking the other way," and tacitly supporting the usage of PEDs due to the breathless media coverage and skyrocketing ticket sales that the home run race created.
 

@@ -31,6 +31,16 @@
         {%- endif -%}
     {%- endcapture -%}
 
+    {%- capture image -%}
+        {%- if post and post.image -%}
+            {{- site.baseurl -}}{{- post.image -}}
+        {%- elsif page and page.image -%}
+            {{- site.baseurl -}}{{- page.image -}}
+        {%- else -%}
+            {{- site.baseurl -}}{{- site.logo -}}
+        {%- endif -%}
+    {%- endcapture -%}
+
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
@@ -41,13 +51,13 @@
     
     <meta property="og:site_name" content="{{ site.sitename }}" />
     <meta property="og:type" content="blog" />
-    <meta property="og:image" content="{{ site.baseurl }}{{ site.logo }}" />
+    <meta property="og:image" content="{{ image }}" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:url" content="http://www.bradwestness.com{{ page.url }}" />
     <meta property="og:description" content="{{- description -}}" />
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:creator" content="bradwestness" />
-    <meta property="twitter:image" content="{{ site.baseurl }}{{ site.logo }}" />
+    <meta property="twitter:image" content="{{ image }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
     <meta property="twitter:description" content="{{- description -}}" />
     
