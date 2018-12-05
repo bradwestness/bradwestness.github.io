@@ -6,7 +6,9 @@ categories: [Tuesdays with Bernie, Brewers, Baseball]
 
 A little bit of team news this week as we get into the off-season trade period.
 
-# Meetings
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SaHrqKKFnSA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Tender is the Day
 
 The Brewers [tendered contract extensions](https://www.mlb.com/brewers/news/brewers-non-tender-jonathan-schoop-2-others/c-301303452) to the following players:
 
@@ -46,7 +48,7 @@ I picked Santana as my "new favorite Brewer" after Carlos Gomez, my previous fav
 
 Shaw has been one of the most consistent offensive producers since he joined the team in 2017, and the heir apparent to Ryan Braun when it comes to batting order. He's not too shabby on defense either, he rarely makes errors and he even handled shifting over to 2nd base midway through the season last year quite handily. Personally, I'd kind of like to see the Brewers keep him at second and use Eric Thames at third, so Thames can get more regular at bats instead of only playing on Aguilar's off-days.
 
-# Partings
+# (Non) Tender is the Night
 
 The team elected to non-tender the following players from the 2018 roster:
 
