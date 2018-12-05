@@ -4,7 +4,7 @@ title: Tuesdays with Bernie No. 5 - Trade Season Begins
 categories: [Tuesdays with Bernie, Brewers, Baseball]
 ---
 
-A little bit of team news this week as we get into the off-season trade period.
+A little bit of team news this week as we get into the off-season trade period. The team had a few tender/non-tender decisions to make at the deadline last Friday.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SaHrqKKFnSA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
