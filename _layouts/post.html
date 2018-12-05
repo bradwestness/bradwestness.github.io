@@ -29,7 +29,9 @@ single: true
             {% assign image = page.image %}
         {% endif %}
         {% if image %}
-            <img src="/{{ image }}" alt="" class="img-fluid" />
+            <p class="post-image">
+                <img src="/{{ image }}" alt="" class="img-fluid" />
+            </p>
         {% endif %}        
         {{ content }}
     </section>
