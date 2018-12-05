@@ -23,8 +23,8 @@ single: true
         </div>
     {% endif %}   
     <section class="post-content">
-        {% if image $}
-            <img src="/{{ image }}" alt="" class="img-fluid" />
+        {% if post and post.image %}
+            <img src="/{{ post.image }}" alt="" class="img-fluid" />
         {% endif %}
         {{ content }}
     </section>
