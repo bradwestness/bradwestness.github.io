@@ -24,7 +24,7 @@ For all the Brewers success in 2018, it's easy to forget that most of their open
 
 #### Junior Guerra
 
-Guerra had to reinvent himself somewhat after struggling quite a bit, but seems to have emerged as a premiere long-relief man. He pitched a herculean 3 and 2/3rds innings of scoreless releif in game 3 of the NLCS against the Dodgers, before they finally scored a walk-off with an RBI single. I'm glad he'll be back.
+Guerra had to reinvent himself somewhat after struggling quite a bit, but seems to have emerged as a premiere long-relief man. He pitched a herculean 3 and 2/3rds innings of scoreless relief in game 3 of the NLCS against the Dodgers, before they finally scored a walk-off with an RBI single. I'm glad he'll be back.
 
 #### Corey Knebel
 
@@ -40,7 +40,7 @@ The loss of Martin Maldonado stung a bit because he was such an unbelievable def
 
 #### Domingo Santana
 
-I picked Santana as my "new favorite Brewer" after Carlos Gomez, my previous favorite, was traded. I really enjoy his lackadaisical charm and he seems to always be having a ton of fun playing the game. Plus, the dude can hit. He was excellent in a pinch hitting role late in the year last year. The only problem is that the Brewers currently have about three excellent outfielders too many, so he might not get much playing time.
+I picked Santana as my "new favorite Brewer" after Carlos Gomez, my previous favorite, was traded. I really enjoy his lackadaisical charm and he seems to always be having a ton of fun playing the game. Plus, the dude can hit. He was excellent in a pinch hitting role late in the year last year. The only problem is that with Yelich, Cain and Braun, the outfield is pretty much nailed down, so Santana is relegated to filling in when Braun needs an off day or if there's injuries, so he might not get much playing time.
 
 #### Travis Shaw
 
@@ -56,8 +56,8 @@ Schoop was kind of a bust, brought in to try to get some offense from the 2nd ba
 
 #### Dan Jennings
 
-Jennings basically filled the Manny Parra/Oliver Drake role in the latter half of the 2018 season, being the releiver the Brewers put in when they had a safe lead, who would then inevitably give up enough runs to make it a close game again. He received less inexplicable praise from the Brewers broadcasters as either Parra or Drake, but I still won't be especially sad to see him go.
+Jennings basically filled the Manny Parra/Oliver Drake role in the latter half of the 2018 season, being the reliever the Brewers put in when they had a safe lead, who would then inevitably give up enough runs to make it a close game again. He received less inexplicable praise from the Brewers' broadcasters as either Parra or Drake, but I still won't be especially sad to see him go.
 
 #### Xavier Cedeno 
 
-As with Jennings, I'm kind of okay with losing Cedeno as he didn't pitch very much and when he did he wasn't /bad/, per se, but not anything to write home about, either.
+I'm kind of okay with losing Cedeno as he didn't pitch very much and when he did he wasn't /bad/, per se, but not anything to write home about, either.
