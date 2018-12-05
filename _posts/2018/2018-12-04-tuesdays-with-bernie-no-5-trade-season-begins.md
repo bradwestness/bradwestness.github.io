@@ -52,7 +52,7 @@ The team elected to non-tender the following players from the 2018 roster:
 
 #### Jonathan Schoop
 
-Schoop was kind of a bust, brought in to try to get some offense from the 2nd base position which the Brewers had been platooning and kind of flailing around with all season, and he was the most expensive in a line of options that never really produced a meaningful amount of offense at the position (Jonathan Villar, Brad Miller, Nate Orf and Tyler Saladino were the others), until they ultimately gave up on 2nd baseman and brought in Moustakas and moved Travis Shaw over to 2nd, which wound up being pretty successful.
+Schoop was kind of a bust, brought in to try to get some offense from the 2nd base position which the Brewers had been platooning and kind of flailing around with all season, and he was the most expensive in a line of options that never really produced a meaningful amount of offense at the position (Jonathan Villar, Brad Miller, Nate Orf and Tyler Saladino were the others), until they ultimately gave up on 2nd basemen and brought in Moustakas and moved Travis Shaw over to 2nd, which wound up being pretty successful.
 
 #### Dan Jennings
 
