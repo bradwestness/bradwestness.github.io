@@ -6,7 +6,9 @@ categories: [Tuesdays with Bernie, Brewers, Baseball]
 
 A little bit of team news this week as we get into the off-season trade period. The team had a few tender/non-tender decisions to make at the deadline last Friday.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SaHrqKKFnSA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SaHrqKKFnSA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 # Tender is the Day
 
