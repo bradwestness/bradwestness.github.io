@@ -21,8 +21,13 @@ single: true
                 {% endfor %}
             </div>
         </div>
-    {% endif %}
-    <section class="post-content">{{ content }}</section>
+    {% endif %}   
+    <section class="post-content">
+        {% if image $}
+            <img src="/{{ image }}" alt="" class="img-fluid" />
+        {% endif %}
+        {{ content }}
+    </section>
     <footer class="post-footer">
         <div class="clearfix">
             <section class="author pull-left">
