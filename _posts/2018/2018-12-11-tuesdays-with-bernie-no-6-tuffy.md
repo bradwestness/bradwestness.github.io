@@ -13,7 +13,7 @@ I was sad when the team lost Bandy, mostly because "Jett Bandy" is just such a g
 
 The best part about Tuffy Gosewisch's name, the thing that makes it truly great, are that both the first *and* last names are absurd. If his name was Tuffy Smith or something, that'd still be mildly funny. But "Gosewisch" is funny in and of it self, which is like a multiplier to the inherently funny Tuffy. 
 
-Every time I hear this guy's name, I am going to do a double-take where, for a split second, I assume someone is trying to trick me with a ("Loser Says What")[https://www.youtube.com/watch?v=G8dXG6jp-b4] type prank.
+Every time I hear this guy's name, I am going to do a double-take where, for a split second, I assume someone is trying to trick me with a ["Loser Says What"](https://www.youtube.com/watch?v=G8dXG6jp-b4) type prank.
 
 <div class="embed-responsive embed-responsive-16by9">
 <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=YgSPaXgAdzE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
