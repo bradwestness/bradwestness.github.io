@@ -41,6 +41,13 @@
         {%- endif -%}
     {%- endcapture -%}
 
+    {%  twitter_card = 'summary' %}    
+    {% if post and post.image %}
+        {% assign twitter_card = 'summary_large_image' %}
+    {% elsif page and page.image %}
+        {% assign twitter_card = 'summary_large_image' %}
+    {% endif %}
+
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
@@ -56,7 +63,7 @@
     <meta property="og:url" content="http://www.bradwestness.com{{ page.url }}" />
     <meta property="og:description" content="{{- description -}}" />
     
-    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:card" content="{{- twitter_card -}}" />
     <meta property="twitter:site" content="@bradwestness" />
     <meta property="twitter:creator" content="@bradwestness" />
     <meta property="twitter:siteid" content="17199669" />
