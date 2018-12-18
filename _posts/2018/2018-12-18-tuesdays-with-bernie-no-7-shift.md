@@ -19,7 +19,7 @@ all four infielders on one side of the field, essentially leaving either third o
 Personally, I think this is a cool aspect of the game, it's another one of the things about baseball that
 is open-ended, so each team has a lot of room to strategize in a way that makes sense for them. Similarly
 to how there's no official measurements for the in-field wall, meaning every stadium has it's own delightfully
-unique peccadillos, and there's no minimum number of batters faced for a starting pitcher, which enables things
+unique peccadillos. And how there's no minimum number of batters faced for a starting pitcher, which enables things
 like Craig Counsell's unprecedented "fake start" of Wade Miley in Game 6 of the NLCS last year.
 
 If you shift all your infielders onto one half of the field, you're by definition leaving the other half totally
