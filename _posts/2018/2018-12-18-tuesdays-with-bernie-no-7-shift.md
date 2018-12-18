@@ -26,17 +26,17 @@ If you shift all your infielders onto one half of the field, you're by definitio
 open. This is a huge risk. So it's not like there's no downside to shifting. If the batter is capable of hitting
 a bloop to the opposite field, or even laying down a bunt, they are almost guaranteed a hit. So I don't understand
 the argument that it's "not fair." It's a gamble, and if you're willing to take it, it can pay off, but it can
-also bite you. In fact, I'd argue it encourages batters to become more "complete hitters," get good enough at
+also bite you. In fact, I'd argue it encourages batters to become more "complete hitters." Get good enough at
 bunting and hitting to all fields that the other team doesn't feel comfortable shifting on you.
 
-The other argument I really don't understand is that banning the shift will somehow "speed up the game." This seems
+The other argument I really don't understand is that banning the shift will somehow *speed up the game*. This seems
 entirely at odds with the idea that shifting is unfair because it's so hard to get a hit against. Hits make the game
-take longer, the more hits there are, the more at-bats there are, the more pitching changes there are, and pitching
-changes are the biggest contributor to "downtime" during a baseball game. The shift actually *speeds up* the game,
-because it works.
+take longer. The more hits there are, the more at-bats there are. The more at-bats there are, the more pitching 
+changes there are, and pitching changes are the biggest contributor to "downtime" during a baseball game. The shift
+actually *speeds up* the game, because it works.
 
 So while I don't think that some restriction, like "there must be two infielders on either side of second base at all
 times" would irreparably harm the game, I do think it's kind of wrong-headed and silly. I think the shift is another
 tool in the belt of the team's coaches and analysts, and like most sabermetrics type trends in baseball, it actually
-helps smaller market teams compete against the big market teams, which expands the universe of competitive teams,
+helps smaller market teams compete against the big market teams. Which expands the universe of competitive teams,
 which is good.
