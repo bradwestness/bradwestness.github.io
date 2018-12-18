@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tuesdays with Bernie No. 7 - Shift
+title: Tuesdays with Bernie No. 7 - Shift Happens
 categories: [Tuesdays with Bernie, Brewers, Baseball]
 image: content/images/shift.png
 ---
