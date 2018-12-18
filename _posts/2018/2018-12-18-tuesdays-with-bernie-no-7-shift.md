@@ -5,16 +5,16 @@ categories: [Tuesdays with Bernie, Brewers, Baseball]
 image: content/images/shift.png
 ---
 
-There have been rumblings this off-season that the MLB might take steps to reign in defensive "shifting," 
-which is a sabermetrics-driven strategy that a lot of teams use to position their fielders in specific
-places for each batter of the opposing team according to the "spray chart" of that particular hitter
-(e.g. they're 60% likely to hit it to left-center, 30% likely to hit it down the left field line), and
-5% likely to go to the opposite field). 
+There have been rumblings this off-season that the MLB might take steps to reign in defensive "shifting." 
+Which is a sabermetrics-driven strategy that a lot of teams use to position their fielders in specific
+places for each batter of the opposing team according to the "spray chart" of that particular hitter.
 
-For batters who almost never "go the other way" (left-handed batters hitting to left field, right-handed batters
-hitting to right field), it makes sense to position your infielders where they're most likely to hit the ball,
-reducing the liklihood of allowing a hit. This means that, in extreme occasions, you might actually position
-all four infielders on one side of the field, essentially leaving either third or first base un-protected.
+Let's say a hitter's stats say they're 60% likely to hit it to left-center, 30% likely to hit it down
+the left field line), and 5% likely to go to the opposite field. With their percentage of opposite-field
+hits so low, it might make sense to position as many fielders as you can in the spot where they hit the
+ball the most often. Sort of the defevnsive side of the old "hit 'em where they ain't" saw, 
+"position 'em where they hit 'em." In extreme occasions, you might actually position all four infielders
+on one side of the field, essentially leaving either third or first base un-defended.
 
 Personally, I think this is a cool aspect of the game, it's another one of the things about baseball that
 is open-ended, so each team has a lot of room to strategize in a way that makes sense for them. Similarly
