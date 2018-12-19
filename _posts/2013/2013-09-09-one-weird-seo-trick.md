@@ -7,7 +7,7 @@ categories: [Software, Programming]
 The title of this blog is a good example of dumb keyword bait. Personally I'm a fan of tried-and-true techniques to legitimately garner more visitors, as told in <a href="http://www.youtube.com/watch?v=fnSJBpB_OKQ">Charles Lewis' Page Rank Rap</a>:
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315" src="http://www.youtube.com/embed/fnSJBpB_OKQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fnSJBpB_OKQ" frameborder="0" allowfullscreen></iframe>
 </div>
 
 I ran the three most recent posts on this blog through the <a href="http://codyromano.com/buzzgrade">Buzz Grade</a> system, and apparently the buzzword I like to use most is "grow".

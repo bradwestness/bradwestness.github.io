@@ -8,7 +8,7 @@ In team news, Craig Counsell came in second in the manager of the year balloting
 
 # Rooting for Laundry
 
-To expand on some of the topics I discussed in [last week's entry](http://www.bradwestness.com/2018/11/13/tuesdays-with-bernie-no-3-unrequested-permission/), I wanted to take a moment to discuss more about the "performative rivalry" between the Cubs and the Brewers.
+To expand on some of the topics I discussed in [last week's entry](https://www.bradwestness.com/2018/11/13/tuesdays-with-bernie-no-3-unrequested-permission/), I wanted to take a moment to discuss more about the "performative rivalry" between the Cubs and the Brewers.
 
 I don't really put a lot of stock in "fandom," especially in sports, as it's mostly just empty tribalism with nobody having any real justification for the team they support other than happenstance. I happen to be a Brewers fan, because my dad took me to Brewers games at Milwaukee County Stadium growing up. I mostly love baseball. If I had grown up outside Pittsburgh I'm sure I'd be a Pirates fan, or if I lived in Michigan, like some of my cousins, I'd be a Tigers fan.
 

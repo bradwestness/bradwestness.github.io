@@ -4,7 +4,7 @@ title: The Pit of Poor Performance - Part 2
 categories: [Software, .NET, Programming]
 ---
 
-In the [first part](http://www.bradwestness.com/2017/10/19/the-pit-of-poor-performance-part-1/) of this post, I laid out the problem at hand and the code for some of the more high-level business logic. I left off by mentioning that the calls to the "repository" classes were hiding complexity which resulted in disastrously poor performance. In this post, I'll dig into those methods and how I ultimately refactored them to increase the performance by over an order of magnitude.
+In the [first part](https://www.bradwestness.com/2017/10/19/the-pit-of-poor-performance-part-1/) of this post, I laid out the problem at hand and the code for some of the more high-level business logic. I left off by mentioning that the calls to the "repository" classes were hiding complexity which resulted in disastrously poor performance. In this post, I'll dig into those methods and how I ultimately refactored them to increase the performance by over an order of magnitude.
 
 ## The Problem
 

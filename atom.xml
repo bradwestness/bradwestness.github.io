@@ -4,10 +4,10 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Brad Westness.com | A simple man in complex times.</title>
-  <link href="http://www.bradwestness.com/atom.xml" rel="self"/>
-  <link href="http://www.bradwestness.com"/>
+  <link href="https://www.bradwestness.com/atom.xml" rel="self"/>
+  <link href="https://www.bradwestness.com"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://www.bradwestness.com/</id>
+  <id>https://www.bradwestness.com/</id>
   <author>
     <name>Brad Westness</name>
     <email>brad.westness@outlook.com</email>
@@ -15,9 +15,9 @@ layout: nil
   {% for post in site.posts %}
   <entry>
     <title>{{ post.title }}</title>
-    <link href="http://www.bradwestness.com{{ post.url }}"/>
+    <link href="https://www.bradwestness.com{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>http://www.bradwestness.com{{ post.id }}</id>
+    <id>https://www.bradwestness.com{{ post.id }}</id>
     <content type="html">{{ post.excerpt | strip_html | xml_escape }}</content>
   </entry>
   {% endfor %}

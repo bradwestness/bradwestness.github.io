@@ -26,7 +26,7 @@ Copy from "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Comm
 
 It seems as though the Build Tools installer now includes an option to install the required NuGet targets and project dependencies required to build both types of .csproj formats as of version 15.4.1. There's now an option for "NuGet targets and build tasks" that can be selected in the installer, which should obviate the need for this step.
 
-[![NuGet targets and build tasks](http://www.bradwestness.com/content/images/build_tools_nuget_targets.PNG "NuGet targets and build tasks")](http://www.bradwestness.com/content/images/build_tools_nuget_targets.PNG)
+[![NuGet targets and build tasks](https://www.bradwestness.com/content/images/build_tools_nuget_targets.PNG "NuGet targets and build tasks")](https://www.bradwestness.com/content/images/build_tools_nuget_targets.PNG)
 
 ## NuGet Restore
 

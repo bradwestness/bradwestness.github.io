@@ -10,7 +10,7 @@ skip *Episode I* entirely, but my modified version retains the order but keeps a
 because I'm a completist. I also think *Episode I* gets an unfairly bad reputation and has
 a lot of good to offer.
 
-![Promotional image courtesy of Lucasfilm.](http://www.bradwestness.com/content/images/ep1duel.jpg)
+![Promotional image courtesy of Lucasfilm.](https://www.bradwestness.com/content/images/ep1duel.jpg)
 
 ### The Trade Dispute
 

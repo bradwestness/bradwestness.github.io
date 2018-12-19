@@ -4,8 +4,8 @@ title: Nintendo Switch First Impressions, Part 4
 categories: [Nintendo, Games]
 ---
 
-In [Part 1](http://www.bradwestness.com/2017/03/19/nintendo-switch-first-impressions-part-1) of this series, I talked about my overall impressions of the Switch and it's
-place in the spectrum of "home console" versus "handheld" gaming system. [Part 2](http://www.bradwestness.com/2017/03/20/nintendo-switch-first-impressions-part-2) covered some more detail about the ingenius Joy Con controllers as well as the Pro Controller, and the different modes of play that the system supports. [Part 3](http://www.bradwestness.com/2017/03/21/nintendo-switch-first-impressions-part-3) covered the software end of things, including the system software, *Snipperclips*, and *1-2-Switch*. This post will focus on *The Legend of Zelda: Breath of the Wild*.
+In [Part 1](https://www.bradwestness.com/2017/03/19/nintendo-switch-first-impressions-part-1) of this series, I talked about my overall impressions of the Switch and it's
+place in the spectrum of "home console" versus "handheld" gaming system. [Part 2](https://www.bradwestness.com/2017/03/20/nintendo-switch-first-impressions-part-2) covered some more detail about the ingenius Joy Con controllers as well as the Pro Controller, and the different modes of play that the system supports. [Part 3](https://www.bradwestness.com/2017/03/21/nintendo-switch-first-impressions-part-3) covered the software end of things, including the system software, *Snipperclips*, and *1-2-Switch*. This post will focus on *The Legend of Zelda: Breath of the Wild*.
 
 ## Greatness In the Air
 

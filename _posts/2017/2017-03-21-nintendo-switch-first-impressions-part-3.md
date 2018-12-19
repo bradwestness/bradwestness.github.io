@@ -4,8 +4,8 @@ title: Nintendo Switch First Impressions, Part 3
 categories: [Nintendo, Games]
 ---
 
-In [Part 1](http://www.bradwestness.com/2017/03/19/nintendo-switch-first-impressions-part-1) of this series, I talked about my overall impressions of the Switch and it's
-place in the spectrum of "home console" versus "handheld" gaming system. [Part 2](http://www.bradwestness.com/2017/03/20/nintendo-switch-first-impressions-part-2) covered some more detail about the ingenius Joy Con controllers as well as the Pro Controller, and the different modes of play that the system supports. In this
+In [Part 1](https://www.bradwestness.com/2017/03/19/nintendo-switch-first-impressions-part-1) of this series, I talked about my overall impressions of the Switch and it's
+place in the spectrum of "home console" versus "handheld" gaming system. [Part 2](https://www.bradwestness.com/2017/03/20/nintendo-switch-first-impressions-part-2) covered some more detail about the ingenius Joy Con controllers as well as the Pro Controller, and the different modes of play that the system supports. In this
 part I will focus on the software, both the main system software as well as some games. I will leave discussion of the flagship Zelda game for its own post.
 
 ## System Software

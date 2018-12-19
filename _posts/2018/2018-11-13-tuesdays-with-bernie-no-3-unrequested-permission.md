@@ -5,7 +5,7 @@ categories: [Tuesdays with Bernie, Brewers, Baseball]
 image: content/images/braun_shirts.jpg
 ---
 
-Pretty slow news week this week. In official team news, it's mostly just been updates about prospect [Kenston Hiura having some pretty good success in the Arizona Fall Leagues](https://www.mlb.com/brewers/news/arizona-fall-league-roundup-for-november-10/c-300542384), as well as [Christian Yelich winning his second Silver Slugger award](https://www.mlb.com/brewers/news/silver-slugger-award-winners-announced/c-300459892), in addition to his [Hank Aaron award for 2018](http://www.bradwestness.com/2019/11/06/tuesdays-with-bernie-no-2-awards-season/). 
+Pretty slow news week this week. In official team news, it's mostly just been updates about prospect [Kenston Hiura having some pretty good success in the Arizona Fall Leagues](https://www.mlb.com/brewers/news/arizona-fall-league-roundup-for-november-10/c-300542384), as well as [Christian Yelich winning his second Silver Slugger award](https://www.mlb.com/brewers/news/silver-slugger-award-winners-announced/c-300459892), in addition to his [Hank Aaron award for 2018](https://www.bradwestness.com/2019/11/06/tuesdays-with-bernie-no-2-awards-season/). 
 
 When I started this blog series, I was actually sort of excited for the slow news weeks of the off-season, because I wanted to use them as an opportunity to talk about some more general baseball topics, as opposed to just dryly recounting team news or speculating about potential trades, which I don't really find that interesting.
 
