@@ -20,7 +20,7 @@ well with how I wanted to manage my media library. You simply back up your
 music into OneDrive (specifically in the "Music" folder), and then the Groove
 music app automagically populates your library.
 
-![Groove Music app on Windows 10 Mobile]({{ site.baseurl }}/content/images/groove-music-windows-10-mobile.jpg)
+![Groove Music app on Windows 10 Mobile]({{ site.baseurl }}content/images/groove-music-windows-10-mobile.jpg)
 
 The nice thing about this setup is that you didn't really have to do any work
 to get your music library onto your mobile device, just log into the Groove
@@ -37,7 +37,7 @@ else receives security updates in a sane way). Microsoft still had my back here,
 they released an effectively identical Groove app for Android which worked the same,
 pulling in all the music I have in OneDrive and letting me keep things offline if I wish.
 
-![Groove Music app on Android and iPhone]({{ site.baseurl }}/content/images/groove-explore-android-iphone-hero.jpg)
+![Groove Music app on Android and iPhone]({{ site.baseurl }}content/images/groove-explore-android-iphone-hero.jpg)
 
 ## Groove is in the Heart
 
@@ -70,13 +70,13 @@ There are a couple third party music apps available that can read your music out
 I actually paid for the "pro" version of [CloudPlayer](https://play.google.com/store/apps/details?id=com.doubleTwist.cloudPlayer&hl=en),
 however I found it to be pretty buggy and unstable when attempting to sync my large-ish collection.
 
-![CloudPlayer app on Android]({{ site.baseurl }}/content/images/cloud-player.png)
+![CloudPlayer app on Android]({{ site.baseurl }}content/images/cloud-player.png)
 
 Another option is to use [Google Play Music Manager](https://support.google.com/googleplaymusic/answer/1075570?hl=en)
 to sync my media collection up to the Google cloud, and then use the Google Play Music app to play the
 music back on my phone. This approach has a couple dealbreaker aspects for me:
 
-![Google Play Music Manager app on Windows]({{ site.baseurl }}/content/images/Google-Play-Music-Manager-608x390.jpg)
+![Google Play Music Manager app on Windows]({{ site.baseurl }}content/images/Google-Play-Music-Manager-608x390.jpg)
 
 1. The "matching" system that Google Music uses means that even though you own the albums and are syncing your personal MP3s, you can only actually listen to music that Google has licensed via the Google Play store
 2. The Google Play Music app is mostly a front-end for purchasing music. There is an option to show "downloaded only" music, but when you do that, you get an omnipresent banner throughout the app pestering you to disable it and buttons everywhere trying to get you to buy things through the Google Play store
@@ -95,7 +95,7 @@ There are two components:
 
 On the desktop app, hit the big plus-sign in the upper left of the main Resilio window to create a new share. "Standard folder" works fine for this.
 
-![Resilio Setup - add standard share]({{ site.baseurl }}/content/images/resilio-setup-1.png)
+![Resilio Setup - add standard share]({{ site.baseurl }}content/images/resilio-setup-1.png)
 
 Select the folder where your music files are stored (for me this is the OneDrive "Music" folder).
 
@@ -110,11 +110,11 @@ Hit the hamburger menu in the upper left and go to "Settings".
 
 Under General, I turned Auto-start, Battery saver and Auto-sleep all on.
 
-![Resilio Setup - General Settings]({{ site.baseurl }}/content/images/resilio-settings-general.png)
+![Resilio Setup - General Settings]({{ site.baseurl }}content/images/resilio-settings-general.png)
 
 Under Network, I turned "Use mobile data" off, so Resilio will only sync my files while in Wi-Fi to avoid incurring a ton of cellular data usage.
 
-![Resilio Setup - Network Settings]({{ site.baseurl }}/content/images/resilio-settings-network.png)
+![Resilio Setup - Network Settings]({{ site.baseurl }}content/images/resilio-settings-network.png)
 
 Under Advanced, and this is the really important part, I set my "Default folder location" and "File download location" both to the default music folder, /storage/emulated/0/Music. This means that the music files I sync via Resilio should automatically show up in other media player apps since they're in the default system location for music. 
 
@@ -122,7 +122,7 @@ I turned off "Autoupdate Gallery," if you leave this on and you have image files
 it will cause every folder in your media library to show up as if it's a photo folder, which can be annoying in e.g. Instagram when trying to find a photo
 and you see 500 folders for every album in your media library.
 
-![Resilio Setup - Advanced Settings]({{ site.baseurl }}/content/images/resilio-settings-advanced.png)
+![Resilio Setup - Advanced Settings]({{ site.baseurl }}content/images/resilio-settings-advanced.png)
 
 ### Step 3 - Subscribe to the Share
 
@@ -137,8 +137,8 @@ So far I've been happiest just using [VLC for Android](https://play.google.com/s
 (I always rip my albums directly to the OneDrive music folder using [Exact Audio Copy](http://exactaudiocopy.de/)), they'll automatically sync down to your mobile device when you're on
 wifi.
 
-![VLC for Android - Library]({{ site.baseurl }}/content/images/vlc-app-library.png)
+![VLC for Android - Library]({{ site.baseurl }}content/images/vlc-app-library.png)
 
-![VLC for Android - Now Playing]({{ site.baseurl }}/content/images/vlc-app-now-playing.png)
+![VLC for Android - Now Playing]({{ site.baseurl }}content/images/vlc-app-now-playing.png)
 
 Happy listening!
