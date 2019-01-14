@@ -137,7 +137,7 @@ While neither are as blatantly offensive as the Washington NFL team, they're sti
 The fact that there were once Native Americans living where the teams now play is not unique to any given area of the country, and the origins of the team names were both essentially "started as a nickname by racists in 1910 because there was a single Native American guy on the team at the time."
 
 #### Atlanta Braves
-Named for a term for Native American warriors. Do "the chop" incessantly whenever they're in the postseason. Get a different thing, guys. Atlanta was founded as the intersection of the Western and Atlantic railroads, and is now home to the world's busiest airport. Something relating to it's global status as a "hub" seems appropriate.
+Named for a term for Native American warriors. Fans do "the chop" incessantly whenever they're in the postseason, which is bad optics when it's a stadium full of non-Native Americans. Get a different thing, guys. Atlanta was founded as the intersection of the Western and Atlantic railroads, and is now home to the world's busiest airport. Something relating to it's global status as a "transport hub" seems appropriate.
 
 #### Cleveland Indians
 Originally named the Napoleons (or "Naps") after player/manager Nap Lajoie, renamed to Indians after Lajoie departed the team in 1914. They did just officially retire Chief Wahoo, but that's literally the least they could do. Change the name, folks. Cleveland is the home to the Rock & Roll Hall of Fame, and it's major industry is healthcare. Plenty to work with.
