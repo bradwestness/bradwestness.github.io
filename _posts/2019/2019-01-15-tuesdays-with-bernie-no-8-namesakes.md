@@ -32,7 +32,7 @@ Named after the "[American Royal](https://en.wikipedia.org/wiki/American_Royal)"
 Named for Houston's involvement in the US space program. That's just cool.
 
 #### 4th Place: Seattle Mariners
-Named for the prominent marine culture in the city of Seattle.
+Named for the prominent marine culture in the city of Seattle. A nice, blue-collar feel.
 
 #### 5th Place: Texas Rangers
 Named for the law enforcement agency of the same name. Last place because "we have a police force" is a weaksauce thing to name your team after.
@@ -65,10 +65,10 @@ Originally the Highlanders, the team officially adopted the "Yankees" nickname i
 These teams have namesakes which refer to local geography or wildlife.
 
 #### 1st Place: San Diego Padres
-Named for the Spanish term for the Franciscan friars, who founded San Diego.
+Named for the Spanish term for the Franciscan friars, who founded San Diego. I like it because it's the opposite of a try-hard namesake. When you think of "friars," you think of guys with bald spots wearing sack-cloth robes, not intimidating athletes.
 
 #### 2nd Place: Minnesota Twins
-Named after the Twin Cities of Minneapolis and St. Paul, Minnesota.
+Named after the Twin Cities of Minneapolis and St. Paul, Minnesota. Ranks high because of the [adorable old logo of the two personified cities shaking hands](https://sports.cbsimg.net/images/visual/whatshot/twins-logo-2015.jpg).
 
 #### 3rd Place: Baltimore Orioles
 Named for the official state bird of Maryland. Scores above the other bird teams because it's the state bird and not just a bird who lives in the area but also a bunch of other areas.
@@ -125,7 +125,7 @@ predisposed to stupid "badass" posturing than MLB teams in general.
 Named for the mythical creatures.
 
 #### 2nd Place: Detroit Tigers
-Named after tigers. Which have no connection to the city of Detroit, as far as I can tell.
+Named after Bengal tigers, from India. Which have no connection to the city of Detroit, as far as I can tell. They share a name with [Bugs Meany's gang](https://en.wikipedia.org/wiki/Encyclopedia_Brown#Formula) of "tough 14 year olds" from the *Encyclopedia Brown* series of books.
 
 ## Group 7 - Racist (Non-Sporting Group)
 Did I say the group of random predatory animals was my least favorite? That's because I blocked out even counting this group. 
