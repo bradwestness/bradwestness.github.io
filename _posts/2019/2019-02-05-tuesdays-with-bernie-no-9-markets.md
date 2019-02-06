@@ -51,7 +51,7 @@ as action, too), I do think it's really a feature and not a bug for the casual o
 As a six or seven year old attending a meaningless regular-season afternoon game between the 
 Brewers and some other mathematically eliminated team, I wasn't exactly given to closely
 watching every pitch. But I did have a blast moving around from section to section, glove in hand,
-debating with my brothers about the best spot to catch a foul ball.
+debating with my brothers and sister about the best spot to catch a foul ball.
 
 Every so often, the bat would crack and the crowd would snap to attention to watch a long, loud
 out, or you'd stretch out your arm to try and catch a foul that wound up landing six sections away. You'd sing along to "Hit the Road Jack" whenever the Brewers chased the opposing starting pitcher.
