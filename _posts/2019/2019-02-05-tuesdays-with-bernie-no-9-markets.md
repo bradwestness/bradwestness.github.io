@@ -56,4 +56,4 @@ debating with my brothers and sister about the best spot to catch a foul ball.
 Every so often, the bat would crack and the crowd would snap to attention to watch a long, loud
 out, or you'd stretch out your arm to try and catch a foul that wound up landing six sections away. You'd sing along to "Hit the Road Jack" whenever the Brewers chased the opposing starting pitcher.
 
-And if you were really lucky, you might even see Bernie take the plunge once or twice, releasing a boquet of blue and yellow balloons into the summer sky.
+And if you were really lucky, you might even see Bernie take the plunge down his slide once or twice, releasing a boquet of blue and yellow balloons into the summer sky.
