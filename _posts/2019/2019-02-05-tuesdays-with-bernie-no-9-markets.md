@@ -49,11 +49,11 @@ While I don't think this is actually true if you're paying attention (strikeouts
 as action, too), I do think it's really a feature and not a bug for the casual observer.
 
 As a six or seven year old attending a meaningless regular-season afternoon game between the 
-Brewers and some other mathematically eliminated NL team, I wasn't exactly given to closely
-watch every pitch. But I did have a blast moving around from section to section, glove in hand,
-debating with my brothers about the best spot to maybe catch a foul ball.
+Brewers and some other mathematically eliminated team, I wasn't exactly given to closely
+watching every pitch. But I did have a blast moving around from section to section, glove in hand,
+debating with my brothers about the best spot to catch a foul ball.
 
 Every so often, the bat would crack and the crowd would snap to attention to watch a long, loud
-out, or stretch out your arm to catch a foul that wound up landing six sections away. You'd sing along to "Hit the Road Jack" whenever the Brewers chased the opposing starting pitcher.
+out, or you'd stretch out your arm to try and catch a foul that wound up landing six sections away. You'd sing along to "Hit the Road Jack" whenever the Brewers chased the opposing starting pitcher.
 
-If you were really lucky, you might even see Bernie take the plunge once or twice, releasing a boquet of blue and yellow balloons into the summer sky.
+And if you were really lucky, you might even see Bernie take the plunge once or twice, releasing a boquet of blue and yellow balloons into the summer sky.
