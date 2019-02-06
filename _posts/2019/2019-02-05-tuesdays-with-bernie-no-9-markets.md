@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tuesdays with Bernie No. 8 - Markets
+title: Tuesdays with Bernie No. 9 - Markets
 categories: [Tuesdays with Bernie, Brewers, Baseball]
 image: content/images/county_stadium.jpg
 ---
