@@ -13,8 +13,7 @@ That sort of negated part of my argument for the Brewers having the best namesak
 in the league, since the corporate-named stadium will no longer be "on theme."
 
 Being as it's headquartered out of Madison, American Family is on the not-so-horrible end of
-the corporate naming sponsor in my opinion. Assuming, at least, that the ultimate name of
-the stadium ends up being something innocuous like "American Family Ballpark" and not
+the corporate naming sponsor spectrum in my opinion. Assuming, at least, that the ultimate name of the stadium ends up being something innocuous like "American Family Ballpark" and not
 something truly gross like "Discount Double-check Field" (yes, I know that the "discount 
 double-check" thing is actually State Farm). 
 
@@ -42,6 +41,8 @@ We would always make a point of trying to get "the wave" going, exhorting the si
 a huge accomplishment when someone would humor us and join in for a few rounds, although it
 never really made it more than a section or two over since there were generally so few people
 in attendance that you couldn't really track the wave's motion around the stadium.
+
+![Sparse Attendance](https://www.bradwestness.com/content/images/sparse.jpg)
 
 People like to complain that baseball is boring because the action comes in fits and starts.
 While I don't think this is actually true if you actually pay attention (strikeouts count
