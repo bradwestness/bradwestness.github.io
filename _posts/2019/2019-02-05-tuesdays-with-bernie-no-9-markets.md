@@ -20,7 +20,7 @@ double-check" thing is actually State Farm).
 Shade thrown, [Guaranteed Rate Field](https://en.wikipedia.org/wiki/Guaranteed_Rate_Field).
 
 Mostly, I think I'll probably never stop referring to the stadium as "Miller Park," because
-that's what will have been called for 20 seasons, and old habits die hard, etc. Even Milwaukee
+that's what it will have been called for 20 seasons, and old habits die hard, etc. Even Milwaukee
 mayor Tom Barrett said he doesn't think the city will change the name of "Miller Park Way"
 (the frontage road that connects the stadium to the interstate).
 
