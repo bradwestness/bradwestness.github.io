@@ -4,17 +4,19 @@ permalink: /categories/
 title: Categories
 ---
 
-<dl class="post-list">
+<section class="post-list">
     {% for category in site.categories %}
         {% capture category_name %}{{ category | first }}{% endcapture %}
         <a name="{{ category_name | slugify }}"></a>
-        <dt id="#{{ category_name | slugify }}" class="col-sm-2">{{ category_name }}</dt>
-        <dd class="col-sm-9">
+        <h2 id="#{{ category_name | slugify }}" class="category">{{ category_name }}</h2>
+        <ul>
             {% for post in site.categories[category_name] %}
-            <p>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-            </p>
-            {% endfor %}   
-        </dd>
+            <li>
+                <h3 itemprop="name" class="post-item-title">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </h3>
+            </li>
+            {% endfor %}    
+        </ul>
     {% endfor %}
-</dl>
+</section>
