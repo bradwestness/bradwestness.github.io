@@ -5,7 +5,7 @@ title: Categories
 ---
 
 <section class="post-list">
-    {% for category in site.categories | sort %}
+    {% for category in site.categories | upcase | sort %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div class="row">
         <div class="col-4 text-right">
