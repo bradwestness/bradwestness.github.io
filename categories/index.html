@@ -5,7 +5,8 @@ title: Categories
 ---
 
 <section class="post-list">
-    {% for category in site.categories | upcase | sort %}
+    {% assign sorted_categories = (site.categories | sort:0) }
+    {% for category in sorted_categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div class="row">
         <div class="col-4 text-right">
