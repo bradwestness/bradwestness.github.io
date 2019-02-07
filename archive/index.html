@@ -10,16 +10,23 @@ title: Archive
     {% unless year == this_year %}
     {% assign year = this_year %}
     {% unless forloop.first %}
-    </ul>
+            </ul>
+        </div>
+    </div>
     {% endunless %}
-    <h2 class="year">{{ date | date: "%Y" }}</h2>
-    <ul>
-        {% endunless %}
-        <li>
-            <h3 itemprop="name" class="post-item-title">
-                <a href="{{ post.url }}">{{ post.title }}</a>
-            </h3>
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="row">
+        <div class="col-4 text-right">
+            <a name="{{ date | date: '%Y' }}"></a>
+            <h2 id="#{{ date | date: '%Y' }}" class="year">{{ date | date: "%Y" }}</h2>
+        </div>
+        <div class="col-8">
+            <ul class="list-unstyled">
+            {% endunless %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
 </section>
