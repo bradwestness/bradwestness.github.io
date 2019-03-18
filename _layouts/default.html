@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>{{ page.title }} | Brad Westness.com</title>
 
     {%- capture description -%}
-        {%- if post and post.excerpt -%}
-            {{- post.excerpt | strip_html -}}
-        {%- elsif post and post.description -%}
-            {{- post.description | strip_html -}}
-        {%- elsif post and post.content -%}
-            {{- post.content | strip_html | truncatewords: 50 -}}
-        {%- elsif page and page.description -%}
-            {{- page.description | strip_html -}}
-        {%- elsif page and page.content -%}
-            {{- page.content | strip_html | truncatewords: 50 -}}
-        {%- else -%}
-            {{- site.description | strip_html -}}
-        {%- endif -%}
+    {%- if post and post.excerpt -%}
+    {{- post.excerpt | strip_html -}}
+    {%- elsif post and post.description -%}
+    {{- post.description | strip_html -}}
+    {%- elsif post and post.content -%}
+    {{- post.content | strip_html | truncatewords: 50 -}}
+    {%- elsif page and page.description -%}
+    {{- page.description | strip_html -}}
+    {%- elsif page and page.content -%}
+    {{- page.content | strip_html | truncatewords: 50 -}}
+    {%- else -%}
+    {{- site.description | strip_html -}}
+    {%- endif -%}
     {%- endcapture -%}
 
     {%- capture keywords -%}
-        {%- if post and post.categories -%}
-            {{- post.categories | join: ',' -}}
-        {%- elsif page and page.categories -%}
-            {{- page.categories | join: ',' -}}
-        {%- else -%}
-            {{- site.keywords -}}
-        {%- endif -%}
+    {%- if post and post.categories -%}
+    {{- post.categories | join: ',' -}}
+    {%- elsif page and page.categories -%}
+    {{- page.categories | join: ',' -}}
+    {%- else -%}
+    {{- site.keywords -}}
+    {%- endif -%}
     {%- endcapture -%}
 
     {%- capture image -%}
-        {%- if post and post.image -%}
-            {{- site.baseurl -}}{{- post.image -}}
-        {%- elsif page and page.image -%}
-            {{- site.baseurl -}}{{- page.image -}}
-        {%- else -%}
-            {{- site.baseurl -}}{{- site.logo -}}
-        {%- endif -%}
+    {%- if post and post.image -%}
+    {{- site.baseurl -}}{{- post.image -}}
+    {%- elsif page and page.image -%}
+    {{- site.baseurl -}}{{- page.image -}}
+    {%- else -%}
+    {{- site.baseurl -}}{{- site.logo -}}
+    {%- endif -%}
     {%- endcapture -%}
 
-    {% assign twitter_card = 'summary' %}    
+    {% assign twitter_card = 'summary' %}
     {% if post and post.image %}
-        {% assign twitter_card = 'summary_large_image' %}
+    {% assign twitter_card = 'summary_large_image' %}
     {% elsif page and page.image %}
-        {% assign twitter_card = 'summary_large_image' %}
+    {% assign twitter_card = 'summary_large_image' %}
     {% endif %}
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Brad Westness" />
     <meta name="copyright" content="Brad Westness" />
     <meta name="description" content="{{- description -}}" />
     <meta name="keywords" content="{{- keywords -}}" />
-    
+
     <meta property="og:site_name" content="{{ site.sitename }}" />
     <meta property="og:type" content="article" />
     <meta property="og:image" content="{{ image }}" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:url" content="https://www.bradwestness.com{{ page.url }}" />
     <meta property="og:description" content="{{- description -}}" />
-    
+
     <meta property="twitter:card" content="{{ twitter_card }}" />
     <meta property="twitter:site" content="@bradwestness" />
     <meta property="twitter:creator" content="@bradwestness" />
@@ -70,13 +71,14 @@
     <meta property="twitter:image" content="{{ image }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
     <meta property="twitter:description" content="{{- description -}}" />
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2d89ef">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="alternate" type="application/atom+xml" href="{{ site.baseurl }}atom.xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}content/bootstrap-theme.min.css" />
@@ -89,12 +91,14 @@
     <link rel="me" type="text/html" href="https://twitter.com/bradwestness" />
     <link rel="me" type="text/html" href="https://github.com/bradwestness" />
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="{{ site.baseurl }}">{{ site.sitename }}</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -123,7 +127,7 @@
                 </ul>
             </div>
         </div>
-    </nav>    
+    </nav>
     <div class="container body-content">
         <div class="row">
             <div class="col-12 col-lg-8">
@@ -132,18 +136,23 @@
                 <footer>
                     <p class="text-secondary small text-right">
                         &copy;
-                        <script type="text/javascript" async="async" defer="defer">document.write(new Date().getFullYear());</script>
+                        <script type="text/javascript" async="async"
+                            defer="defer">document.write(new Date().getFullYear());</script>
                         {{ site.sitename }}
                     </p>
                 </footer>
             </div>
             <div class="d-none d-print-none text-right d-lg-block col-lg-3 offset-lg-1">
-                <p><a href="{{ site.baseurl }}about/"><img src="{{ site.baseurl }}{{ site.logo }}" class="img-fluid rounded-circle" alt="Brad Westness" /></a></p>
+                <p><a href="{{ site.baseurl }}about/"><img src="{{ site.baseurl }}{{ site.logo }}"
+                            class="img-fluid rounded-circle" alt="Brad Westness" /></a></p>
                 <p class="lead test-secondary">{{ site.description }}</p>
                 <ul class="list-inline">
-                    <li><a class="btn btn-link btn-sm" href="https://www.twitter.com/bradwestness" title="Twitter" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
-                    <li><a class="btn btn-link btn-sm" href="https://www.github.com/bradwestness" title="Github" target="_blank"><i class="fa fa-github"></i> Github</a></li>
-                    <li><a class="btn btn-link btn-sm" href="mailto:brad.westness@outlook.com" title="Email"><i class="fa fa-envelope"></i> Email</a></li>
+                    <li><a class="btn btn-link btn-sm" href="https://www.twitter.com/bradwestness" title="Twitter"
+                            target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                    <li><a class="btn btn-link btn-sm" href="https://www.github.com/bradwestness" title="Github"
+                            target="_blank"><i class="fa fa-github"></i> Github</a></li>
+                    <li><a class="btn btn-link btn-sm" href="mailto:brad.westness@outlook.com" title="Email"><i
+                                class="fa fa-envelope"></i> Email</a></li>
                 </ul>
             </div>
         </div>
@@ -181,4 +190,5 @@
     <script type="text/javascript" src="{{ site.baseurl }}scripts/prism.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}scripts/site.js"></script>
 </body>
+
 </html>
