@@ -30,6 +30,6 @@ If the Brewers really want to improve upon last year's one-game-shy-of-the-World
 
 I for one, would love to see Kimbrel get signed. The goofy gargoyle pose he takes as he looks in for the sign between pitches is almost reason enough, and the dude is seriously good. Signing a truly elite closer like him would also send a signal that the team really is serious about competing at the highest levels in 2019.
 
-P.S. - Yelich can hit:
+### P.S. - Yelich can hit:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Is it just us or does anyone else think <a href="https://twitter.com/ChristianYelich?ref_src=twsrc%5Etfw">@ChristianYelich</a> looks ready for Opening Day? 🤔 <a href="https://t.co/0eOwnilph9">pic.twitter.com/0eOwnilph9</a></p>&mdash; Milwaukee Brewers (@Brewers) <a href="https://twitter.com/Brewers/status/1109563578325958656?ref_src=twsrc%5Etfw">March 23, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
