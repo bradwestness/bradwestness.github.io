@@ -10,7 +10,7 @@ With spring training upon us, the Brewers lineup is starting to take shape for t
 * Former Padre [Corey Spangenberg](https://www.mlb.com/brewers/news/cory-spangenberg-signs-contract-with-brewers/c-302403566) will serve as a utility middle-infielder
 * [Mike Moustakas will return](https://www.mlb.com/brewers/news/mike-moustakas-to-man-second-base-for-brewers/c-304117214), although reports are that the team wants him to play 2nd base, rather than his usual position at the hot corner
 
-When I first heard that Moose was coming back, I assumed it meant Counsell & Co. would put Shaw at second again, like they did for the second half of the 2018 season. It's interesting to hear that they're planning to at least try *Moustakas* out at second base, and raises the question of what Spangenberg's role will be in this new-look infield. 
+When I first heard that Moose was coming back, I assumed it meant Counsell & Co. would put Shaw at second again, like they did for the second half of the 2018 season. It's interesting to hear that they're planning to at least try *Moustakas* out at second base, and raises the question of what Spangenberg's role will be in this new-look infield.
 
 I wouldn't be surprised if Shaw, Moustakas and Spangenberg end up platooning a bit at both positions throughout the season, depending on who's healthy and who's getting a day off that particular game, or what have you.
 
