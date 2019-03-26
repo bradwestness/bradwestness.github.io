@@ -28,6 +28,6 @@ The Brewers are apparently [one of only two teams still](https://www.mlb.com/bre
 
 If the Brewers really want to improve upon last year's one-game-shy-of-the-World-Series performance and get the championship series this season, they're not going to do it by trying to just eat the loss of Knebel without a suitable replacement.
 
-![Craig Kimbrel, Gargoyle](https://www.bradwestness.com/content/images/kimbrel.jpg)
+![Craig Kimbrel, Gargoyle](https://www.bradwestness.com/content/images/kimbrel.jpeg)
 
 I for one, would love to see Kimbrel get signed. His goofy gargoyle pose as he takes the sign between pitches is almost reason enough, and the dude is seriously good. Signing a truly elite closer like him would also send a signal that the team really is serious about competing at the highest levels in 2019.
