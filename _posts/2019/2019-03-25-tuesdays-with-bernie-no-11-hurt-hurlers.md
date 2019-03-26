@@ -5,9 +5,11 @@ categories: [Tuesdays with Bernie, Brewers, Baseball]
 image: content/images/cactuscrew.jpg
 ---
 
-Spring Training is effectively over, and Opening Day is this Thursday! It an exciting
+Spring Training is effectively over, and Opening Day is this Thursday! It's going to be an exciting
 season, as the Brewers have openly stated that they have every intention of making
-a run for the World Series this year. With some free agent additions, the lineup is
+a run for the World Series this year. 
+
+With some free agent additions, the lineup is
 looking pretty dang stacked. However, there is one somewhat concerning piece of business
 coming out of the Cactus Crew...
 
@@ -26,4 +28,8 @@ If the Brewers really want to improve upon last year's one-game-shy-of-the-World
 
 ![Craig Kimbrel, Gargoyle](https://www.bradwestness.com/content/images/kimbrel.jpeg)
 
-I for one, would love to see Kimbrel get signed. His goofy gargoyle pose as he takes the sign between pitches is almost reason enough, and the dude is seriously good. Signing a truly elite closer like him would also send a signal that the team really is serious about competing at the highest levels in 2019.
+I for one, would love to see Kimbrel get signed. The goofy gargoyle pose he takes as he looks in for the sign between pitches is almost reason enough, and the dude is seriously good. Signing a truly elite closer like him would also send a signal that the team really is serious about competing at the highest levels in 2019.
+
+P.S. - Yelich can hit:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Is it just us or does anyone else think <a href="https://twitter.com/ChristianYelich?ref_src=twsrc%5Etfw">@ChristianYelich</a> looks ready for Opening Day? 🤔 <a href="https://t.co/0eOwnilph9">pic.twitter.com/0eOwnilph9</a></p>&mdash; Milwaukee Brewers (@Brewers) <a href="https://twitter.com/Brewers/status/1109563578325958656?ref_src=twsrc%5Etfw">March 23, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
