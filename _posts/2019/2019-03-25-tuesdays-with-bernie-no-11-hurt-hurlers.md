@@ -24,7 +24,7 @@ Knebel however, [apparently has a partial tear in his UCL](https://www.mlb.com/b
 
 ## Enter the Gargoyle
 
-The Brewers are apparently [one of only two teams still](https://www.mlb.com/brewers/news/craig-kimbrel-rumors-c297610312) in the running to sign 2018 World Series champion closer for the Red Sox, Craig Kimbrel. One wonders if the potential loss of Knebel will loosen up the front office's purse strings a big. 
+The Brewers are apparently [one of only two teams still](https://www.mlb.com/brewers/news/craig-kimbrel-rumors-c297610312) in the running to sign 2018 World Series champion closer for the Red Sox, Craig Kimbrel. One wonders if the potential loss of Knebel will loosen up the front office's purse strings a bit. 
 
 If the Brewers really want to improve upon last year's one-game-shy-of-the-World-Series performance and get the championship series this season, they're not going to do it by trying to just eat the loss of Knebel without a suitable replacement.
 
