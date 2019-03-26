@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tuesdays with Bernie No. 10 - Hurt Hurlers
+title: Tuesdays with Bernie No. 11 - Hurt Hurlers
 categories: [Tuesdays with Bernie, Brewers, Baseball]
 image: content/images/cactuscrew.jpg
 ---
