@@ -5,7 +5,7 @@ categories: [Tuesdays with Bernie, Brewers, Baseball]
 image: content/images/cactuscrew.jpg
 ---
 
-Spring Training is effectively over, and Opening Night is this Thursday! It an exciting
+Spring Training is effectively over, and Opening Day is this Thursday! It an exciting
 season, as the Brewers have openly stated that they have every intention of making
 a run for the World Series this year. With some free agent additions, the lineup is
 looking pretty dang stacked. However, there is one somewhat concerning piece of business
