@@ -13,20 +13,16 @@ coming out of the Cactus Crew...
 
 ## Hurt Hurlers
 
-One of the Brewers marquee starters and the two best closers the Brewers employed last year are all going into the 2019 season with injuries. 
-
-[Jeremy Jeffress' is reportedly more of a conditioning issue](https://www.mlb.com/brewers/news/jeremy-jeffress-to-start-season-on-injured-list), and he is expected to reach full health after a short stint on the DL rehabbing his shoulder.
+One of the Brewers marquee starters and the two best closers the Brewers employed last year are all going into the 2019 season with injuries. [Jeremy Jeffress' is reportedly more of a conditioning issue](https://www.mlb.com/brewers/news/jeremy-jeffress-to-start-season-on-injured-list), and he is expected to reach full health after a short stint on the DL rehabbing his shoulder.
 
 [Jimmy Nelson is similarly still rehabbing a shoulder injury](https://www.mlb.com/brewers/news/jimmy-nelson-resting-but-optimistic-for-season) for which he had surgery
-last year and missed most of the 2018 season.
-
-Knebel however, [apparently has a partial tear in his UCL](https://www.mlb.com/brewers/news/corey-knebel-out-alex-wilson-coming-in), and may need surgery. I assume that would pretty much end his 2019 season before it begins.
+last year and missed most of the 2018 season. Knebel however, [apparently has a partial tear in his UCL](https://www.mlb.com/brewers/news/corey-knebel-out-alex-wilson-coming-in), and may need surgery. I assume that would pretty much end his 2019 season before it begins.
 
 ## Enter the Gargoyle
 
 The Brewers are apparently [one of only two teams still](https://www.mlb.com/brewers/news/craig-kimbrel-rumors-c297610312) in the running to sign 2018 World Series champion closer for the Red Sox, Craig Kimbrel. One wonders if the potential loss of Knebel will loosen up the front office's purse strings a bit. 
 
-If the Brewers really want to improve upon last year's one-game-shy-of-the-World-Series performance and get the championship series this season, they're not going to do it by trying to just eat the loss of Knebel without a suitable replacement.
+If the Brewers really want to improve upon last year's one-game-shy-of-the-World-Series performance and get to the championship series this season, they're not going to do it by trying to just eat the loss of Knebel without a suitable replacement.
 
 ![Craig Kimbrel, Gargoyle](https://www.bradwestness.com/content/images/kimbrel.jpeg)
 
