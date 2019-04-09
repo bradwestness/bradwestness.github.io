@@ -25,6 +25,8 @@ Wisconsin sportswriter Paul Imig has coined the "Kimbrel Challenge," which is si
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Also, try to say “Craig Kimbrel” 5 times fast. <a href="https://t.co/2dpgfQfAX6">pic.twitter.com/2dpgfQfAX6</a></p>&mdash; Paul Imig (@Paulimig) <a href="https://twitter.com/Paulimig/status/1110664601744625665?ref_src=twsrc%5Etfw">March 26, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
+One wonders if it works like Beetlejuice. If you successfully say his name 3 times, does Craig Kimbrel appear?
+
 While [multiple stories](https://larrybrownsports.com/baseball/brewers-pessimistic-landing-craig-kimbrel/489791) have [come out](https://www.cbssports.com/mlb/news/craig-kimbrel-rumors-brewers-cubs-dont-seem-like-suitors-despite-early-season-bullpen-struggles/) about how it's pretty unlikely that the Brewers and Kimbrel will wind up coming to any kind of agreement, it doesn't seem like the book is entirely closed on him as he remains a free agent. Which is all sorts of weird, considering that he was the winning closer of the most recent World Series.
 
 I'm a little less bullish on Kimbrel as I may have been last week, if his asking price is so astronomical I'd rather not have the team sign him to a gigantic multi-year deal in a panic before we see how the Brewers pitching staff looks once Jeremy Jeffress and Jimmy Nelson both return.
