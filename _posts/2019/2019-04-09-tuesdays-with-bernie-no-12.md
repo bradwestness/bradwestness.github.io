@@ -25,13 +25,15 @@ Wisconsin sportswriter Paul Imig has coined the "Kimbrel Challenge," which is si
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Also, try to say “Craig Kimbrel” 5 times fast. <a href="https://t.co/2dpgfQfAX6">pic.twitter.com/2dpgfQfAX6</a></p>&mdash; Paul Imig (@Paulimig) <a href="https://twitter.com/Paulimig/status/1110664601744625665?ref_src=twsrc%5Etfw">March 26, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-One wonders if it works like Beetlejuice. If you successfully say his name 3 times, does Craig Kimbrel appear?
+One wonders if it works like summoning Beetlejuice: if you successfully say his name 3 times, does Craig Kimbrel appear?
+
+## Bullish Bullpen
 
 While [multiple stories](https://larrybrownsports.com/baseball/brewers-pessimistic-landing-craig-kimbrel/489791) have [come out](https://www.cbssports.com/mlb/news/craig-kimbrel-rumors-brewers-cubs-dont-seem-like-suitors-despite-early-season-bullpen-struggles/) about how it's pretty unlikely that the Brewers and Kimbrel will wind up coming to any kind of agreement, it doesn't seem like the book is entirely closed on him as he remains a free agent. Which is all sorts of weird, considering that he was the winning closer of the most recent World Series.
 
-I'm a little less bullish on Kimbrel as I may have been last week, if his asking price is so astronomical I'd rather not have the team sign him to a gigantic multi-year deal in a panic before we see how the Brewers pitching staff looks once Jeremy Jeffress and Jimmy Nelson both return.
+I'm a little less bullish on Kimbrel than [I may have been last time](https://www.bradwestness.com/2019/03/25/tuesdays-with-bernie-no-11-hurt-hurlers/). If his asking price is so astronomical, I'd rather not have the team sign him to a gigantic multi-year deal in a panic before we see how the Brewers pitching staff looks once Jeremy Jeffress and Jimmy Nelson both return.
 
-Jeffress is expected to pitch as early as the upcoming Dodgers/Brewers series in Milwaukee (starting next week Thursday), while Nelson is not expected back for a little while after that.
+Jeffress is [expected to pitch as early as the upcoming Dodgers/Brewers series in Milwaukee](https://www.jsonline.com/story/sports/mlb/brewers/2019/04/06/jeremy-jeffress-could-ready-return-brewers-bullpen-next-homestand/3369598002/) (starting next week Thursday), while Nelson is not expected back for a little while after that.
 
 It may be the best for the Brewers to muddle through the first half with their pitching staff as-is, and potentially make a move at the All-Star break if a playoff push still looks attainable. 
 
