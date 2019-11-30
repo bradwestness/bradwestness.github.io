@@ -1,7 +1,7 @@
 ﻿(function ($) {
 
     var toggleTheme = function () {
-        var themeStyle = $("#theme-style");
+        var themeStyle = $("link#theme-style")[0];
         var nightCss = "content/bootswatch-darkly.min.css";
         var dayCss = "content/bootswatch-flatly.min.css";
         var current = themeStyle.href;
@@ -31,7 +31,7 @@
     }
 
     var getCurrentTheme = function(){
-        var themeStyle = $("#theme-style");
+        var themeStyle = $("link#theme-style")[0];
         return themeStyle.href;
     }
 
@@ -41,7 +41,7 @@
         toggleTheme();
     }
 
-    $("#theme-toggle").click(function (click) {
+    $("a#theme-toggle").click(function (click) {
         toggleTheme();
         click.preventDefault();
         return false;
