@@ -35,13 +35,11 @@
         return themeStyle.href;
     }
 
-    (function(){
-        var savedTheme = getSavedTheme();
+    var savedTheme = getSavedTheme();
 
-        if (savedTheme && savedTheme !== getCurrentTheme){
-            toggleTheme();
-        }
-    })();
+    if (savedTheme && savedTheme !== getCurrentTheme()){
+        toggleTheme();
+    }
 
     $("#theme-toggle").click(function (click) {
         toggleTheme();
