@@ -55,7 +55,7 @@
     }
 
     var bootswatchSelector = "link#bootswatch-style";
-    var savedTheme = getSavedTheme(themeSelector);
+    var savedTheme = getSavedTheme(bootswatchSelector);
 
     if (savedTheme && savedTheme !== getCurrentTheme(bootswatchSelector)) {
         toggleTheme();
