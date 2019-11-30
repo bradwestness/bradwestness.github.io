@@ -1,10 +1,8 @@
 ﻿(function ($) {
 
-    var toggleTheme = function () {
-        var themeStyle = $("link#theme-style")[0];
-        var nightCss = "content/bootswatch-darkly.min.css";
-        var dayCss = "content/bootswatch-flatly.min.css";
-        var current = themeStyle.href;
+    var toggleStyle = function (elementSelector, nightCss, dayCss) {
+        var styleElement = $(elementSelector)[0];
+        var current = styleElement.href;
 
         if (current.indexOf(nightCss) >= 0) {
             current = current.replace(nightCss, dayCss);
@@ -12,32 +10,54 @@
             current = current.replace(dayCss, nightCss);
         }
 
-        themeStyle.href = current;
-        saveTheme(current);
+        styleElement.href = current;
+        saveTheme(elementSelector, current);
     }
 
-    var saveTheme = function (theme) {
+    var toggleBootswatch = function () {
+        toggleStyle(
+            "link#bootswatch-style",
+            "content/bootswatch-darkly.min.css",
+            "content-bootswatch-flatly.min.css"
+        );
+    }
+
+    var togglePrism = function () {
+        toggleStyle(
+            "link#prism-style",
+            "content/prism.night.css",
+            "content/prism.default.css"
+        );
+    }
+
+    var toggleTheme = function() {
+        toggleBootswatch();
+        togglePrism();
+    }
+
+    var saveTheme = function (elementSelector, value) {
         if (window.localStorage && window.localStorage.setItem) {
-            window.localStorage.setItem("theme", theme);
+            window.localStorage.setItem(elementSelector, value);
         }
     }
 
-    var getSavedTheme = function () {
-        if (window.localStorage && window.localStorage.theme) {
-            return window.localStorage.theme;
+    var getSavedTheme = function (elementSelector) {
+        if (window.localStorage && window.localStorage[elementSelector]) {
+            return window.localStorage[elementSelector];
         }
 
         return null;
     }
 
-    var getCurrentTheme = function(){
-        var themeStyle = $("link#theme-style")[0];
-        return themeStyle.href;
+    var getCurrentTheme = function (elementSelector) {
+        var styleElement = $(elementSelector)[0];
+        return styleElement.href;
     }
 
-    var savedTheme = getSavedTheme();
+    var bootswatchSelector = "link#bootswatch-style";
+    var savedTheme = getSavedTheme(themeSelector);
 
-    if (savedTheme && savedTheme !== getCurrentTheme()){
+    if (savedTheme && savedTheme !== getCurrentTheme(bootswatchSelector)) {
         toggleTheme();
     }
 
@@ -47,7 +67,6 @@
         return false;
     });
 
-    $(".post-content img").addClass("img-fluid");    
-    
+    $(".post-content img").addClass("img-fluid");
 
 })(window.jQuery);
