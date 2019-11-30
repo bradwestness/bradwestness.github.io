@@ -18,7 +18,7 @@
         toggleStyle(
             "link#bootswatch-style",
             "content/bootswatch-darkly.min.css",
-            "content-bootswatch-flatly.min.css"
+            "content/bootswatch-flatly.min.css"
         );
     }
 
