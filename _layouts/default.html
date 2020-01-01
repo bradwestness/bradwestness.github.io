@@ -141,8 +141,7 @@
                 <footer>
                     <p class="text-secondary small text-right">
                         &copy;
-                        <script type="text/javascript" async="async"
-                            defer="defer">document.write(new Date().getFullYear());</script>
+                        {{ 'now' | date: "%Y" }}
                         {{ site.sitename }}
                     </p>
                 </footer>
