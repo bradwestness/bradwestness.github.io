@@ -7,19 +7,15 @@ image: content/images/lack-rack-plex-nas.jpg
 
 Last year, I invested in a Plex Premium lifetime subscription, and I really like it. Previously, I had been relying on my Roku player's built-in Media Player app to play video files stored on a network share on my PC, which it was a pain to navigate.
 
-![The Roku Media Player app, whose UI leaves a lot to be desired](https://www.bradwestness.com/content/images/roku-media-player.jpg)
-> The Roku Media Player app, whose UI leaves a lot to be desired
+{% include figure.html filename="roku-media-player.jpg" description="The Roku Media Player app, whose UI leaves a lot to be desired." %}
 
 I was also just storing all my video files on my main PC, which I use for work and software development, which required that my PC was always-on and not rebooting or installing a Windows Insider build or anything like that, so it was less than ideal.
 
-![The Plex user interface, being much nicer.](https://www.bradwestness.com/content/images/plex-ui.jpg)
-> The Plex user interface is much nicer.
-> It's like your own personal Netflix, but of media you actually own
+{% include figure.html filename="plex-ui.jpg" description="The Plex user interface is much nicer. It's like your own personal Netflix, but of media you actually own." %}
 
 I had seen quite a few people who I follow on Twitter talking about getting Synology DiskStation devices, which can be used as Plex servers. However, I balked at the prices of these, which runs upwards of $500 on Amazon, and that's before you purchase hard drives to put in the thing, which would be useless without them.
 
-![Synology DiskStation devices listing on Amazon](https://www.bradwestness.com/content/images/synology-amazon.jpg)
-> Synology DiskStation listings on Amazon
+{% include figure.html filename="synology-amazon.jpg" description="Synology DiskStation devices listing on Amazon" %}
 
 I had also previously seen [some articles about people repurposing IKEA "LACK" end tables into makeshift server racks](https://www.instructables.com/id/lack-the-rack/), since they happen to be the exact right size for holding rackmount equipment. A thought began percolating in my mind: could I find a used or refurbished rackmount server for cheaper than a Synology device plus disks, and build a LACK Rack using one of the LACK tables I already had in my house?
 
@@ -33,8 +29,7 @@ I also wanted to be able to be able to add a dedicated GPU to assist in transcod
 
 After quite a bit of hunting around and squinting at various pictures of rackmount servers, I decided a refurbished Dell PowerEdge R710 ticked all the boxes that I needed.
 
-![Dell PowerEdge R710 listings on eBay](https://www.bradwestness.com/content/images/poweredge-ebay.jpg)
-> Dell PowerEdge R710 listings on eBay
+{% include figure.html filename="poweredge-ebay.jpg" description="Dell PowerEdge R710 listings on eBay" %}
 
 1. Price - there are a lot of refurbished servers of the R710 variety readily available which fell in the sub-$500 range (including hard drives!)
 2. Formfactor - the R710 is a 2U type server (meaning it's two "rackmount units" in height), and there are PCIe risers so you can add full-size add-in cards. Meaning it should be possible to add both my TV Tuner and a dedicated GPU.
@@ -54,18 +49,15 @@ The six hard drives is nice because of the integraded RAID controller. I set my 
 
 The first step I had to take when the server arrived was installing the TV tuner card, which I had removed from my main PC. This went off without a hitch.
 
-![Installing the TV Tuner Card](https://www.bradwestness.com/content/images/poweredge-tv-tuner.jpg)
-> Installing the TV tuner card
+{% include figure.html filename="poweredge-tv-tuner.jpg" description="Installing the TV Tuner Card" %}
 
 The next step (since I hadn't picked up a GPU yet) was mounting the server (and the rackmount style UPS I also picked up) into the IKEA LACK table. For the UPS, I used some metal rackmount shelf things I picked up on Amazon. 
 
-![LACK table with brackets](https://www.bradwestness.com/content/images/lack-brackets.jpg)
-> LACK table with brackets
+{% include figure.html filename="lack-brackets.jpg" description="LACK table with brackets" %}
 
 For the server itself, I just rested it on some L-brackets that I picked up at the hardware store.
 
-![PowerEdge R710 mounted in LACK Rack](https://www.bradwestness.com/content/images/poweredge-mounted.jpg)
-> PowerEdge R710 mounted in LACK Rack
+{% include figure.html filename="poweredge-mounted.jpg" description="PowerEdge R710 mounted in LACK Rack" %}
 
 ## To Be Continued...
 
