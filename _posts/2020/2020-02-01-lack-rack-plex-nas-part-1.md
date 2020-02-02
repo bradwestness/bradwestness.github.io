@@ -9,11 +9,11 @@ Last year, I invested in a Plex Premium lifetime subscription, and I really like
 
 {% include figure.html filename="roku-media-player.jpg" description="The Roku Media Player app, whose UI leaves a lot to be desired." %}
 
-I was also just storing all my video files on my main PC, which I use for work and software development, which required that my PC was always-on and not rebooting or installing a Windows Insider build or anything like that, so it was less than ideal.
+I was also just storing all my video files on my main PC, which I use for work and software development, which required that my PC was always-on, not rebooting or installing a Windows Insider build, not joined to a VPN or anything like that, or else anyone in my house watching a video via Plex would suddenly lose their stream. So it was less than ideal.
 
 {% include figure.html filename="plex-ui.jpg" description="The Plex user interface is much nicer. It's like your own personal Netflix, but of media you actually own." %}
 
-I had seen quite a few people who I follow on Twitter talking about getting Synology DiskStation devices, which can be used as Plex servers. However, I balked at the prices of these, which runs upwards of $500 on Amazon, and that's before you purchase hard drives to put in the thing, which would be useless without them.
+I had seen quite a few people who I follow on Twitter talking about getting Synology DiskStation devices, which can be used as Plex servers. However, I balked at the prices of these, which runs upwards of $500 on Amazon, and that's before you purchase hard drives to put in the thing, and they would be useless without them.
 
 {% include figure.html filename="synology-amazon.jpg" description="Synology DiskStation devices listing on Amazon" %}
 
@@ -61,4 +61,4 @@ For the server itself, I just rested it on some L-brackets that I picked up at t
 
 ## To Be Continued...
 
-I now had my LACK Rack built. The next step was to get an OS installed on the thing, which I will cover in Part 2.
+I now had my LACK Rack built. The next step was to get an OS installed on the thing, and install the GPU. There were some twists and turns along the way, which I will cover in Part 2.
