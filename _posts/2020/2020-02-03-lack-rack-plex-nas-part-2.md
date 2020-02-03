@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building a LACK Rack Plex NAS From a Decomissioned Rackmount Server, Part 2
+title: Building a LACK Rack Plex NAS From a Refurbished Rackmount Server, Part 2
 categories: [Personal,Software,TV,Movies]
 image: content/images/lack-rack-basement.jpg
 ---
