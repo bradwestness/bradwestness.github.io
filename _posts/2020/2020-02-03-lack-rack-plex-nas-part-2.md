@@ -51,11 +51,9 @@ So it turns out that Dell makes two kind of risers for this model of server. The
 
 {% include figure.html filename="pcie-x16-riser.jpg" description="This little bugger set me back $200." %}
 
-Doing some reasearch, I found that you also can't just run a ribbon cable directly from the motherboard, because the riser's have special "security" leads that the motherboard checks for upon boot, and if it's not present, the machine won't POST. Basically this is hardware DRM preventing you from not using Dell's special riser cards that are built specifically for this server. Bummer.
+Doing some reasearch, I found that you also can't just run a ribbon cable directly from the motherboard, because the risers have special "security" leads that the motherboard checks for upon boot, and if it's not present, the machine won't POST. Basically this is hardware DRM preventing you from not using Dell's special riser cards that are built specifically for this server. Bummer.
 
-Ultimately, I felt it was worth it because the whole point of this project was to build a solid Plex server and hardware transcoding is definitely part of that, in my opinion. But it's definitely an issue with using enterprise-grade hardware for a consumer project like this: if you're not careful you end up needing specialty parts and they don't come cheap.
-
-A fortune 500 company wouldn't think anything of this extra $200 expense, but it was basically half the cost of the entire server so it took a big bite out of my "cheaper than a Synology DiskStation" argument. Caveat emptor and all that.
+Ultimately, I felt it was worth it because the whole point of this project was to build a solid Plex server and hardware transcoding is definitely part of that, in my opinion. But it's certainly an issue with using enterprise-grade hardware for a consumer project like this: if you're not careful you end up needing specialty parts and they don't come cheap. A fortune 500 company wouldn't think anything of this extra $200 expense, but it was basically half the cost of the entire server so it took a big bite out of my "cheaper than a Synology DiskStation" argument. Caveat emptor and all that.
 
 ### The Second Setback
 
@@ -69,11 +67,11 @@ If you go back and look at the PCI x16 riser above, you can see that the slot is
 
 {% include figure.html filename="dual-pci-slots-r710-case.PNG" description="In effect, with the PCIe x16 riser, you can only use a single expansion slot (indicated)." %}
 
-This is unfortunate, since there's really no reason that I can see why the PCIe x16 riser couldn't have had the single slot positioned in the middle so that you could use two-slot cards. 
+This is unfortunate, since there's really no reason that I can see why the PCIe x16 riser couldn't have had the single slot positioned in the middle so that you could use two-slot cards.
 
 I toyed with the idea of rigging up some combination of a PCIe x16 ribbon cable and some rubber stand-offs to enable using a two-slot card which would just rest in the space, but that seemed like it'd be janky because the card wouldn't be installed securely.
 
-I decided to go back to the drawing board and get a single-slot GPU to use instead of the 1050 Ti. The upshot of this is that I hadn't noticed that all the "consumer level" GeForce cards have a driver-enforced "session limit" of 2 concurrent transcodes, which you can hit even if only a single person is streaming a video from your Plex server because things like overlaying subtitles count as their own "session." Hat-tip to [Scott Galloway](https://twitter.com/scottgal) for alerting me to this limitation.
+I decided to go back to the drawing board and get a single-slot GPU to use instead of the 1050 Ti, which I would resell on eBay. The upshot of this is that I hadn't noticed that all the "consumer level" GeForce cards have a driver-enforced "session limit" of 2 concurrent transcodes, which you can hit even if only a single person is streaming a video from your Plex server because things like overlaying subtitles count as their own "session." Hat-tip to [Scott Galloway](https://twitter.com/scottgal) for alerting me to this limitation.
 
 I should note that you _can_ find "cracked" drivers for NVidia's consumer graphics cards that remove the transcode session limitation, but I kind of wanted this thing to be rock solid and that seemed like introducing a pretty big level of potential instability.
 
@@ -91,9 +89,9 @@ At long last, my LACK Rack Plex NAS was complete (say that 10 times fast). Here'
 * Dual 870w Power Supplies (upgraded from 540w the server came with) - $30
 * PCIe x16 Riser - $200
 * NVidia Quadro M2000 GPU - $145
-* Metal brackes, ethernet cables, etc - $30
+* Metal brackets, ethernet cables, etc. - $30
 
-This brings the total cost to around $750. I already had the LACK table ($8) and TV Tuner card ($80). 
+This brings the total cost to around $750. I already had the LACK table ($8) and TV Tuner card ($80).
 
 I still think that's a pretty good deal all things considered, especially for how much more powerful this box is compared to a Synology DiskStation, and since using the DVR capabilities with over-the-air TV via Plex is preventing me from paying for a cable TV subscription, so that's a savings of about $100 a month. This thing pays for itself!
 
