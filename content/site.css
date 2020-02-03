@@ -53,13 +53,7 @@ textarea {
         .post-content blockquote p {
             margin: 0;
         }
-/* 
-    .post-content img:not(.img-fluid) {
-        margin-left: auto;
-        margin-right: auto;
-        max-height: 320px;
-    } */
-
+        
     .post-content div.embed-responsive,
     .post-content iframe {
         margin-bottom: 1.6em;
