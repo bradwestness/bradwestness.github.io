@@ -61,4 +61,4 @@ For the server itself, I just rested it on some L-brackets that I picked up at t
 
 ## To Be Continued...
 
-I now had my LACK Rack built. The next step was to get an OS installed on the thing, and install the GPU. There were some twists and turns along the way, which I will cover in Part 2.
+I now had my LACK Rack built. The next step was to get an OS installed on the thing, and install the GPU. There were some twists and turns along the way, which [I will cover in Part 2](https://www.bradwestness.com/2020/02/03/lack-rack-plex-nas-part-2/).

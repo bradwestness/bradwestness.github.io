@@ -2,10 +2,10 @@
 layout: post
 title: Building a LACK Rack Plex NAS From a Decomissioned Rackmount Server, Part 2
 categories: [Personal,Software,TV,Movies]
-image: content/images/lack-rack-plex-nas.jpg
+image: content/images/lack-rack-basement.jpg
 ---
 
-In part 1 of this blog series, I talked about the reasoning behind my decision to build a Plex server out of a refurbished Dell PowerEdge R710 server. In this second part, I will cover the process of getting the OS and GPU installed.
+In [part 1 of this blog series](https://www.bradwestness.com/2020/02/01/lack-rack-plex-nas-part-1/), I talked about the reasoning behind my decision to build a Plex server out of a refurbished Dell PowerEdge R710 server. In this second part, I will cover the process of getting the OS and GPU installed.
 
 ## Installing the Operating System
 
@@ -29,6 +29,8 @@ The R710 is a few years old now, so the most recent version of Windows Server it
 
 {% include figure.html filename="windows-server-2016-setup.png" description="Windows Server 2016 Setup." %}
 
+One thing I wasn't sure of since I'd never dealt with RAID before, was whether you can still partition the drive logically after creating a RAID volume. This is, indeed the case. Windows just sees the RAID volume as if it's one giant hard drive, and you can partition it however you like just as if it was actually a single disk drive. I created a 100GB partition for the OS and programs, and left the rest as the "media" partition. That way I can always format and re-install the OS if I'm so inclined without losing any media.
+
 Once Windows Server 2016 was installed, I was able to upgrade from there to Windows Server 2019 without any issues. Then it was just a matter of installing Plex and copying all my media over from my old machine onto the new server.
 
 ## Installing the GPU - Here There Be Dragons
@@ -49,13 +51,15 @@ So it turns out that Dell makes two kind of risers for this model of server. The
 
 {% include figure.html filename="pcie-x16-riser.jpg" description="This little bugger set me back $200." %}
 
+Doing some reasearch, I found that you also can't just run a ribbon cable directly from the motherboard, because the riser's have special "security" leads that the motherboard checks for upon boot, and if it's not present, the machine won't POST. Basically this is hardware DRM preventing you from not using Dell's special riser cards that are built specifically for this server. Bummer.
+
 Ultimately, I felt it was worth it because the whole point of this project was to build a solid Plex server and hardware transcoding is definitely part of that, in my opinion. But it's definitely an issue with using enterprise-grade hardware for a consumer project like this: if you're not careful you end up needing specialty parts and they don't come cheap.
 
 A fortune 500 company wouldn't think anything of this extra $200 expense, but it was basically half the cost of the entire server so it took a big bite out of my "cheaper than a Synology DiskStation" argument. Caveat emptor and all that.
 
 ### The Second Setback
 
-So, now that I had the PCIe x16 riser, all should be right with the world, right? I was excited to finally get the GPU, which had been sitting in a draw encased in it's static-free bag for weeks now, installed.
+So, now that I had the PCIe x16 riser, all should be right with the world, right? I was excited to finally get the GPU, which had been sitting in a drawer encased in it's static-free bag for weeks now, installed.
 
 When I got the machine opened back up, another roadblock revealed itself. The GeForce GTX 1050 Ti I picked out was of the "two-slot" variety of GPU, meaning it takes up two expansion slots of space in the computer's chassis.
 
@@ -71,9 +75,9 @@ I toyed with the idea of rigging up some combination of a PCIe x16 ribbon cable 
 
 I decided to go back to the drawing board and get a single-slot GPU to use instead of the 1050 Ti. The upshot of this is that I hadn't noticed that all the "consumer level" GeForce cards have a driver-enforced "session limit" of 2 concurrent transcodes, which you can hit even if only a single person is streaming a video from your Plex server because things like overlaying subtitles count as their own "session." Hat-tip to [Scott Galloway](https://twitter.com/scottgal) for alerting me to this limitation.
 
-After pouring over some more benchmarks and doing price comparisons, I decided on a NVidia Quadro M2000, which is a single-slot card, and part of NVidia's "workstation" line meant for professional video editing/computer graphics rendering, which does not have the session limitation.
-
 I should note that you _can_ find "cracked" drivers for NVidia's consumer graphics cards that remove the transcode session limitation, but I kind of wanted this thing to be rock solid and that seemed like introducing a pretty big level of potential instability.
+
+After pouring over some more benchmarks and doing price comparisons, I decided on a NVidia Quadro M2000, which is a single-slot card, and part of NVidia's "workstation" line meant for professional video editing/computer graphics rendering, which does not have the session limitation.
 
 {% include figure.html filename="nvidia-quadro-installed.jpg" description="All is right with the world." %}
 
@@ -89,18 +93,20 @@ At long last, my LACK Rack Plex NAS was complete (say that 10 times fast). Here'
 * NVidia Quadro M2000 GPU - $145
 * Metal brackes, ethernet cables, etc - $30
 
-This brings the total cost to around $750. So, I still think that's a pretty good deal all things considered, especially for how much more powerful this box is compared to a Synology DiskStation.
+This brings the total cost to around $750. I already had the LACK table ($8) and TV Tuner card ($80). 
+
+I still think that's a pretty good deal all things considered, especially for how much more powerful this box is compared to a Synology DiskStation, and since using the DVR capabilities with over-the-air TV via Plex is preventing me from paying for a cable TV subscription, so that's a savings of about $100 a month. This thing pays for itself!
 
 ## Final Thoughts
 
 Would I recommend going this route for others? Depends on how comfortable you are dealing with low-level OEM utilities (iDRAC, Lifecycle Controller) and pricing out refurbished hardware on eBay.
 
-It was definitely more of a hassle to get everything situated and set-up over the course of about a month, compared to a plug-and-play specialty device.
+It was definitely more of a hassle to get everything situated and set-up (over the course of about a month), compared to the hassle-free instant gratification of a plug-and-play specialty device.
 
 I should also note - the PowerEdge is decidedly not quiet. I had originally envisioned the LACK rack just sitting in the corner of our living room, where the LACK table had been sitting previously, but the high-pitched whine of the PowerEdge's fans drove me to ultimately move the whole shebang down to the basement, which involved running new lines for the TV and internet coax cables, and that was another part of the project that I didn't initally anticipate.
 
 {% include figure.html filename="lack-rack-plex-nas.jpg" description="The original location, which wound up being temporary due to the noise." %}
 
-However, if you're like me and the prospect of building something like this sounds like half the fun, then I'd definitely say go for it. I anticipate this being the primary driver of my home network and media, as well as our photo and video backup for years to come.
+However, if you're like me and the prospect of building something like this sounds like half the fun, then I'd definitely say go for it. I anticipate this being the primary driver of my home network and media, as well as our photo and video backup, for years to come.
 
 {% include figure.html filename="lack-rack-basement.jpg" description="The LACK Rack Plex NAS' final home in the basement." %}
