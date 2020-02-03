@@ -67,6 +67,6 @@
         return false;
     });
 
-    $(".post-content img:not(.figure-img)").addClass("img-fluid");
+    $(".post-content img").addClass("img-fluid");
 
 })(window.jQuery);
