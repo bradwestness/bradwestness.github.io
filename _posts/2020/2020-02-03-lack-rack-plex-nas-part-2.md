@@ -9,7 +9,7 @@ In [part 1 of this blog series](https://www.bradwestness.com/2020/02/01/lack-rac
 
 ## Installing the Operating System
 
-The Dell PowerEdge R710 server that I bought came with a built-in "iDRAC" NIC management card, which despite the name, has nothing to do with vampires. It's actually a separate solid-state computer that pipes the video output from the main server into this auxiliary card over serial, so that you can remotely access the server over your network. You can even get watch it POST and get into the BIOS because the iDRAC (Integrated Dell Remote Access Controller) is actually a separate computer. It's just like being physically at the terminal!
+The Dell PowerEdge R710 server that I bought came with a built-in "iDRAC" NIC management card, which despite the name, has nothing to do with vampires. It's actually a separate solid-state computer that pipes the video output from the main server into this auxiliary card over serial, so that you can remotely access the server over your network. You can even watch it POST and get into the BIOS because the iDRAC (Integrated Dell Remote Access Controller) is actually a separate computer. It's just like being physically at the terminal!
 
 The iDRAC has a web interface which is similar to the admin interface you get for configuring a router or other network device, you just hit the IP address of the iDRAC (which has it's own ethernet jack), via a web browser. From there, you can view various statistics of the machine's uptime, hardware health, CPU utilization, etc. The main thing for my purposes was the remote console.
 
