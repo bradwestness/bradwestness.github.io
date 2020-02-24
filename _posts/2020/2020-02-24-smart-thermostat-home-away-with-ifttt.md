@@ -141,4 +141,4 @@ Once the service was started, I performed a highly scientific test wherein I dis
 
 Success! My home HVAC system is now aware of when we're home or away without needing to give always-on location access to anyone.
 
-I kind of wish this is how they just did it by default, but now I'm having some more ideas for things that could be triggered this way, such as automatically closing or opening the garage door (if you have a smart garage door opener), or arming a home security system.
+I kind of wish this is how they just did it by default (although setting up static IP addresses for the phones would probably be beyond the ken of non-technical folk), but now I'm having some more ideas for things that could be triggered this way, such as automatically closing or opening the garage door (if you have a smart garage door opener), or arming a home security system.
