@@ -50,7 +50,7 @@ This method loops through the IP address passed in and short-circuits as soon as
 
 Originally I was envisioning directly controlling the thermostat with some kind of HTTP request, but it turns out that the only way to send a command to it is to first authenticate to it via [OAuth 2.0](https://oauth.net/2/), which requires opening a browser window so the user can enter their credentials and authenticate the app and such. 
 
-I could've theoretically set up a custom app to do this (Honeywell has a developer portal where you can do this for free), but that seemed like entirely too much work for this little "nice to have" hobby project.
+I could've theoretically set up a custom app to do this. Honeywell has a developer portal where you can do this for free, but you still need to implement a web endpoint to handle the callbacks and tokens and whatnot, and that seemed like entirely too much work for this little "nice to have" hobby project.
 
 Then I thought I might be able to use one of the "smart assistants" that work with the thermostat (it supports Cortana, Alexa and Google Assistant), however with the specific thermostat I have, the only commands you can give via any of those are to set the temperature to a certain point... not "set away" or "set home" (you can apparently do that with the [Ecobee](https://www.cozyhomehq.com/alexa-thermostat-commands-for-nest-honeywell-ecobee-emerson/) line of thermostats, however).
 
