@@ -129,11 +129,11 @@ The `SetServiceState()` stuff is just stolen from the tutorial I lined above.
 
 Installing the Windows Service is pretty painless, you just build the app and then install it using the `installutil` tool that comes pre-installed with the .NET Framework. The only caveat is that you have to install it from an administrative command prompt.
 
-{% include figure.html filename="wifi-thermostat-powershell.jpg" description="Installing the Windows Service." %}
+{% include figure.html filename="wifi-thermostat-powershell.png" description="Installing the Windows Service." %}
 
 Installing the service just makes it available on the system, but you still have to start it. Start -> Run -> services.msc opens the Services control panel, and from there you can find the new service in the list and start it (I also set it to autostart in the event the server reboots).
 
-{% include figure.html filename="wifi-thermostat-windows-service.png" description="A wild service appears!." %}
+{% include figure.html filename="wifi-thermostat-windows-service.png" description="A wild service appears!" %}
 
 Once the service was started, I performed a highly scientific test wherein I disabled Wifi on both my and my wife's phones for a few minutes, and watched the IFTT activity screen.
 
