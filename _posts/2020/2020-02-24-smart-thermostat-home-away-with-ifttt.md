@@ -66,7 +66,7 @@ So, the #away applet sets a "permanent hold" at 55 degrees fahrenheit (which is 
 
 ## Creating a Windows Service
 
-IFTTT has an app that you can also set up to trigger IFTTT applets when your device connects or disconnects to a certain Wifi SSID, however that would trigger the app when *one* device connects or disconnects from the home network, and I wanted to only trigger away when *all* of a set of devices are gone, and trigger home as soona s *any* of them are present. Plus, that required running an app at all times on all the devices again.
+IFTTT has an Android app that you can also set up to trigger IFTTT applets when your device connects or disconnects to a certain Wifi SSID, however that would trigger the change when *one* device connects or disconnects from the home network, and I wanted to only trigger away when *all* of a set of devices are gone, and trigger home as soona s *any* of them are present. Plus, that required running an app at all times on all the devices again.
 
 I had my code to check for an IP address on the network, and my IFTTT applets set up, now I just needed to create and install a Windows service on my Plex server to periodically check for the IP addresses on the network and e-mail IFTTT when the home/away status changes.
 
