@@ -2,7 +2,7 @@
 layout: post
 title: Better Home/Away Smart Thermostat Detection via Wifi and IFTTT
 categories: [Personal,Software,Programming]
-image: content/images/lack-rack-basement.jpg
+image: content/images/wifi-thermostat-device.jpg
 ---
 
 In 2018 I put in a smart thermostat, a Honeywell T5+, specifically. The thermostat works with an app called Honeywell Home that supports geofencing to detect when one or more users are home or away based on their device's location services data.
@@ -66,7 +66,9 @@ So, the #away applet sets a "permanent hold" at 55 degrees fahrenheit (which is 
 
 ## Creating a Windows Service
 
-So, I had my code to check for an IP address on the network, and my IFTTT applets set up, now I just needed to create and install a Windows service on my Plex server to periodically check for the IP addresses on the network and e-mail IFTTT when the home/away status changes.
+IFTTT has an app that you can also set up to trigger IFTTT applets when your device connects or disconnects to a certain Wifi SSID, however that would trigger the app when *one* device connects or disconnects from the home network, and I wanted to only trigger away when *all* of a set of devices are gone, and trigger home as soona s *any* of them are present. Plus, that required running an app at all times on all the devices again.
+
+I had my code to check for an IP address on the network, and my IFTTT applets set up, now I just needed to create and install a Windows service on my Plex server to periodically check for the IP addresses on the network and e-mail IFTTT when the home/away status changes.
 
 [This tutorial](https://docs.microsoft.com/en-us/dotnet/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer) on the Microsoft Docs site was extremely valuable in walking through the process of creating and installing a Windows Service with C#.
 
