@@ -23,6 +23,8 @@ I prefer to keep SQL in the application code versus using stored procedures for 
 
 They aren't shipped with the app code and can therefore become out of sync with the app code, and as soon as one stored procedure doesn't return the right number of columns or adds a required paramter that the app doesn't send, things are going to go boom. Plus, the received wisdom that stored procedures are inherently faster than parameterized queries is a myth.
 
+But, having all your most complicated persistence logic in a big dumb string is definitely sub-optimal.
+
 ## Enter the Embeds
 
 I have always hoped someone would come up with a better way to handle this that was built into the IDE. In fact, [JetBrains' Rider IDE](https://www.jetbrains.com/rider/) does have support for "SQL Fragments" where you can get intellisense inside of SQL strings.
@@ -60,7 +62,9 @@ public IEnumerable<ArtistDTO> GetTop10ArtistsByPlaylistCount()
 		// Execute the query using your script selector definition
 
 		return dbContext
-			.QueryScript<ArtistDTO, ArtistScripts>(x => x.GetTop10ArtistsByPlaylistCount)
+			.QueryScript<ArtistDTO, ArtistScripts>(
+                x => x.GetTop10ArtistsByPlaylistCount
+            )
 			.ToList();
 	}
 }
