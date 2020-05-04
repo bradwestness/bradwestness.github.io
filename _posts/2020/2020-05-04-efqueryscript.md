@@ -33,9 +33,13 @@ However, if you're not lucky enough to use Rider in your day job, you may still 
 
 A solution to this that I finally spun up at work was to include database scripts as .SQL files in the project as embedded resources, which can then be read at runtime and used to execute queries against EF database contexts. This has been well-enough received by my team that I figured I'd make it available as an open-source NuGet package for anybody else who might be interested. I called it [EFQueryScript](https://github.com/bradwestness/EFQueryScript).
 
-{% include figure.html filename="sql-resource.png" description="Now this is pod racing!" %}
+{% include figure.html filename="sql-build-action.png" description="Don't forget to set the 'Build Action' to 'Embedded Resource.'" %}
 
 The upshot is that you get nice intellisense and syntax highlighting in Visual Studio when editing the .SQL files this way, but you can still easily execute them just as you would an ad-hoc SQL query with Entity Framework using an inline string.
+
+{% include figure.html filename="sql-resource.png" description="Now this is pod racing!" %}
+
+In order to use the embedded resource in a query, you do the following:
 
 ```csharp
 // Simply define a "script selector" class with properties
