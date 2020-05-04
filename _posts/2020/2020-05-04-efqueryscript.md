@@ -38,7 +38,7 @@ A solution to this that I finally spun up at work was to include database script
 The upshot is that you get nice intellisense and syntax highlighting in Visual Studio when editing the .SQL files this way, but you can still easily execute them just as you would an ad-hoc SQL query with Entity Framework using an inline string.
 
 ```csharp
-// Simply define a class with properties that resolve
+// Simply define a "script selector" class with properties that resolve
 // to the names of the embedded resource SQL scripts
 // in your project
 // Note: This class must be in the same assembly as the embedded resources
