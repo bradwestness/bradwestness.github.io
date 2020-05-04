@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Running Entity Framework Queries from Embedded Resource SQL Files
+title: Running Entity Framework Queries from Embedded Resource SQL Files with EFQueryScript
 categories: [Programming,Software]
 image: content/images/sql-resource.png
 ---
