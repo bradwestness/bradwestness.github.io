@@ -48,7 +48,7 @@ single: true
                 </p>
             </section>
 
-            <section class="share pull-right">
+            <section class="share pull-right d-print-none">
                 <h4>Share this post</h4>
                 <ul class="list-inline">
                     <li>
@@ -74,7 +74,7 @@ single: true
         </div>
 
         {% if page.previous.url || page.next.url %}
-        <ul class="pagination">
+        <ul class="pagination d-print-none">
             {% if page.previous.url %}
             <li class="page-item">
                 <a class="page-link" href="{{ page.previous.url }}" aria-label="Previous">
@@ -93,7 +93,7 @@ single: true
         </ul>
         {% endif %}
 
-        <section class="comments">
+        <section class="comments d-print-none">
             <h4>Comments</h4>
             <div id="disqus_thread"></div>
             <script type="text/javascript">
