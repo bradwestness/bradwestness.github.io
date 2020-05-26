@@ -41,17 +41,29 @@ Just make sure to have have several interconnected paths, since players can move
 
 Sprinkle the following typs of spaces throughout the board:
 
+#### Start Space
+
+![Start Space](https://www.bradwestness.com/content/images/paper_mario_party_start_space.png)
+
+A space for everyone to start on. Nothing else special about it.
+
 #### Star Spaces ⭐
+
+![Star Space](https://www.bradwestness.com/content/images/paper_mario_party_star_space.png)
 
 There needs to be exactly six Star Spaces on the board, each corresponding to one side of a six-sided dice. At the start of a game, you roll the dice to pick which Star Space to place a Star on, and everyone tries to get to the Star to buy it. When somebody does, you roll again and put a new Star on the new space.
 
 #### Item Spaces 🍄
 
+![Item Space](https://www.bradwestness.com/content/images/paper_mario_party_item_space.png)
+
 There doesn't need to be a specific number of Item Spaces, just sprinkle some throughout the board. When a player lands on an Item Space, they draw a card from the Item Card pile and it goes into their hand for use on subsequent turn(s).
 
 #### Chance Spaces [?]
 
-There doesn't need to b e aspecific number of Chance Spaces, just sprinkle some throughout the board. When a player lands on a Chance Space, they draw a card from the Chance Card pile, and it takes immediate effect.
+![Chance Space](https://www.bradwestness.com/content/images/paper_mario_party_chance_space.png)
+
+There doesn't need to be a specific number of Chance Spaces, just sprinkle some throughout the board. When a player lands on a Chance Space, they draw a card from the Chance Card pile, and it takes immediate effect.
 
 #### Warp Pipes
 
@@ -62,7 +74,9 @@ We added these after the above picture was taken when we realized that you can't
 You'll need:
 
 #### Stars
-    
+
+{% include figure.html filename="paper_mario_party_stars_coins.png" description="Stars and Coins" %}
+
 We made these by folding a piece of yellow card stock into thirds both ways and cutting a star shape out, which yielded nine Stars.
 
 #### Coins
