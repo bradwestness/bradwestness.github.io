@@ -134,7 +134,7 @@ Each turn goes like this:
 
 Here's what happens depending on what kind of space the player stops on:
 
-| Type of Space | Effect |
+| Type | Effect |
 | --- | --- |
 | Star Space | <ul><li>If the player has 3 coins, they may buy the Star, otherwise nothing happens.</li><li>You must stop exactly on the Star Space to buy the Star.</li><li>After a player buys a Star, they roll the dice to determine where the next Star will go.</li></ul> |
 | Chance Space | <ul><li>Draw a card from the Chance Card pile and do whatever it says.</li><li>Replace the Chance Card at the bottom of the pile.</li></ul> |
