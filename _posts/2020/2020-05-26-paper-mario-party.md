@@ -109,7 +109,7 @@ Here are some of the ones we tried:
 
 {% include figure.html filename="paper_mario_party_player_pieces.png" description="Left to right: Mario, Pom Pom, Luigi" %}
 
-We each drew and cut out our own character to use as our piece during the game. We made Mario, Luigi, Yoshi, and Pom Pom.
+We each drew and cut out our own character to use as our piece during the game. We made Mario, Luigi, Yoshi, and [Pom Pom](https://www.mariowiki.com/Pom_Pom).
 
 ## 4. Gameplay
 
