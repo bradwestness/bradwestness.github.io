@@ -21,7 +21,11 @@ Before a winner is declared, two Bonus Stars are awarded. Whoever has the most S
 
 ## 2. What You Need
 
-The only things you need are 1 six-sided dice and some kind of timer. I just used my phone, but an hourglass "borrowed" from another board game would work too. Everything else can be made out of paper (hence "Paper Mario Party").
+The only things you need are:
+* 1 six-sided dice
+* Some kind of timer. I just used my phone, but an hourglass "borrowed" from another board game would work too. 
+
+Everything else can be made out of paper (hence "Paper Mario Party").
 
 ## 3. Craft World
 
