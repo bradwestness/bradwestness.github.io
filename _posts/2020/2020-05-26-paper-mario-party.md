@@ -103,6 +103,8 @@ We each drew and cut out our own character to use as our piece during the game. 
 
 ## 4. Gameplay
 
+Now you're ready to play the game! It's pretty simple.
+
 ### 4.1 Starting a Game
 
 {% include figure.html filename="paper_mario_party_starting_a_game.png" description="The Bonus Stars" %}
@@ -169,8 +171,6 @@ We used the following Bonus Stars. You could make up your own as well:
 
 {% include figure.html filename="paper_mario_party_gameplay.png" description="Intense Paper Mario Party gameplay in progress." %}
 
-If anybody else gives this a shot, I'd love to hear how it worked and what tweaks or additions or house rules you made.
-
-I'd like this thing to be "open source," so if you have changes that make it more fun, or new Minigame ideas, we can incorporate them back into our game as well! 
+I'd like this thing to be "open source," so if you have changes that make it more fun, or new Minigame ideas, I'd love to hear how it worked so we can incorporate them back into our game as well! 
 
 Have fun!
