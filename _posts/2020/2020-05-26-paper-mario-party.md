@@ -29,7 +29,9 @@ The first step is to make the game board and the pieces.
 
 ### 3.1 The Board
 
-The board doesn't need to follow any specific design, but should have several "paths" since players can move in any direction they choose.
+The board doesn't need to follow any specific design. I originally intended to have four square "zones" with paths connecting each, but wound up with two and a weird second path between them because the paper wasn't big enough. It works, though! 
+
+Just make sure to have have several interconnected paths, since players can move in any direction they choose.
 
 {% include figure.html filename="paper_mario_party_board.png" description="The Board" %}
 
