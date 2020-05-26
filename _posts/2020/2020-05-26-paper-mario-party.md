@@ -13,21 +13,21 @@ We improvised the rules and made all our own game pieces and everything, and the
 
 We've played it quite a few times now, making little tweaks each time, and it's actually pretty great. Vastly more fun than Candyland or Chutes and Ladders for all involved. The kids get to get up and move around during the "minigames," and the adults get to play a game that actually involves some semblance of strategy rather than just rotely doing whatever a card or spinner says on every turn.
 
-## How to Play
+## 1. How to Play
 
 The object of the game is to collect Stars. Each Star costs 3 Coins. To get Coins, you have to win "minigames," which are all things like: Staring Contest, Thumb Wrestling, Tic-Tac-Toe, etc. The game ends when one player collects three Stars. 
 
 Before a winner is declared, two Bonus Stars are awarded. Whoever has the most Stars when after the bonuses are awarded is the winner!
 
-## What You Need
+## 2. What You Need
 
-The only things you need are 1 six-sided dice and some kind of timer. I just used my phone, but an hourglass "borrowed" from another board game would work too.
+The only things you need are 1 six-sided dice and some kind of timer. I just used my phone, but an hourglass "borrowed" from another board game would work too. Everything else can be made out of paper (hence "Paper Mario Party").
 
-## Craft World
+## 3. Craft World
 
 The first step is to make the game board and the pieces.
 
-### The Board
+### 3.1 The Board
 
 The board doesn't need to follow any specific design, but should have several "paths" since players can move in any direction they choose.
 
@@ -51,7 +51,7 @@ There doesn't need to b e aspecific number of Chance Spaces, just sprinkle some 
 
 We added these after the above picture was taken when we realized that you can't have a Mario game without warp pipes. I just put two corresponding green pipes on opposite corners of the board, and two corresponding red pipes on the other corners. When you land on one, you instantly travel to the corresponding pipe of the same color.
 
-### The Pieces
+### 3.2 The Pieces
 
 You'll need:
 
@@ -63,7 +63,7 @@ We made these by folding a piece of yellow card stock into thirds both ways and 
     
 In the same fashion as the stars, we folded a piece of paper into thirds both ways and then cut out four circles, which yielded 36 Coins.
 
-#### Chance Cards
+#### Chance Cards 
     
 Indicated by a Mario-style [?] block, we made ten of these. They have the following varieties:
 
@@ -101,9 +101,9 @@ This is where the real fun is. At the end of each round, all players compete in 
 
 We each drew and cut out our own character to use as our piece during the game. We made Mario, Luigi, Yoshi, and Pom Pom.
 
-## Gameplay
+## 4. Gameplay
 
-### Starting a Game
+### 4.1 Starting a Game
 
 {% include figure.html filename="paper_mario_party_starting_a_game.png" description="The Bonus Stars" %}
 
@@ -113,7 +113,7 @@ Setting up is simple:
 * Roll the dice to determine which Star Space to place a Star on
 * Have each player roll the dice to determine who goes first
 
-### Taking Turns
+### 4.2 Taking Turns
 
 Each turn goes like this:
 
@@ -140,11 +140,11 @@ Each turn goes like this:
 
 At the end of each round, draw a Minigame Card and play the minigame! The winner(s) receive 1 coin each. Make sure to record how many games each player has won, which is used when awarding Bonus Stars at the end.
 
-### Ending the Game
+### 4.3 Ending the Game
 
 When any player acquires their third Star, the current round becomes the Final Round. You still finish the round (including Minigame), but Bonus Stars are awarded after and a winner is declared.
 
-#### Bonus Stars
+#### 4.4 Bonus Stars
 
 {% include figure.html filename="paper_mario_party_bonus_stars.png" description="The Bonus Stars" %}
 
