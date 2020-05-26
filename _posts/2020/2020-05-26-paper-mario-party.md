@@ -136,11 +136,11 @@ Here's what happens depending on what kind of space the player stops on:
 
 | Type | Effect |
 | --- | --- |
-| Star Space | <ul><li>If the player has 3 coins, they may buy the Star, otherwise nothing happens.</li><li>You must stop exactly on the Star Space to buy the Star.</li><li>After a player buys a Star, they roll the dice to determine where the next Star will go.</li></ul> |
-| Chance Space | <ul><li>Draw a card from the Chance Card pile and do whatever it says.</li><li>Replace the Chance Card at the bottom of the pile.</li></ul> |
-| Item Space | <ul><li>Draw a card from the Item Card pile and hold onto it.</li><li>Item Cards can't be used on the same turn they are acquired, but can be used at the start of any subsequent turn.</li></ul> |
-| Warp Pipe | <ul><li>Move your piece to the corresponding warp pipe of the matching color.</li><li>You could choose to make this optional.</li></ul> |
-| Another Player | <ul><li>If you land on the same space as another player, you can "stomp" on them, and steal 1 Coin from them.</li><li>Any other special space effects occur as usual.</li></ul> |
+| Star Space | {::nomarkdown}<ul><li>If the player has 3 coins, they may buy the Star, otherwise nothing happens.</li><li>You must stop exactly on the Star Space to buy the Star.</li><li>After a player buys a Star, they roll the dice to determine where the next Star will go.</li></ul>{:/} |
+| Chance Space | {::nomarkdown}<ul><li>Draw a card from the Chance Card pile and do whatever it says.</li><li>Replace the Chance Card at the bottom of the pile.</li></ul>{:/} |
+| Item Space | {::nomarkdown}<ul><li>Draw a card from the Item Card pile and hold onto it.</li><li>Item Cards can't be used on the same turn they are acquired, but can be used at the start of any subsequent turn.</li></ul>{:/} |
+| Warp Pipe | {::nomarkdown}<ul><li>Move your piece to the corresponding warp pipe of the matching color.</li><li>You could choose to make this optional.</li></ul>{:/} |
+| Another Player | {::nomarkdown}<ul><li>If you land on the same space as another player, you can "stomp" on them, and steal 1 Coin from them.</li><li>Any other special space effects occur as usual.</li></ul>{:/} |
 
 At the end of each round, draw a Minigame Card and play the minigame! The winner(s) receive 1 coin each. Make sure to record how many games each player has won, which is used when awarding Bonus Stars at the end.
 
