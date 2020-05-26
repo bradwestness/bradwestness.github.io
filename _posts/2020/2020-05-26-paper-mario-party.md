@@ -41,50 +41,28 @@ Just make sure to have have several interconnected paths, since players can move
 
 Sprinkle the following typs of spaces throughout the board:
 
-#### Start Space
+ | Type | Description |   |
+ | --- | --- | --- |
+ | Start Space | A space for everyone to start on. There should only be one of these. | ![Start Space](https://www.bradwestness.com/content/images/paper_mario_party_start_space.png)
+ Star Space | There should be exactly six of htese, each numbered according to one side of a six sided dice. At the start of a game, you roll the dice to pick which Star Space to place a Star on, and everyone tries to get to the Star to buy it. When somebody does, you roll again and put a new Star on the new Space. | ![Star Space](https://www.bradwestness.com/content/images/paper_mario_party_star_space.png) |
+| Item Space | There doesn't need to be a specific number of Item Spaces, just sprinkle some throughout the board. When a player lands on an Item Space, they draw a card from the Item Card pile and it goes into their hand for use on subsequent turn(s). | ![Item Space](https://www.bradwestness.com/content/images/paper_mario_party_item_space.png) |
+| Chance Space | There doesn't need to be a specific number of Chance Spaces, just sprinkle some throughout the board. When a player lands on a Chance Space, they draw a card from the Chance Card pile, and it takes immediate effect. | ![Chance Space](https://www.bradwestness.com/content/images/paper_mario_party_chance_space.png) |
+| Warp Pipe | We added these after the above picture was taken when we realized that you can't have a Mario game without warp pipes. I just put two corresponding green pipes on opposite corners of the board, and two corresponding red pipes on the other corners. When you land on one, you instantly travel to the corresponding pipe of the same color. | |
 
-![Start Space](https://www.bradwestness.com/content/images/paper_mario_party_start_space.png)
-
-A space for everyone to start on. Nothing else special about it.
-
-#### Star Spaces ⭐
-
-![Star Space](https://www.bradwestness.com/content/images/paper_mario_party_star_space.png)
-
-There needs to be exactly six Star Spaces on the board, each corresponding to one side of a six-sided dice. At the start of a game, you roll the dice to pick which Star Space to place a Star on, and everyone tries to get to the Star to buy it. When somebody does, you roll again and put a new Star on the new space.
-
-#### Item Spaces 🍄
-
-![Item Space](https://www.bradwestness.com/content/images/paper_mario_party_item_space.png)
-
-There doesn't need to be a specific number of Item Spaces, just sprinkle some throughout the board. When a player lands on an Item Space, they draw a card from the Item Card pile and it goes into their hand for use on subsequent turn(s).
-
-#### Chance Spaces [?]
-
-![Chance Space](https://www.bradwestness.com/content/images/paper_mario_party_chance_space.png)
-
-There doesn't need to be a specific number of Chance Spaces, just sprinkle some throughout the board. When a player lands on a Chance Space, they draw a card from the Chance Card pile, and it takes immediate effect.
-
-#### Warp Pipes
-
-We added these after the above picture was taken when we realized that you can't have a Mario game without warp pipes. I just put two corresponding green pipes on opposite corners of the board, and two corresponding red pipes on the other corners. When you land on one, you instantly travel to the corresponding pipe of the same color.
 
 ### 3.2 The Pieces
 
 You'll need:
 
-#### Stars
-
-{% include figure.html filename="paper_mario_party_stars_coins.png" description="Stars and Coins" %}
-
-We made these by folding a piece of yellow card stock into thirds both ways and cutting a star shape out, which yielded nine Stars.
-
-#### Coins
-    
-In the same fashion as the stars, we folded a piece of paper into thirds both ways and then cut out four circles, which yielded 36 Coins.
+| Type | Description |   |
+| --- | --- | --- |
+| Stars | We made these by folding a piece of yellow card stock into thirds both ways and cutting a star shape out, which yielded nine Stars. | ![Stars](https://www.bradwestness.com/content/images/paper_mario_party_stars.png) |
+| Coins | In the same fashion as the stars, we folded a piece of paper into thirds both ways and then cut out four circles, which yielded 36 Coins. | ![Coins](https://www.bradwestness.com/content/images/paper_mario_party_coins.png) |
 
 #### Chance Cards 
-    
+
+{% include figure.html filename="paper_mario_party_chance_cards.png" description="Some are lucky, some are bad luck." %}
+
 Indicated by a Mario-style [?] block, we made ten of these. They have the following varieties:
 
 * Get 1 coin (we made three of these)
@@ -92,32 +70,42 @@ Indicated by a Mario-style [?] block, we made ten of these. They have the follow
 * Get 1 star (only one of these)
 * Lose 1 star (only 1 of these)
 * Move 1 space from the star (only 1 of these)
-* The Star moves (only 1 of these)
+* The Star moves (only 1 of these)  
 
 #### Item Cards
     
+{% include figure.html filename="paper_mario_party_item_cards.png" description="If you hoard items and don't use them, you might get a Bonus Star at the end!" %}
+
 Indicated by a 🍄, we made ten of these as well. They have the following varieties:
 
-* Dash Mushroom - adds 3 to your next dice roll (we made 3 of these)
-* Poison Mushroom - subtracts 2 from another player's next dice roll (we made 3 of these)
-* Golden Dash Mushroom - adds 5 to your next dice roll (we made 2 of these)
-* Golden Pipe - move 1 place away from the star (only 1 of these)
-* Double Card - allows the player to buy 2 stars the next time they land on the Star space (only 1 of these)
+| Item | Description | |
+| --- | --- | --- |
+| Dash Mushroom | Adds 3 to your next dice roll (we made 3 of these). | |
+| Poison Mushroom | Subtracts 2 from another player's next dice roll (we made 3 of these). | |
+| Golden Dash Mushroom | Adds 5 to your next dice roll (we made 2 of these). | |
+| Golden Pipe | Move 1 place away from the star (only 1 of these). | |
+| Double Card | Allows the player to buy 2 stars the next time they land on the Star space (only 1 of these). | |
 
 #### Minigame Cards
 
+{% include figure.html filename="paper_mario_party_minigame_cards.png" description="An assortment of minigames" %}
+
 This is where the real fun is. At the end of each round, all players compete in a minigame for a coin. They should be fun games that kids can play which don't require a ton of equipment. Here are some of the ones we tried:
 
-* Staring contest - Either 1 on 1 round-robin, or everyone at once. If you blink, you're out. Last person standing wins.
-* Simon Says - One player is "Simon" and if they get everyone else out in a minute, they win, otherwise the winner(s) are whoever makes it to the end of the minute.
-* Make a Basket - Pick some object to be the "ball" (we used a stuffed animal and an empty Amazon box), and take turns shooting "baskets," when you miss, you're out. Last person standing wins.
-* Guess a Number - Everyone picks a number from 1-6 (you can't pick the same number as another player), and then one person rolls the dice. Who ever is closest without going over (a.k.a. the "The Price is Right" rule) wins.
-* Rock, Paper, Scissors - Round-robin until one person is declared the winner.
-* Tic-Tac-Toe - Round-robin until one person is the winner, if the last game is a tie, both players get a coin.
-* Footrace - Pick a starting and ending point and have a footrace. Winner gets a coin.
-* Thumb Wrestling - Round robin until one person is the winner.
+| Minigame | Description | |
+| --- | --- | --- |
+| Staring Contest | Either 1 on 1 round-robin, or everyone at once. If you blink, you're out. Last person standing wins. | |
+| Simon Says | One player is "Simon" and if they get everyone else out in a minute, they win, otherwise the winner(s) are whoever makes it to the end of the minute. | |
+| Make a Basket | Pick some object to be the "ball" (we used a stuffed animal and an empty Amazon box), and take turns shooting "baskets," when you miss, you're out. Last person standing wins. | |
+| Guess a Number | Everyone picks a number from 1-6 (you can't pick the same number as another player), and then one person rolls the dice. Who ever is closest without going over (a.k.a. the "The Price is Right" rule) wins. | |
+| Rock, Paper, Scissors | Round-robin until one person is declared the winner. | |
+| Tic-Tac-Toe | Round-robin until one person is the winner, if the last game is a tie, both players get a coin. | |
+| Footrace | Pick a starting and ending point and have a footrace. Winner gets a coin. | |
+| Thumb Wrestling | Round robin until one person is the winner. | |
 
 #### Player Pieces
+
+{% include figure.html filename="paper_mario_party_player_pieces.png" description="Left to right: Mario, Pom Pom, Luigi" %}
 
 We each drew and cut out our own character to use as our piece during the game. We made Mario, Luigi, Yoshi, and Pom Pom.
 
@@ -145,30 +133,57 @@ Each turn goes like this:
 
 Here's what happens depending on what kind of space the player stops on:
 
-#### Star Space
+<table>
+	<thead>
+		<tr>
+		<th style="width:30%">Type of Space</th>
+		<th>Effect</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>		
+			<td>Star Space</td>
+			<td>
 
 * If the player has 3 coins, they may buy the Star, otherwise nothing happens.
 * You must stop exactly on the Star Space to buy the Star.
 * After a player buys a Star, they roll the dice to determine where the next Star will go.
+</td>
+		</tr>
+		<tr>
+			<td>Chance Space</td>
+			<td>	
 
-#### Chance Space
 * Draw a card from the Chance Card pile and do whatever it says.
 * Replace the Chance Card at the bottom of the pile.
-
-#### Item Space
+</td>
+		</tr>
+		<tr>
+			<td>Item Space</td>
+			<td>
 
 * Draw a card from the Item Card pile and hold onto it.
 * Item Cards can't be used on the same turn they are acquired, but can be used at the start of any subsequent turn.
-
-#### Warp Pipe
+</td>	
+		</tr>
+		<tr>
+			<td>Warp Pipe</td>
+			<td>
 
 * Move your piece to the corresponding warp pipe of the matching color.
 * You could choose to make this optional.
-	
-#### Another Player
+</td>
+		</tr>
+		<tr>
+		<td>Another Player</td>
+		<td>
 
 * If you land on the same space as another player, you can "stomp" on them, and steal 1 Coin from them.
 * Any other special space effects occur as usual.
+</td>
+		</tr>
+	</tbody>
+</table>
 
 At the end of each round, draw a Minigame Card and play the minigame! The winner(s) receive 1 coin each. Make sure to record how many games each player has won, which is used when awarding Bonus Stars at the end.
 
@@ -184,18 +199,14 @@ Roll the dice and award the corresponding Bonus Stars. Do this twice.
 
 We used the following Bonus Stars. You could make up your own as well:
 
-1. Rich Bonus
-    * The player(s) with the most Coins get a Star. If it's a tie, they each get one.
-1. Buddy Bonus
-	* If any two players are on the same space, they each get a Star. If nobody is sharing a space, re-roll for a different Bonus Star.
-1. Item Bonus
-	* The player(s) with the most unused Items get a Star. If it's a tie, they each get one.
-1. Minigame Bonus
-	* The player(s) who won the most Minigames get a Star. If it's a tie, they each get one.
-1. Blue Shell Bonus
-	* The player with the fewest Stars gets a Star.
-1. Baby Bowser Bonus
-	* The youngest player gets a Star.
+| # | Bonus | Description |
+| --- | --- | --- |
+| 1 | Rich Bonus | The player(s) with the most Coins get a Star. If it's a tie, they each get one. |
+| 2 | Buddy Bonus | If any two players are on the same space, they each get a Star. If nobody is sharing a space, re-roll for a different Bonus Star. |
+| 3 | Item Bonus | The player(s) with the most unused Items get a Star. If it's a tie, they each get one. |
+| 4 | Minigame Bonus | The player(s) who won the most Minigames get a Star. If it's a tie, they each get one. |
+| 5 | Blue Shell Bonus | The player with the fewest Stars gets a Star. |
+| 6 | Baby Bowser Bonus | The youngest player gets a Star. |
 
 ## Remix It!
 
