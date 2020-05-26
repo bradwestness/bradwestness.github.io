@@ -134,57 +134,13 @@ Each turn goes like this:
 
 Here's what happens depending on what kind of space the player stops on:
 
-<table>
-	<thead>
-		<tr>
-		<th style="width:30%">Type of Space</th>
-		<th>Effect</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>		
-			<td>Star Space</td>
-			<td>
-
-* If the player has 3 coins, they may buy the Star, otherwise nothing happens.
-* You must stop exactly on the Star Space to buy the Star.
-* After a player buys a Star, they roll the dice to determine where the next Star will go.
-</td>
-		</tr>
-		<tr>
-			<td>Chance Space</td>
-			<td>	
-
-* Draw a card from the Chance Card pile and do whatever it says.
-* Replace the Chance Card at the bottom of the pile.
-</td>
-		</tr>
-		<tr>
-			<td>Item Space</td>
-			<td>
-
-* Draw a card from the Item Card pile and hold onto it.
-* Item Cards can't be used on the same turn they are acquired, but can be used at the start of any subsequent turn.
-</td>	
-		</tr>
-		<tr>
-			<td>Warp Pipe</td>
-			<td>
-
-* Move your piece to the corresponding warp pipe of the matching color.
-* You could choose to make this optional.
-</td>
-		</tr>
-		<tr>
-		<td>Another Player</td>
-		<td>
-
-* If you land on the same space as another player, you can "stomp" on them, and steal 1 Coin from them.
-* Any other special space effects occur as usual.
-</td>
-		</tr>
-	</tbody>
-</table>
+| Type of Space | Effect |
+| --- | --- |
+| Star Space | <ul><li>If the player has 3 coins, they may buy the Star, otherwise nothing happens.</li><li>You must stop exactly on the Star Space to buy the Star.</li><li>After a player buys a Star, they roll the dice to determine where the next Star will go.</li></ul> |
+| Chance Space | <ul><li>Draw a card from the Chance Card pile and do whatever it says.</li><li>Replace the Chance Card at the bottom of the pile.</li></ul> |
+| Item Space | <ul><li>Draw a card from the Item Card pile and hold onto it.</li><li>Item Cards can't be used on the same turn they are acquired, but can be used at the start of any subsequent turn.</li></ul> |
+| Warp Pipe | <ul><li>Move your piece to the corresponding warp pipe of the matching color.</li><li>You could choose to make this optional.</li></ul> |
+| Another Player | <ul><li>If you land on the same space as another player, you can "stomp" on them, and steal 1 Coin from them.</li><li>Any other special space effects occur as usual.</li></ul> |
 
 At the end of each round, draw a Minigame Card and play the minigame! The winner(s) receive 1 coin each. Make sure to record how many games each player has won, which is used when awarding Bonus Stars at the end.
 
@@ -192,7 +148,7 @@ At the end of each round, draw a Minigame Card and play the minigame! The winner
 
 When any player acquires their third Star, the current round becomes the Final Round. You still finish the round (including Minigame), but Bonus Stars are awarded after and a winner is declared.
 
-#### 4.4 Bonus Stars
+#### Bonus Stars
 
 {% include figure.html filename="paper_mario_party_bonus_stars.png" description="The Bonus Stars" %}
 
