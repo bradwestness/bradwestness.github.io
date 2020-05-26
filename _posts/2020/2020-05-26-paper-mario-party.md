@@ -33,16 +33,14 @@ The board doesn't need to follow any specific design, but should have several "p
 
 Sprinkle the following typs of spaces throughout the board:
 
-1. Star Spaces
+1. Star Spaces ⭐
     * There needs to be exactly six Star Spaces on the board, each corresponding to one side of a six-sided dice. At the start of a game, you roll the dice to pick which Star Space to place a Star on, and everyone tries to get to the Star to buy it. When somebody does, you roll again and put a new Star on the new space.
-1. Item Spaces
+1. Item Spaces 🍄
     * There doesn't need to be a specific number of Item Spaces, just sprinkle some throughout the board. When a player lands on an Item Space, they draw a card from the Item Card pile and it goes into their hand for use on subsequent turn(s).
-1. Chance Spaces
+1. Chance Spaces [?]
 	* There doesn't need to b e aspecific number of Chance Spaces, just sprinkle some throughout the board. When a player lands on a Chance Space, they draw a card from the Chance Card pile, and it takes immediate effect.
 1. Warp Pipes
 	* We added these after the above picture was taken when we realized that you can't have a Mario game without warp pipes. I just put two corresponding green pipes on opposite corners of the board, and two corresponding red pipes on the other corners. When you land on one, you instantly travel to the corresponding pipe of the same color.
-
-There is one important feature to the board: there must be six "Star spaces," each one corresponding to a side of a six-sided dice. 
 
 ### The Pieces
 
