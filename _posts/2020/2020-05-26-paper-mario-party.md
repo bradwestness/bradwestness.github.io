@@ -90,7 +90,9 @@ Indicated by a 🍄, we made ten of these as well. They have the following varie
 
 {% include figure.html filename="paper_mario_party_minigame_cards.png" description="An assortment of minigames" %}
 
-This is where the real fun is. At the end of each round, all players compete in a minigame for a coin. They should be fun games that kids can play which don't require a ton of equipment. Here are some of the ones we tried:
+This is where the real fun is. At the end of each round, all players compete in a minigame for a coin. They should be fun games that kids can play which don't require a ton of equipment. 
+
+Here are some of the ones we tried:
 
 | Minigame | Description |
 | --- | --- |
