@@ -44,7 +44,7 @@ Sprinkle the following typs of spaces throughout the board:
  | Type | Description |   |
  | --- | --- | --- |
  | Start Space | A space for everyone to start on. There should only be one of these. | ![Start Space](https://www.bradwestness.com/content/images/paper_mario_party_start_space.png)
- Star Space | There should be exactly six of htese, each numbered according to one side of a six sided dice. At the start of a game, you roll the dice to pick which Star Space to place a Star on, and everyone tries to get to the Star to buy it. When somebody does, you roll again and put a new Star on the new Space. | ![Star Space](https://www.bradwestness.com/content/images/paper_mario_party_star_space.png) |
+ Star Space | There should be exactly six of these, each numbered according to one side of a six sided dice. At the start of a game, you roll the dice to pick which Star Space to place a Star on, and everyone tries to get to the Star to buy it. When somebody does, you roll again and put a new Star on the new Space. | ![Star Space](https://www.bradwestness.com/content/images/paper_mario_party_star_space.png) |
 | Item Space | There doesn't need to be a specific number of Item Spaces, just sprinkle some throughout the board. When a player lands on an Item Space, they draw a card from the Item Card pile and it goes into their hand for use on subsequent turn(s). | ![Item Space](https://www.bradwestness.com/content/images/paper_mario_party_item_space.png) |
 | Chance Space | There doesn't need to be a specific number of Chance Spaces, just sprinkle some throughout the board. When a player lands on a Chance Space, they draw a card from the Chance Card pile, and it takes immediate effect. | ![Chance Space](https://www.bradwestness.com/content/images/paper_mario_party_chance_space.png) |
 | Warp Pipe | We added these after the above picture was taken when we realized that you can't have a Mario game without warp pipes. I just put two corresponding green pipes on opposite corners of the board, and two corresponding red pipes on the other corners. When you land on one, you instantly travel to the corresponding pipe of the same color. | |
@@ -78,13 +78,13 @@ Indicated by a Mario-style [?] block, we made ten of these. They have the follow
 
 Indicated by a 🍄, we made ten of these as well. They have the following varieties:
 
-| Item | Description | |
-| --- | --- | --- |
-| Dash Mushroom | Adds 3 to your next dice roll (we made 3 of these). | |
-| Poison Mushroom | Subtracts 2 from another player's next dice roll (we made 3 of these). | |
-| Golden Dash Mushroom | Adds 5 to your next dice roll (we made 2 of these). | |
-| Golden Pipe | Move 1 place away from the star (only 1 of these). | |
-| Double Card | Allows the player to buy 2 stars the next time they land on the Star space (only 1 of these). | |
+| Item | Description |
+| --- | --- |
+| Dash Mushroom | Adds 3 to your next dice roll (we made 3 of these). |
+| Poison Mushroom | Subtracts 2 from another player's next dice roll (we made 3 of these). |
+| Golden Dash Mushroom | Adds 5 to your next dice roll (we made 2 of these). |
+| Golden Pipe | Move 1 place away from the star (only 1 of these). |
+| Double Card | Allows the player to buy 2 stars the next time they land on the Star space (only 1 of these). |
 
 #### Minigame Cards
 
@@ -92,16 +92,16 @@ Indicated by a 🍄, we made ten of these as well. They have the following varie
 
 This is where the real fun is. At the end of each round, all players compete in a minigame for a coin. They should be fun games that kids can play which don't require a ton of equipment. Here are some of the ones we tried:
 
-| Minigame | Description | |
-| --- | --- | --- |
-| Staring Contest | Either 1 on 1 round-robin, or everyone at once. If you blink, you're out. Last person standing wins. | |
-| Simon Says | One player is "Simon" and if they get everyone else out in a minute, they win, otherwise the winner(s) are whoever makes it to the end of the minute. | |
-| Make a Basket | Pick some object to be the "ball" (we used a stuffed animal and an empty Amazon box), and take turns shooting "baskets," when you miss, you're out. Last person standing wins. | |
-| Guess a Number | Everyone picks a number from 1-6 (you can't pick the same number as another player), and then one person rolls the dice. Who ever is closest without going over (a.k.a. the "The Price is Right" rule) wins. | |
-| Rock, Paper, Scissors | Round-robin until one person is declared the winner. | |
-| Tic-Tac-Toe | Round-robin until one person is the winner, if the last game is a tie, both players get a coin. | |
-| Footrace | Pick a starting and ending point and have a footrace. Winner gets a coin. | |
-| Thumb Wrestling | Round robin until one person is the winner. | |
+| Minigame | Description |
+| --- | --- |
+| Staring Contest | Either 1 on 1 round-robin, or everyone at once. If you blink, you're out. Last person standing wins. |
+| Simon Says | One player is "Simon" and if they get everyone else out in a minute, they win, otherwise the winner(s) are whoever makes it to the end of the minute. |
+| Make a Basket | Pick some object to be the "ball" (we used a stuffed animal and an empty Amazon box), and take turns shooting "baskets," when you miss, you're out. Last person standing wins. |
+| Guess a Number | Everyone picks a number from 1-6 (you can't pick the same number as another player), and then one person rolls the dice. Who ever is closest without going over (a.k.a. the "The Price is Right" rule) wins. |
+| Rock, Paper, Scissors | Round-robin until one person is declared the winner. |
+| Tic-Tac-Toe | Round-robin until one person is the winner, if the last game is a tie, both players get a coin. |
+| Footrace | Pick a starting and ending point and have a footrace. Winner gets a coin. |
+| Thumb Wrestling | Round robin until one person is the winner. |
 
 #### Player Pieces
 
@@ -121,6 +121,7 @@ Setting up is simple:
 
 * Each player starts with one Coin
 * Roll the dice to determine which Star Space to place a Star on
+* Each player puts their piece on the Start Space
 * Have each player roll the dice to determine who goes first
 
 ### 4.2 Taking Turns
