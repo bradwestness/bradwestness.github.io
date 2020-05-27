@@ -34,7 +34,7 @@ a [critique of the U.S.'s involvement in the Vietnam War](http://nypost.com/2014
 ### Jar-Jar Binks
 
 I'm not going to say Jar-Jar is a great character, but for all the high-minded political stuff 
-going on, there needed to be some comedic releif to keep the younger people in the audience 
+going on, there needed to be some comedic relief to keep the younger people in the audience 
 interested. I realize I'm damning with faint praise, but Jar-Jar is really hardly 
 in the movie, and it's pretty easy to just ignore him if you don't think he's funny. 
 
@@ -42,7 +42,7 @@ I don't think he's really any more distracting or annoying than C3P0's constant 
 Strikes Back*, and similarly, most of  the comedy really comes from how even the characters 
 in the movie don't really like him, much like Han's antagonism toward the  C3P0 in that film. 
 
-I actually think there's a pretty good mix of political stuff, comedic releif, space action 
+I actually think there's a pretty good mix of political stuff, comedic relief, space action 
 and military strategy, and the movie would not keep younger audience members engaged if you
 just took out Jar-Jar and the Gungans entirely. It's also telling that people who saw 
 *Phantom Menace* first as kids aren't bothered by Jar-Jar at all. It's the devil you know, I think.
