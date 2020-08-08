@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Switching Your Network to UniFi
-categories: [Software]
-image: content/images/paper_mario_party_cover.png
+title: Switching Your Home Network to UniFi
+categories: [Software,Programming]
+image: content/images/unifi_header.jpg
 ---
 
 I recently switched over my home network to all [UniFi](https://store.ui.com/) based gear, and I've had several co-workers and friends ask about it, there's a bit of a learning curve to figure out what exactly you actually need to get a network put together with UniFi, so I figured I'd write up my thoughts in the form of a blog post so I can refer folks to it in the future.
@@ -18,7 +18,7 @@ If you think about a normal consumer Wifi router, it basically has these functio
 * Software to let you configure your network (the controller)
 * A hardware router (for routing traffic to the correct location on your network)
 * A hardware switch (for enabling you to connect wired ethernet devices)
-* A hardware Wifi access point (for enabling you to connect wireless devices)
+* A hardware wifi access point (for enabling you to connect wireless devices)
 
 In the UniFi ecosystem, it's best to think of these all as discrete functions, and the various pieces of hardware that Ubiquiti makes can fulfill them in different ways.
 
@@ -28,7 +28,9 @@ First of all, you need to decide what type of controller you want to run. There 
 
 #### Software
 
-You can run the UniFi "Controller Software" on any machine that you already own. It doesn't even need to be "always on," it can just be a regular PC. However, the software controller obviously won't be able to collect statistics for perform automatic scheduled tasks if it's running on a machine that is off or asleep.
+You can run the UniFi "Controller Software" on any machine that you already own. It doesn't even need to be "always on," it can just be a regular PC.
+
+However, the software controller obviously won't be able to collect statistics for perform automatic scheduled tasks if the machine it's running on is turned off or goes to sleep.
 
 Since I have an [always-on server in my basement to run Plex](https://www.bradwestness.com/2020/02/01/lack-rack-plex-nas-part-1/), this is the option I went with.
 
@@ -42,11 +44,11 @@ If you want to go with a hardware controller, there are a few different options.
 
 ##### Cloud Key
 
-{% include figure.html filename="unifi_cloud_key.webp" description="Ubiquiti UniFi Cloud Key, Gen 2" %}
+{% include figure.html filename="unifi_cloud_key.png" description="Ubiquiti UniFi Cloud Key, Gen 2" %}
 
 In UniFi terminology, the "Cloud Key" is basically just a Raspberry Pi that runs the controller software. This gives you a little more of a "plug and play" approach to running a controller, while still requiring separate routing, switching and access point hardware.
 
-The Cloud Key "Plus" units are the same, but contains integrated hard drives which can be used to store video if you also plan to run Ubiquiti's security cameras.
+The Cloud Key "Plus" units are the same, but contain integrated hard drives which can be used to store video if you also plan to run Ubiquiti's security cameras.
 
 ##### Dream Machine
 
@@ -86,7 +88,9 @@ If you have a rack, you'll probably want to choose one of the various rackmount 
 
 ### WiFi Access Points
 
-The last part of your network you'll need to take care of is WiFi coverage. Here again, there are an embarassment of options. However, it's important to pay attention to the capabilities of each. All 802.11ac access points are not created equal. If you want to ensure the best coverage and throughput, you'll want to make sure you pick a "Wave 2" access point that has MU-MIMO capabilities (this greatly increases throughput when multiple devices are connected simultaneously).
+The last part of your network you'll need to take care of is WiFi coverage. Here again, there are an embarassment of options. However, it's important to pay attention to the capabilities of each. 
+
+All 802.11ac access points are not created equal. If you want to ensure the best coverage and throughput, you'll want to make sure you pick a "Wave 2" access point that has MU-MIMO capabilities (this greatly increases throughput when multiple devices are connected simultaneously).
 
 #### NanoHD
 
@@ -100,7 +104,7 @@ Most of the other access points that UniFi offers (the HD Access Point, the Beac
 
 #### In-Wall HD
 
-{% include figure.html filename="unifi_nanohd_access_point.png" description="Ubiquiti UniFi NanoHD Access Point" %}
+{% include figure.html filename="unifi_inwallhd_access_point.png" description="Ubiquiti UniFi NanoHD Access Point" %}
 
 The In-Wall HD access point is a nice option if you're running wired ethernet to your primary home-office or home theater - it's a WiFi access point and a 4-port switch in one, all powered by PoE, it's the same size as an electrical outlet, and if you have several devices you want to plug in via wired ethernet in addition to wifi, it's a good option. I wound up running wired ethernet to my "home office" and have my main PC plugged into one of these. The wifi radio is kind of a bonus.
 
