@@ -108,7 +108,7 @@ Most of the other access points that UniFi offers (the HD Access Point, the Beac
 
 {% include figure.html filename="unifi_inwallhd_access_point.png" description="Ubiquiti UniFi In-Wall HD Access Point" %}
 
-The In-Wall HD access point is a nice option if you're running wired ethernet to your primary home-office or home theater - it's a WiFi access point and a 4-port switch in one, all powered by PoE, it's the same size as an electrical outlet, and if you have several devices you want to plug in via wired ethernet in addition to wifi, it's a good option. I wound up running wired ethernet to my "home office" and have my main PC plugged into one of these. The wifi radio is kind of a bonus.
+The In-Wall HD access point is a nice option if you're running wired ethernet to your primary home-office or home theater - it's a WiFi access point and a 4-port switch in one, all powered by PoE. It's the same size as an electrical outlet and can be mounted in the same size wall opening. I wound up running wired ethernet to my "home office" and have my main PC plugged into one of these. The wifi radio is kind of a bonus.
 
 ## My Network
 
