@@ -74,7 +74,7 @@ UniFi likes to refer to their routing devices as "Security Gateways," which can 
 
 If you go with software or a Cloud Key for the controller, you'll need a Security Gateway to perform routing functions on your network. If you go with one of the Dream Machine options, you don't need this as it's built into the Dream Machines (either normal or Pro).
 
-The Security Gateway is the thing that sits between the internet and your local network. You plug your cable or DLS modem into the WAN port on the Security Gateway, and then connect the LAN port to a switch.
+The Security Gateway is the thing that sits between the internet and your local network. You plug your cable or DSL modem into the WAN port on the Security Gateway, and then connect the LAN port to a switch.
 
 ### Switching
 
