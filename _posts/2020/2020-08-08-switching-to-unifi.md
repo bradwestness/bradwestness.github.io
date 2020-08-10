@@ -140,7 +140,7 @@ This is powered via PoE from the 16-port switch in the basement.
 * Switch Flex mounted on outside wall
 * FlexHD Access Point on rear of house (for backyard Wifi)
 
-The Switch Flex is powered via PoE from the 16-port lite switch in the basement, and the FlexHD access point is powered via PoE passthrough from the Swtich Flex.
+The Switch Flex is powered via PoE from the 16-port lite switch in the basement, and the FlexHD access point is powered via PoE passthrough from the Switch Flex.
 
 "Flex," as best as I can tell, is UniFi code for "can be used outdoors."
 
