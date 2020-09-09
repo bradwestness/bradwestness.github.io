@@ -74,7 +74,7 @@ UniFi likes to refer to their routing devices as "Security Gateways," which can 
 
 If you go with software or a Cloud Key for the controller, you'll need a Security Gateway to perform routing functions on your network. If you go with one of the Dream Machine options, you don't need this as it's built into the Dream Machines (either normal or Pro).
 
-The Security Gateway is the thing that sits between the internet and your local network. You plug your cable or DLS modem into the WAN port on the Security Gateway, and then connect the LAN port to a switch.
+The Security Gateway is the thing that sits between the internet and your local network. You plug your cable or DSL modem into the WAN port on the Security Gateway, and then connect the LAN port to a switch.
 
 ### Switching
 
@@ -140,7 +140,7 @@ This is powered via PoE from the 16-port switch in the basement.
 * Switch Flex mounted on outside wall
 * FlexHD Access Point on rear of house (for backyard Wifi)
 
-The Switch Flex is powered via PoE from the 16-port lite switch in the basement, and the FlexHD access point is powered via PoE passthrough from the Swtich Flex.
+The Switch Flex is powered via PoE from the 16-port lite switch in the basement, and the FlexHD access point is powered via PoE passthrough from the Switch Flex.
 
 "Flex," as best as I can tell, is UniFi code for "can be used outdoors."
 
