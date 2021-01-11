@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wildcard Subdomain Hosting
+title: Hosting Wildcard Subdomains from Home for Free
 categories: [Software,Programming]
 image: content/images/domain_banner.png
 ---
