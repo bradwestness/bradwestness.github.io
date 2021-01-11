@@ -31,6 +31,8 @@ Next, in the UniFi controller software, I went to Settings -> Advanced Features 
 
 Since I'm forwarding all subdomains, I used the wildcard (*) here as well. This ensures that whenever my public IP address changes, my UniFi controller will automatically update the DNS settings for my domain at Namecheap with the new IP address, so everything will continue to resolve correctly. Neat!
 
+If you're not running UniFi, Namecheap does offer a standalone Dynamic IP client that will notify them when your IP changes as well. Just click the "Software Download" link in the Dynamic DNS section of their portal, as seen in the "Registrar DNS Configuration" section above.
+
 ### Static Route
 
 In order for traffic from the web to be routed to the right device on your network, you'll want to ensure the device has a static (private) IP configured. I set up a NIC Team on my server (which has 4 NICs) and assigned the virtual NIC a static IP of 192.168.1.200.
