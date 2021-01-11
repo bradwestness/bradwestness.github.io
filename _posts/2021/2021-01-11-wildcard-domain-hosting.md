@@ -17,7 +17,7 @@ Luckily, there are completely free ways to do all of this, the only thing I'm ac
 
 So, I don't have a static IP, meaning my public IP address changes whenever Spectrum decides to issue a new IP address to my modem. The solution here is Dynamic DNS, which thankfully my domain name registrar supports, and my [UniFi](https://www.bradwestness.com/2020/08/08/switching-to-unifi/) controller has a Dynamic DNS section where you can tell it to update your domain's DNS records whenever your public IP changes. Nifty!
 
-### Domain DNS Configuration
+### Registrar DNS Configuration
 
 The first step is to log into my domain registrar and set up an "A+ Dynamic DNS Record" for my domain. I used a wildcard (*) for the host, because I wanted every subdomain that's not explicitly configured otherwise (e.g. "www", which goes to the GitHub Pages site) to resolve to my home web server.
 
