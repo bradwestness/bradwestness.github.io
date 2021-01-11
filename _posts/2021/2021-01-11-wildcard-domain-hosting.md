@@ -2,7 +2,7 @@
 layout: post
 title: Wildcard Subdomain Hosting
 categories: [Software,Programming]
-image: content/images/unifi_header.jpg
+image: content/images/domain_banner.png
 ---
 
 Despite an overflowing number of options for hosting your own blog or website these days, I still feel like the best bang for your buck is GitHub Pages (if you're a developer, that is). It's free and does SSL and you can set it up to work with a custom doamin name, something that's a "premiere" option requiring paid service at most other blogging/website platforms.
@@ -15,7 +15,7 @@ Luckily, there are completely free ways to do all of this, the only thing I'm ac
 
 ## Setting up the DNS Records
 
-So, I don't have a static IP, meaning my public IP address changes whenever Spectrum decides to issue a new IP address to my modem. The solution here is Dynamic DNS, which thankful my domain name registrar supports, and my [UniFi](https://www.bradwestness.com/2020/08/08/switching-to-unifi/) controller has a Dynamic DNS section where you can tell it to update your domain's DNS records whenever your public IP changes. Nifty!
+So, I don't have a static IP, meaning my public IP address changes whenever Spectrum decides to issue a new IP address to my modem. The solution here is Dynamic DNS, which thankfully my domain name registrar supports, and my [UniFi](https://www.bradwestness.com/2020/08/08/switching-to-unifi/) controller has a Dynamic DNS section where you can tell it to update your domain's DNS records whenever your public IP changes. Nifty!
 
 ### Domain DNS Configuration
 
@@ -39,7 +39,7 @@ Then, in the UniFi controller software, I went to Settings -> Advanced Features 
 
 {% include figure.html filename="domain_route.png" description="Setting up a static route in the UniFi Controller software for HTTPS traffic" %}
 
-### Web Server Configuration
+## Web Server Configuration
 
 Now, my router will send any HTTP traffic coming in over the web on either ports 80 or 443 to my web server. However, I still need to set up my server, running Windows Server 2019, to actually respond to that incoming traffic.
 
@@ -69,11 +69,11 @@ Once the tool is installed, you can just run `wacs` (again, from an admin prompt
 
 {% include figure.html filename="domain_wacs.png" description="Setting up SSL certificates with win-acme" %}
 
- Win-Acme can read your IIS bindings and detect which sites to make certificates for you automatically, but I wanted to create a wildcard certificate, so I chose option M in the first prompt (full options) and option 2 in the second prompt (Manual input). At the "Enter host names" prompt, I entered my domain with a wildcard (*) subdomain prefix.
+Win-Acme can read your IIS bindings and detect which sites to make certificates for you automatically, but I wanted to create a wildcard certificate, so I chose option M in the first prompt (full options) and option 2 in the second prompt (Manual input). At the "Enter host names" prompt, I entered my domain with a wildcard (*) subdomain prefix.
 
- After you've got all your info set up, Win-Acme will walk you through a "challenge" which is to verify you actually own the domain you're creating a certificate for.
+After you've got all your info set up, Win-Acme will walk you through a "challenge" which is to verify you actually own the domain you're creating a certificate for.
  
- I did the DNS challenge option, which involved creating a DNS TXT record with a certain text value, which was painless to do at the Namecheap portal. Once your ownership is verified, Win-Acme can automatically apply the cert to your IIS sites, and then you're off to the races.
+I did the DNS challenge option, which involved creating a DNS TXT record with a certain text value, which was painless to do at the Namecheap portal. Once your ownership is verified, Win-Acme can automatically apply the cert to your IIS sites, and then you're off to the races.
  
 {% include figure.html filename="domain_iis.png" description="Wildcard Let's Encrypt certificate configured for the default website in IIS" %}
 
@@ -81,4 +81,12 @@ I have the "Default Website" set up in IIS to respond to any unhandled request r
 
 {% include figure.html filename="domain_cert.png" description="Certificate is valid!" %}
 
+### Individual Sites
+
+Just to make sure everything was working properly via IIS, I set up a couple additional websites and bound them to specific domain names, but still using the same wildcard certificate as the default website. I set them up with different paths so they'll each return a different static index.html page, for testing.
+
+{% include figure.html filename="domain_foobar.png" description="Additional sites" %}
+
 Success! I can now hit any arbitrary subdomain via HTTPS to my home server and it will respond with a valid SSL certificate. All for free!
+
+You could even host a multi-tenant application federated by subdomain using this method and it'll all just work.
