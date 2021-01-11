@@ -41,6 +41,8 @@ Then, in the UniFi controller software, I went to Settings -> Advanced Features 
 
 {% include figure.html filename="domain_route.png" description="Setting up a static route in the UniFi Controller software for HTTPS traffic" %}
 
+Even if you're not using UniFi, almost all routers offer the ability to set up static routes in their admin panel, although it varies by make and model.
+
 ## Web Server Configuration
 
 Now, my router will send any HTTP traffic coming in over the web on either ports 80 or 443 to my web server. However, I still need to set up my server, running Windows Server 2019, to actually respond to that incoming traffic.
