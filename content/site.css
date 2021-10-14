@@ -29,6 +29,10 @@ textarea {
     text-decoration: none;
 }
 
+    .post-item-title a:hover, .post-title a:hover {
+        text-decoration: underline;
+    }
+
 .post-item-excerpt {
     line-height: 1.5em;
 }
