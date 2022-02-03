@@ -75,16 +75,23 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="/site.webmanifest">
+    <script type="text/javascript">
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+    }
+    </script>
 
-    <link rel="alternate" type="application/atom+xml" href="{{ site.baseurl }}atom.xml" />
-    <link rel="stylesheet" id="bootswatch-style" href="{{ site.baseurl }}content/bootswatch-darkly.min.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}content/bootswatch-flatly.min.css" media="(prefers-color-scheme: light)" />
+    <link rel="stylesheet" href="{{ site.baseurl }}content/bootswatch-darkly.min.css" media="(prefers-color-scheme: dark)" />
     <link rel="stylesheet" href="{{ site.baseurl }}content/font-awesome.min.css" />
-    <link rel="stylesheet" id="prism-style" href="{{ site.baseurl }}content/prism.night.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}content/prism.default.css" media="(prefers-color-scheme: light)" />
+    <link rel="stylesheet" href="{{ site.baseurl }}content/prism.night.css" media="(prefers-color-scheme: dark)" />
     <link rel="stylesheet" href="{{ site.baseurl }}content/site.css" />
 
+    <link rel="alternate" href="{{ site.baseurl }}atom.xml" type="application/atom+xml" />
     <link rel="canonical" href="https://www.bradwestness.com{{ page.url }}" />
     <link rel="me" type="text/html" href="{{ site.baseurl }}" />
     <link rel="me" type="text/html" href="https://twitter.com/bradwestness" />
@@ -121,11 +128,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ site.baseurl }}atom.xml" target="_blank">
                             <i class="fa fa-rss"></i> Feed
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="theme-toggle" href="#">
-                            <i class="fa fa-sun-o"></i> Switch Theme
                         </a>
                     </li>
                 </ul>
