@@ -159,7 +159,6 @@ If we used a regular class instead of a `record` for the Address type, the items
 You can constrain the generic type of the `EquatableHashSet` implementation to only allow types that implement the `IEquatable<T>` interface to obviate this problem:
 
 ```csharp
-
 public class EquatableHashSet<T> : HashSet<T>
     where T : IEquatable<T>
 {
