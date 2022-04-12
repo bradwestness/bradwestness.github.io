@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Record Collection Equality in C#
-categories: [Software,Programming]
+categories: [Software,Programming,.NET]
 image: content/images/record_collection.jpg
 ---
 
@@ -9,7 +9,7 @@ I've seen this come up a few times at work, so I figured I'd dig in a bit and ex
 
 The `record` keyword in C# is syntactic sugar for defining a class with immutable properties, with the added benefit that overrides for the `Object` type's `Equals()` and `GetHashCode()` methods are automatically generated, which also ensures _*by value*_ equality comparisons, rather than the _*by reference*_ comparisons you get by default when comparing `Class`-instance objects in C#.
 
-## _*By Reference*_ Equality
+## _By Reference_ Equality
 
 Let's say we have a `Person` class, defined like this:
 
@@ -33,7 +33,7 @@ Console.WriteLine($"Are these objects equal? {p1 == p2}.");
 
 The `p1` and `p2` objects are both instances of the `Person` class, but they both reference different objects in memory, therefore the equality check is false.
 
-## _*By Value*_ Equality
+## _By Value_ Equality
 
 Now, let's say we define `Person` as a `record` instead:
 
@@ -83,7 +83,7 @@ This is because `IEnumerable<T>` is not, itself, a record type. So, while the `F
 
 The comparison of the arrays is done _*by reference*_, and they don't point to the same `Array` instance, so the equality fails.
 
-## "SetEquals" to the Rescue
+## _SetEquals_ to the Rescue
 
 The HashSet type (included in the BCL) includes a `SetEquals()` method, which will compare two collections of objects, and return true if they contain the same items.
 
@@ -150,7 +150,7 @@ Console.WriteLine($"Are these objects equal? {p11 == p12}.");
 
 The two `PersonRec` instances are now considered equivalent, because all the properites have the same values, and the two `EquatableHashSet<AddressRec>`'s set equality was true, even though the addresses are not in the same order.
 
-### Caveat
+### Caveat Emptor
 
 The way we defined `EquatableHashSet<T>` above only works when the type of the object in the collection is a primitive or `record` type.
 
@@ -188,3 +188,5 @@ public class EquatableHashSet<T> : HashSet<T>
 ```
 
 With the `where T : IEquatable<T>` constraint, the compiler will no longer allow passing in types that do not implement `IEquatable<T>`. All `record` types implement this by default, so you will be able to use them as expected, but you will not be able to use `EquatableHashSet` with any `class` types that don't implement the interface explicitly.
+
+Doing _*by value*_ comparison of every item in a collection obviously has performance implications as well, since comparing the equality of the containing object will enumerate through the collection and compare the equality of each item, so use wisely.
