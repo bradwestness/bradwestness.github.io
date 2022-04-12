@@ -16,8 +16,8 @@ Let's say we have a `Person` class, defined like this:
 ```csharp
 public class Person
 {
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
+    public string FirstName { get; init; }
+    public string LastName { get; init; }
 }
 ```
 
