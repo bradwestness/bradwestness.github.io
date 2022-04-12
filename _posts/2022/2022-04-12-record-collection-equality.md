@@ -28,7 +28,7 @@ var p1 = new Person { FirstName = "Brad", LastName = "Westness" };
 var p2 = new Person { FirstName = "Brad", LastName = "Westness" };
 
 Console.WriteLine($"Are these objects equal? {p1 == p2}.");
-// Output: Are these objects equal? false.
+// Output: Are these objects equal? False.
 ```
 
 The `p1` and `p2` objects are both instances of the `Person` class, but they both reference different objects in memory, therefore the equality check is false.
@@ -44,7 +44,7 @@ var p3 = new PersonRec("Brad", "Westness");
 var p4 = new PersonRec("Brad", "Westness");
 
 Console.WriteLine($"Are these objects equal? {p3 == p4}.");
-// Output: Are these objects equal? true.
+// Output: Are these objects equal? True.
 ```
 
 This works as long as all the properties on the `PersonRec` type are primitives, or other `record` types.
@@ -59,7 +59,7 @@ var p5 = new PersonRec("Brad", "Westness", new AddressRec("123 Foo Street", "Spr
 var p6 = new PersonRec("Brad", "Westness", new AddressRec("123 Foo Street", "Springfield", "AL", "12345"));
 
 Console.WriteLine($"Are these objects equal? {p5 == p6}.");
-// Output: Are these objects equal? true.
+// Output: Are these objects equal? True.
 ```
 
 The equality check still works becuase `AddressRec` is also a `record`, and therefore when the two `PersonRec` objects are compared, the values of each of the properties on their `Address` record are compared _*by value*_ as well.
@@ -74,7 +74,7 @@ var p7 = new PersonRec("Brad", "Westness", new[] { new AddressRec("123 Foo Stree
 var p8 = new PersonRec("Brad", "Westness", new[] { new AddressRec("123 Foo Street", "Springfield", "AL", "12345") });
 
 Console.WriteLine($"Are these objects equal? {p7 == p8}.");
-// Output: Are these objects equal? false.
+// Output: Are these objects equal? False.
 ```
 
 🚨 The two `record`s are no longer considered equal! 🚨
@@ -97,7 +97,7 @@ var p9 = new PersonRec("Brad", "Westness", new HashSet(new[] { new AddressRec("1
 var p10 = new PersonRec("Brad", "Westness", new HashSet(new[] { new AddressRec("123 Foo Street", "Springfield", "AL", "12345") }));
 
 Console.WriteLine($"Are these objects equal? {p9 == p10}.");
-// Output: Are these objects equal? false.
+// Output: Are these objects equal? False.
 ```
 
 Wait, what? It's still false?
@@ -145,7 +145,7 @@ var p12 = new PersonRec("Foo", "Bar", new EquatableHashSet<AddressRec>(new[]
 }));
 
 Console.WriteLine($"Are these objects equal? {p11 == p12}.");
-// Output: Are these objects equal? true.
+// Output: Are these objects equal? True.
 ```
 
 The two `PersonRec` instances are now considered equivalent, because all the properites have the same values, and the two `EquatableHashSet<AddressRec>`'s set equality was true, even though the addresses are not in the same order.
