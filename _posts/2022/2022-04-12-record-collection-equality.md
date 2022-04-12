@@ -7,7 +7,7 @@ image: content/images/record_collection.jpg
 
 I've seen this come up a few times at work, so I figured I'd dig in a bit and expound on how equality does and does not work with [C# 9 "record" types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/record) and collections.
 
-The `record` keyword in C# is syntactic sugar for defining a class with immutable properties, with the added benefit that overrides for the `Object` type's `Equals()` and `GetHashCode()` methods are automatically generated, which also ensures _*by value*_ equality comparisons, rather than the _*by reference*_ comparisons you get by default when comparing `Class`-instance objects in C#.
+The `record` keyword in C# is syntactic sugar for defining a class with immutable properties (read: `record` properties have [the `init` modifier](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/init)), with the added benefit that overrides for the `Object` type's `Equals()` and `GetHashCode()` methods are automatically generated, which also ensures _*by value*_ equality comparisons, rather than the _*by reference*_ comparisons you get by default when comparing `Class`-instance objects in C#.
 
 ## _By Reference_ Equality
 
