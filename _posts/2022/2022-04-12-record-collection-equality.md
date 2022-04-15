@@ -5,9 +5,9 @@ categories: [Software,Programming,.NET]
 image: content/images/record_collection.jpeg
 ---
 
-I've seen this come up a few times at work, so I figured I'd dig in a bit and expound on how equality does and does not work with [C# 9 "record" types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/record) and collections.
+I've seen this come up a few times at work, so I figured I'd dig in a bit and expound on how equality does and does not work with [C# 9 `record` types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/record) and collections.
 
-The `record` keyword in C# is syntactic sugar for defining a class with immutable properties (read: `record` properties have [the `init` modifier](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/init)), with the added benefit that overrides for the `Object` type's `Equals()` and `GetHashCode()` methods are automatically generated, which also ensures _*by value*_ equality comparisons, rather than the _*by reference*_ comparisons you get by default when comparing `Class`-instance objects in C#.
+The `record` keyword in C# is syntactic sugar for defining a class with immutable properties (read: `record` properties have [the `init` modifier](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/init)), with the added benefit that overrides for the `Object` type's `Equals()` and `GetHashCode()` methods are automatically generated, which also ensures _by value_ equality comparisons, rather than the _by reference_ comparisons you get by default when comparing `Class`-instance objects in C#.
 
 ## _By Reference_ Equality
 
@@ -89,7 +89,7 @@ Console.WriteLine($"Are these objects equal? {p5 == p6}.");
 // Output: Are these objects equal? True.
 ```
 
-The equality check still works becuase `AddressRec` is also a `record` and overrides it's own `Equals()` method with _*by value*_ comparisons, and therefore when the two `PersonRec` objects are compared, the values of each of the properties on their `Address` property are compared _*by value*_ as well.
+The equality check still works becuase `AddressRec` is also a `record` and overrides it's own `Equals()` method with _by value_ comparisons, and therefore when the two `PersonRec` objects are compared, the values of each of the properties on their `Address` property are compared _by value_ as well.
 
 Let's say, however, that you need a *collection* of addresses on your person object.
 
@@ -106,9 +106,9 @@ Console.WriteLine($"Are these objects equal? {p7 == p8}.");
 
 🚨 The two `record`s are no longer considered equal! 🚨
 
-This is because `IEnumerable<T>` is not, itself, a record type. So, while the `FirstName`, `LastName` and `Addresses` properties are still compared to each other when comparing the two `PersonRec` instances, the `Addresses` property is simply a reference to an object (in this case an `Array`) that itself does not implement _*by value*_ equality.
+This is because `IEnumerable<T>` is not, itself, a record type. So, while the `FirstName`, `LastName` and `Addresses` properties are still compared to each other when comparing the two `PersonRec` instances, the `Addresses` property is simply a reference to an object (in this case an `Array`) that itself does not implement _by value_ equality.
 
-The comparison of the arrays is done _*by reference*_, and they don't point to the same `Array` instance, so the equality fails.
+The comparison of the arrays is done _by reference_, and they don't point to the same `Array` instance, so the equality fails.
 
 ## _SetEquals_ to the Rescue
 
@@ -181,7 +181,7 @@ The two `PersonRec` instances are now considered equivalent, because all the pro
 
 The way we defined `EquatableHashSet<T>` above only works when the type of the object in the collection is a primitive or `record` type.
 
-If we used a regular class instead of a `record` for the Address type, the items in the collection would still be compared _*by reference*_, unless you manually override the `Equals()` and `GetHashCode()` methods the same way that `record` does automatically.
+If we used a regular class instead of a `record` for the Address type, the items in the collection would still be compared _by reference_, unless you manually override the `Equals()` and `GetHashCode()` methods the same way that `record` does automatically.
 
 You can constrain the generic type of the `EquatableHashSet` implementation to only allow types that implement the `IEquatable<T>` interface to obviate this problem:
 
@@ -189,17 +189,9 @@ You can constrain the generic type of the `EquatableHashSet` implementation to o
 public class EquatableHashSet<T> : HashSet<T>
     where T : IEquatable<T>
 {
-    public EquatableHashSet()
-        : base()
-    {
+    public EquatableHashSet() : base() { }
 
-    }
-
-    public EquatableHashSet(IEnumerable<T> collection)
-        : base(collection)
-    {
-
-    }
+    public EquatableHashSet(IEnumerable<T> collection) : base(collection) { }
 
     public override bool Equals(object? obj)
     {
@@ -215,4 +207,4 @@ public class EquatableHashSet<T> : HashSet<T>
 
 With the `where T : IEquatable<T>` constraint, the compiler will no longer allow passing in types that do not implement `IEquatable<T>`. All `record` types implement this by default, so you will be able to use them as expected, but you will not be able to use `EquatableHashSet` with any `class` types that don't implement the interface explicitly.
 
-Doing _*by value*_ comparison of every item in a collection obviously has performance implications as well, since comparing the equality of the containing object will enumerate through the collection and compare the equality of each item, so use wisely.
+Doing _by value_ comparison of every item in a collection obviously has performance implications as well, since comparing the equality of the containing object will enumerate through the collection and compare the equality of each item, so use wisely.
