@@ -49,6 +49,31 @@ Console.WriteLine($"Are these objects equal? {p3 == p4}.");
 
 This works as long as all the properties on the `PersonRec` type are primitives, or other `record` types.
 
+This is because when we use the `record` keyword, the compiler generates a class that overrides the `Equals()` method to consider the equality of all the members of the object rather than just the object itself.
+
+So, using `record` is roughly equivalent to defining a class like this:
+
+```csharp
+public class PersonRec
+{
+    public string FirstName { get; init; }
+    public string LastName { get; init; }
+
+    public PersonRec(string firstName, string lastName)
+    {
+        this.FirstName = firstName;
+        this.LastName = lastName;
+    }
+
+    public override bool Equals(PersonRec other)
+    {
+        return this.FirstName.Equals(other.FirstName) && this.LastName.Equals(other.LastName);
+    }
+
+    // records also override the == and != operators, as well as GetHashCode(), among a few other things
+}
+```
+
 Let's see what happens if we add an `Address` record to the `PersonRec` type:
 
 ```csharp
@@ -62,7 +87,7 @@ Console.WriteLine($"Are these objects equal? {p5 == p6}.");
 // Output: Are these objects equal? True.
 ```
 
-The equality check still works becuase `AddressRec` is also a `record`, and therefore when the two `PersonRec` objects are compared, the values of each of the properties on their `Address` record are compared _*by value*_ as well.
+The equality check still works becuase `AddressRec` is also a `record` and overrides it's own `Equals()` method with _*by value*_ comparisons, and therefore when the two `PersonRec` objects are compared, the values of each of the properties on their `Address` property are compared _*by value*_ as well.
 
 Let's say, however, that you need a *collection* of addresses on your person object.
 
