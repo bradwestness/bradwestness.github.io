@@ -54,7 +54,7 @@ This is because when we use the `record` keyword, the compiler generates a class
 So, using `record` is roughly equivalent to defining a class like this:
 
 ```csharp
-public class PersonRec
+public class PersonRec : IEquatable<PersonRec>
 {
     public string FirstName { get; init; }
     public string LastName { get; init; }
@@ -65,12 +65,14 @@ public class PersonRec
         this.LastName = lastName;
     }
 
-    public override bool Equals(PersonRec other)
+    public override bool Equals(PersonRec? other)
     {
-        return this.FirstName.Equals(other.FirstName) && this.LastName.Equals(other.LastName);
+        return this.FirstName.Equals(other?.FirstName)
+            && this.LastName.Equals(other?.LastName);
     }
 
-    // records also override the == and != operators, as well as GetHashCode(), among a few other things
+    // records also override the == and != operators,
+    // as well as GetHashCode(), among a few other things
 }
 ```
 
