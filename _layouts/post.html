@@ -13,7 +13,7 @@ single: true
     {% if categories and categories.size > 0 %}
         <div class="meta">
             <div class="tags">
-                <i class="fa fa-tags"></i>
+                <i class="bi bi-tags"></i>
                 {% for category in categories %}
                 <span class="badge">
                     <a href="{{ site.baseurl }}/categories/#{{ category | slugify }}">{{ category }}</a>
