@@ -25,7 +25,7 @@ With that in mind, the GameCube controller is the perfect incarnation of the mod
 2. It fits perfectly in the hand. I know this is highly subjective, but for my money the GameCube controller fits just-right in the sweet spot between the original XBox's unweildy behemoth controllers, and the Switch Joy Con's for-dainty-waifs-only petiteness.
 3. No stupid gimmicks.<sup>*</sup> Whether it be the Joy Con's integrated NFC reader and IR camera, or the expandable add-on paks of the N64 and Dreamcast controllers, there's something to be said for addition by subtraction. While the Joy Con's NFC reader, IR camera, or the N64 and Dreamcast controllers' expandable add-on paks are "neat," aside from adding rumble and memory cards in the case of the N64, would anyone really miss those features?
 
-<sub>* Okay, so the GameCube controller's analog shoulder trigger things were _kind of_ a gimmick, but c'mon, they were _cool_.</sub>
+<sup>* Okay, so the GameCube controller's analog shoulder trigger things were _kind of_ a gimmick, but c'mon, they were _cool_.</sup>
 
 ### Wireless
 
