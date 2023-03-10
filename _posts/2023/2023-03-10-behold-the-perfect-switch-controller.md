@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Behold, the Perfect Nintendo Switch Controller
-categories: [Software,Programming]
+categories: [Nintendo, Games]
 image: content/images/wizard_table.jpg
 ---
 
-On this Mar10 Day, I'd like to take a moment to celebrate the conclusion of a long quest that I've been on. Namely, to find the "perfect" Nintendo Switch controller.
+On this [Mar10 Day](https://www.nintendo.com/whatsnew/nintendo-powers-up-mar10-day/), I'd like to take a moment to celebrate the conclusion of a long quest that I've been on. Namely, to find the "perfect" Nintendo Switch controller.
 
 ## The Criteria
 
@@ -17,10 +17,12 @@ The GameCube controller is, for my money, the most perfect video game controller
 
 Previously I would've said the Super Nintendo controller was the best, and I think it still is for 2D games. But for 3D, you simply need to have at least one analog stick, and the industry seems to have settled on two analog sticks being the right number of analog sticks.
 
+{% include figure.html filename="Gamecube_controller.png" description="Image source: Wikipedia" %}
+
 With that in mind, the GameCube controller is the perfect incarnation of the modern control scheme:
 
 1. The buttons are different sizes and shapes. This gives you no-look tactile feedback so you can easily tell which is which by touch.
-2. It fits perfectly in the hand. I know this is highly subjective, but for my money the GameCube controller fits perfectly in the sweet spot between the original XBox's unweildy behemoth controllers, and the Switch Joy Con's for-dainty-waifs-only tininess.
+2. It fits perfectly in the hand. I know this is highly subjective, but for my money the GameCube controller fits perfectly in the sweet spot between the original XBox's unweildy behemoth controllers, and the Switch Joy Con's for-dainty-waifs-only petiteness.
 3. No stupid gimmicks. Whether it be the Joy Con's integrated NFC reader and IR camera, or the expandable add-on paks of the N64 and Dreamcast controllers, there's something to be said for addition by subtraction. While the Joy Con's NFC reader, IR camera, or the N64 and Dreamcast controllers' expandable add-on paks are "neat," aside from adding rumble and memory cards in the case of the N64, would anyone really miss those features?
 
 ### Wireless
@@ -29,7 +31,7 @@ I'm not a fighting game guy, and I've never really felt that the almost impercep
 
 ### Integrated Rechargeable Battery
 
-Hunting for AAs when you're in the middle of a session of Breath of the Wild is dumb. It's 2023, if your earbuds have a lithium battery in them, so should your Nintendo controller.
+Hunting through your kitchen "junk drawer" for AAs when you're in the middle of a session of Breath of the Wild is dumb. It's 2023, if your earbuds have a lithium battery in them, so should your Nintendo controller.
 
 ### Accellerometer/Gyroscope
 
