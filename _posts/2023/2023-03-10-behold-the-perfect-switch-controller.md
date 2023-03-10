@@ -17,7 +17,7 @@ The GameCube controller is, for my money, the most perfect video game controller
 
 Previously I would've said the Super Nintendo controller was the best, and I think it still is for 2D games. But for 3D, you simply need to have at least one analog stick, and the industry seems to have settled on two analog sticks being the right number of analog sticks.
 
-{% include figure.html filename="Gamecube_controller.png" description="Image source: Wikipedia" %}
+{% include figure.html filename="GameCube_controller.png" description="Image source: Wikipedia" %}
 
 With that in mind, the GameCube controller is the perfect incarnation of the modern control scheme:
 
