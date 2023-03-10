@@ -26,10 +26,16 @@ title: .NET software development, Brewers baseball, pop culture, etc.
             </div>
         {% endif %}
         <section itemprop="description" class="post-item-exceprt text-justify">
-            <p>{{- post.excerpt | strip_html -}}</p>
-            {% if post.image and post.image.size > 0 %}
-                <img src="/{{ post.image }}" class="img-thumbnail rounded float-end ms-2" style="max-height: 75px;" alt="{{ post.title }}" />
-            {% endif %}            
+            <div class="row">
+                <div class="col">
+                    <p>{{- post.excerpt | strip_html -}}</p>
+                </div>                
+                {% if post.image and post.image.size > 0 %}
+                    <div class="col">
+                        <img src="/{{ post.image }}" class="img-thumbnail rounded float-end ms-2" style="max-width: 75px;" alt="{{ post.title }}" />
+                    </div>
+                {% endif %}      
+            </div>      
         </section>
         <footer class="post-item-footer">
             <ul class="post-item-meta-list list-inline">
