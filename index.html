@@ -31,8 +31,8 @@ title: .NET software development, Brewers baseball, pop culture, etc.
                     <p>{{- post.excerpt | strip_html -}}</p>
                 </div>                
                 {% if post.image and post.image.size > 0 %}
-                    <div class="col">
-                        <img src="/{{ post.image }}" class="img-thumbnail rounded float-end ms-2" style="max-width: 75px;" alt="{{ post.title }}" />
+                    <div class="col-1">
+                        <img src="/{{ post.image }}" class="img-thumbnail rounded ms-2" style="max-height: 75px;" alt="{{ post.title }}" />
                     </div>
                 {% endif %}      
             </div>      
