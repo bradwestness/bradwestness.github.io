@@ -27,7 +27,7 @@ title: .NET software development, Brewers baseball, pop culture, etc.
         {% endif %}
         <section itemprop="description" class="post-item-exceprt text-justify">
             {% if post.image and post.image.size > 0 %}
-                <img src="/{{ post.image }}" class="img-thumbnail rounded float-start me-10" style="max-height: 50px;" alt="{{ post.title }}" />
+                <img src="/{{ post.image }}" class="img-thumbnail rounded float-start me-2" style="max-height: 50px;" alt="{{ post.title }}" />
             {% endif %}            
             <p>{{- post.excerpt | strip_html -}}</p>
         </section>
