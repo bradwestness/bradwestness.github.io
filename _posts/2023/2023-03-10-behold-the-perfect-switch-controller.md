@@ -5,7 +5,7 @@ categories: [Nintendo, Games]
 image: content/images/wizard_table.jpg
 ---
 
-On this [Mar10 Day](https://www.nintendo.com/whatsnew/nintendo-powers-up-mar10-day/), I'd like to take a moment to celebrate the conclusion of a long quest that I've been on. Namely, to find the "perfect" Nintendo Switch controller.
+On this [Mar10 Day](https://www.nintendo.com/whatsnew/nintendo-powers-up-mar10-day/), I'd like to take a moment to celebrate the conclusion of an epic quest that I've been on. Namely, to find the "perfect" Nintendo Switch controller.
 
 ## The Criteria
 
@@ -21,7 +21,7 @@ Previously I would've said the Super Nintendo controller was the best, and I thi
 
 With that in mind, the GameCube controller is the perfect incarnation of the modern control scheme:
 
-1. The buttons are different sizes and shapes. This gives you no-look tactile feedback so you can easily tell which is which by touch.
+1. The primary buttons are different sizes and shapes. This gives you no-look tactile feedback so you can easily tell which is which by touch.
 2. It fits perfectly in the hand. I know this is highly subjective, but for my money the GameCube controller fits perfectly in the sweet spot between the original XBox's unweildy behemoth controllers, and the Switch Joy Con's for-dainty-waifs-only petiteness.
 3. No stupid gimmicks. Whether it be the Joy Con's integrated NFC reader and IR camera, or the expandable add-on paks of the N64 and Dreamcast controllers, there's something to be said for addition by subtraction. While the Joy Con's NFC reader, IR camera, or the N64 and Dreamcast controllers' expandable add-on paks are "neat," aside from adding rumble and memory cards in the case of the N64, would anyone really miss those features?
 
@@ -49,7 +49,7 @@ The only problem: it was backordered. Well, I dutifully back-ordered one, and it
 
 {% include figure.html filename="wizard_handheld.jpg" description="A wizard is never late, he arrives preciesly when he means to." %}
 
-## The Result
+## The Holy Grail
 
 Coincidentally, a new wave of courses for Mario Kart 8 released this week as well, which was a perfect test for the new controller, and not to put too fine a point on it, but this thing is bitchin'.
 
