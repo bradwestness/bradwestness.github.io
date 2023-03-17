@@ -64,8 +64,9 @@ single: true
                         </a>
                     </li>
                     <li>
-                        {% assign social_link = 'https://www.bradwestness.com' | append page.url | url_encode %}
-                        {% assign mastodon_link = "https://mastodon.social/share?text=" | append: page.title | append: ' \n\n ' | append: social_link %}
+                        {% assign social_link = 'https://www.bradwestness.com' | append page.url %}
+                        {% assign social_text = page.title | append ' \n\n ' | append social_link | url_encode %}
+                        {% assign mastodon_link = "https://mastodon.social/share?text=" | append: social_text %}
                         <a class="btn btn-link btn-sm" href="{{ mastodon_url | urlencode }}"
                            onclick="window.open(this.href, 'mastodon-share','width=580,height=296'); return false;">
                             <i class="bi bi-mastodon"></i> Mastodon
