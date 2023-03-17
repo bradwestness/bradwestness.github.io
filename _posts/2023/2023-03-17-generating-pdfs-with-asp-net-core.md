@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Generating PDFs with ASP.NET Core and WKHtmlToPDF
-categories: [Nintendo, Games]
+categories: [Software,Programming,.NET]
 image: content/images/wkhtmltopdf.jpg
 ---
 
