@@ -63,14 +63,14 @@ single: true
                             <i class="bi bi-facebook"></i> Facebook
                         </a>
                     </li>
-                    <!--
                     <li>
-                        <a class="btn btn-link btn-sm" href="https://plus.google.com/share?url=https://www.bradwestness.com{{ page.url }}"
-                           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530'); return false;">
-                            <i class="fa fa-google-plus"></i> Google+
+                        {% assign social_link = 'https://www.bradwestness.com' | append page.url | url_encode %}
+                        {% assign mastodon_link = "https://mastodon.social/share?text=" | append: page.title | append: ' \n\n ' | append: social_link %}
+                        <a class="btn btn-link btn-sm" href="{{ mastodon_url | urlencode }}"
+                           onclick="window.open(this.href, 'mastodon-share','width=580,height=296'); return false;">
+                            <i class="bi bi-mastodon"></i> Mastodon
                         </a>
                     </li>
-                    -->
                 </ul>
             </section>
         </div>
