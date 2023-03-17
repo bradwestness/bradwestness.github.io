@@ -60,7 +60,9 @@ var doc = new HtmlToPdfDocument
 };
 ```
 
-Sweet! Now e've got dynamically generated PDFs from HTML content, right from within our .NET application. However, we're just passing in a hardcoded HTML string.
+Sweet! Now we've got dynamically generated PDFs from HTML content, right from within our .NET application. However, we're just passing in a hardcoded HTML string.
+
+Surely there must be some smarter way to build up the HTML we're going to generate our PDF from, rather than just a big, dumb string?
 
 {% include figure.html filename="better_way.gif" description="There's got to be a better way!" %}
 
@@ -198,7 +200,7 @@ public static IConverter GetPdfGenerator(
 }
 ```
 
-Finally, the piece de resistance, an extension method to return a PDF from a controller action just like how you would normally return a View or File result:
+Finally, the pièce de résistance, an extension method to return a PDF from a controller action just like how you would normally return a `ViewResult` or `FileContentResult`:
 
 ```csharp
 
