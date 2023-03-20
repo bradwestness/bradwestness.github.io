@@ -94,7 +94,7 @@ public static async Task<string> RenderViewAsync<TModel>(
 
     if (!viewResult.Success)
     {
-        throw new PdfGenerationException(
+        throw new RazorPdfGenerationException(
             $@"A view with the name ""{viewName}"" could not be found.");
     }
 
@@ -125,7 +125,7 @@ public static ICompositeViewEngine GetViewEngine(
 
     if (viewEngine is null)
     {
-        throw new PdfGenerationException(
+        throw new RazorPdfGenerationException(
             $"View rendering services have not been configured for this request. Please call {nameof(IServiceCollection)}.AddControllersWithViews() in your application's dependency registration.");
     }
 
@@ -133,12 +133,12 @@ public static ICompositeViewEngine GetViewEngine(
 }
 ```
 
-> Note: `PdfGenerationException` here is just a simple class I created that extends from `Exception`, it's not doing anything special.
+> Note: `RazorPdfGenerationException` here is just a simple class I created that extends from `Exception`, it's not doing anything special.
 
 Now you've got a method to render an ASP.NET View to a string, now you just need to pass that into a DinkToPdf "converter" instance to render it to a PDF:
 
 ```csharp
-public static async Task<byte[]> GeneratePdfAsync<TModel>(
+public static async Task<byte[]> GenerateRazorPdfAsync<TModel>(
     this Controller controller,
     TModel model,
     string? viewName = null,
@@ -154,7 +154,7 @@ public static async Task<byte[]> GeneratePdfAsync<TModel>(
     headerSettings ??= new HeaderSettings();
     footerSettings ??= new FooterSettings();
 
-    var converter = controller.GetPdfGenerator();
+    var converter = controller.GetRazorPdfConverter();
     var html = await controller.RenderViewAsync(model, viewName, isPartialView);
     var document = new HtmlToPdfDocument
     {
@@ -179,7 +179,7 @@ public static async Task<byte[]> GeneratePdfAsync<TModel>(
     return bytes;
 }
 
-public static IConverter GetPdfGenerator(
+public static IConverter GetRazorPdfConverter(
     this Controller controller)
 {
     ArgumentNullException.ThrowIfNull(controller);
@@ -192,7 +192,7 @@ public static IConverter GetPdfGenerator(
 
     if (pdfConverter is null)
     {
-        throw new PdfGenerationException(
+        throw new RazorPdfGenerationException(
             $"The PDF Generation services have not been configured for this request. Please call {nameof(IServiceCollection)}.{nameof(ServiceCollectionExtensions.AddPdfGeneration)}() in your application's dependency registration.");
     }
 
@@ -203,8 +203,7 @@ public static IConverter GetPdfGenerator(
 Finally, the pièce de résistance, an extension method to return a PDF from a controller action just like how you would normally return a `ViewResult` or `FileContentResult`:
 
 ```csharp
-
-public static async Task<FileContentResult> Pdf<TModel>(
+public static async Task<FileContentResult> RazorPdf<TModel>(
     this Controller controller,
     TModel model,
     string? viewName = null,
@@ -261,6 +260,8 @@ First, you'll just need to wire up the PDF generation in your application's star
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
+	// other service registrations
+
     services.AddSingleton(() => new DinkToPdf.SynchronizedConverter(new PdfTools()));
 }
 ```
@@ -271,16 +272,18 @@ Now you can return a PDF generated from a Razor View directly in your ASP.NET Co
 public class UserController : Controller
 {
     [HttpGet]
-    public async Task<FileContentResult> Report(
-        int id,
+    public async Task<FileContentResult> PrintReport(
+        int userId,
         [FromServices] IUserService userService)
     {
-        UserModel model = await userService.GetByIdAsync(id);
+        UserModel model = await userService.GetReportDataAsync(id);
 
-        return this.Pdf(
-            model: model,
-            downloadFileName: "user_report.pdf",
-            lastModified: DateTimeOffset.UtcNow);
+		// Renders the Razor view at ~/Views/User/PrintReport.cshtml (by default),
+		// then generates a PDF from the HTML, and returns the PDF as a FileContentResult
+		return this.RazorPdf(
+			model,
+			downloadFileName: "user_report.pdf",
+			lastModified: DateTimeOffset.UtcNow);
     }
 }
 ```
