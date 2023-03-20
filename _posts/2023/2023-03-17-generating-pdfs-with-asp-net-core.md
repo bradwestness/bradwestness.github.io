@@ -276,7 +276,7 @@ public class UserController : Controller
         int userId,
         [FromServices] IUserService userService)
     {
-        UserModel model = await userService.GetReportDataAsync(id);
+        var model = await userService.GetReportDataAsync(id);
 
 		// Renders the Razor view at ~/Views/User/PrintReport.cshtml (by default),
 		// then generates a PDF from the HTML, and returns the PDF as a FileContentResult
