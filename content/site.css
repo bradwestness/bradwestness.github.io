@@ -42,6 +42,10 @@ textarea {
     opacity: .5;
 }
 
+.excerpt, .excerpt a, .excerpt:hover, .excerpt a:hover {
+    text-decoration: none;
+}
+
 .page-content, .post-content, .post-item-excerpt {
     font-size: 1.2em;
     line-height: 1.6em;
