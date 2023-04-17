@@ -44,6 +44,7 @@ textarea {
 
 .excerpt, .excerpt a, .excerpt:hover, .excerpt a:hover {
     text-decoration: none;
+    color: inherit;
 }
 
 .page-content, .post-content, .post-item-excerpt {
