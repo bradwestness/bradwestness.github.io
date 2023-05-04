@@ -25,3 +25,5 @@ gems:
 
 feed:
   path: atom.xml
+
+include: [".well-known"]
