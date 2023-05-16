@@ -3,14 +3,14 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Brad Westness.com | A simple man in complex times.</title>
+  <title>Brad Westness.com | {{- site.description | strip_html -}}</title>
   <link href="https://www.bradwestness.com/atom.xml" rel="self"/>
   <link href="https://www.bradwestness.com"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>https://www.bradwestness.com/</id>
   <author>
     <name>Brad Westness</name>
-    <email>brad.westness@outlook.com</email>
+    <email>brad@westness.cc</email>
   </author>
   {% for post in site.posts %}
   <entry>
