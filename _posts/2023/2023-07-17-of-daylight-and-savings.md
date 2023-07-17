@@ -147,9 +147,9 @@ Phoenix is in Arizona, which doesn't observe Daylight Savings Time, so it's offs
 
 Well, the offsets are correct, but you may notice something - that the flight on the 5th is still going to be wrong. When you apply the -5 offset to the 12:00 UTC time, you get 7 AM, but the flight is always supposed to leave at 6 AM local time. So, we're right back where we started.
 
-### Bug 4 - Trying to Adjust for DST on the client
+### Bug 4 - Trying to Adjust for DST Downstream
 
-What a lot of engineers will do at this point is go "ah, ok, so I need to add an extra hour to the time when it's in a location that observes DST to account for the offset changing."
+What a lot of engineers will do at this point is go "Ah, ok, so I need to add an extra hour to the time when it's in a location that observes DST to account for the offset changing."
 
 So they implement some complicated logic to determine whether DST is in effect in the specified location and add or subtract an extra hour from the UTC time to account for it.
 
@@ -168,13 +168,15 @@ THe thought process is something like:
 
 Huzzah! The answer is what we expected! Simple as, right?
 
-But wait - 6:00 AM in Chicago during daylight time is not actually 12:00 UTC, because `6 + 5 != 12`. So if you use this method and leave at 6:00 AM local time, you will not actually be leaving that the time the flight is scheduled for.
+But wait: 6:00 AM in Chicago during daylight time is not actually 12:00 UTC, because `6 + 5 != 12`. So if you use this method and leave at 6:00 AM local time, you will not actually be leaving that the time the flight is scheduled for.
 
 The extra magic adjustment hour you subtracted means you actually left at 11:00 UTC, which means that the FAA and air traffic control may have a lot of questions about why you're trying to take off an hour earlier than your scheduled time.
 
 ## So what's the right solution?
 
-Well, there's no one "right" solution, but the main thing to remember is that you can't correct for DST changes by keeping the UTC time the same and fiddling with offsets, you have to actually *plan the UTC times an hour later* to account for the DST change, if you want the event to be at the same local time both when DST is in effect and after it ends.
+Well, there's no one "right" solution, but the main thing to remember is that you can't correct for DST changes by keeping the UTC time the same and fiddling with offsets.
+
+If you want an event at 6 AM during daylight time to still be at 6 AM after daylight time ends, you have to actually *plan the UTC time an hour later* to account for the DST change.
 
 ```
 2023-11-04 11:00:00 UTC
@@ -213,11 +215,11 @@ This can also be problematic if you persist your dates as UTC times with a speci
 
 Now, lets say DST is made permanent before these events actually happen. How do you handle this in your data?
 
-Do you subtract an hour from every UTC date that takes place between Nov 5th and March 12th and change the offset? What about parts of the country that don't observe DST already, like Arizona and bits of Indiana?
+Do you update all your records to subtract an hour from every UTC date that takes place between Nov 5th and March 12th and change the offset? What about parts of the country that don't observe DST already, like Arizona and bits of Indiana?
 
 Seems like it could potentially cause a lot of problems.
 
-My preferred method is to not persist the UTC offset, but instead persist the [TZDB identifier](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) of the location:
+My preferred method is not to persist the UTC offset, but instead persist the [TZDB identifier](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) of the location:
 
 ```
 {
@@ -242,6 +244,6 @@ Daylight Savings changeovers also lead to weirdness due to the fact that on days
 
 This obviously leads to weirdness when you want something to happen once a day the time that was skipped over or repeated.
 
-On days when we "spring ahead" should the event not happen at all? On days when we "fall back" should it happen twice?
+On days when we "spring ahead" should the event not happen at all, or an hour late? On days when we "fall back" should it happen twice?
 
 This is left as an exercise for the reader.
