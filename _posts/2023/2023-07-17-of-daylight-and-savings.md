@@ -25,10 +25,10 @@ Let's say, for example, you are operating an airline. You have a direct flight f
 
 Most developers at this point will think something along the lines of:
 
-1. ORD is in Chicago, which is UTC-5
+1. ORD is in Chicago, which is UTC-6
 2. PHX is in Phoenix, which is UTC-7
 2. Dates should always be stored in UTC, therefore:
-3. Plan a flight for every day of the year that departs at 11:00 UTC (since `11:00 - 5:00 = 6:00 AM` in Chicago) and has an expected arrival time of 15:00 UTC (since `11 + 4 = 15`)
+3. Plan a flight for every day of the year that departs at 12:00 UTC (since `12:00 - 6:00 = 6:00 AM` in Chicago) and has an expected arrival time of 16:00 UTC (since `12 + 4 = 16`)
 
 So, you might end up with a data object that looks something like this:
 
@@ -38,11 +38,11 @@ Flights: [
         id: 1,
         Departure: {
             Location: "ORD",
-            Time: "2023-11-04T11:00:00.000Z"
+            Time: "2023-03-11T12:00:00.000Z"
         },
         Arrival: {
             Location: "PHX",
-            Time: "2023-11-04T15:00:00.000Z"
+            Time: "2023-03-11T16:00:00.000Z"
         }
     },
     // ...etc
@@ -53,17 +53,23 @@ Flights: [
 
 Now, on the front-end you need to display these dates in the local time of the airport (NOT the local time of the user who is viewing the information).
 
-At this point, a lot of developers will say "I'll just make a lookup table of all the locations to their UTC offsets," `{ "ORD": -5, "PHX": -7, ...etc }`. Then they apply the offset to the UTC time and everything is hunky dory. 
+At this point, a lot of developers will say "I'll just make a lookup table of all the locations to their UTC offsets," `{ "ORD": -6, "PHX": -7, ...etc }`. Then they apply the offset to the UTC time and everything is hunky dory. 
 
-That is, until the very next following day (I used November 4th in the example on purpose). Daylight Savings Time ends in the US on November 5th, 2023, so Chicago will no longer be in `Central Daylight Time` (-5), but will "fall back" to `Central Standard Time` (-6).
+That is, until the very next following day (I used March 11th in the example on purpose). Daylight Savings Time begins in the US on March 12th, 2023, so Chicago will no longer be in `Central Standard Time` (-6), but will "spring ahead" to `Central Daylight Time` (-5).
 
-The result is some engineer getting woken up in the middle of the night by someone frantically wondering why all the six o'clock flights after November 5th say they're leaving at 5:00 AM.
+The result is some engineer getting woken up in the middle of the night by someone frantically wondering why all the flights after March 11th are off by an hour.
 
 ### Bug 2 - Using System.TimeZone Names
 
 You might read the above section and think "Hah! That foolish developer, they should've simply included the timezone in the record, then they can translate it instead of depending on a hardcoded list of offsets."
 
-If you're a .NET engineer like myself, you might use the [System.TimeZone](https://learn.microsoft.com/en-us/dotnet/api/system.timezone?view=net-7.0) names, like this:
+If you're a .NET engineer like myself, you might use the [System.TimeZone](https://learn.microsoft.com/en-us/dotnet/api/system.timezone?view=net-7.0) names.
+
+Now, System.TimeZone has been deprecated since the move to .NET Core, for a myriad of reasons. For one thing, *it doesn't include any Daylight Time zones*.
+
+It has `Central Standard Time` and `Eastern Standard Time` but no `Central Daylight Time` or `Eastern Daylight Time`.
+
+So this is another source of bugs around DST changeovers, because there's no way to effectively communicate whether DST is in effect when using this scheme.
 
 ```
 Flights: [
@@ -71,12 +77,12 @@ Flights: [
         id: 1,
         Departure: {
             Location: "ORD",
-            Time: "2023-11-04T11:00:00.000Z",
+            Time: "2023-03-11T12:00:00.000Z",
             TimeZone: "Central Standard Time"
         },
         Arrival: {
             Location: "PHX",
-            Time: "2023-11-04T15:00:00.000Z",
+            Time: "2023-03-11T16:00:00.000Z",
             TimeZone: "Mountain Standard Time"
         }
     },
@@ -84,12 +90,12 @@ Flights: [
         id: 2,
         Departure: {
             Location: "ORD",
-            Time: "2023-11-05T11:00:00.000Z",
+            Time: "2023-03-12T12:00:00.000Z",
             TimeZone: "Central Standard Time"
         },
         Arrival: {
             Location: "PHX",
-            Time: "2023-11-05T15:00:00.000Z",
+            Time: "2023-03-12T16:00:00.000Z",
             TimeZone: "Mountain Standard Time"
         }
     },
@@ -97,11 +103,9 @@ Flights: [
 ]
 ```
 
-Now, System.TimeZone has been deprecated since the move to .NET Core, for a myriad of reasons. For one thing, *it doesn't include any Daylight Time zones*.
-
-It has `Central Standard Time` and `Eastern Standard Time` but no `Central Daylight Time` or `Eastern Daylight Time`. So this is another source of bugs around DST changeovers, because there's no way to effectively communicate the fact that DST is in effect when using this scheme. 
-
 You end up with misleading data - any events planned between March 12 and November 5, 2023 will not actually be in `Central Standard Time,` so if you apply the `Central Standard Time` offset (-6) to the UTC date you'll wind up with the wrong local time, since the local time is actually `Central Daylight Time` (-5).
+
+Therefore every consumer of this data needs to know that `Central Standard Time` really means "either CST or CDT depending on whether Daylight Savings is in effect, which you must determine for yourself," which as you may imagine is not exactly a "pit of success."
 
 ### Bug 3 - Specifying UTC Offsets
 
@@ -113,12 +117,12 @@ Flights: [
         id: 1,
         Departure: {
             Location: "ORD",
-            Time: "2023-11-04T11:00:00.000Z",
-            Offset: -5
+            Time: "2023-03-11T12:00:00.000Z",
+            Offset: -6
         },
         Arrival: {
             Location: "PHX",
-            Time: "2023-11-04T15:00:00.000Z",
+            Time: "2023-03-11T16:00:00.000Z",
             Offset: -7
         }
     },
@@ -126,12 +130,12 @@ Flights: [
         id: 2,
         Departure: {
             Location: "ORD",
-            Time: "2023-11-05T11:00:00.000Z",
-            Offset: -6
+            Time: "2023-03-12T12:00:00.000Z",
+            Offset: -5
         },
         Arrival: {
             Location: "PHX",
-            Time: "2023-11-05T15:00:00.000Z",
+            Time: "2023-03-12T16:00:00.000Z",
             Offset: -7
         }
     },
@@ -139,31 +143,38 @@ Flights: [
 ]
 ```
 
-Phoenix is in Arizona, which doesn't observe Daylight Savings Time, so it's offset doesn't change. Chicago's does, and we now see it's set to -6 for the flight on the day when DST is no longer in effect. Looks good, right?
+Phoenix is in Arizona, which doesn't observe Daylight Savings Time, so it's offset doesn't change. Chicago's does, and we now see it's set to -5 for the flight on the day when DST goes into effect. Looks good, right?
 
-Well, the offsets are correct, but you may notice something - that the flight on the 5th is still going to be wrong. When you apply the -6 offset to the 11:00 UTC time, you get 5 AM, but the flight is always supposed to leave at 6 AM local time. So, we're right back where we started.
+Well, the offsets are correct, but you may notice something - that the flight on the 5th is still going to be wrong. When you apply the -5 offset to the 12:00 UTC time, you get 7 AM, but the flight is always supposed to leave at 6 AM local time. So, we're right back where we started.
 
 ### Bug 4 - Trying to Adjust for DST on the client
 
 What a lot of engineers will do at this point is go "ah, ok, so I need to add an extra hour to the time when it's in a location that observes DST to account for the offset changing."
 
-So they implement some complicated logic to determine whether DST is in effect in the specified location and add or subtract an extra hour from the UTC time to account for it. So they go:
+So they implement some complicated logic to determine whether DST is in effect in the specified location and add or subtract an extra hour from the UTC time to account for it.
+
+THe thought process is something like:
 
 ```
-11:00 UTC
--6:00 (central standard time offset)
-+1:00 (extra magical DST adjustment hour)
+12:00 UTC
+-6:00 (Central Standard Time offset)
 -----
- 6:00 AM Chicago time
+ 6:00 Central Standard Time, which is
+ 7:00 Central Daylight Time
+-1:00 (extra magical adjustment hour when DST is in effect)
+-----
+ 6:00 Central Daylight Time
 ```
 
-Huzzah! The answer is what we expected! Simple as, right? But wait - 6:00 AM in Chicago during standard time (e.g. the winter, when the UTC offset is -6), is not actually 11:00 UTC, because `6 + 6 != 11`. So if you use this method and leave at 6:00 AM local time, you will not actually be leaving that the time the flight is scheduled for.
+Huzzah! The answer is what we expected! Simple as, right?
 
-The extra magic adjustment hour you subtracted means you actaully left at 12:00 UTC, which means that the FAA may have a lot of questions about why you're trying to take off an hour later than your scheduled time three months out of the year.
+But wait - 6:00 AM in Chicago during daylight time is not actually 12:00 UTC, because `6 + 5 != 12`. So if you use this method and leave at 6:00 AM local time, you will not actually be leaving that the time the flight is scheduled for.
+
+The extra magic adjustment hour you subtracted means you actually left at 11:00 UTC, which means that the FAA and air traffic control may have a lot of questions about why you're trying to take off an hour earlier than your scheduled time.
 
 ## So what's the right solution?
 
-Well, there's no one "right" solution, but the main thing to remember is that you can't correct for DST changes by keeping the UTC time the same and fiddling with offsets, you have to actually *plan the UTC times an hour later* to account for the DST change, if you want the event to be at the same local time both before and after the change.
+Well, there's no one "right" solution, but the main thing to remember is that you can't correct for DST changes by keeping the UTC time the same and fiddling with offsets, you have to actually *plan the UTC times an hour later* to account for the DST change, if you want the event to be at the same local time both when DST is in effect and after it ends.
 
 ```
 2023-11-04 11:00:00 UTC
@@ -181,15 +192,15 @@ Just remember the sage words of Bill S. Preston, Esquire: "Listen to this dude R
 
 {% include figure.html filename="rufus.gif" description="Animated GIF from BILL & TED'S EXCELLENT ADVENTURE (1989) showing Rufus (George Carlin) saying 'You have to dial one number higher.'" %}
 
-## Extra Credit: Don't get caught with your pants down when DST goes away
+Or an hour earlier, when you're going from Standard Time to Daylight Time.
 
-As mentioned above, there's legislation in motion to end DST in the entire US - or rather, to make it permanent.
+## Extra Credit: Don't Get Caught in the Lurch when DST Becomes Permanent
 
 Confusingly, most of the year is already spent in "daylight savings time" (March to November, so about 9 months), while only 3 months of the year are "standard time."
 
 The [Sunshine Protection Act](https://www.reuters.com/world/us/us-senate-approves-bill-that-would-make-daylight-savings-time-permanent-2023-2022-03-15/) proposes to make DST permanent, so for our example, Chicago's UTC offset would always be -5 and no longer change to -6 over the winter months.
 
-This can also be problematic if you persist your dates as UTC times with a specified local offset, like this:
+This can also be problematic if you persist your dates as UTC times with a specified local offset but no other contextual data, like this:
 
 ```
 {
@@ -200,9 +211,11 @@ This can also be problematic if you persist your dates as UTC times with a speci
 }
 ```
 
-Now, lets say DST is made permanent before this event actually happens. How do you handle this in your data? 
+Now, lets say DST is made permanent before these events actually happen. How do you handle this in your data?
 
-Do you subtract an hour from every UTC date that takes place between Nov 5th and March 12th and change the offset? What about parts of the country that don't obvserve DST already, like Arizona and bits of Indiana? Seems like it could potentially cause a lot of problems.
+Do you subtract an hour from every UTC date that takes place between Nov 5th and March 12th and change the offset? What about parts of the country that don't observe DST already, like Arizona and bits of Indiana?
+
+Seems like it could potentially cause a lot of problems.
 
 My preferred method is to not persist the UTC offset, but instead persist the [TZDB identifier](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) of the location:
 
@@ -225,8 +238,10 @@ But, it should be a lot more foolproof to know that you need to adjust the event
 
 ### Extra, Extra Credit
 
-Daylight Savings changeovers also lead to weirdness due to the fact that on days when the locale "springs ahead," there are only 23 hours in the day (there is no 2:30 AM since it was skipped over), and on days when the locale "falls back," there are 25 hours, and 1:30 AM happens twice.
+Daylight Savings changeovers also lead to weirdness due to the fact that on days when the locale "springs ahead," there are only 23 hours in the day (there is no 2-3 AM hour, since it was skipped over), and on days when the locale "falls back," there are 25 hours, and the 1-2 AM hour happens twice.
 
 This obviously leads to weirdness when you want something to happen once a day the time that was skipped over or repeated.
 
-On days when we "spring ahead" should it not happen at all? On days when we "fall back" should it happen twice? This is left as an exercise for the reader.
+On days when we "spring ahead" should the event not happen at all? On days when we "fall back" should it happen twice?
+
+This is left as an exercise for the reader.
