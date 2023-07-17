@@ -5,7 +5,7 @@ categories: [Software,Programming,.NET]
 image: content/images/dali.png
 ---
 
-The "right" way to persist and transmit dates and times seems like it should be a solved problem, yet get any three softare engineers how it should be done, and you'll get three separate answers.
+The "right" way to persist and transmit dates and times seems like it should be a solved problem, yet ask any three software engineers how it should be done, and you'll get three separate answers.
 
 There's an old axiom that goes like this:
 
@@ -28,7 +28,7 @@ Most developers at this point will think something along the lines of:
 1. ORD is in Chicago, which is UTC-5
 2. PHX is in Phoenix, which is UTC-7
 2. Dates should always be stored in UTC, therefore:
-3. Plan a flight for every day of the year that departs at 11:00 UTC (since `11:00 - 5:00 = 6:00 AM` in Chicago) and arrives at 15:00 UTC (since `11 + 4 = 15`)
+3. Plan a flight for every day of the year that departs at 11:00 UTC (since `11:00 - 5:00 = 6:00 AM` in Chicago) and has an expected arrival time of 15:00 UTC (since `11 + 4 = 15`)
 
 So, you might end up with a data object that looks something like this:
 
@@ -51,13 +51,13 @@ Flights: [
 
 ### Bug 1 - Using Hardcoded Offsets
 
-Now, on the front-end you need to display these dates in the local time of the location (NOT the local time of the user who is viewing the information).
+Now, on the front-end you need to display these dates in the local time of the airport (NOT the local time of the user who is viewing the information).
 
-At this point, a lot of developers will say "I'll just make a lookup table of all the locations to their UTC offsets," `{ "ORD": -6, "PHX": -7, ...etc }`. Then they apply the offset to the UTC time and everything is hunky dory. 
+At this point, a lot of developers will say "I'll just make a lookup table of all the locations to their UTC offsets," `{ "ORD": -5, "PHX": -7, ...etc }`. Then they apply the offset to the UTC time and everything is hunky dory. 
 
-That is, until the very next following day (I used November 4th in the example on purpose). Daylight Savings Time ends in the US on November 5th, 2023, so Chicago will no longer be in Central Daylight Time (-5), but will "fall back" to Central Standard Time (-6).
+That is, until the very next following day (I used November 4th in the example on purpose). Daylight Savings Time ends in the US on November 5th, 2023, so Chicago will no longer be in `Central Daylight Time` (-5), but will "fall back" to `Central Standard Time` (-6).
 
-The result is some engineer getting woken up in the middle of the night by someone frantically wondering why all the flights after November 5th say they're leaving at 5 AM.
+The result is some engineer getting woken up in the middle of the night by someone frantically wondering why all the six o'clock flights after November 5th say they're leaving at 5:00 AM.
 
 ### Bug 2 - Using System.TimeZone Names
 
@@ -72,12 +72,12 @@ Flights: [
         Departure: {
             Location: "ORD",
             Time: "2023-11-04T11:00:00.000Z",
-            Timezone: "Central Standard Time"
+            TimeZone: "Central Standard Time"
         },
         Arrival: {
             Location: "PHX",
             Time: "2023-11-04T15:00:00.000Z",
-            Timezone: "Mountain Standard Time"
+            TimeZone: "Mountain Standard Time"
         }
     },
     {
@@ -85,12 +85,12 @@ Flights: [
         Departure: {
             Location: "ORD",
             Time: "2023-11-05T11:00:00.000Z",
-            Timezone: "Central Standard Time"
+            TimeZone: "Central Standard Time"
         },
         Arrival: {
             Location: "PHX",
             Time: "2023-11-05T15:00:00.000Z",
-            Timezone: "Mountain Standard Time"
+            TimeZone: "Mountain Standard Time"
         }
     },
     // ...
