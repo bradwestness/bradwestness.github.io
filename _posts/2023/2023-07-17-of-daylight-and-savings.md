@@ -149,11 +149,11 @@ Well, the offsets are correct, but you may notice something - that the flight on
 
 ### Bug 4 - Trying to Adjust for DST Downstream
 
-What a lot of engineers will do at this point is go "Ah, ok, so I need to add an extra hour to the time when it's in a location that observes DST to account for the offset changing."
+What a lot of engineers will do at this point is go "Ah, ok, so I need to add an extra hour to the time on the front end, when it's in a location that observes DST to account for the offset changing."
 
 So they implement some complicated logic to determine whether DST is in effect in the specified location and add or subtract an extra hour from the UTC time to account for it.
 
-THe thought process is something like:
+The thought process is something like:
 
 ```
 12:00 UTC
