@@ -19,7 +19,7 @@ Some areas have gotten rid of daylight savings already, or are in the process of
 
 The worst part about working on logistics software is that every time the DST changeover happens, you get to discover what new bugs have been implemented related to DST handling since the last time it changed.
 
-## Running an Airline
+## Exercise - Running an Airline
 
 Let's say, for example, you are operating an airline. You have a direct flight from ORD to PHX at `6:00 AM` Chicago time, every day of the year. The flight takes 4 hours.
 
@@ -53,7 +53,7 @@ Flights: [
 
 Now, on the front-end you need to display these dates in the local time of the location (NOT the local time of the user who is viewing the information).
 
-At this point, a lot of developers will say "I'll just make a lookup table of all the locations to their UTC offsets," `{ "ORD": -6, "PHX" -7, ... }` etc. Then they apply the offset to the UTC time and everything is hunky dory. 
+At this point, a lot of developers will say "I'll just make a lookup table of all the locations to their UTC offsets," `{ "ORD": -6, "PHX": -7, ...etc }`. Then they apply the offset to the UTC time and everything is hunky dory. 
 
 That is, until the very next following day (I used November 4th in the example on purpose). Daylight Savings Time ends in the US on November 5th, 2023, so Chicago will no longer be in Central Daylight Time (-5), but will "fall back" to Central Standard Time (-6).
 
@@ -99,11 +99,13 @@ Flights: [
 
 Now, System.TimeZone has been deprecated since the move to .NET Core, for a myriad of reasons. For one thing, *it doesn't include any Daylight Time zones*.
 
-It has `Central Standard Time` and `Eastern Standard Time` but no `Central Daylight Time` or `Eastern Daylight Time`. So this is another source of bugs around DST changeovers, because there's no way to effectively communicate the fact that DST is in effect when using this scheme.
+It has `Central Standard Time` and `Eastern Standard Time` but no `Central Daylight Time` or `Eastern Daylight Time`. So this is another source of bugs around DST changeovers, because there's no way to effectively communicate the fact that DST is in effect when using this scheme. 
+
+You end up with misleading data - any events planned between March 12 and November 5, 2023 will not actually be in `Central Standard Time,` so if you apply the `Central Standard Time` offset (-6) to the UTC date you'll wind up with the wrong local time, since the local time is actually `Central Daylight Time` (-5).
 
 ### Bug 3 - Specifying UTC Offsets
 
-So you might think "ok, we'll just send the UTC offset of the locations instead of the timezone name." This way we can send a different offset for the dates that are during Daylight Savings and the ones that aren't:
+So you might think "Okay, we'll just send the UTC offset of the locations instead of the timezone name." This way we can send a different offset for the dates that are during Daylight Savings and the ones that aren't:
 
 ```
 Flights: [
@@ -199,7 +201,7 @@ This can also be problematic if you persist your dates as UTC times with a speci
 
 Now, lets say DST is made permanent before this event actually happens. How do you handle this in your data? 
 
-Do you subtract an hour from every UTC date that takes place between Nov 5th and March 23rd and change the offset? That seems like it could potentially cause a lot of problems, what about parts of the country that don't obvserve DST already, like Arizona and bits of Indiana?
+Do you subtract an hour from every UTC date that takes place between Nov 5th and March 12th and change the offset? That seems like it could potentially cause a lot of problems, what about parts of the country that don't obvserve DST already, like Arizona and bits of Indiana?
 
 My preferred method is to not persist the UTC offset, but instead persist the [TZDB identifier](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) of the location:
 
@@ -217,3 +219,11 @@ This way, you can rely on a robust library like [NodaTime](https://nodatime.org/
 As long as the library you rely on is actively maintained and incorporates any changes to rules (such as the Sunshine Protection Act going into effect), you won't have to worry about updating records with new offsets. Just remember to update your NuGet package references.
 
 You will still have to change the UTC times of future events that are currently during Standard Time, if you want them to resolve to the same local time when DST is made permanent, however.
+
+### Extra, Extra Credit
+
+Daylight Savings changeovers also lead to weirdness due to the fact that on days when the locale "springs ahead," there are only 23 hours in the day (there is no 2:30 AM since it was skipped over), and on days when the locale "falls back," there are 25 hours, and 1:30 AM happens twice.
+
+This obviously leads to weirdness when you want something to happen once a day at the same time every day.
+
+On days when we "spring ahead" should it not happen at all? On days when we "fall back" should it happen twice?
