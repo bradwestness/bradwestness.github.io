@@ -194,8 +194,6 @@ Just remember the sage words of Bill S. Preston, Esquire: "Listen to this dude R
 
 {% include figure.html filename="rufus.gif" description="Animated GIF from BILL & TED'S EXCELLENT ADVENTURE (1989) showing Rufus (George Carlin) saying 'You have to dial one number higher.'" %}
 
-Or an hour earlier, when you're going from Standard Time to Daylight Time.
-
 ## Extra Credit: Don't Get Caught in the Lurch when DST Becomes Permanent
 
 Confusingly, most of the year is already spent in "daylight savings time" (March to November, so about 9 months), while only 3 months of the year are "standard time."
