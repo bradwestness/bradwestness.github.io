@@ -194,8 +194,8 @@ This can also be problematic if you persist your dates as UTC times with a speci
 ```
 {
   events: [
-    { id: 1, time: "2023-11-06T12:00:00.000Z", offset: -5 },
-    { id: 2, time: "2023-11-06T13:00:00.000Z", offset: -6 },
+    { id: 1, time: "2023-11-04T11:00:00.000Z", offset: -5 },
+    { id: 2, time: "2023-11-05T12:00:00.000Z", offset: -6 },
   ]
 }
 ```
@@ -209,8 +209,8 @@ My preferred method is to not persist the UTC offset, but instead persist the [T
 ```
 {
   events: [
-    { id: 1, time: "2023-11-06T12:00:00.000Z", tzdb: "America/Chicago" },
-    { id: 2, time: "2023-11-06T13:00:00.000Z", tzdb: "America/Chicago" },
+    { id: 1, time: "2023-11-06T11:00:00.000Z", tzdb: "America/Chicago" },
+    { id: 2, time: "2023-11-06T12:00:00.000Z", tzdb: "America/Chicago" },
   ]
 }
 ```
@@ -220,6 +220,8 @@ This way, you can rely on a robust library like [NodaTime](https://nodatime.org/
 As long as the library you rely on is actively maintained and incorporates any changes to rules (such as the Sunshine Protection Act going into effect), you won't have to worry about updating records with new offsets. Just remember to update your NuGet package references.
 
 You will still have to change the UTC times of future events that are currently during Standard Time, if you want them to resolve to the same local time when DST is made permanent, however.
+
+But, it should be a lot more foolproof to know that you need to adjust the events whose TZDB is "America/Chicago" (or any of the other locales no longer observing DST), than it would be if you were just going off of records with an offset of -6.
 
 ### Extra, Extra Credit
 
