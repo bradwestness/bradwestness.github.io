@@ -5,7 +5,7 @@ categories: [Software,Programming,.NET]
 image: content/images/dali.png
 ---
 
-The "right" way to persist and transmit dates and times seems like it should be a solved problem, yet ask any three developers in a room how it should be done, and you'll get three separate answers.
+The "right" way to persist and transmit dates and times seems like it should be a solved problem, yet get any three softare engineers how it should be done, and you'll get three separate answers.
 
 There's an old axiom that goes like this:
 
@@ -13,22 +13,24 @@ There's an old axiom that goes like this:
 > 
 > -- Phil Karlton
 
-I would add to that a third thing, which is: planning events that span across daylight savings boundaries.
+I would add to that a third hard thing, which is: planning events that span across daylight savings boundaries.
 
-Some areas have gotten rid of daylight savings already, or are in the process of doing so, but as of this writing, it's still observied most of the contiguous US.
+Some areas have gotten rid of daylight savings already, or are in the process of doing so, but as of this writing, it's still observed most of the contiguous US.
 
 The worst part about working on logistics software is that every time the DST changeover happens, you get to discover what new bugs have been implemented related to DST handling since the last time it changed.
 
 ## Running an Airline
 
-Let's say, for example, you are operating an airline. You have a direct flight from ORD to PHX at 6:00 AM every day of the year. The flight takes 3 hours.
+Let's say, for example, you are operating an airline. You have a direct flight from ORD to PHX at `6:00 AM` Chicago time, every day of the year. The flight takes 4 hours.
 
 Most developers at this point will think something along the lines of:
 
 1. ORD is in Chicago, which is UTC-5
 2. PHX is in Phoenix, which is UTC-7
-2. Dates should always be stored in UTC, therefore
-3. Plan a flight for every day of the year that departs at 11:00 UTC (since `11:00 - 5:00 = 6:00 AM` in Chicago) and arrives at 15:00 UTC (since `11 + 4 = 15`). So, you end up with a data object that looks something like this:
+2. Dates should always be stored in UTC, therefore:
+3. Plan a flight for every day of the year that departs at 11:00 UTC (since `11:00 - 5:00 = 6:00 AM` in Chicago) and arrives at 15:00 UTC (since `11 + 4 = 15`)
+
+So, you might end up with a data object that looks something like this:
 
 ```
 Flights: [
@@ -43,7 +45,7 @@ Flights: [
             Time: "2023-11-04T15:00:00.000Z"
         }
     },
-    // ...
+    // ...etc
 ]
 ```
 
@@ -53,7 +55,7 @@ Now, on the front-end you need to display these dates in the local time of the l
 
 At this point, a lot of developers will say "I'll just make a lookup table of all the locations to their UTC offsets," `{ "ORD": -6, "PHX" -7, ... }` etc. Then they apply the offset to the UTC time and everything is hunky dory. 
 
-That is, until the very next following day (I used November 4th in the example on purpose). Daylight Savings Time ends in the US on November 5th, 2023, so Chicago will no longer be in Central Daylight Time, but will "fall back" to Central Standard Time (-6).
+That is, until the very next following day (I used November 4th in the example on purpose). Daylight Savings Time ends in the US on November 5th, 2023, so Chicago will no longer be in Central Daylight Time (-5), but will "fall back" to Central Standard Time (-6).
 
 The result is some engineer getting woken up in the middle of the night by someone frantically wondering why all the flights after November 5th say they're leaving at 5 AM.
 
@@ -141,7 +143,7 @@ Well, the offsets are correct, but you may notice something - that the flight on
 
 ### Bug 4 - Trying to Adjust for DST on the client
 
-What a lot of engineers will do at this point is go ah, ok, so I need to add an extra hour to the time when it's in a location that observes DST to account for the offset changing.
+What a lot of engineers will do at this point is go "ah, ok, so I need to add an extra hour to the time when it's in a location that observes DST to account for the offset changing."
 
 So they implement some complicated logic to determine whether DST is in effect in the specified location and add or subtract an extra hour from the UTC time to account for it. So they go:
 
@@ -150,7 +152,7 @@ So they implement some complicated logic to determine whether DST is in effect i
 -6:00 (central standard time offset)
 +1:00 (extra magical DST adjustment hour)
 -----
- 6:00
+ 6:00 AM Chicago time
 ```
 
 Huzzah! The answer is what we expected! Simple as, right? But wait - 6:00 AM in Chicago during standard time (e.g. the winter, when the UTC offset is -6), is not actually 11:00 UTC, because `6 + 6 != 11`. So if you use this method and leave at 6:00 AM local time, you will not actually be leaving that the time the flight is scheduled for.
@@ -173,14 +175,16 @@ Well, there's no one "right" solution, but the main thing to remember is that yo
            06:00:00 CST
 ```
 
-Just remember the sage words fo Bill S. Preston, Esquire:
+Just remember the sage words of Bill S. Preston, Esquire: "Listen to this dude Rufus, he knows what he's doing."
 
-{% include figure.html filename="rufus.gif" description="Listen to this due Rufus, he knows what he's doing." %}
+{% include figure.html filename="rufus.gif" description="Animated GIF from BILL & TED'S EXCELLENT ADVENTURE (1989) showing Rufus (George Carlin) saying 'You have to dial one number higher.'" %}
 
 
 ## Extra Credit: Don't get caught with your pants down when DST goes away
 
-As mentioned above, there's legislation in motion to end DST in the entire US - or rather, to make it permanent. Confusingly, most of the year is already spent in "daylight savings time" (March to November, so about 9 months), while only 3 months of the year are "standard time." The [Sunshine Protection Act](https://www.reuters.com/world/us/us-senate-approves-bill-that-would-make-daylight-savings-time-permanent-2023-2022-03-15/) proposes to make DST permanent, so for our example, Chicago's UTC offset would always be -6 and no longer change to -5 over the winter months.
+As mentioned above, there's legislation in motion to end DST in the entire US - or rather, to make it permanent.
+
+Confusingly, most of the year is already spent in "daylight savings time" (March to November, so about 9 months), while only 3 months of the year are "standard time." The [Sunshine Protection Act](https://www.reuters.com/world/us/us-senate-approves-bill-that-would-make-daylight-savings-time-permanent-2023-2022-03-15/) proposes to make DST permanent, so for our example, Chicago's UTC offset would always be -6 and no longer change to -5 over the winter months.
 
 This can also be problematic if you persist your dates as UTC times with a specified local offset, like this:
 
@@ -202,12 +206,14 @@ My preferred method is to not persist the UTC offset, but instead persist the [T
 ```
 {
   events: [
-    { id: 1, time: "2023-11-06T12:00:00.000Z", timeZone: "America/Chicago" },
-    { id: 2, time: "2023-11-06T13:00:00.000Z", timeZone: "America/Chicago" },
+    { id: 1, time: "2023-11-06T12:00:00.000Z", tzdb: "America/Chicago" },
+    { id: 2, time: "2023-11-06T13:00:00.000Z", tzdb: "America/Chicago" },
   ]
 }
 ```
 
-This way, you can rely on a robust library like NodaTime to apply the correct offset for the specified zone to the UTC time determining on the rules of the locale where it takes place. As long as the library you rely on is actively maintained and incorporates any changes to rules (such as the Sunshine Protection Act going into effect), you won't have to worry about updating records with new offsets.
+This way, you can rely on a robust library like [NodaTime](https://nodatime.org/) to apply the correct offset for the specified zone to the UTC time, depending on the rules of the locale where it takes place.
+
+As long as the library you rely on is actively maintained and incorporates any changes to rules (such as the Sunshine Protection Act going into effect), you won't have to worry about updating records with new offsets. Just remember to update your NuGet package references.
 
 You will still have to change the UTC times of future events that are currently during Standard Time, if you want them to resolve to the same local time when DST is made permanent, however.
