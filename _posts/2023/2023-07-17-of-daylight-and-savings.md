@@ -159,7 +159,7 @@ So they implement some complicated logic to determine whether DST is in effect i
 
 Huzzah! The answer is what we expected! Simple as, right? But wait - 6:00 AM in Chicago during standard time (e.g. the winter, when the UTC offset is -6), is not actually 11:00 UTC, because `6 + 6 != 11`. So if you use this method and leave at 6:00 AM local time, you will not actually be leaving that the time the flight is scheduled for.
 
-The extra magic adjustment hour you subtracted means you actaully left at 12:00 UTC, which means that after flying for four hours, you will not arrive at 15:00 UTC but at 16:00 UTC, and everyone at the airport in Phoenix will be very confused as to why the flight that's meant to arrive at 9:00 AM is a full hour late.
+The extra magic adjustment hour you subtracted means you actaully left at 12:00 UTC, which means that the FAA may have a lot of questions about why you're trying to take off an hour later than your scheduled time three months out of the year.
 
 ## So what's the right solution?
 
@@ -167,9 +167,9 @@ Well, there's no one "right" solution, but the main thing to remember is that yo
 
 ```
 2023-11-04 11:00:00 UTC
-           -5:00:00 CST offset
+           -5:00:00 CDT offset
            --------
-           06:00:00 CST
+           06:00:00 CDT
            
 2023-11-05 12:00:00 UTC
            -6:00:00 CST offset
@@ -181,27 +181,28 @@ Just remember the sage words of Bill S. Preston, Esquire: "Listen to this dude R
 
 {% include figure.html filename="rufus.gif" description="Animated GIF from BILL & TED'S EXCELLENT ADVENTURE (1989) showing Rufus (George Carlin) saying 'You have to dial one number higher.'" %}
 
-
 ## Extra Credit: Don't get caught with your pants down when DST goes away
 
 As mentioned above, there's legislation in motion to end DST in the entire US - or rather, to make it permanent.
 
-Confusingly, most of the year is already spent in "daylight savings time" (March to November, so about 9 months), while only 3 months of the year are "standard time." The [Sunshine Protection Act](https://www.reuters.com/world/us/us-senate-approves-bill-that-would-make-daylight-savings-time-permanent-2023-2022-03-15/) proposes to make DST permanent, so for our example, Chicago's UTC offset would always be -6 and no longer change to -5 over the winter months.
+Confusingly, most of the year is already spent in "daylight savings time" (March to November, so about 9 months), while only 3 months of the year are "standard time."
+
+The [Sunshine Protection Act](https://www.reuters.com/world/us/us-senate-approves-bill-that-would-make-daylight-savings-time-permanent-2023-2022-03-15/) proposes to make DST permanent, so for our example, Chicago's UTC offset would always be -5 and no longer change to -6 over the winter months.
 
 This can also be problematic if you persist your dates as UTC times with a specified local offset, like this:
 
 ```
 {
   events: [
-    { id: 1, time: "2023-11-06T12:00:00.000Z", offset: -6 },
-    { id: 2, time: "2023-11-06T13:00:00.000Z", offset: -5 },
+    { id: 1, time: "2023-11-06T12:00:00.000Z", offset: -5 },
+    { id: 2, time: "2023-11-06T13:00:00.000Z", offset: -6 },
   ]
 }
 ```
 
 Now, lets say DST is made permanent before this event actually happens. How do you handle this in your data? 
 
-Do you subtract an hour from every UTC date that takes place between Nov 5th and March 12th and change the offset? That seems like it could potentially cause a lot of problems, what about parts of the country that don't obvserve DST already, like Arizona and bits of Indiana?
+Do you subtract an hour from every UTC date that takes place between Nov 5th and March 12th and change the offset? What about parts of the country that don't obvserve DST already, like Arizona and bits of Indiana? Seems like it could potentially cause a lot of problems.
 
 My preferred method is to not persist the UTC offset, but instead persist the [TZDB identifier](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) of the location:
 
@@ -224,6 +225,6 @@ You will still have to change the UTC times of future events that are currently 
 
 Daylight Savings changeovers also lead to weirdness due to the fact that on days when the locale "springs ahead," there are only 23 hours in the day (there is no 2:30 AM since it was skipped over), and on days when the locale "falls back," there are 25 hours, and 1:30 AM happens twice.
 
-This obviously leads to weirdness when you want something to happen once a day at the same time every day.
+This obviously leads to weirdness when you want something to happen once a day the time that was skipped over or repeated.
 
-On days when we "spring ahead" should it not happen at all? On days when we "fall back" should it happen twice?
+On days when we "spring ahead" should it not happen at all? On days when we "fall back" should it happen twice? This is left as an exercise for the reader.
