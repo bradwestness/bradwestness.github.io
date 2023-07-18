@@ -176,7 +176,11 @@ The thought process is something like:
 
 Huzzah! The answer is what we expected! Simple as, right?
 
-But wait: 6:00 AM in Chicago during daylight time is not actually 12:00 UTC, because `6 + 5 != 12`. So if you use this method and leave at 6:00 AM local time, you will not actually be leaving that the time the flight is scheduled for.
+But wait: 6:00 AM in Chicago during daylight time is not actually 12:00 UTC, because `6 + 5 != 12`.
+
+> This is the fun part, when you're on an emergency conference call with ten other engineers across the organization plus outside vendors, and everyone's doing napkin math to double check whether or not `6 + 6` gives the same sum as `6 + 5`.
+
+So, if you use this method and leave at 6:00 AM local time, you will not actually be leaving that the time the flight is scheduled for.
 
 The extra magic adjustment hour you subtracted means you actually left at 11:00 UTC, which means that the FAA and air traffic control may have a lot of questions about why you're trying to take off an hour earlier than your scheduled time.
 
