@@ -30,6 +30,8 @@ Most developers at this point will think something along the lines of:
 2. Dates should always be stored in UTC, therefore:
 3. Plan a flight for every day of the year that departs at 12:00 UTC (since `12:00 - 6:00 = 6:00 AM` in Chicago) and has an expected arrival time of 16:00 UTC (since `12 + 4 = 16`)
 
+> Normally you might store the dates as [Unix Epoch timestamps](https://en.wikipedia.org/wiki/Unix_time), but I'm using [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format here for human-readability.
+
 So, you might end up with a data object that looks something like this:
 
 ```
@@ -49,15 +51,19 @@ Flights: [
 ]
 ```
 
+There are a host of ways this can and will go wrong when Daylight Savings time changes, a few of which I'll outline here. These are all issues I've seen occur in production systems.
+
 ### Bug 1 - Using Hardcoded Offsets
 
 Now, on the front-end you need to display these dates in the local time of the airport (NOT the local time of the user who is viewing the information).
 
-At this point, a lot of developers will say "I'll just make a lookup table of all the locations to their UTC offsets," `{ "ORD": -6, "PHX": -7, ...etc }`. Then they apply the offset to the UTC time and everything is hunky dory. 
+At this point, a lot of developers will say "I'll just make a lookup table of all the locations to their UTC offsets," `{ "ORD": -6, "PHX": -7, ...etc }`. Then they apply the offset to the UTC time and everything is hunky dory.
 
 That is, until the very next following day (I used March 11th in the example on purpose). Daylight Savings Time begins in the US on March 12th, 2023, so Chicago will no longer be in `Central Standard Time` (-6), but will "spring ahead" to `Central Daylight Time` (-5).
 
 The result is some engineer getting woken up in the middle of the night by someone frantically wondering why all the flights after March 11th are off by an hour.
+
+> Note: a lot of developers also make the mistake of assuming that UTC offsets are always in integer amounts, which [is not the case](https://en.wikipedia.org/wiki/Time_in_Nepal).
 
 ### Bug 2 - Using System.TimeZone Names
 
@@ -147,6 +153,8 @@ Phoenix is in Arizona, which doesn't observe Daylight Savings Time, so it's offs
 
 Well, the offsets are correct, but you may notice something - that the flight on the 5th is still going to be wrong. When you apply the -5 offset to the 12:00 UTC time, you get 7 AM, but the flight is always supposed to leave at 6 AM local time. So, we're right back where we started.
 
+> Note: Once again, notice that using whole numbers for the offset will break down as soon as you go international and have to contend with places that have UTC offsets on the half or quarter-hour.
+
 ### Bug 4 - Trying to Adjust for DST Downstream
 
 What a lot of engineers will do at this point is go "Ah, ok, so I need to add an extra hour to the time on the front end, when it's in a location that observes DST to account for the offset changing."
@@ -174,7 +182,7 @@ The extra magic adjustment hour you subtracted means you actually left at 11:00 
 
 ## So what's the right solution?
 
-Well, there's no one "right" solution, but the main thing to remember is that you can't correct for DST changes by keeping the UTC time the same and fiddling with offsets.
+Well, there's no one "right" solution, but the main thing to remember - the thing that a lot of people seem to trip over - is that *you can't correct for DST changes by keeping the UTC time the same and fiddling with offsets.*
 
 If you want an event at 6 AM during daylight time to still be at 6 AM after daylight time ends, you have to actually *plan the UTC time an hour later* to account for the DST change.
 
@@ -189,6 +197,8 @@ If you want an event at 6 AM during daylight time to still be at 6 AM after dayl
            --------
            06:00:00 CST
 ```
+
+It may seem counter-intuitive since [UTC does not observe Daylight Savings](https://en.wikipedia.org/wiki/Coordinated_Universal_Time), but if the locale that the event is actually happening *does*, you need to account for that when setting the corresponding UTC time. You can't "adjust" your way out of the UTC time not changing when the local time's offset does change.
 
 Just remember the sage words of Bill S. Preston, Esquire: "Listen to this dude Rufus, he knows what he's doing."
 
