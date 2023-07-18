@@ -178,7 +178,7 @@ Huzzah! The answer is what we expected! Simple as, right?
 
 But wait: 6:00 AM in Chicago during daylight time is not actually 12:00 UTC, because `6 + 5 != 12`.
 
-> This is the fun part, when you're on an emergency conference call with ten other engineers across the organization plus outside vendors, and everyone's doing napkin math to double check whether or not `6 + 6` gives the same sum as `6 + 5`.
+> This is the fun part, when you're on an emergency conference call with ten other engineers across the organization plus outside vendors, and everyone's doing napkin math to double check whether or not `12 - 6` has the same difference as `12 - 5`.
 
 So, if you use this method and leave at 6:00 AM local time, you will not actually be leaving that the time the flight is scheduled for.
 
