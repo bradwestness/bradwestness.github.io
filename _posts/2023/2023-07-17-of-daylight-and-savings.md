@@ -11,7 +11,7 @@ There's an old axiom that goes like this:
 
 > There are only two hard things in Computer Science: cache invalidation and naming things.
 > 
-> -- Phil Karlton
+> *-- Phil Karlton*
 
 I would add to that a third hard thing, which is: planning events that span across daylight savings boundaries.
 
@@ -53,7 +53,7 @@ Flights: [
 
 There are a host of ways this can and will go wrong when Daylight Savings time changes, a few of which I'll outline here. These are all issues I've seen occur in production systems.
 
-### Bug 1 - Using Hardcoded Offsets
+### Bug 1: Using Hardcoded Offsets
 
 Now, on the front-end you need to display these dates in the local time of the airport (NOT the local time of the user who is viewing the information).
 
@@ -65,7 +65,7 @@ The result is some engineer getting woken up in the middle of the night by someo
 
 > Note: a lot of developers also make the mistake of assuming that UTC offsets are always in integer amounts, which [is not the case](https://en.wikipedia.org/wiki/Time_in_Nepal).
 
-### Bug 2 - Using System.TimeZone Names
+### Bug 2: Using System.TimeZone Names
 
 You might read the above section and think "Hah! That foolish developer, they should've simply included the timezone in the record, then they can translate it instead of depending on a hardcoded list of offsets."
 
@@ -113,7 +113,7 @@ You end up with misleading data - any events planned between March 12 and Novemb
 
 Therefore every consumer of this data needs to know that `Central Standard Time` really means "either CST or CDT depending on whether Daylight Savings is in effect, which you must determine for yourself," which as you may imagine is not exactly a "pit of success."
 
-### Bug 3 - Specifying UTC Offsets
+### Bug 3: Persisting UTC Offsets
 
 So you might think "Okay, we'll just send the UTC offset of the locations instead of the timezone name." This way we can send a different offset for the dates that are during Daylight Savings and the ones that aren't:
 
@@ -155,7 +155,7 @@ Well, the offsets are correct, but you may notice something - that the flight on
 
 > Note: Once again, notice that using whole numbers for the offset will break down as soon as you go international and have to contend with places that have UTC offsets on the half or quarter-hour.
 
-### Bug 4 - Trying to Adjust for DST Downstream
+### Bug 4: Trying to Adjust for DST Downstream
 
 What a lot of engineers will do at this point is go "Ah, ok, so I need to add an extra hour to the time on the front end, when it's in a location that observes DST to account for the offset changing."
 
@@ -186,7 +186,7 @@ The extra magic adjustment hour you subtracted means you actually left at 11:00 
 
 ## So what's the right solution?
 
-Well, there's no one "right" solution, but the main thing to remember - the thing that a lot of people seem to trip over - is that *you can't correct for DST changes by keeping the UTC time the same and fiddling with offsets.*
+Well, there's no one "right" solution, but the main thing to remember -- the thing that a lot of people seem to trip over -- is that *you can't correct for DST changes by keeping the UTC time the same and fiddling with offsets.*
 
 If you want an event at 6 AM during daylight time to still be at 6 AM after daylight time ends, you have to actually *plan the UTC time an hour later* to account for the DST change.
 
@@ -204,9 +204,11 @@ If you want an event at 6 AM during daylight time to still be at 6 AM after dayl
 
 It may seem counter-intuitive since [UTC does not observe Daylight Savings](https://en.wikipedia.org/wiki/Coordinated_Universal_Time), but if the locale that the event is actually happening *does*, you need to account for that when setting the corresponding UTC time. You can't "adjust" your way out of the UTC time not changing when the locale's offset does change.
 
-Just remember the sage words of Bill S. Preston, Esquire: "Listen to this dude Rufus, he knows what he's doing."
-
 {% include figure.html filename="rufus.gif" description="Animated GIF from BILL & TED'S EXCELLENT ADVENTURE (1989) showing Rufus (George Carlin) saying 'You have to dial one number higher.'" %}
+
+> "Listen to this dude Rufus, he knows what he's doing."
+>
+> *-- Bill S. Preston, Esq.*
 
 ## Extra Credit: Don't Get Caught in the Lurch when DST Becomes Permanent
 
