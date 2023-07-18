@@ -115,7 +115,7 @@ Therefore every consumer of this data needs to know that `Central Standard Time`
 
 ### Bug 3: Persisting UTC Offsets
 
-So you might think "Okay, we'll just send the UTC offset of the locations instead of the timezone name." This way we can send a different offset for the dates that are during Daylight Savings and the ones that aren't:
+So you might think "Okay, we'll just store the UTC offset of the locations instead of the timezone name." This way we can set a different offset for the dates that are during Daylight Savings and the ones that aren't:
 
 ```
 Flights: [
@@ -246,7 +246,9 @@ My preferred method is not to persist the UTC offset, but instead persist the [T
 
 This way, you can rely on a robust library like [NodaTime](https://nodatime.org/) to apply the correct offset for the specified zone to the UTC time, depending on the rules of the locale where it takes place.
 
-As long as the library you rely on is actively maintained and incorporates any changes to rules (such as the Sunshine Protection Act going into effect), you won't have to worry about updating records with new offsets. Just remember to update your NuGet package references.
+As long as the library you rely on is actively maintained and incorporates any changes to rules (such as the Sunshine Protection Act going into effect), you won't have to worry about updating records with new offsets.
+
+Just remember to update your package references frequently, so you pick up new versions of your chosen library when DST rules change.
 
 You will still have to change the UTC times of future events that are currently during Standard Time, if you want them to resolve to the same local time when DST is made permanent, however.
 
