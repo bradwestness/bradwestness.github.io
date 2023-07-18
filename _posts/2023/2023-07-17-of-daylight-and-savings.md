@@ -198,7 +198,7 @@ If you want an event at 6 AM during daylight time to still be at 6 AM after dayl
            06:00:00 CST
 ```
 
-It may seem counter-intuitive since [UTC does not observe Daylight Savings](https://en.wikipedia.org/wiki/Coordinated_Universal_Time), but if the locale that the event is actually happening *does*, you need to account for that when setting the corresponding UTC time. You can't "adjust" your way out of the UTC time not changing when the local time's offset does change.
+It may seem counter-intuitive since [UTC does not observe Daylight Savings](https://en.wikipedia.org/wiki/Coordinated_Universal_Time), but if the locale that the event is actually happening *does*, you need to account for that when setting the corresponding UTC time. You can't "adjust" your way out of the UTC time not changing when the locale's offset does change.
 
 Just remember the sage words of Bill S. Preston, Esquire: "Listen to this dude Rufus, he knows what he's doing."
 
