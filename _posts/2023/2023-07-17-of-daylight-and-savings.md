@@ -246,9 +246,7 @@ My preferred method is not to persist the UTC offset, but instead persist the [T
 
 This way, you can rely on a robust library like [NodaTime](https://nodatime.org/) to apply the correct offset for the specified zone to the UTC time, depending on the rules of the locale where it takes place.
 
-As long as the library you rely on is actively maintained and incorporates any changes to rules (such as the Sunshine Protection Act going into effect), you won't have to worry about updating records with new offsets.
-
-Just remember to update your package references frequently, so you pick up new versions of your chosen library when DST rules change.
+As long as the library you rely on is actively maintained and incorporates any changes to rules (such as the Sunshine Protection Act going into effect), you won't have to worry about updating records with new offsets. Just remember to update your package references frequently, so you pick up new versions as rules change.
 
 You will still have to change the UTC times of future events that are currently during Standard Time, if you want them to resolve to the same local time when DST is made permanent, however.
 
