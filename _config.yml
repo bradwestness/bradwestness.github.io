@@ -1,7 +1,7 @@
 #
 # Blog settings
 #
-sitename: Brad Westness.com
+sitename: Brad Westness
 baseurl: https://brad.westness.cc/
 logo: content/images/caricature.jpg
 description: Wisconsinite, .NET Software Engineer, Brewers fan, he/him.

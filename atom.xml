@@ -3,11 +3,11 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Brad Westness.com | {{- site.description | strip_html -}}</title>
-  <link href="https://www.bradwestness.com/atom.xml" rel="self"/>
-  <link href="https://www.bradwestness.com"/>
+  <title>Brad Westness | {{- site.description | strip_html -}}</title>
+  <link href="https://brad.westness.cc/atom.xml" rel="self"/>
+  <link href="https://brad.westness.cc"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>https://www.bradwestness.com/</id>
+  <id>https://brad.westness.cc/</id>
   <author>
     <name>Brad Westness</name>
     <email>brad@westness.cc</email>
@@ -15,9 +15,9 @@ layout: nil
   {% for post in site.posts %}
   <entry>
     <title>{{ post.title }}</title>
-    <link href="https://www.bradwestness.com{{ post.url }}"/>
+    <link href="https://brad.westness.cc{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>https://www.bradwestness.com{{ post.id }}</id>
+    <id>https://brad.westness.cc{{ post.id }}</id>
     <content type="html">{{ post.excerpt | strip_html | xml_escape }}</content>
   </entry>
   {% endfor %}
