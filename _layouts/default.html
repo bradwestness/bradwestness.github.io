@@ -42,13 +42,6 @@
     {%- endif -%}
     {%- endcapture -%}
 
-    {% assign twitter_card = 'summary' %}
-    {% if post and post.image %}
-    {% assign twitter_card = 'summary_large_image' %}
-    {% elsif page and page.image %}
-    {% assign twitter_card = 'summary_large_image' %}
-    {% endif %}
-
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -63,14 +56,6 @@
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:url" content="https://brad.westness.cc{{ page.url }}" />
     <meta property="og:description" content="{{- description -}}" />
-
-    <meta property="twitter:card" content="{{ twitter_card }}" />
-    <meta property="twitter:site" content="@bradwestness" />
-    <meta property="twitter:creator" content="@bradwestness" />
-    <meta property="twitter:siteid" content="17199669" />
-    <meta property="twitter:image" content="{{ image }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
-    <meta property="twitter:description" content="{{- description -}}" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -94,7 +79,6 @@
     <link rel="alternate" href="{{ site.baseurl }}atom.xml" type="application/atom+xml" />
     <link rel="canonical" href="https://brad.westness.cc{{ page.url }}" />
     <link rel="me" type="text/html" href="{{ site.baseurl }}" />
-    <link rel="me" type="text/html" href="https://twitter.com/bradwestness" />
     <link rel="me" type="text/html" href="https://github.com/bradwestness" />
     <link rel="me" type="text/html" href="https://bsky.app/profile/brad.westness.cc" />
 </head>
@@ -158,8 +142,6 @@
                                 target="_blank"><i class="bi bi-cloud"></i> Bluesky</a></li>
                         <li><a class="btn btn-link btn-sm" rel="me" href="https://www.github.com/bradwestness" title="Github"
                                 target="_blank"><i class="bi bi-github"></i> Github</a></li>
-                        <li><a class="btn btn-link btn-sm" rel="me" href="https://mastodon.social/@bradwestness" title="Mastodon"
-                                target="_blank"><i class="bi bi-mastodon"></i> Mastodon</a></li>
                         <li><a class="btn btn-link btn-sm" rel="me" href="mailto:brad@westness.cc" title="Email"><i
                                 class="bi bi-envelope"></i> Email</a></li>
                     </ul>
