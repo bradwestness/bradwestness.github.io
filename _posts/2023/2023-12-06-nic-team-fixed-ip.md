@@ -22,17 +22,15 @@ However, after a lot of trial and error, I finally figured out and resolve this 
 
 ## The Solution
 
-{% include figure.html filename="windows-server-manager-nic-team.png" description="Windows Server Manager" %}
+So, when you have a NIC Team configured in Windows Server, it turns out that the MAC Address of the "virtual NIC" that Windows Server creates (which really distributes traffic across the physical NICs that are members of the team) doesn't get assigned a MAC address.
 
-So, when you have a NIC Team configured in Windows Server, it turns out that the MAC Address of the "virtual NIC" that Windows Server uses (which really distributes traffic across the four physical NICs that are installed in the machine) doesn't get assigned a MAC address when it's created.
-
-{% include figure.html filename="windows-server-device-manager-nic-team.png" description="Device Manager" %}
+{% include figure.html filename="windows-server-device-manager-nic-team.png" description="Virtual and Physical NICs in Device Manager" %}
 
 By default, Windows Server just picks the MAC address of one of the NIC Team's member NICs on startup as the MAC address for the team.
 
-However, the really tricky bit is that this is done in a non-deterministic fashion. You might reasonably expect that the NIC in the first PCI slot or some other physical attribute as the NIC to use as the MAC address for the virtual adapter.
+However, the really tricky bit is that this is done in a non-deterministic fashion. You might reasonably expect that Windows Server would always pick the NIC in the first PCI slot (or some other physical attribute)as the NIC to use as the MAC address for the virtual adapter. That way, when you assign a fixed IP to the virtual adapter, it would work every time.
 
-That way, when you assing a fixed IP to the virtual adapter, it would work every time. This isn't the case. It just picks one seemingly at random, so your fixed IP will be assigned to the NIC team if it happens to pick the MAC address that is associated to the fixed IP, but that's a one-in-four shot in the case of my server.
+This isn't the case. It just picks one seemingly at random, so your fixed IP will be assigned to the NIC team if it happens to pick the MAC address that is associated to the fixed IP, but that's a one-in-four shot in the case of my server.
 
 {% include figure.html filename="windows-server-nic-team-properties.png" description="By default, the NIC Team's virtual adapter MAC Address is 'Not Present'" %}
 
@@ -40,11 +38,13 @@ To address this, you can edit the MAC address of the NIC Team's virtual adapter,
 
 {% include figure.html filename="duck-duck-go-mac-address-generator.png" description="DuckDuckGo to the rescue!" %}
 
-If you [search for 'MAC address generator' in DuckDuckGo](https://duckduckgo.com/?q=mac+address+generator) (my search engine of choice), it'll spit out a random MAC address. Just copy and paste that into the "Value" box in the adapter driver's properties window as shown above.
+If you [search for 'MAC address generator' in DuckDuckGo](https://duckduckgo.com/?q=mac+address+generator) (my search engine of choice), it'll spit out a random MAC address. Just copy and paste that into the "Value" box in the adapter driver's properties window as shown above (you'll need to remove any colons first).
 
 {% include figure.html filename="windows-server-nic-team-properties-with-mac-address.png" description="Note: you have to remove the colons from the MAC Address before entering it into this input." %}
 
 Now, if you go create a fixed IP address to the new device on your router (after deleting the old assignment to a physical NIC's MAC address, natch), it should actually get assigned to your virtual NIC team every time, no matter which NIC is chosen as the "primary" member of the NIC team after a reboot.
+
+{% include figure.html filename="nic-team-plex-remote-access.png" description="My server is actually using the fixed IP address I assigned to it, wow!" %}
 
 Victory!
 
