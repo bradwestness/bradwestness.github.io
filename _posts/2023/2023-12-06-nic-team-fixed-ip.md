@@ -12,7 +12,7 @@ I had configured a fixed IP in my Unifi admin console, which *should* result in 
 
 {% include figure.html filename="unifi-nic-team-fixed-ip.png" description="Assigning a Fixed IP address in the Unifi Network console" %}
 
-I also set up a port forwarding rule (or port forward) so that incoming Plex traffic to my network would be forwarded to my Plex server.
+I also set up a port forwarding rule so that incoming Plex traffic to my network would be forwarded to my Plex server.
 
 {% include figure.html filename="unifi-nic-team-port-forward.png" description="Creating a port forwarding rule in the Unifi Network console" %}
 
@@ -28,7 +28,7 @@ So, when you have a NIC Team configured in Windows Server, it turns out that the
 
 By default, Windows Server just picks the MAC address of one of the NIC Team's member NICs on startup as the MAC address for the team.
 
-However, the really tricky bit is that this is done in a non-deterministic fashion. You might reasonably expect that Windows Server would always pick the NIC in the first PCI slot (or some other physical attribute)as the NIC to use as the MAC address for the virtual adapter. That way, when you assign a fixed IP to the virtual adapter, it would work every time.
+However, the really tricky bit is that this is done in a non-deterministic fashion. You might reasonably expect that Windows Server would always pick the NIC in the first PCI slot (or some other physical attribute) as the NIC to use as the MAC address for the virtual adapter. That way, when you assign a fixed IP to the virtual adapter, it would work every time.
 
 This isn't the case. It just picks one seemingly at random, so your fixed IP will be assigned to the NIC team if it happens to pick the MAC address that is associated to the fixed IP, but that's a one-in-four shot in the case of my server.
 
