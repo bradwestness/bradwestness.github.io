@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Assigning a Fixed IP Addrees to a NIC Team in Windows Server
+title: Assigning a Fixed IP Address to a NIC Team in Windows Server
 categories: [Software,Programming]
 image: content/images/windows-server-manager-nic-team.png
 ---
