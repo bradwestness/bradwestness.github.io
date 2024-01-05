@@ -64,7 +64,10 @@ This will get you a `RegisteredSchema` object representing the Protobuf schema o
 Now, we'll need to persist the schemas for the topic to disk so that we can compile them using [Protoc](https://protobuf.dev/overview/).
 
 ```csharp
-private async Task SaveSchemaAndReferences(RegisteredSchema schema, string outputDirectory, CancellationToken cancellationToken)
+private async Task SaveSchemaAndReferences(
+    RegisteredSchema schema,
+    string outputDirectory,
+    CancellationToken cancellationToken)
 {
     var schemaFileName = schema.Subject;
 
@@ -80,18 +83,28 @@ private async Task SaveSchemaAndReferences(RegisteredSchema schema, string outpu
     // Ensure the target directory exists
     Directory.CreateDirectory(protoDirectory);
 
-    await File.WriteAllTextAsync(protoFilePath, schema.SchemaString, Encoding.UTF8, cancellationToken);
+    await File.WriteAllTextAsync(
+        protoFilePath,
+        schema.SchemaString,
+        Encoding.UTF8,
+        cancellationToken);
 
     // We also need to download any schemas referenced by this schema
     // before we can compile the Protobufs
     await SaveReferencedSchemas(schema, outputDirectory, cancellationToken);
 }
 
-private async Task SaveReferencedSchemas(RegisteredSchema schema, string outputDirectory, CancellationToken cancellationToken)
+private async Task SaveReferencedSchemas(
+    RegisteredSchema schema,
+    string outputDirectory,
+    CancellationToken cancellationToken)
 {
     foreach (var reference in schema.References)
     {
-        var referencedSchema = await _schemaRegistryClient.GetRegisteredSchemaAsync(reference.Subject, reference.Version);
+        var referencedSchema = await _schemaRegistryClient.GetRegisteredSchemaAsync(
+            reference.Subject,
+            reference.Version);
+
         var referencedSchemaFileName = referencedSchema.Subject;
 
         if (!referencedSchemaFileName.EndsWith(".proto"))
@@ -107,7 +120,11 @@ private async Task SaveReferencedSchemas(RegisteredSchema schema, string outputD
         // e.g. google/protobuf/timestamp.proto
         Directory.CreateDirectory(referencedProtoDirectory);
 
-        await File.WriteAllTextAsync(referencedProtoFilePath, referencedSchema.SchemaString, Encoding.UTF8, cancellationToken);
+        await File.WriteAllTextAsync(
+            referencedProtoFilePath,
+            referencedSchema.SchemaString,
+            Encoding.UTF8,
+            cancellationToken);
 
         // Recursion!
         // This will persist any referenced schemas that are referenced from this one,
@@ -259,7 +276,9 @@ Now that we've got a set of compiled C# types which represent the Protobuf schem
 we need to find the `MessageDescriptor` for the type that represents the root-level object for the topic's value:
 
 ```csharp
-async Task<MessageDescriptor?> GetMessageDescriptor(RegisteredSchema schema, CancellationToken cancellationToken)
+async Task<MessageDescriptor?> GetMessageDescriptor(
+    RegisteredSchema schema,
+    CancellationToken cancellationToken)
 {
     var outputDirectory = "/my/temp/directory";
     
@@ -271,8 +290,12 @@ async Task<MessageDescriptor?> GetMessageDescriptor(RegisteredSchema schema, Can
     var messageType = messageTypes.FirstOrDefault(x => x.Name == messageTypeName);
 
     // getting the descriptor is a bit tricky, since it's a static field on the IMessage implementation
-    var descriptorProperty = messageType?.GetProperty(nameof(IMessage.Descriptor), BindingFalags.Public | BindingFlags.Static);
-    var messageDescriptor = descriptorProperty?.GetValue(null, Array.Empty<object>()) as MessageDescriptor;
+    var descriptorProperty = messageType?.GetProperty(
+        nameof(IMessage.Descriptor),
+        BindingFalags.Public | BindingFlags.Static);
+
+    var messageDescriptor = descriptorProperty
+        ?.GetValue(null, Array.Empty<object>()) as MessageDescriptor;
 
     return messageDescriptor;
 }
@@ -301,21 +324,37 @@ using Confluent.SchemaRegistry;
 using Confluent.SchemaRegistry.Serdes;
 using Google.Protobuf;
 
-async Task PublishJsonAsProtobuf(string topicName, string messageKey, string messageValueJson, CancellationToken cancellationToken)
+async Task PublishJsonAsProtobuf(
+    string topicName,
+    string messageKey,
+    string messageValueJson,
+    CancellationToken cancellationToken)
 {
     var valueSchema = await TryGetLatestSchema($"{topicName}-value");
     var messageDescriptor = await GetMessageDescriptor(valueSchema, cancellationToken);
     var messageValueProtobuf = messageDescriptor.Parser.ParseJson(messageValueJson);
 
     // In order to invoke the ProduceMessageWithStringKey method,
-    // we need to use reflection to get the generic method with the type of our message value
+    // we need to use reflection to get the generic method
+    // with the type of our message value
     var methodInfo = this.GetType()
-        .GetMethod(nameof(ProduceMessageWithStringKey), BindingFlags.NonPublic | BindingFlags.Instance)
+        .GetMethod(
+            nameof(ProduceMessageWithStringKey),
+             BindingFlags.NonPublic | BindingFlags.Instance)
         .MakeGenericMethod(messageDescriptor.ClrType);
 
     // Now we can invoke the generic method, which will enable us to hop across
     // the dynamic / generic divide into the typed ProduceMessageWithStringKey method below
-    var task = methodInfo.Invoke(this, new[] { topicName, messageKey, messageValueProtobuf, cancellationToken }) as Task;
+    var task = methodInfo.Invoke(
+        this,
+        new[]
+        {
+            topicName,
+            messageKey,
+            messageValueProtobuf,
+            cancellationToken
+        }) as Task;
+
     await task;
 }
 
