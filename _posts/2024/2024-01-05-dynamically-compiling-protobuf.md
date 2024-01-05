@@ -233,7 +233,7 @@ async Task<Type[]> LoadCompiledMessageTypes(string outputDirectory, Cancellation
         throw new InvalidOperationException($"Failed to compile protobufs: {errorMessages}");
     }
 
-    // if we've reached this point, the compilation wwas a success,
+    // If we've reached this point, the compilation was a success,
     // so get all the types in the generated assembly that are implementations
     // of the Google.Protobuf.IMessage interface
     var compiledAssembly = Assembly.Load(ms.ToArray());
@@ -265,8 +265,8 @@ private static Lazy<MetadataReference[]> MetadataReferences => new Lazy<Metadata
         MetadataReference.CreateFromFile(Path.Combine(dotnetDirectory, "System.dll")),
         MetadataReference.CreateFromFile(Path.Combine(dotnetDirectory, "System.Collections.dll")),
         MetadataReference.CreateFromFile(Path.Combine(dotnetDirectory, "System.Linq.dll")),
-        MetadataReference.CreateFromFile(Path.Combine(dotnetDirectory, "System.Runtime.dll")),
         MetadataReference.CreateFromFile(Path.Combine(dotnetDirectory, "System.Private.CoreLib.dll")),
+        MetadataReference.CreateFromFile(Path.Combine(dotnetDirectory, "System.Runtime.dll")),
         MetadataReference.CreateFromFile(typeof(IMessage).GetTypeInfo().Assembly.Location),
     };
 });
@@ -289,7 +289,8 @@ async Task<MessageDescriptor?> GetMessageDescriptor(
     var messageTypes = await LoadCompiledMessageTypes(outputDirectory, cancellationToken);
     var messageType = messageTypes.FirstOrDefault(x => x.Name == messageTypeName);
 
-    // getting the descriptor is a bit tricky, since it's a static field on the IMessage implementation
+    // Getting the descriptor is a bit tricky,
+    // since it's a static field on the IMessage implementation
     var descriptorProperty = messageType?.GetProperty(
         nameof(IMessage.Descriptor),
         BindingFalags.Public | BindingFlags.Static);
@@ -340,7 +341,7 @@ async Task PublishJsonAsProtobuf(
     var methodInfo = this.GetType()
         .GetMethod(
             nameof(ProduceMessageWithStringKey),
-             BindingFlags.NonPublic | BindingFlags.Instance)
+            BindingFlags.NonPublic | BindingFlags.Instance)
         .MakeGenericMethod(messageDescriptor.ClrType);
 
     // Now we can invoke the generic method, which will enable us to hop across
@@ -355,6 +356,7 @@ async Task PublishJsonAsProtobuf(
             cancellationToken
         }) as Task;
 
+    // Don't forget to await the task we got from invoking the asynchronous method!
     await task;
 }
 
