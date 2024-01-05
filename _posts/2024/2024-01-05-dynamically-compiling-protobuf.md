@@ -178,12 +178,12 @@ async Task<Type[]> LoadCompiledMessageTypes(string outputDirectory, Cancellation
     var syntaxTrees = new List<SyntaxTree>();
     var hashes = new HashSet<string>();
 
-    // add all the generated C# files to the compilation
+    // Add all the generated C# files to the compilation
     foreach (var file in Directory.EnumerateFiles(outputDirectory, "*.cs", SearchOption.AllDirectories))
     {
         var source = await File.ReadAllTextAsync(file, cancellationToken);
 
-        // if the directory contained multiple copies of the same protobuf,
+        // If the directory contained multiple copies of the same protobuf,
         // (e.g. if it was referenced from multiple places in the schema hierarchy)
         // we only want to add each unique .cs class to our assembly once,
         // or we'll get compilation errors due to conflicting type names
@@ -328,8 +328,8 @@ private async Task ProduceMessageWithStringKey<TValue>(
     try
     {
         // Create a typed producer instance with a protobuf value serializer,
-        // and the schema regsitry client we configured earlier
-        using var producer  = new ProducerBuilder<string, TValue>(new ProducerConfig
+        // and the schema registry client we configured earlier
+        using var producer = new ProducerBuilder<string, TValue>(new ProducerConfig
             {
                 BootstrapServers = "example.com",
                 SecurityProtocol = SecurityProtocol.SaslSsl,
