@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Software Engineer Character Classes
+title: Software Engineering Character Classes
 categories: [Software,Programming]
 image: content/images/character_classes.jpg
 ---
