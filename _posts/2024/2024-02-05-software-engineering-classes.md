@@ -7,11 +7,15 @@ image: content/images/character_classes.jpg
 
 Much like a role-playing game, software engineers come in a variety of types, or "builds."
 
-In gaming, these are referred to as "character classes." Which are you?
+In gaming, these are referred to as "character classes."
+
+Which are you?
 
 ## Mage / Magic User
 
-The mage, or magic user, is capable of writing incredibly performant and elegant code, that is nevertheless inscrutable to anyone else who witnesses it. Including themselves, if it's been a minute.
+The mage, or magic user, is capable of writing incredibly performant and elegant code, that is nevertheless inscrutable to anyone else who witnesses it.
+
+Including themselves, if it's been a minute.
 
 To gaze upon the result of their labors is to gaze into the abyss of madness. It works, just don't touch it.
 
@@ -25,13 +29,13 @@ The thief copies code from Stack Overflow without really knowing what it does.
 
 Will shell into a broken production system and run a mysterious bash script that resolves the ongoing outage without anybody knowing they were there.
 
-Just don't ask why it worked.
+Just don't ask _why_ it worked.
 
 {% include figure.html filename="character_classes_thief.gif" description="Zero residual presence." %}
 
 ## Medic / Healer
 
-A meticulous planner, the medic thrives as a "maintenance mode" developer. Harnesses thorny brownfield systems by erecting a bulletproof scaffolding of automated testing around them.
+A meticulous planner, the medic thrives as a "maintenance mode" developer. They harness thorny brownfield systems by erecting a bulletproof scaffolding of automated testing around them.
 
 Sometimes you need to force them to put down their toys and go outside and play with the other developers. Implement a new feature. They get weird if you leave them alone for too long.
 
@@ -41,7 +45,9 @@ Sometimes you need to force them to put down their toys and go outside and play 
 
 Polymath who can be sent ahead to try out new technolgies and lay down a path that others can follow. They spot potholes and dead-ends before others fall into them.
 
-The scout writes a doc or creates a library to encourage others to use the new thing according to best practices. Sometimes the scout needs to be "brought in," or they will wander indefinitely in the wilderness.
+The scout writes a doc or creates a library to encourage others to use the new thing according to best practices.
+
+Sometimes the scout needs to be "brought in," or they will wander indefinitely in the wilderness.
 
 {% include figure.html filename="character_classes_scout.gif" description="The scout will forge ahead and discover where all the lightning sand, flame-spurts and R.O.U.S.'s are, so that others may avoid them." %}
 
