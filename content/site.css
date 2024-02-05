@@ -47,11 +47,6 @@ textarea {
     color: inherit;
 }
 
-.page-content, .post-content, .post-item-excerpt {
-    font-size: 1.2em;
-    line-height: 1.6em;
-}
-
     .post-content > p:first-child {
         margin-top: 1.6em;
     }
