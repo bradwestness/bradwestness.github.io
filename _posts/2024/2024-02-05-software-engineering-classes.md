@@ -2,7 +2,7 @@
 layout: post
 title: Software Engineer Character Classes
 categories: [Software,Programming]
-image: content/images/character_classes.png
+image: content/images/character_classes.jpg
 ---
 
 Much like a role-playing game, software engineers come in a variety of types, or "builds."
@@ -21,7 +21,11 @@ Tests? What are you, some kind of cop?
 
 ## Thief / Ninja
 
-The thief copies code from Stack Overflow without really knowing what it does. Will shell into a broken production system and run a mysterious bash script that resolves the ongoing outage without anybody knowing they were there. Just don't ask why it worked.
+The thief copies code from Stack Overflow without really knowing what it does.
+
+Will shell into a broken production system and run a mysterious bash script that resolves the ongoing outage without anybody knowing they were there.
+
+Just don't ask why it worked.
 
 {% include figure.html filename="character_classes_thief.gif" description="Zero residual presence." %}
 
@@ -43,6 +47,10 @@ The scout writes a doc or creates a library to encourage others to use the new t
 
 ## Tank / Fighter
 
-If you have a seemingly insurmountable problem that never gets prioritized into a sprint, simply nerd-snipe the tank into fixing it. They will bash their heads against it without stopping for rest or food until the problem has been smashed into manageable bits. Needs medic badly by the end of the sprint.
+If you have a seemingly insurmountable problem that never gets prioritized into a sprint, simply nerd-snipe the tank into fixing it.
+
+They will bash their heads against it without stopping for rest or food until the problem has been smashed into manageable bits.
+
+Needs medic badly by the end of the sprint.
 
 {% include figure.html filename="character_classes_tank.gif" description="It may not be the prettiest solution, but it works, darn it." %}
