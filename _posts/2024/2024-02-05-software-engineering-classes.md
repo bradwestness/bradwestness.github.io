@@ -61,7 +61,7 @@ Needs medic badly by the end of the sprint.
 
 {% include figure.html filename="character_classes_tank.gif" description="It may not be the prettiest solution, but it works, darn it." %}
 
-## Into the Breach
+## You Have My Axe
 
 Obviously, in real life, people contain multitudes. Nobody fits a single narrow "type" definition all the time, and people are constantly growing and changing. The only constant is change, right?
 
