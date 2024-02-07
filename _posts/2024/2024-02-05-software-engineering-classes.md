@@ -60,3 +60,11 @@ They will bash their heads against it without stopping for rest or food until th
 Needs medic badly by the end of the sprint.
 
 {% include figure.html filename="character_classes_tank.gif" description="It may not be the prettiest solution, but it works, darn it." %}
+
+## Into the Breach
+
+Obviously, in real life, people contain multitudes. Nobody fits a single narrow "type" definition all the time, and people are constantly growing and changing. The only constant is change, right?
+
+But, I find it kind of fun to think in these terms sometimes when working on a difficult problem. "I'm totally being a tank for my team right now, I'm slogging through all this tedious grunt work that nobody wants to do, but will improve the lives of everyone else on the team."
+
+More of a self-motivation tactic than a way to pigeonhole or judge your co-workers, hopefully.
