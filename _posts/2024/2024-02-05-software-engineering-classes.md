@@ -5,11 +5,7 @@ categories: [Software,Programming]
 image: content/images/character_classes.jpg
 ---
 
-Much like a role-playing game, software engineers come in a variety of types, or "builds."
-
-In gaming, these are referred to as "character classes."
-
-Which are you?
+Much like a role-playing game, software engineers come in a variety of types, or "builds." In gaming, these are referred to as "character classes." Which are you?
 
 ## Mage / Magic User
 
