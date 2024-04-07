@@ -12,7 +12,7 @@ Without prescribing any specific architecture, let's assume you've got some kind
 The naive, happy path might look something like this:
 
 <div class="mermaid">
-flowchart TD
+flowchart LR
     A["HTTP API"] --> |Depends on| B(User service)
     B --> |Depends on| C(User repository)
     C --> |Depends on| D[(Users)]
