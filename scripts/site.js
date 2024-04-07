@@ -50,7 +50,8 @@
 
     if (mermaid) {
         mermaid.initialize({
-            startOnLoad: true
+            startOnLoad: true,
+            theme: "dark",
         });
     }
 
