@@ -7,7 +7,11 @@ image: content/images/blast-radius.jpg
 
 I was recently listening to an episode of the [.NET Rocks podcast with guest Steve "Ardalis" Smith](2024-04-07-organizing-your-code-for-minimal-blast-radius) and Steve articulated an issue I've tried to highlight in code reviews many times in the past in a very succinct way that I loved: you want to organize your code in such a way as to minimize the "blast radius" when you inevitably make a change.
 
-Without prescribing any specific architecture, let's assume you've got some kind of onion layer or n-tier pattern going (I think [three is the magic number](https://brad.westness.cc/2014/10/13/peach-driven-development/), myself). For this post, we'll assume a basic ecommerce store style user-product-order-orderitem system.
+Without prescribing any specific architecture, let's assume you've got some kind of onion layer or n-tier pattern going (I think [three is the magic number](https://brad.westness.cc/2014/10/13/peach-driven-development/), myself). 
+
+### The Happy Path
+
+For this post, we'll assume a basic ecommerce store style user-product-order-orderitem system.
 
 The naive, happy path might look something like this:
 
@@ -41,11 +45,13 @@ flowchart TD
 
 Even though you've not got multiple "types of things" whithin one domain, you've still got a pretty clear demarcation of the blast radius of any given change. If you change the Product repository, you shouldn't have to re-test the User service, for example.
 
+### Getting Complicated
+
 Now, this is still an overly-rosy view of an system architecture. In practice, what ends up happening is that the User service needs to pull some Order data in. And the Order service obviously needs to get the products on a given order.
 
 If you were to pull an accurate diagram of a given system like this, you'd probably wind up with a diagram that looks a little like this:
 
-<div class="mermaid">
+<!-- <div class="mermaid">
 flowchart TD
     A["HTTP API"] --> |Depends on| B(User service)
     A --> |Depends on| C(Product service)
@@ -60,7 +66,7 @@ flowchart TD
     F --> |Depends on| I[(Products)]    
     G --> |Depends on| J[(Orders)]
     G --> |Depends on| I
-<div>
+<div> -->
 
 Now, things are getting a little knottier. If you add a feature to the order repository, it may not be obvious that it affects the User service, for example. However, I still think in pragmatic terms this is mostly fine. The realities of creating useful API endpoints that it's often just not feasible to truly segregate everything in a perfectly pure way for performance reasons.
 
@@ -72,7 +78,7 @@ In practice, what can easily happen is this: a developer will be adding a featur
 
 Now, you've introduced dependency arrows that don't go down across layers. You've got services at the same layer of the app that depend on each other. Which can wind up looking like this:
 
-<div class="mermaid">
+<!-- <div class="mermaid">
 flowchart TD
     A["HTTP API"] --> |Depends on| B(User service)
     A --> |Depends on| C(Product service)    
@@ -93,7 +99,7 @@ flowchart TD
     G --> |Depends on| J[(Orders)]
     G --> |Depends on| H    
     G --> |Depends on| I
-</div>
+</div> -->
 
 Now things are really turning into a ball of mud. The dependency chain no longer flows "downhill" from one layer to the next. There's even a  There's a circular dependency between the User service and the Order service! It becomes very hard to reason about the blast radius of any given change, because everything is connected to everything else.
 
