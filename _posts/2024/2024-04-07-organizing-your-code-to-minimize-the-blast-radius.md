@@ -51,7 +51,7 @@ Now, this is still an overly-rosy view of an system architecture. In practice, w
 
 If you were to pull an accurate diagram of a given system like this, you'd probably wind up with a diagram that looks a little like this:
 
-<!-- <div class="mermaid">
+<pre class="mermaid">
 flowchart TD
     A["HTTP API"] --> |Depends on| B(User service)
     A --> |Depends on| C(Product service)
@@ -66,7 +66,7 @@ flowchart TD
     F --> |Depends on| I[(Products)]    
     G --> |Depends on| J[(Orders)]
     G --> |Depends on| I
-<div> -->
+</pre>
 
 Now, things are getting a little knottier. If you add a feature to the order repository, it may not be obvious that it affects the User service, for example. However, I still think in pragmatic terms this is mostly fine. The realities of creating useful API endpoints that it's often just not feasible to truly segregate everything in a perfectly pure way for performance reasons.
 
