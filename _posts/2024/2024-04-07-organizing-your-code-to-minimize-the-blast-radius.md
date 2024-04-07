@@ -68,7 +68,9 @@ flowchart TD
     G --> |Depends on| I
 </pre>
 
-Now, things are getting a little knottier. If you add a feature to the order repository, it may not be obvious that it affects the User service, for example. However, I still think in pragmatic terms this is mostly fine. The realities of creating useful API endpoints that it's often just not feasible to truly segregate everything in a perfectly pure way for performance reasons.
+Now, things are getting a little knottier. If you add a feature to the order repository, it may not be obvious that it affects the User service, for example.
+
+However, I still think in pragmatic terms this is mostly fine. The realities of creating useful API endpoints that it's often just not feasible to truly segregate everything in a perfectly pure way (usually for performance reasons).
 
 ### Here There Be Dragons
 
