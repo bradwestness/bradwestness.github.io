@@ -101,13 +101,13 @@ flowchart TD
     G --> |Depends on| I
 </div> -->
 
-Now things are really turning into a ball of mud. The dependency chain no longer flows "downhill" from one layer to the next. There's even a  There's a circular dependency between the User service and the Order service! It becomes very hard to reason about the blast radius of any given change, because everything is connected to everything else.
+Now things are really turning into a ball of mud. The dependency chain no longer flows "downhill" from one layer to the next. There's even a circular dependency between the User service and the Order service! It becomes very hard to reason about the blast radius of any given change, because everything is connected to everything else.
 
 ### Only a Sith Speaks in Absolutes
 
-I also really enjoyed the part of the .NET Rocks episode where Steve talks about how "it depends" is not a satisfactory answer to a question, despite the fact that it's one software engineers love to give.
+I also really enjoyed the part of the .NET Rocks episode where Steve talks about how "it depends" is not a satisfactory answer to a question, despite the fact that it's one software engineers love to give. You have to follow "it depends" with what "it" depends "on," and what you'd do in each case.
 
-What should you do to prevent the situation above? I'm a pragmatist and I don't think having a hard-and-fast "never have one service reference a dependency it doesn't wholly own" is feasible to follow 100% of the time, but there are a few guidelines I try to follow:
+So what should you do to prevent the situation above? I'm a pragmatist and I don't think having a hard-and-fast "never have one service reference a dependency it doesn't wholly own" rule is feasible to follow 100% of the time. But, there are a few guidelines I try to follow:
 
 1. Dependencies should flow "downhill" from one layer to the next, and not "sideways" to another service at the same layer
 2. If you need multiple services at the same layer to share some bit of functionality, extract that functionality out into a shared "utility" class or library, and have them both reference it, rather than directly referencing each other
