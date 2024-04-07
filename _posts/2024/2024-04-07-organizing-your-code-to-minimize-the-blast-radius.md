@@ -15,12 +15,12 @@ For this post, we'll assume a basic ecommerce store style user-product-order-ord
 
 The naive, happy path might look something like this:
 
-<div class="mermaid">
+<pre class="mermaid">
 flowchart LR
     A["HTTP API"] --> |Depends on| B(User service)
     B --> |Depends on| C(User repository)
     C --> |Depends on| D[(Users)]
-</div>
+</pre>
 
 Now, in this very straightforward example, testing changes is pretty easy. If you change a component, you simply have to test everything above it. For example, if you make a change to the User service, you need to test both the user service and the API endpoint, but you shouldn't need to re-test the User repository or databsae table if they haven't changed at all.
 
@@ -30,7 +30,7 @@ If you have a true microservice architecture like the above diagram, this is pre
 
 Most organizations following Domain Driven Design still use more like "mini services" which are not quite as tiny as true microservices. What you might end up with is an architecture that looks a little something more like this:
 
-<div class="mermaid">
+<pre class="mermaid">
 flowchart TD
     A["HTTP API"] --> |Depends on| B(User service)
     A --> |Depends on| C(Product service)
@@ -41,11 +41,11 @@ flowchart TD
     E --> |Depends on| H[(Users)]
     F --> |Depends on| I[(Products)]
     G --> |Depends on| J[(Orders)]    
-</div>
+</pre>
 
 Even though you've not got multiple "types of things" whithin one domain, you've still got a pretty clear demarcation of the blast radius of any given change. If you change the Product repository, you shouldn't have to re-test the User service, for example.
 
-### Getting Complicated
+### Let's Get Real
 
 Now, this is still an overly-rosy view of an system architecture. In practice, what ends up happening is that the User service needs to pull some Order data in. And the Order service obviously needs to get the products on a given order.
 
@@ -78,7 +78,7 @@ In practice, what can easily happen is this: a developer will be adding a featur
 
 Now, you've introduced dependency arrows that don't go down across layers. You've got services at the same layer of the app that depend on each other. Which can wind up looking like this:
 
-<!-- <div class="mermaid">
+<pre class="mermaid">
 flowchart TD
     A["HTTP API"] --> |Depends on| B(User service)
     A --> |Depends on| C(Product service)    
@@ -99,7 +99,7 @@ flowchart TD
     G --> |Depends on| J[(Orders)]
     G --> |Depends on| H    
     G --> |Depends on| I
-</div> -->
+</pre>
 
 Now things are really turning into a ball of mud. The dependency chain no longer flows "downhill" from one layer to the next. There's even a circular dependency between the User service and the Order service! It becomes very hard to reason about the blast radius of any given change, because everything is connected to everything else.
 
