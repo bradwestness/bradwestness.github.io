@@ -22,12 +22,8 @@ gems:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-mermaid
 
 feed:
   path: atom.xml
-
-mermaid:
-  src: '/content/mermaid.min.js'
 
 include: [".well-known"]
