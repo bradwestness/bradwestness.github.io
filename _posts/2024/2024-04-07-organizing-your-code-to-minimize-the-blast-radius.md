@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Organizing Your Code to Minimize the 'Blast Radius'
-categories: [Software,Programming]
+categories: [Software,Programming,.NET]
 image: content/images/blast-radius.jpg
 ---
 

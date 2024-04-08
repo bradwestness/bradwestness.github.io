@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Projects are APIs. Internal is Your Friend.
-categories: [Software,Programming]
+categories: [Software,Programming,.NET]
 image: content/images/master_and_commander_header.jpg
 ---
 
