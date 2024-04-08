@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Internal is your friend. Projects are Interfaces. Oceans are Battlefields.
+title: Internal is your friend. Projects are interfaces. Oceans are battlefields.
 categories: [Software,Programming,.NET]
 image: content/images/master_and_commander_header.jpg
 ---
