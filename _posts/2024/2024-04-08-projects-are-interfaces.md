@@ -13,7 +13,7 @@ In addition to the [great info about limiting the "blast radius" of your code](/
 
 When organizing a .NET solution, it's useful to [break apart the various layers of your application into separate projects](/2014/10/13/peach-driven-development/). This helps separate the concerns of your system, and also helps manage the dependency graph of packages each project needs to reference. This way, for example, your presentation layer doesn't need to directly reference the database driver that the data project uses.
 
-What may be less obvious is that the projects within an application themselves represent an interface that the project is exposing to the rest of the application. In the same way that you might choose to not expose some methods on a class in order to prevent calling code from taking a direct dependency on implementation details, you should be judicious about choosing whether to expose the classes and types within a given project to the rest of the solution.
+What may be less obvious is that the *projects within an application themselves* represent an interface that the project is exposing to the rest of the application. In the same way that you might choose not to expose some methods on a class in order to prevent calling code from taking a direct dependency on implementation details, you should be judicious about choosing whether to expose the classes and types within a given project to the rest of the solution.
 
 For instance, let's say you have an incredibly simple and contrived example of an ASP.NET web application solution:
 
@@ -29,9 +29,9 @@ I think some engineers get in the habit of thinking that making as much of your 
 
 However, *a project within an application solution* is a little different. You generally want a little tighter control over what types are exposed, because you want to retain the ability to change implementations later without having that change require a lot of corresponding work across all the other layers of the solution.
 
-In the **Data** project of the sample solution above, the `SampleDbContext` and `UserRepository` classes can be defined with the `internal` keyword, meaning projects that reference them no longer have any visibility into those types.
+In the **Data** project of the sample solution above, the `SampleDbContext` and `UserRepository` classes can be defined with the `internal` keyword, meaning the other projects in the solution that reference the **Data** project no longer have any visibility into those types.
 
-{% include figure.html filename="master_and_commander_screenshot_2.png" description="Note how the `UserRepository` class being marked as `internal` means that the `UserService` class can now only see the `IUserRepository` interface in it's intellisense, removing ambiguity for the caller." %}
+{% include figure.html filename="master_and_commander_screenshot_2.png" description="Note how the `UserRepository` class being marked as `internal` means that the `UserService` class can now only see the `IUserRepository` interface in its intellisense, ensuring the caller doesn't take a direct dependency on the concrete type." %}
 
 ## Give a Hoot, Don't Pollute
 
@@ -66,11 +66,9 @@ public static class Extensions
 }
 ```
 
-Here, the `UserDataModel` type is being mapped to the `UserDomainModel` type, because `UserDataModel` may have additional properties that we don't want to expose at the domain layer except in specific circumstances for security purposes (e.g. `PasswordHash` and `EmailAddress`).
+Here, the `UserDataModel` type is being mapped to the `UserDomainModel` type, because `UserDataModel` may have additional properties that we don't want to expose at the domain layer for security purposes (e.g. `PasswordHash` and `EmailAddress`). I like extension methods for this kind of mapping code, because it's much easier to reason about than something like [AutoMapper](https://docs.automapper.org/en/stable/), which is an excellent and very powerful [foot-gun](https://en.wiktionary.org/wiki/footgun).
 
-> I like extension methods for this kind of mapping code, because it's much easier to reason about than something like [AutoMapper](https://docs.automapper.org/en/stable/), which is an excellent and very powerful [foot-gun](https://en.wiktionary.org/wiki/footgun).
-
-The nice thing about using an extension method for this kind of thing is that it means the acutal `UserDomainModel` class doesn't need to know anything about the `UserDataModel` class. Extension methods are great for these sort of boundary-crossing parts of code where you don't really want one piece to know too much about the internals of the other.
+The nice thing about using an extension method for this kind of thing is that it means the acutal `UserDomainModel` class doesn't need to know anything about the `UserDataModel` class. Extension methods are great for these sort of boundary-crossing parts of code where you don't want one layer to know too much about the internals of another.
 
 However, there is one common misconception about extension methods. Note the last line of the above Microsoft Learn quote (emphasis mine):
 
@@ -80,7 +78,7 @@ Extension methods have to be static by definition. The misconception is that peo
 
 I like using `private static` or `internal static` wherever possible, because it guarantees the method is [stateless](https://en.wikipedia.org/wiki/Stateless_protocol) (and you should never store state in a static field).
 
-C# is an object-oriented language, but the .NET team has added a lot of [functional language] features in recent releases. I like to think of `private static` methods as sort of a poor-man's functional code.
+C# is an object-oriented language, but the .NET team has added a lot of [functional language] features in recent releases. I like to think of writing `private static` methods in C# as sort of a poor-man's functional programming.
 
 You can reason about a method like this much easier because you can clearly trace the inputs and outputs and don't have to think about how statefulness might impact the result of a given method.
 
