@@ -5,7 +5,7 @@ categories: [Software,Programming]
 image: content/images/blast-radius.jpg
 ---
 
-I was recently listening to an episode of the [.NET Rocks podcast with guest Steve "Ardalis" Smith](2024-04-07-organizing-your-code-for-minimal-blast-radius) and Steve articulated an issue I've tried to highlight in code reviews many times in the past in a very succinct way that I loved: You want to organize your code in such a way as to minimize the "blast radius" when you inevitably make a change.
+I was recently listening to an episode of the [.NET Rocks podcast with guest Steve "Ardalis" Smith](https://www.dotnetrocks.com/details/1888) and Steve articulated an issue I've tried to highlight in code reviews many times in the past in a very succinct way that I loved: you want to organize your code in such a way as to minimize the "blast radius" when you inevitably make a change.
 
 Without prescribing any specific architecture, let's assume you've got some kind of onion layer or n-tier pattern going (when it comes to layers, I think [three is the magic number](https://brad.westness.cc/2014/10/13/peach-driven-development/), myself). 
 
