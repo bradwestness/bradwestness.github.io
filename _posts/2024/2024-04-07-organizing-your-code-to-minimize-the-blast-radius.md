@@ -26,9 +26,9 @@ Now, in this very straightforward example, testing changes is pretty easy. If yo
 
 This is what Steve Smith referred to as the "blast radius" in the podcast episode - what things are **possibly broken** by a given change? Basically, anything with an arrow pointing to the thing that changed is the blast radius.
 
-If you have a true microservice architecture like the above diagram, this is pretty easy since there's really only one "path" in the flowchart and everything lies on it. However, there's quite a bit of overhead to doing microservices to this degree, where every individual data element is completely segregated in it's own system. 
+If you have a true microservice architecture like the above diagram, this is pretty easy since there's really only one "path" in the flowchart, and everything lies on it. However, there's quite a bit of overhead to doing microservices to this degree, where every individual data element is completely segregated in it's own system. 
 
-I think of this as more of a "picoservice," and if you're not Amazon or Netflix, you probably don't need to architect things to this degree of separation. Most organizations following Domain Driven Design still use something more like "mini services," which are not quite as tiny as true microservices.
+I think of this as more of a "picoservice," and if you're not Amazon or Netflix, you probably don't need to architect things to this degree of separation. Most organizations following Domain Driven Design land somewhere more like "mini services," which are not quite as tiny as true microservices.
 
 What you might end up with is an architecture that looks a little something more like this:
 
@@ -45,15 +45,15 @@ flowchart TD
     G --> |Depends on| J[(Orders)]    
 </pre>
 
-Even though you've not got multiple "types of things" whithin one domain, you've still got a pretty clear demarcation of the blast radius of any given change. If you change the Product repository, you shouldn't have to re-test the User service, for example.
+Even though you've now got multiple "types of things" whithin one domain, you've still got a pretty clear demarcation of the blast radius of any given change. If you change the Product repository, you shouldn't have to re-test the User service, for example.
 
 Or, if you determine that the Product service really should be spun off into it's own separate microservice (if it has different scaling needs, say) you can pull it out cleanly without having to worry about untangling it from too many other concerns.
 
 ### Let's Get Real
 
-Now, this is still an overly-rosy view of a system architecture. In practice, what ends up happening is that the User service needs to pull some Order data in. And the Order service obviously needs to get the products on a given order. If you're using dependnecy injection and inversion-of-control pattnerns, it's all too easy to simply inject another Repository into the User service. Which means there are now a few more lines of dependency to keep track of.
+Now, this is still an overly-rosy view of a system architecture. In practice, what tends to happen is that the User service needs to pull some Order data in. And the Order service obviously needs to get the products on a given order. If you're using dependnecy injection and inversion-of-control pattnerns, it's all too easy to simply inject another repository instance into the User service. Which means there are now a few more lines of dependency to keep track of.
 
-If you were to pull an accurate diagram of a system like this, you'd probably wind up with a diagram that looks a little like this:
+If you were to pull an accurate diagram of a system like this, it would probably look more like this:
 
 <pre class="mermaid">
 flowchart TD
@@ -72,7 +72,7 @@ flowchart TD
     G --> |Depends on| I
 </pre>
 
-Now things have gotten a little knottier. If you add a feature to the order repository, it may not be obvious that it affects the User service, for example.
+Now things have gotten a little knottier. If you add a feature to the order repository, it may not be obvious that it affects the User service, for example. The blast radius of each service has gotten large as more lines of communication were opened between them.
 
 However, I still think in pragmatic terms this is mostly fine. The realities of creating useful API endpoints that it's often just not feasible to truly segregate everything in a perfectly pure way. Perfomance concerns have a way of dictating some compromises in this regard.
 
@@ -88,9 +88,9 @@ Again, using inversion-of-control patterns, it's all too easy to simply inject t
 public class UserService(
     IUserRepository userRepository, 
     IOrderRepository orderRepository,
-    IProductService productService)
+    IProductService productService) // <--- BAD!
 {
-    // omitted for clarity
+  // ...
 }
 ```
 
