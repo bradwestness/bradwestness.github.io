@@ -118,7 +118,7 @@ flowchart TD
     G --> |Depends on| I
 </pre>
 
-Now what we've got is a ball of mud. The dependency chain no longer flows "downhill" from one layer to the next. There's even a circular dependency between the User service and the Order service!
+Now what we've got is a ball of mud. The dependency chain no longer flows "downhill" from one layer to the next (note how [Mermaid](https://mermaid.js.org/intro/getting-started.html) can no longer lay the layers out in neat rows). There's even a circular dependency between the User service and the Order service!
 
 It becomes very hard to reason about the blast radius of any given change, because everything is connected to everything else.
 
