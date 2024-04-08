@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Internal is Your Friend. Projects are Interfaces.
+title: Internal is your friend. Projects are Interfaces. Oceans are Battlefields.
 categories: [Software,Programming,.NET]
 image: content/images/master_and_commander_header.jpg
 ---
@@ -86,7 +86,7 @@ You can reason about a method like this much easier because you can clearly trac
 
 Making the methods `private` or `internal` also has the benefit of not *polluting* the namespaces of the types you actually want to expose to other projects in the solution. If you've ever worked on an application that references a lot of extenion method libraries, you'll notice that it becomes hard to find the actual method you want to call when "dotting into" a particular object with Intellisense, because there are a hundred extension methods that are all broadly applicable to type `Object`, and that is sort of the opposite of a pit of success. You want it to be obvious to callers which methods they should use to do the thing they want to do with your type.
 
-#### Whither Tests
+## Whither Tests
 
 If you're liberally using `private` and `internal`, that doesn't mean you can't test those methods. You can use the `InternalsVisibleTo` directive in the project file to expose internal types to your tests project only, while keeping them hidden from the other projects within your solution.
 
@@ -111,5 +111,7 @@ If you're liberally using `private` and `internal`, that doesn't mean you can't 
 ```
 
 {% include figure.html filename="master_and_commander_screenshot_4.png" description="With the `InternalsVisibleTo` option exposing the internal types only to the tests project, I can still write unit tests against my extension methods without exposing them outside of their containing project." %}
+
+## Charting Your Course
 
 So just remember: Make types `internal` by default, projects are interfaces, and oceans are now battlefields. Happy sailing!
