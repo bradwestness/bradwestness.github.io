@@ -109,7 +109,6 @@ flowchart TD
     D --> |Depends on| G(Order repository)
     D --> |Depends on| B
     D --> |Depends on| F
-    D --> |Depends on| G
     E --> |Depends on| G
     E --> |Depends on| H[(Users)]
     E --> |Depends on| J    
