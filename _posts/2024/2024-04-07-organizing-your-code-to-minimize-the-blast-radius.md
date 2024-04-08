@@ -5,18 +5,18 @@ categories: [Software,Programming]
 image: content/images/blast-radius.jpg
 ---
 
-I was recently listening to an episode of the [.NET Rocks podcast with guest Steve "Ardalis" Smith](2024-04-07-organizing-your-code-for-minimal-blast-radius) and Steve articulated an issue I've tried to highlight in code reviews many times in the past in a very succinct way that I loved: you want to organize your code in such a way as to minimize the "blast radius" when you inevitably make a change.
+I was recently listening to an episode of the [.NET Rocks podcast with guest Steve "Ardalis" Smith](2024-04-07-organizing-your-code-for-minimal-blast-radius) and Steve articulated an issue I've tried to highlight in code reviews many times in the past in a very succinct way that I loved: You want to organize your code in such a way as to minimize the "blast radius" when you inevitably make a change.
 
-Without prescribing any specific architecture, let's assume you've got some kind of onion layer or n-tier pattern going (I think [three is the magic number](https://brad.westness.cc/2014/10/13/peach-driven-development/), myself). 
+Without prescribing any specific architecture, let's assume you've got some kind of onion layer or n-tier pattern going (when it comes to layers, I think [three is the magic number](https://brad.westness.cc/2014/10/13/peach-driven-development/), myself). 
 
 ### The Happy Path
 
-For this post, we'll assume a basic ecommerce store style user-product-order-orderitem system.
+For this post, we'll assume a basic eCommerce system with Users, Products, and Orders.
 
 The naive, happy path might look something like this:
 
 <pre class="mermaid">
-flowchart LR
+flowchart TD
     A["HTTP API"] --> |Depends on| B(User service)
     B --> |Depends on| C(User repository)
     C --> |Depends on| D[(Users)]
@@ -24,11 +24,13 @@ flowchart LR
 
 Now, in this very straightforward example, testing changes is pretty easy. If you change a component, you simply have to test everything above it. For example, if you make a change to the User service, you need to test both the user service and the API endpoint, but you shouldn't need to re-test the User repository or databsae table if they haven't changed at all.
 
-This is what Steve Smith referred to as the "blast radius" in the podcast episode - what things are `possibly broken` by a given change? Basically, anything with an arrow pointing to the thing that changed is the blast radius.
+This is what Steve Smith referred to as the "blast radius" in the podcast episode - what things are **possibly broken** by a given change? Basically, anything with an arrow pointing to the thing that changed is the blast radius.
 
-If you have a true microservice architecture like the above diagram, this is pretty easy since there's really only one "path" in the flowchart and everything lies on it. However, there's quite a bit of overhead to doing microservices to this degree, where every individual data element is completely segregated in it's own system. I think of this as more of a "picoservice," and if you're not Amazon or Netflix, you probably don't need to architect things to this degree of separation.
+If you have a true microservice architecture like the above diagram, this is pretty easy since there's really only one "path" in the flowchart and everything lies on it. However, there's quite a bit of overhead to doing microservices to this degree, where every individual data element is completely segregated in it's own system. 
 
-Most organizations following Domain Driven Design still use more like "mini services" which are not quite as tiny as true microservices. What you might end up with is an architecture that looks a little something more like this:
+I think of this as more of a "picoservice," and if you're not Amazon or Netflix, you probably don't need to architect things to this degree of separation. Most organizations following Domain Driven Design still use something more like "mini services," which are not quite as tiny as true microservices.
+
+What you might end up with is an architecture that looks a little something more like this:
 
 <pre class="mermaid">
 flowchart TD
@@ -45,11 +47,13 @@ flowchart TD
 
 Even though you've not got multiple "types of things" whithin one domain, you've still got a pretty clear demarcation of the blast radius of any given change. If you change the Product repository, you shouldn't have to re-test the User service, for example.
 
+Or, if you determine that the Product service really should be spun off into it's own separate microservice (if it has different scaling needs, say) you can pull it out cleanly without having to worry about untangling it from too many other concerns.
+
 ### Let's Get Real
 
-Now, this is still an overly-rosy view of an system architecture. In practice, what ends up happening is that the User service needs to pull some Order data in. And the Order service obviously needs to get the products on a given order.
+Now, this is still an overly-rosy view of a system architecture. In practice, what ends up happening is that the User service needs to pull some Order data in. And the Order service obviously needs to get the products on a given order. If you're using dependnecy injection and inversion-of-control pattnerns, it's all too easy to simply inject another Repository into the User service. Which means there are now a few more lines of dependency to keep track of.
 
-If you were to pull an accurate diagram of a given system like this, you'd probably wind up with a diagram that looks a little like this:
+If you were to pull an accurate diagram of a system like this, you'd probably wind up with a diagram that looks a little like this:
 
 <pre class="mermaid">
 flowchart TD
@@ -68,17 +72,29 @@ flowchart TD
     G --> |Depends on| I
 </pre>
 
-Now, things are getting a little knottier. If you add a feature to the order repository, it may not be obvious that it affects the User service, for example.
+Now things have gotten a little knottier. If you add a feature to the order repository, it may not be obvious that it affects the User service, for example.
 
-However, I still think in pragmatic terms this is mostly fine. The realities of creating useful API endpoints that it's often just not feasible to truly segregate everything in a perfectly pure way (usually for performance reasons).
+However, I still think in pragmatic terms this is mostly fine. The realities of creating useful API endpoints that it's often just not feasible to truly segregate everything in a perfectly pure way. Perfomance concerns have a way of dictating some compromises in this regard.
 
 ### Here There Be Dragons
 
-As long as all the arrows are pointing down, it's still not **super** hard to trace the blast radius of any given change. It's a little like a Jenga tower, sure. But if you're touching a given block, you only have to worry about the ones above.
+As long as all the arrows are pointing down, it's still not **super** hard to trace the blast radius of any given change. It's a little like a Jenga tower, sure. But like Jenga, if you're touching a given block, you only have to worry about the ones above.
 
-In practice, what can easily happen is this: a developer will be adding a feature to the User service that has some cross-cutting implication (say, to get their last five orders for a "resent purchases" view), and they will say "there's a useful method in the Order service that already encapsulates this functionality. To avoid duplication and to ensure consistent behavior, I'll just use call that method from my new feature."
+The insidious, dangerous, and subtle thing that can happen in practice is this: A developer will be adding a feature to the User service that has some cross-cutting implication. Say, to get a list of five "suggested products" based on the user's past orders. The developer will think "there's a useful method in the Product service that already encapsulates this functionality. To avoid duplication and to ensure consistent behavior, I'll just use call that existing method for this new feature."
 
-Now, you've introduced dependency arrows that don't go down across layers. You've got services at the same layer of the app that depend on each other. Which can wind up looking like this:
+Again, using inversion-of-control patterns, it's all too easy to simply inject the other service into the one that needs to use the shared functionality. Then you wind up with code like this:
+
+```csharp
+public class UserService(
+    IUserRepository userRepository, 
+    IOrderRepository orderRepository,
+    IProductService productService)
+{
+    // omitted for clarity
+}
+```
+
+One of these things is not like the others! By injecting an `IProductService` instance into the `UserService` class, a dependency arrow has been introduced which does not go down to the layer below. Now there are services at the same layer of the app that depend on each other. Which can wind up looking like this:
 
 <pre class="mermaid">
 flowchart TD
@@ -103,7 +119,9 @@ flowchart TD
     G --> |Depends on| I
 </pre>
 
-Now things are really turning into a ball of mud. The dependency chain no longer flows "downhill" from one layer to the next. There's even a circular dependency between the User service and the Order service! It becomes very hard to reason about the blast radius of any given change, because everything is connected to everything else.
+Now what we've got is a ball of mud. The dependency chain no longer flows "downhill" from one layer to the next. There's even a circular dependency between the User service and the Order service!
+
+It becomes very hard to reason about the blast radius of any given change, because everything is connected to everything else.
 
 ### Only a Sith Speaks in Absolutes
 
