@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Internal is your friend. Projects are interfaces. Oceans are battlefields.
-categories: [Software,Programming,.NET]
+categories: [Software, Programming, .NET]
 image: content/images/master_and_commander_header.jpg
 ---
 
@@ -13,7 +13,7 @@ In addition to the [great info about limiting the "blast radius" of your code](/
 
 When organizing a .NET solution, it's useful to [break apart the various layers of your application into separate projects](/2014/10/13/peach-driven-development/). This helps separate the concerns of your system, and also helps manage the dependency graph of packages each project needs to reference. This way, for example, your presentation layer doesn't need to directly reference the database driver that the data project uses.
 
-What may be less obvious is that the *projects within an application themselves* represent an interface that the project is exposing to the rest of the application. In the same way that you might choose not to expose some methods on a class in order to prevent calling code from taking a direct dependency on implementation details, you should be judicious about choosing whether to expose the classes and types within a given project to the rest of the solution.
+What may be less obvious is that the _projects within an application themselves_ represent an interface that the project is exposing to the rest of the application. In the same way that you might choose not to expose some methods on a class in order to prevent calling code from taking a direct dependency on implementation details, you should be judicious about choosing whether to expose the classes and types within a given project to the rest of the solution.
 
 For instance, let's say you have an incredibly simple and contrived example of an ASP.NET web application solution:
 
@@ -23,11 +23,11 @@ Now, it's pretty obvious that the **Data** project here is purposefully exposing
 
 However, there's some extra stuff in those projects that are currently exposed as well. The **Data** project is exposing the `SampleDbContext` type, which is an implementation concern (the fact that the data project is using Entity Framework should be of no concern to the layers above), and the **Domain** project is exposing the `DataModelExtensions` class.
 
-It's easy to inadvertently expose more than you intend to the rest of the application if you're in the habit of just rotely typing `public class MyClass` whenever you create a new `*.cs` file within your solution. 
+It's easy to inadvertently expose more than you intend to the rest of the application if you're in the habit of just rotely typing `public class MyClass` whenever you create a new `*.cs` file within your solution.
 
 I think some engineers get in the habit of thinking that making as much of your code public (and not sealed) as possible allows more "flexibility" for users of those types. Which I think **can** generally be true for library code. Several of Microsoft's own SDK libraries have a bad habit of making all their types internal and sealed with no public constructors, resulting in the need for [wrapper libraries](https://github.com/bradwestness/cosmos-factories) that do a lot of reflection-based junk to make them testable, for instance. Ahem.
 
-However, *a project within an application solution* is a little different. You generally want a little tighter control over what types are exposed, because you want to retain the ability to change implementations later without having that change require a lot of corresponding work across all the other layers of the solution.
+However, _a project within an application solution_ is a little different. You generally want a little tighter control over what types are exposed, because you want to retain the ability to change implementations later without having that change require a lot of corresponding work across all the other layers of the solution.
 
 In the **Data** project of the sample solution above, the `SampleDbContext` and `UserRepository` classes can be defined with the `internal` keyword, meaning the other projects in the solution that reference the **Data** project no longer have any visibility into those types.
 
@@ -40,6 +40,7 @@ One feature of C# that is both extremely useful and very easy to abuse is [exten
 From the Microsoft Learn page linked above:
 
 > #### Layer-Specific Functionality
+>
 > When using an Onion Architecture or other layered application design, it's common to have a set of Domain Entities or Data Transfer Objects that can be used to communicate across application boundaries. These objects generally contain no functionality, or only minimal functionality that applies to all layers of the application. Extension methods can be used to add functionality that is specific to each application layer without loading the object down with methods not needed or wanted in other layers.
 
 In the sample app, there is an `Extensions` class in the **Domain** project which contains the following code:
@@ -72,7 +73,7 @@ The nice thing about using an extension method for this kind of thing is that it
 
 However, there is one common misconception about extension methods. Note the last line of the above Microsoft Learn quote (emphasis mine):
 
-> Extension methods can be used to add functionality that is specific to each application layer *without loading the object down with methods not needed or wanted in other layers*.
+> Extension methods can be used to add functionality that is specific to each application layer _without loading the object down with methods not needed or wanted in other layers_.
 
 Extension methods have to be static by definition. The misconception is that people seem to think they also need to be **public**. They don't! You can define `internal` extension methods, or even `private` ones! The containing class just has to be `static`.
 
@@ -84,7 +85,7 @@ You can reason about a method like this much easier because you can clearly trac
 
 {% include figure.html filename="master_and_commander_screenshot_3.gif" description="When a namespace has become polluted with lots of extenion methods, it becomes difficult to find the actual method you want to call." %}
 
-Making the methods `private` or `internal` also has the benefit of not *polluting* the namespaces of the types you actually want to expose to other projects in the solution. If you've ever worked on an application that references a lot of extenion method libraries, you'll notice that it becomes hard to find the actual method you want to call when "dotting into" a particular object with Intellisense, because there are a hundred extension methods that are all broadly applicable to type `Object`, and that is sort of the opposite of a pit of success. You want it to be obvious to callers which methods they should use to do the thing they want to do with your type.
+Making the methods `private` or `internal` also has the benefit of not _polluting_ the namespaces of the types you actually want to expose to other projects in the solution. If you've ever worked on an application that references a lot of extenion method libraries, you'll notice that it becomes hard to find the actual method you want to call when "dotting into" a particular object with Intellisense, because there are a hundred extension methods that are all broadly applicable to type `Object`, and that is sort of the opposite of a pit of success. You want it to be obvious to callers which methods they should use to do the thing they want to do with your type.
 
 ## Whither Tests
 
@@ -116,8 +117,8 @@ If you're liberally using `private` and `internal`, that doesn't mean you can't 
 
 So just remember:
 
-* Make any type that you don't specifically wish to expose outside of a given project `internal` by default.
-* Projects are interfaces.
-* Oceans are now battlefields.
+- Make any type that you don't specifically wish to expose outside of a given project `internal` by default.
+- Projects are interfaces.
+- Oceans are now battlefields.
 
- Happy sailing!
+Happy sailing!
