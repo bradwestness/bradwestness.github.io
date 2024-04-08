@@ -112,3 +112,4 @@ If you're liberally using `private` and `internal`, that doesn't mean you can't 
 
 {% include figure.html filename="master_and_commander_screenshot_4.png" description="With the `InternalsVisibleTo` option exposing the internal types only to the tests project, I can still write unit tests against my extension methods without exposing them outside of their containing project." %}
 
+So just remember: Make types `internal` by default, projects are interfaces, and oceans are now battlefields. Happy sailing!
