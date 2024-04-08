@@ -114,4 +114,10 @@ If you're liberally using `private` and `internal`, that doesn't mean you can't 
 
 ## Charting Your Course
 
-So just remember: Make types `internal` by default, projects are interfaces, and oceans are now battlefields. Happy sailing!
+So just remember:
+
+1. Make any type that you don't specifically wish to expose outside of a given project `internal` by default.
+1. Projects are interfaces.
+1. Oceans are now battlefields.
+
+ Happy sailing!
