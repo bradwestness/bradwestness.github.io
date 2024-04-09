@@ -77,7 +77,7 @@ However, there is one common misconception about extension methods. Note the las
 
 > Extension methods can be used to add functionality that is specific to each application layer _without loading the object down with methods not needed or wanted in other layers_.
 
-Extension methods have to be static by definition. The misconception is that people seem to think they also need to be **public**. They don't! You can define `internal` extension methods, or even `private` ones! The containing class just has to be `static`.
+Extension methods have to be `static` by definition. The misconception is that people seem to think they also need to be `public`. They don't! You can define `internal` extension methods, or even `private` ones! The containing class just has to be `static`.
 
 I like using `private static` or `internal static` wherever possible, because it guarantees the method is [stateless](https://en.wikipedia.org/wiki/Stateless_protocol) (unless you store state in a static field, which... don't do that).
 
