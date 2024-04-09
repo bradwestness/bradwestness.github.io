@@ -119,8 +119,8 @@ If you're liberally using `private` and `internal`, that doesn't mean you can't 
 
 So just remember:
 
-- Make any type that you don't specifically wish to expose outside of a given project `internal` by default.
-- Projects are interfaces. Only expose things to the rest of the solution that you want other porjects to take direct dependencies on. If you expose it, someone **will** take a direct dependency on it.
+- Internal is your friend. Make any type that you don't specifically wish to expose outside of a given project `internal` by default.
+- Projects are interfaces. Only expose things to the rest of the solution that you want other projects to take direct dependencies on. If you expose it, someone **will** take a direct dependency on it.
 - Oceans are now battlefields.
 
 Happy sailing!
