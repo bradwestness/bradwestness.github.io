@@ -79,9 +79,9 @@ However, there is one common misconception about extension methods. Note the las
 
 Extension methods have to be static by definition. The misconception is that people seem to think they also need to be **public**. They don't! You can define `internal` extension methods, or even `private` ones! The containing class just has to be `static`.
 
-I like using `private static` or `internal static` wherever possible, because it guarantees the method is [stateless](https://en.wikipedia.org/wiki/Stateless_protocol) (and you should never store state in a static field).
+I like using `private static` or `internal static` wherever possible, because it guarantees the method is [stateless](https://en.wikipedia.org/wiki/Stateless_protocol) (unless you store state in a static field, which... don't do that).
 
-C# is an object-oriented language, but the .NET team has added a lot of [functional language] features in recent releases. I like to think of writing `private static` methods in C# as sort of a poor-man's functional programming.
+C# is an object-oriented language, but the .NET team has added a lot of [functional language](https://en.wikipedia.org/wiki/Functional_programming) features in recent releases. I like to think of writing `private static` methods in C# as sort of a poor-man's functional programming.
 
 You can reason about a method like this much easier because you can clearly trace the inputs and outputs and don't have to think about how statefulness might impact the result of a given method.
 
