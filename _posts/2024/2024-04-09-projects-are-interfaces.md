@@ -25,7 +25,7 @@ However, there's some extra stuff in those projects that are currently exposed a
 
 It's easy to inadvertently expose more than you intend to the rest of the application if you're in the habit of just rotely typing `public class MyClass` whenever you create a new `*.cs` file within your solution.
 
-I think some engineers get in the habit of thinking that making as much of your code public (and not sealed) as possible allows more "flexibility" for users of those types. Which I think **can** generally be true for library code. Several of Microsoft's own SDK libraries have a bad habit of making all their types internal and sealed with no public constructors, resulting in the need for [wrapper libraries](https://github.com/bradwestness/cosmos-factories) that do a lot of reflection-based junk to make them testable, for instance. Ahem.
+I think some engineers get in the habit of thinking that making as much of your code public (and not sealed) as possible allows more "flexibility" for users of those types. Which I think _*can*_ generally be true for library code. Several of Microsoft's own SDK libraries have a bad habit of making all their types internal and sealed with no public constructors, resulting in the need for [wrapper libraries](https://github.com/bradwestness/cosmos-factories) that do a lot of reflection-based junk to make them testable, for instance. Ahem.
 
 However, _a project within an application solution_ is a little different. You generally want a little tighter control over what types are exposed, because you want to retain the ability to change implementations later without having that change require a lot of corresponding work across all the other layers of the solution.
 
@@ -39,11 +39,11 @@ One feature of C# that is both extremely useful and very easy to abuse is [exten
 
 From the Microsoft Learn page linked above:
 
-> #### Layer-Specific Functionality
+> **Layer-Specific Functionality**
 >
 > When using an Onion Architecture or other layered application design, it's common to have a set of Domain Entities or Data Transfer Objects that can be used to communicate across application boundaries. These objects generally contain no functionality, or only minimal functionality that applies to all layers of the application. Extension methods can be used to add functionality that is specific to each application layer without loading the object down with methods not needed or wanted in other layers.
 
-In the sample app, there is an `Extensions` class in the **Domain** project which contains the following code:
+Let's look at the contents of the `DataModelExtensions` class in the **Domain** project of the sample application we're working with:
 
 ```csharp
 using SampleApp.Data.Models;
@@ -67,7 +67,9 @@ public static class Extensions
 }
 ```
 
-Here, the `UserDataModel` type is being mapped to the `UserDomainModel` type, because `UserDataModel` may have additional properties that we don't want to expose at the domain layer for security purposes (e.g. `PasswordHash` and `EmailAddress`). I like extension methods for this kind of mapping code, because it's much easier to reason about than something like [AutoMapper](https://docs.automapper.org/en/stable/), which is an excellent and very powerful [foot-gun](https://en.wiktionary.org/wiki/footgun).
+Here, the `UserDataModel` type is being mapped to the `UserDomainModel` type, because `UserDataModel` may have additional properties that we don't want to expose at the domain layer for security purposes (e.g. `PasswordHash` and `EmailAddress`).
+
+> I like extension methods for this kind of mapping code, because they are much easier to reason about than something like [AutoMapper](https://docs.automapper.org/en/stable/), which is an excellent and very powerful [foot-gun](https://en.wiktionary.org/wiki/footgun). Whoever inherits this code base will thank you for writing an obvious (and easy to test) extension method rather than some surprising and "magic" mapping code.
 
 The nice thing about using an extension method for this kind of thing is that it means the acutal `UserDomainModel` class doesn't need to know anything about the `UserDataModel` class. Extension methods are great for these sort of boundary-crossing parts of code where you don't want one layer to know too much about the internals of another.
 
