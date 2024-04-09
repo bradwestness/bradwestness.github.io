@@ -25,7 +25,7 @@ However, there's some extra stuff in those projects that are currently exposed a
 
 It's easy to inadvertently expose more than you intend to the rest of the application if you're in the habit of just rotely typing `public class MyClass` whenever you create a new `*.cs` file within your solution.
 
-I think some engineers get in the habit of thinking that making as much of your code public (and not sealed) as possible allows more "flexibility" for users of those types. Which I think _*can*_ generally be true for library code. Several of Microsoft's own SDK libraries have a bad habit of making all their types internal and sealed with no public constructors, resulting in the need for [wrapper libraries](https://github.com/bradwestness/cosmos-factories) that do a lot of reflection-based junk to make them testable, for instance. Ahem.
+I think some engineers get in the habit of thinking that making as much of your code public (and not sealed) as possible allows more "flexibility" for users of those types. Which I think ***can*** generally be true for library code. Several of Microsoft's own SDK libraries have a bad habit of making all their types internal and sealed with no public constructors, resulting in the need for [wrapper libraries](https://github.com/bradwestness/cosmos-factories) that do a lot of reflection-based junk to make them testable, for instance. Ahem.
 
 However, _a project within an application solution_ is a little different. You generally want a little tighter control over what types are exposed, because you want to retain the ability to change implementations later without having that change require a lot of corresponding work across all the other layers of the solution.
 
