@@ -91,7 +91,7 @@ Making the methods `private` or `internal` also has the benefit of not _pollutin
 
 ## Whither Tests
 
-If you're liberally using `private` and `internal`, that doesn't mean you can't test those methods. You can use the `InternalsVisibleTo` directive in the project file to expose internal types to your tests project only, while keeping them hidden from the other projects within your solution.
+If you're liberally using `private` and `internal`, that doesn't mean you can't test those methods. You can use the `InternalsVisibleTo` directive in the project file to expose `internal` types to your tests project only, while keeping them hidden from the other projects within your solution.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -120,7 +120,7 @@ If you're liberally using `private` and `internal`, that doesn't mean you can't 
 So just remember:
 
 - Make any type that you don't specifically wish to expose outside of a given project `internal` by default.
-- Projects are interfaces.
+- Projects are interfaces. Only expose things to the rest of the solution that you want other porjects to take direct dependencies on. If you expose it, someone **will** take a direct dependency on it.
 - Oceans are now battlefields.
 
 Happy sailing!
