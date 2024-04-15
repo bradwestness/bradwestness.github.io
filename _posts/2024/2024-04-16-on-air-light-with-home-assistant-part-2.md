@@ -105,6 +105,8 @@ action:
 mode: single
 ```
 
+{% include figure.html filename="on_air_light_in_action.png" description="It's alive!" %}
+
 ### Other Considerations
 
 I'm just putting the smart bulb in an existing hallway light fixture, which is connected to a three-way switch system. So, what happens if the light is turned off and then back on via the switch? I want it to check whether I'm on a Zoom call or not and set itself to the appropriate preset when it first comes online.
