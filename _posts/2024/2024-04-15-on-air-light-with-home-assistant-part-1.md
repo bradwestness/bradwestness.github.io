@@ -7,7 +7,7 @@ image: content/images/on_air_light_header.jpg
 
 I've been working from home full time since March of 2020 (before that I was working from home two days a week for about a decade). Personally, I love not having to commute for half an hour just to sit at a computer somewhere else, along the flexibility being remote gives me to let the dog out, throw in a load of laundry over my lunch break, and pick up and drop off my kids from school.
 
-However, when my kids are home from school (say, during spring break), they often attempt to come into the spare bedroom that serves as my office (because it's also their playroom and has a bunch of their tows in it). This is a familiar scene: I'll be on a video call attempting to pay attention to something someone on the call is saying, when the door begins creaking open, and someone timidly peeks their head in and asks if I'm on a call... which I can't really respond to if I am on a call.
+However, when my kids are home from school (say, during spring break), they often attempt to come into the spare bedroom that serves as my office (because it's also their playroom and has a bunch of their toys in it). This is a familiar scene: I'll be on a video call attempting to pay attention to something someone on the call is saying, when the door begins creaking open, and someone timidly peeks their head in and asks if I'm on a call... which I can't really respond to, because I am on a call.
 
 It'd be nice if I had a way I could indicate whether or not I was on a call outside the office room I'm in so they can tell without needing to open the door. 
 
@@ -35,11 +35,11 @@ Luckly, there's a really great "agent" application for Windows called [HASS.Agen
 
 ### Setting Up MQTT in Home Assistant
 
-In order for HASS.Agent to communicate with Home Assistant, you first need to add the [Mosquitto MQTT broker add-on](https://mosquitto.org/) to your Home Assistant instance, which you can do by going to Settings -> Add-ons -> Mosquitto Broker and clicking the Install button. [MQTT](https://en.wikipedia.org/wiki/MQTT) is a standard message queue protocol that enables services to publish events to Home Assistant an an asynchronous manner.
+In order for HASS.Agent to communicate with Home Assistant, you first need to add the [Mosquitto MQTT broker add-on](https://mosquitto.org/) to your Home Assistant instance, which you can do by going to Settings -> Add-ons -> Mosquitto Broker and clicking the Install button. [MQTT](https://en.wikipedia.org/wiki/MQTT) is a standard message queue protocol that enables services to publish events to Home Assistant in an asynchronous manner.
 
 {% include figure.html filename="on_air_light_screenshot_2.png" description="Installing the Mosquitto MQTT broker add-on in Home Assistant" %}
 
-Once the Mosquitto broker is installed, there are still a few more steps to confiure it so that HASS.Agent can connect to it. First, check the "Watchdog" option, so Home Assistant will automatically restart the add-on if it crashes. then click the Start button.
+Once the Mosquitto broker is installed, there are still a few more steps to confiure so that HASS.Agent can connect to it. First, check the "Watchdog" option, so Home Assistant will automatically restart the add-on if it crashes. then click the Start button.
 
 **There's still one more step to actually allow services to talk to Home Assistant via MQTT**. This one is easy to miss. Now that the MQTT service is running, go to Settings -> Devices & Services -> MQTT -> Configure.
 
@@ -53,7 +53,7 @@ Now that MQTT is running in the Home Assistant instance, we can actually set up 
 
 {% include figure.html filename="on_air_light_screenshot_4.png" description="Creating a user in Home Assistant for HASS.Agent to use." %}
 
-With that done, we can now run the HASS.Agent installer and step through the handy setup wizard. HASS.Agent has a bunch of capabilities for letting Home Assistant *control* your Windows machine and use it as a media player, etc. For my puroses, I don't really plan on using any of that. I just want to expose some "sensors" from my machine to Home Assistant so that I can create triggers based off of them.
+With that done, we can now run the HASS.Agent installer and step through the handy setup wizard. HASS.Agent has a bunch of capabilities for letting Home Assistant *control* your Windows machine and use it as a media player, etc. For my purposes, I don't really plan on using any of that. I just want to expose some "sensors" from my machine to Home Assistant so that I can create triggers based off of them.
 
 So, I left the Local API and Satellite Service options in HASS.Agent disabled. The main thing you want to ensure is that you configure the MQTT settings using the user account credentials we just created above.
 
@@ -83,7 +83,7 @@ So, it appears we can base our ProcessActive sensor off of `cpthost.exe`, which 
 
 Once configured, you can click "Store Sensor" and then "Store and Activate Sensors," which will actually send the sensor to Home Assistant.
 
-Back in Home Assistant, you should now see your new sensor under Settings -> Devices & Services -> Entities.
+Back in Home Assistant, you should now see your new sensor under Settings -> Devices & Services -> Entities. You may need to restart Home Assistant for it to notice the new sensor.
 
 {% include figure.html filename="on_air_light_screenshot_9.png" description="The new 'ZoomActive' sensor within Home Assistant." %}
 
@@ -111,4 +111,4 @@ To create the "Call Ended" automation, I created another automation with the opp
 
 ## To Be Continued
 
-Now we've got a sensor that tells Home Assistant when we're on a call, and an automation that can trigger an action based off of the sensor's value. I'll cover actually connecting the automation to a smart "On Air" light in Part 2.
+Now we've got a sensor that tells Home Assistant when we're on a call, and an automation that can trigger an action based off of the sensor's value. I'll cover actually connecting the automation to an IoT-connected smart light in [Part 2](/2024-04-15-on-air-light-with-home-assistant-part-2).
