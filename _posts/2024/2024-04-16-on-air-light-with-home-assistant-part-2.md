@@ -27,7 +27,7 @@ Home Assistant's WLED plugin [doesn't support White Balance correction (CCT) mod
 
 If you've got the same device as me, you want to set the GPIO options to: `4`, `12`, `14`, and `5` (the correct values for these took some sleuthing to discover).
 
-{% include figure.html filename="on_air_light_led_preferences.png" description="Setting LED Preferences for the WLED bulb." %}
+{% include figure.html filename="on_air_light_wled_preferences.png" description="Setting LED Preferences for the WLED bulb." %}
 
 ### Creating Presets
 
