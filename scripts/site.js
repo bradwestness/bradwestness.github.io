@@ -44,7 +44,7 @@
         cookieAlert.addClass("d-none");
     });
 
-    $(".post-content img").addClass("img-fluid w-100");
+    $(".post-content > img").addClass("mx-auto d-block");
 
     $(".post-content table").addClass("table table-bordered table-striped");
 

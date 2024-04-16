@@ -9,7 +9,7 @@ In [part 1](/2024/04/15/on-air-light-with-home-assistant-part-1), I covered sett
 
 But for now, I just have the automation sending a notification to the Home Assistant app on my phone. In this part, I'll cover actually connecting it to an IoT-connected smart bulb.
 
-## Choosing a Bulb
+### Choosing a Bulb
 
 After doing some research about which smart LED bulbs work well with Home Assistant, I settled on an [Athom WLED 15W Color LED](https://www.athom.tech/blank-1/wled-15w-color-bulb). This will fit in my existing light fixture, and Home Assistant has a built-in connector for communicating with WLED bulbs.
 
@@ -33,13 +33,13 @@ If you've got the same device as me, you want to set the GPIO options to: `4`, `
 
 Once you've got the bulb connected to your WiFi and using the right output mode, you can create some presets. First, use the color wheel on the main screen for the device to get the color how you want it. Then, toggle over to the "Presets" tab and hit the create button, and you can save the device's current state as a preset.
 
-{% include figure.html filename="on_air_light_led_color_wheel.png" description="Use the color wheel to get the bulb looking how you like, then save it as a preset." %}
+{% include figure.html filename="on_air_light_color_wheel.png" description="Use the color wheel to get the bulb looking how you like, then save it as a preset." %}
 
 For my purposes, I created two presets: a "normal" one for the default state when not on a call. I tried to match the "soft white" color of my existing non-smart LED bulbs in the area for this. Then, I created a second preset for when I'm on a call, which is bright red.
 
 {% include figure.html filename="on_air_light_presets.png" description="I creatively named my presets `1` (normal) and `2` (on a call)." %}
 
-## Home Assistant Setup
+### Home Assistant Setup
 
 Now that we've got the smart bulb all set up and configured, we can add it to Home Assistand and use it in our automations!
 
@@ -105,7 +105,7 @@ action:
 mode: single
 ```
 
-{% include figure.html filename="on_air_light_in_action.png" description="It's alive!" %}
+{% include figure.html filename="on_air_light_in_action.gif" description="It's alive!" %}
 
 ### Other Considerations
 
@@ -147,7 +147,7 @@ action:
 mode: single
 ```
 
-> Note: I used a "building block" with **or** logic to handle multiple states of the Zoom Active sensor from HASS.Agent. If the computer is alseep or turned off, the sensor will be unavailable and the automation won't be able to get the numeric state of the sensor, so using the "or" logic ensures that all three states are covered: the sensor is unavailable, unknown, or known but in the "off" state.
+> Note: I used a "building block" with **or** logic to handle multiple states of the Zoom Active sensor from HASS.Agent. If the computer is alseep or turned off, the sensor will be unavailable and the automation won't be able to get the numeric state of the sensor, so using the "or" logic ensures that all three states are covered: the sensor is unavailable, unknown, or known but in the "inactive" state.
 
 ##### WLED Turned On - Zoom Active
 
