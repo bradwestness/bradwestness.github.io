@@ -111,4 +111,4 @@ To create the "Call Ended" automation, I created another automation with the opp
 
 ## To Be Continued
 
-Now we've got a sensor that tells Home Assistant when we're on a call, and an automation that can trigger an action based off of the sensor's value. I'll cover actually connecting the automation to an IoT-connected smart light in [Part 2](/2024-04-16-on-air-light-with-home-assistant-part-2).
+Now we've got a sensor that tells Home Assistant when we're on a call, and an automation that can trigger an action based off of the sensor's value. I'll cover actually connecting the automation to an IoT-connected smart light in [Part 2](/2024/04/16/on-air-light-with-home-assistant-part-2/).
