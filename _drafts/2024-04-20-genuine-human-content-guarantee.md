@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The 100% Human Generated Content Quality Assurance Guarantee
-categories: [Software, Programming]
+categories: [Software, Movies, Personal]
 image: content/images/on_air_light_on_call.jpg
 ---
 
