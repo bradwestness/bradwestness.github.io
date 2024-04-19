@@ -2,7 +2,7 @@
 layout: post
 title: The 100% Human Generated Content Quality Assurance Guarantee
 categories: [Software, Movies, Personal]
-image: content/images/human_generated_content_quality_assurance_guarantee.jpg
+image: content/images/human_generated_content_quality_assurance_guarantee.png
 ---
 
 In the closing credits of his 2007 movie RATATOUILLE, director Brad Bird [included a little easter egg for animators](https://www.latimes.com/archives/la-xpm-2007-jun-29-et-ratatouille29-story.html) - a "Quality Assurance Guarantee" badge in the credits which informs the viewer that "no motion capture or other performance shortcuts were used in the production of the film."
@@ -46,7 +46,7 @@ I think we need a Quality Assurance Guarantee for the internet, sort of like Bra
 To that end, I [commissioned a human artist]() (wild, I know) to create the following graphic. It's released under the [creative commons 'public domain' license](https://creativecommons.org/publicdomain/zero/1.0/), so feel free to use it if you like.
 
 
-{% include figure.html filename="human_generated_content_quality_assurance_guarantee.jpg" description="This image is published under a Creative Commons 1.0 Universal license, (CC0 1.0)." %}
+{% include figure.html filename="human_generated_content_quality_assurance_guarantee.png" description="This image is published under a Creative Commons 1.0 Universal license, (CC0 1.0)." %}
 
 ### Old Man Yells At Cloud
 
