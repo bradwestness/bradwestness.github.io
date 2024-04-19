@@ -64,7 +64,7 @@ But, it's very important not to skip that human part: you *have to have a person
 
 In addition to all the moral and ethical problems with stealing copyrighted works and allowing the computer to make management decisions, there remains the issue of expecting people to pay for, or invest time in consuming, content that was auto-generated with an AI tool. I like the following quote:
 
-> Why should I read something you couldn't be bothered to write?
+> Why should I be expected to read something you couldn't be bothered to write?
 
 Sadly, I'm not having any luck coming up with the original author of that quote (I guarantee it wasn't an LLM). It gets to the central problem that I think Brad Bird was reacting against with his Quality Assurance Guarantee - if you're going to use every "performance shortcut" available to you, up to and including auto-generating your entire output, you can't really be surprised if your audience doesn't feel particularly compelled to spend their time or money on consuming it.
 
