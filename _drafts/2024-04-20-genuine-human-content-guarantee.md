@@ -29,11 +29,13 @@ I think this is the kind of thing Bird was trying to subtly fight back against b
 
 The onset of generative AI technologies has created a similar problem with text and visual content writ large. Anybody can go to Bing Image Creator and gin up a graphic to slap on a blog post. Google search results [have already been overrun by reams of auto-generated AI posts on any conceivable topic which game their SEO algorithms to ensure they appear at the top](https://www.fastcompany.com/90501691/science-confirms-it-web-sites-really-do-all-look-the-same).
 
+{% include figure.html filename="bing_image_creator.png" description="Even the sample images on the Bing Image Creator homepage all share the same 'smooth vinyl lit with diffuse light from everywhere and nowhere' look that makes them identifiably AI generated at a glance." %}
+
 But, these things have a similar problem. The [AI-generated images all have a similar](https://medium.com/@keithkisser/why-does-all-ai-art-look-like-that-f74e2a9e1c87) "everything is made of smooth vinyl and lit with diffuse light from every side" look to them. The AI-generated blog posts all [contain paragraphs of gobbledegook that talk around the subject at hand while incessantly repeating the SEO-targeted keywords without actually providing any useful information](https://www.nytimes.com/2024/03/29/opinion/ai-internet-x-youtube.html) (or worse, provide factually incorrect information).
 
-{% include figure.html filename="wallace_and_gromit.jpg" description="Aardman Animation's Wallace and Gromit" %}
+All this results in a feeling that everything you look at on the internet is now a part of this kind of undifferentiated slurry of "content" which got spit out by a machine but which lacks a certain human quality. I like Aardman studios films, not because they look super realistic with flawlessly smooth animation, but precisely **because** you can see the thumbprints on the claymation models.
 
-All this results in a feeling that everything you look at on the internet is now a part of this kind of undifferentiated slurry of "content" which got spit out by a machine but which lacks a certain human quality. I like Aardman studios films, not because they look super realistic and smooth, but precisely **because** you can see the thumbprints on the claymation models.
+{% include figure.html filename="wallace_and_gromit.jpg" description="Aardman Animation's Wallace and Gromit" %}
 
 ### Humans at Work
 
