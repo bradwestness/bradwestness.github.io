@@ -74,7 +74,7 @@ One detail of Bird's statement above stands out to me: he says his Quality Assur
 
 It's important to keep some perspective on these things. It may seem like we've been doomed to a permanent state of being buried alive under oceans of auto-generated AI sludge, but I think people are already starting to realize the limitations of trying to auto-generate news stories and entire novels and such with these tools.
 
-It's a trend that will likely receed somewhat and find it's own level eventually. It's always tempting when some trend is experiencing exponential growth to assume it'll continue that way indefinitely, but most things actually end up being [bell curves](https://en.wikipedia.org/wiki/Normal_distribution).
+It's a trend that will likely recede somewhat and find its level eventually. It's always tempting when some trend is experiencing exponential growth to assume it'll continue that way indefinitely, but most things actually end up being [bell curves](https://en.wikipedia.org/wiki/Normal_distribution).
 
 {% include figure.html filename="bell_curve.jpg" description="I'd say we're probably somewhere near the 85th percentile of the AI bell curve as of this writing." %}
 
