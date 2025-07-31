@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Designing Software like a TV Writers Room
+title: Build Software Like a Sitcom Writers Room
 categories: [Software, TV, Personal]
 image: content/images/30-rock-writers-table.jpg
 ---
