@@ -8,8 +8,8 @@ image: content/images/30-rock-writers-table.jpg
 In 2007, the [Writers Guild of America went on strike](https://en.wikipedia.org/wiki/2007%E2%80%9308_Writers_Guild_of_America_strike) for 99 days, from November 5, 2007 to February 12th, 2008. The strike had the effect of interrupting the production of TV series midway through their seasons. The writers were on strike over their lack of residuals from DVD sales, but actors and crews (being represented by separate unions) were not. Many shows were required by contract to continue filming any already-scripted episodes, but without input from the striking writers. 
 
 > One of my favorite artifacts of this era was the recurring bit on _Late Night_ where Conan O'Brien would kill time that would've otherwise been devoted to written sketches by seeing how long he could spin his wedding ring on his desk:
->
-> <div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/9fpYpmksscA?si=KNXZsgqGf-TlWMW5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/9fpYpmksscA?si=KNXZsgqGf-TlWMW5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ## 30 Rock and the 2007 Writers Strike
 
@@ -35,8 +35,8 @@ Listening to the DVD commentaries of the second season of _30 Rock_ is a fascina
 However, you do have to be wary of team members who consistently shut down proposals without suggesting alternatives. I think of this like a group of friends who are attempting to agree on a place to get lunch: you can't veto every idea without providing some of your own.
 
 > A breakdown of _30 Rock_'s three-second masterclass on how __not__ to collaborate:
-> 
-> <div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/Kb_AHBGF5i8?si=RqqY1M-5ACXRwzsl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/Kb_AHBGF5i8?si=RqqY1M-5ACXRwzsl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 It's not practical to have a zero-tolerance policy to shooting down an idea without suggesting an alternative, since there may in fact be a good reason _not_ to do something without a clear alternative of what to do instead. But I find it becomes clear in fairly short order when this is a pattern of behavior, at which point the best response may be to say "I understand your objection but until I hear a better option, we are going to move forward with the current proposal."
 
