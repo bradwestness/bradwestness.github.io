@@ -5,14 +5,14 @@ categories: [Software, TV, Personal]
 image: content/images/30-rock-writers-table.jpg
 ---
 
-## 30 Rock and the 2007 Writers' Strike
-
 In 2007, the [Writers Guild of America went on strike](https://en.wikipedia.org/wiki/2007%E2%80%9308_Writers_Guild_of_America_strike) for 99 days, from November 5, 2007 to February 12th, 2008. The strike had the effect of interrupting the production of TV series midway through their seasons. The writers were on strike over their lack of residuals from DVD sales, but actors and crews (being under separate unions) were not. Many shows were required by contract to continue filming already-scripted episodes, but without input from the striking writers. 
 
 > One of my favorite artifacts of this era was the recurring bit on _Late Night_ where Conan O'Brien would kill time that would've otherwise been devoted to written sketches by seeing how long he could spin his wedding ring on his desk:
-> <div class="embed-responsive embed-responsive-16by9">
+<div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=9fpYpmksscA" frameborder="0" allowfullscreen></iframe>
 </div>
+
+## 30 Rock and the 2007 Writers' Strike
 
 _30 Rock_, then in its second season, was one such show. The production was compelled to continue filming until they ran out of scripted episodes, ultimately resulting in a shortened season where only 15 of the planned 22 episodes were completed. However, even these episodes were filmed without the ability to rewrite or punch up scenes as showrunner Tina Fey and the rest of the writers had done on the first season and at Saturday Night Live.
 
