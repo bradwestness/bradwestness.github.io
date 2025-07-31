@@ -20,7 +20,7 @@ TV shows often have a single writer script the initial draft of each episode fro
 > I have a trick that makes things easier for me. Since writing is very hard and rewriting is comparatively easy and rather fun, I always write my scripts all the way through as fast as I can, the first day, if possible, putting in crap jokes and pattern dialogue—“Homer, I don’t want you to do that.” “Then I won’t do it.” Then the next day, when I get up, the script’s been written. It’s lousy, but it’s a script. The hard part is done. It’s like a crappy little elf has snuck into my office and badly done all my work for me, and then left with a tip of his crappy hat. All I have to do from that point on is fix it. So I’ve taken a very hard job, writing, and turned it into an easy one, rewriting, overnight. I advise all writers to do their scripts and other writing this way. And be sure to send me a small royalty every time you do it.\
 > &mdash; <cite>[John Swartzwelder (2021) in The New Yorker][1]</cite>
 
-## Designing like a writers' room 
+## Designing Like a Writers Room 
 
 This is the approach I like to take when designing software or "breaking" a new feature with a team. I find it useful to create a collaborative artifact like a Google Doc or LucidChart diagram and fill in a "crappy" broad strokes outline, like Swartzwelder recommends. Then, the fun part is getting your team around a table (or screen share) to pitch better ideas that will "beat" the crappy version in your initial draft. You can even intentionally include wrong or bad ideas in this draft to ensure that people will call them out and suggest something better. This way, the onus isn't on a single person to create a perfect solution to a complex problem in a silo.
 
@@ -30,7 +30,7 @@ There is a reason TV writers do have someone actually write that first draft, ev
 
 Listening to the DVD commentaries of the second season of _30 Rock_ is a fascinating time capsule, and gives an illuminating window into Fey's approach to creating the series, famous for it's incredibly dense joke-a-second pace. She repeatedly bemoans gags or plot lines that she thinks they "could've beaten" at the table, meaning that someone would've pitched a joke that got a bigger laugh than the one in the credited writer's first draft. I try to bring this attitude to collaborative design sessions (whether functional or graphical), I _want_ you to beat my idea. I'd love nothing more than for you to suggest an alternative that would sidestep an issue I didn't anticipate. 
 
-## "Yes, and" vs "No, but"
+## "Yes, and" versus "No, but"
 
 However, you do have to be wary of team members who consistently shut down proposals without suggesting alternatives. I think of this like a group of friends who are attempting to agree on a place to get lunch: you can't veto every idea without providing some of your own.
 
