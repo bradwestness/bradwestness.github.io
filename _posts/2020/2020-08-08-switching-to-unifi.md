@@ -78,7 +78,7 @@ The Security Gateway is the thing that sits between the internet and your local 
 
 ### Switching
 
-There are an embarassment of switch options in the UniFi ecosystem. A whole bunch of various rackmount switches and a few more consumer-oriented options. Unless you have a truly stupid amount of hardware you plan to connect, I'd recommend either the newer 8-port UniFi Switch Lite 8 PoE, the UniFi Switch Lite 16 PoE.
+There are an embarrassment of switch options in the UniFi ecosystem. A whole bunch of various rackmount switches and a few more consumer-oriented options. Unless you have a truly stupid amount of hardware you plan to connect, I'd recommend either the newer 8-port UniFi Switch Lite 8 PoE, the UniFi Switch Lite 16 PoE.
 
 {% include figure.html filename="unifi_switch_lite.png" description="Ubiquiti UniFi Switch Lite 16 PoE" %}
 
@@ -90,7 +90,7 @@ If you have a rack, you'll probably want to choose one of the various rackmount 
 
 ### WiFi Access Points
 
-The last part of your network you'll need to take care of is WiFi coverage. Here again, there are an embarassment of options. However, it's important to pay attention to the capabilities of each. 
+The last part of your network you'll need to take care of is WiFi coverage. Here again, there are an embarrassment of options. However, it's important to pay attention to the capabilities of each. 
 
 All 802.11ac access points are not created equal. If you want to ensure the best coverage and throughput, you'll want to make sure you pick a "Wave 2" access point that has MU-MIMO capabilities (this greatly increases throughput when multiple devices are connected simultaneously).
 

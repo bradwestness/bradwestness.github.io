@@ -39,7 +39,7 @@ Just make sure to have have several interconnected paths, since players can move
 
 {% include figure.html filename="paper_mario_party_board.png" description="The Board" %}
 
-Sprinkle the following typs of spaces throughout the board:
+Sprinkle the following types of spaces throughout the board:
 
  | Type | Description |   |
  | --- | --- | --- |

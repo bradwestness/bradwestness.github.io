@@ -22,7 +22,7 @@ Previously I would've said the Super Nintendo controller was the best, and I thi
 With that in mind, the GameCube controller is the perfect incarnation of the modern control scheme:
 
 1. The primary buttons are different sizes and shapes. This gives you no-look tactile feedback, so you can easily tell which is which by touch.
-2. It fits perfectly in the hand. I know this is highly subjective, but for my money the GameCube controller fits just-right in the sweet spot between the original XBox's unweildy behemoth controllers, and the Switch Joy Con's for-dainty-waifs-only petiteness.
+2. It fits perfectly in the hand. I know this is highly subjective, but for my money the GameCube controller fits just-right in the sweet spot between the original XBox's unwieldy behemoth controllers, and the Switch Joy Con's for-dainty-waifs-only petiteness.
 3. No stupid gimmicks.<sup>*</sup> Whether it be the Joy Con's integrated NFC reader and IR camera, or the expandable add-on paks of the N64 and Dreamcast controllers, there's something to be said for addition by subtraction. While the Joy Con's NFC reader, IR camera, or the N64 and Dreamcast controllers' expandable add-on paks are "neat," aside from adding rumble and memory cards in the case of the N64, would anyone really miss those features?
 
 <sup>* Okay, so the GameCube controller's analog shoulder trigger things were _kind of_ a gimmick, but c'mon, they were _cool_.</sup>
@@ -59,13 +59,13 @@ It feels great in the hand, the sticks are excellent and the shoulder buttons ha
 
 The only drawbacks are:
 
-1. The programmable macro-buttons on the rear of the controller are too easy to bump. Luckly this is pretty easily mitigated by simply disabling them.
+1. The programmable macro-buttons on the rear of the controller are too easy to bump. Luckily this is pretty easily mitigated by simply disabling them.
 2. The "turbo mode" buttons are similarly just an extra box-checking gizmo that I don't care about, but easy enough to ignore.
 3. While the controller has rumble, it's not "HD rumble," so everything is the same intensity, and it's just a hair too intense for my liking. Not a deal breaker, but it'd be nice if you could configure the rumble to be slightly less intense, which would probably also extend the amount of play time you get between charging.
 
 {% include figure.html filename="wizard_docked.jpg" description="Now I can finally shake trees in Animal Crossing like a pro gamer." %}
 
-It was also, shockingly, slighly cheaper than an actual Nintendo "Pro Controller," but doesn't feel cheap or brittle at all. 
+It was also, shockingly, slightly cheaper than an actual Nintendo "Pro Controller," but doesn't feel cheap or brittle at all. 
 
 Highly recommended if, like me, you have big hands and find the Joy Con awkward, or you just love the GameCube's button layout. This is not an affiliate link and I'm not being paid to promote this, just sharing a cool thing that I like.
 

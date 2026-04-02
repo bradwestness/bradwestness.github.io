@@ -4,7 +4,7 @@ title: Nintendo Switch First Impressions, Part 2
 categories: [Nintendo, Games]
 ---
 
-In [Part 1](https://www.bradwestness.com/2017/03/19/nintendo-switch-first-impressions-part-1) of this series, I talked about my overall impressions of the Switch and it's
+In [Part 1](https://www.bradwestness.com/2017/03/19/nintendo-switch-first-impressions-part-1) of this series, I talked about my overall impressions of the Switch and its
 place in the spectrum of "home console" versus "handheld" gaming system. In this
 part I will focus more on the hardware and different "modes" of play, including
 the various ways the Joy Con can be used and the Pro Controller.
@@ -48,7 +48,7 @@ a little extra ergonomics to give them a more robust feel.
 I haven't played this way much, since I've mostly been using the Pro Controller when playing on the TV, but I think I prefer the disconnected mode anyway. The grip feels slightly flimsy, and it feels more natural to hold the Joy Con in your palms versus the angle the sticks wind up being at in the grip.
 
 Note: There is also a "charging grip" accessory that Nintendo sells separately, which I would
-recommend against buying. It's effectively the same as the "comfort grip," except it has a USB-C connector on the bottom, meaning you can plug it in. It does not have it's own battery
+recommend against buying. It's effectively the same as the "comfort grip," except it has a USB-C connector on the bottom, meaning you can plug it in. It does not have its own battery
 installed, so it's just a passive connection that only charges the controllers when plugged in. They charge whenever they're connected to the Switch itself, so I'd recommend charging them that way when not in use and then using them disconnected or with the comfort grip. The
 only way the charging grip would make sense is for charging a second pair of Joy Con, but
 as of this writing I don't think there are any games that support using more than two at a time anyway.
@@ -68,7 +68,7 @@ them to be more comfortable than the horizontal Wii remote was. They have the sa
 button layout as the SNES controller in this mode, so it will obviate the need to purchase
 a separate controller for SNES games in the Virtual Console when it arrives.
 
-The only problem I can forsee is that the aforementioned smaller control sticks on
+The only problem I can foresee is that the aforementioned smaller control sticks on
 the Joy Con might make them less well suited for playing games that require precision,
 especially some of the classic NES or SNES twitch-based action games. I've really only used
 this mode for Snipperclips thus far, which is relatively slow paced. I think this mode
@@ -102,6 +102,6 @@ I assume you'd just tilt one or the other Joy Con but I don't know which).
 Still, that's not to say that I have buyer's remorse. It's definitely the most hefty and heavy-duty controller available for the system, and comfortable for longer stretches. It'll also be nice once games that support over 2 players start coming out, since someone can use
 the Pro Controller while two others use a Joy Con apiece (for Mario Kart, for example).
 
-It'll probably also be preferrable for *Mario Odyssey,* which I imagine will require much more
+It'll probably also be preferable for *Mario Odyssey,* which I imagine will require much more
 precise controls for jumping and running than Zelda, where you can pretty easily get by with
 the Joy Con's more limited control sticks.

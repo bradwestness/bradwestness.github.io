@@ -4,8 +4,8 @@ title: Nintendo Switch First Impressions, Part 3
 categories: [Nintendo, Games]
 ---
 
-In [Part 1](https://www.bradwestness.com/2017/03/19/nintendo-switch-first-impressions-part-1) of this series, I talked about my overall impressions of the Switch and it's
-place in the spectrum of "home console" versus "handheld" gaming system. [Part 2](https://www.bradwestness.com/2017/03/20/nintendo-switch-first-impressions-part-2) covered some more detail about the ingenius Joy Con controllers as well as the Pro Controller, and the different modes of play that the system supports. In this
+In [Part 1](https://www.bradwestness.com/2017/03/19/nintendo-switch-first-impressions-part-1) of this series, I talked about my overall impressions of the Switch and its
+place in the spectrum of "home console" versus "handheld" gaming system. [Part 2](https://www.bradwestness.com/2017/03/20/nintendo-switch-first-impressions-part-2) covered some more detail about the ingenious Joy Con controllers as well as the Pro Controller, and the different modes of play that the system supports. In this
 part I will focus on the software, both the main system software as well as some games. I will leave discussion of the flagship Zelda game for its own post.
 
 ## System Software
@@ -26,7 +26,7 @@ One other thing that Nintendo has (finally) gotten right is that eShop purchases
 
 There's been some kerfuffle around the lack of some non-gaming functionality in the system software, namely the lack of a web browser and common streaming apps, like Netflix, Hulu, Youtube, etc (which were all present on both the Wii and Wii U). Nintendo has already stated that streaming apps are coming in the near future, and frankly I haven't really missed the inclusion of a web browser.
 
-Sure, I did use the Wii U's browser from time to time to look up a strategy guide if I happneed to get stuck in a particular game, which was convenient, but I can also just do that with my phone or home PC, which have faster browsers and better text input, so omitting that function is not a deal breaker for me. I haven't really missed it (and *Breath of the Wild* is a game that requires looking up hints pretty frequently).
+Sure, I did use the Wii U's browser from time to time to look up a strategy guide if I happened to get stuck in a particular game, which was convenient, but I can also just do that with my phone or home PC, which have faster browsers and better text input, so omitting that function is not a deal breaker for me. I haven't really missed it (and *Breath of the Wild* is a game that requires looking up hints pretty frequently).
 
 It'll be nice when the streaming apps are available, but again, I don't think it's a deal breaker. If you subscribe to those services you almost certainly already have a device which can watch them readily available. The Switch's screen is very nice and bigger than the average cell phone, so it could be nice to use it as a "second screen" if you want to watch a different show than the rest of the family is watching in the living room, for example. I'm sure I'll probably try that once the streaming apps are available, but I never really do that with my phone now, so I doubt it'll be a common occurrence.
 
@@ -44,7 +44,7 @@ This is probably the one big negative of the experience of being an early adopte
 
 ![1-2-Switch]({{ site.baseurl }}content/images/1-2-Switch.jpg)
 
-The thing that made Wii Sports fun was that while the games were largely based around a particular capability of the hardware, they were still representative of actual sports, and you could have fun trying to beat your friend's high score, or set a new personal best. *1-2-Switch* on the other hand, feels like essentially a tech demo. The "games" are generally just a single action and don't really have any replay value. Once you play the "speed eating" game, there's litte reason why you'd ever go back and play again.
+The thing that made Wii Sports fun was that while the games were largely based around a particular capability of the hardware, they were still representative of actual sports, and you could have fun trying to beat your friend's high score, or set a new personal best. *1-2-Switch* on the other hand, feels like essentially a tech demo. The "games" are generally just a single action and don't really have any replay value. Once you play the "speed eating" game, there's little reason why you'd ever go back and play again.
 
 The real problem is that *1-2-Switch* is a full price game, and should really just be a pack-in (like *Wii Sports* was), or maybe like a $10 digital download. It does effectively show off all the various capabilities of the Joy Con controllers, but it just isn't worth $50 and will probably not see much play time after playing each of the minigames a couple times. If you want a party game, I'd say save your money and get *Mario Kart 8 Deluxe* when it comes out.
 
@@ -54,7 +54,7 @@ The real problem is that *1-2-Switch* is a full price game, and should really ju
 
 ![1-2-Switch]({{ site.baseurl }}content/images/snipperclips.jpg)
 
-The main mode consists of a series of 1 or 2 player co-operative puzzles (if playing alone you simply switch between the two characters). Each puzzle is a single "screen" and you must figure out how to acheive some deceptively simple goal by "snipping" your characters into various shapes to form tools (like a gear to turn a crank, or a basket to convey eggs or other objects around the stage), or simply match the shape of your characters to a dotted outline.
+The main mode consists of a series of 1 or 2 player co-operative puzzles (if playing alone you simply switch between the two characters). Each puzzle is a single "screen" and you must figure out how to achieve some deceptively simple goal by "snipping" your characters into various shapes to form tools (like a gear to turn a crank, or a basket to convey eggs or other objects around the stage), or simply match the shape of your characters to a dotted outline.
 
 There are also multiplayer modes including a battle mode where you attempt to "snip" the other players before they get you. It's a cool little game and a great example of an indie title that probably never would have been distributed due to the prohibitive cost of manufacturing physical copies, but was made possible by the advent of the eShop.
 

@@ -11,7 +11,7 @@ In [part 1 of this blog series](https://www.bradwestness.com/2020/02/01/lack-rac
 
 The Dell PowerEdge R710 server that I bought came with a built-in "iDRAC" NIC management card, which despite the name, has nothing to do with vampires. It's actually a separate solid-state computer that pipes the video output from the main server into this auxiliary card over serial, so that you can remotely access the server over your network. You can even watch it POST and get into the BIOS because the iDRAC (Integrated Dell Remote Access Controller) is actually a separate computer. It's just like being physically at the terminal!
 
-The iDRAC has a web interface which is similar to the admin interface you get for configuring a router or other network device, you just hit the IP address of the iDRAC (which has it's own ethernet jack), via a web browser. From there, you can view various statistics of the machine's uptime, hardware health, CPU utilization, etc. The main thing for my purposes was the remote console.
+The iDRAC has a web interface which is similar to the admin interface you get for configuring a router or other network device, you just hit the IP address of the iDRAC (which has its own ethernet jack), via a web browser. From there, you can view various statistics of the machine's uptime, hardware health, CPU utilization, etc. The main thing for my purposes was the remote console.
 
 {% include figure.html filename="idrac-post.png" description="Watching the server POST via the iDRAC." %}
 
@@ -41,7 +41,7 @@ So, I had gotten this far without attempting to install a GPU, since the one I b
 
 When the GPU finally arrived and I went to install it, the problem became clear - although there was enough room for the GPU to fit in the designated PCIe slot within the case, I couldn't plug it in.
 
-{% include figure.html filename="geforce-fit.jpg" description="The GeForce GTX 1050 Ti, nestled snugly into it's position in the server's second PCIe riser." %}
+{% include figure.html filename="geforce-fit.jpg" description="The GeForce GTX 1050 Ti, nestled snugly into its position in the server's second PCIe riser." %}
 
 Why? Because, although it hadn't even occurred to me to check, the PCIe riser that came with the server splits the motherboard's PCIe x16 slot (i.e. the full-width kind) into dual PCIe x8 slots (i.e. the half-width kind). What I had here was a square peg and a round hole. So, back to the drawing board.
 
@@ -51,13 +51,13 @@ So it turns out that Dell makes two kind of risers for this model of server. The
 
 {% include figure.html filename="pcie-x16-riser.jpg" description="This little bugger set me back $200." %}
 
-Doing some reasearch, I found that you also can't just run a ribbon cable directly from the motherboard, because the risers have special "security" leads that the motherboard checks for upon boot, and if it's not present, the machine won't POST. Basically this is hardware DRM preventing you from not using Dell's special riser cards that are built specifically for this server. Bummer.
+Doing some research, I found that you also can't just run a ribbon cable directly from the motherboard, because the risers have special "security" leads that the motherboard checks for upon boot, and if it's not present, the machine won't POST. Basically this is hardware DRM preventing you from not using Dell's special riser cards that are built specifically for this server. Bummer.
 
 Ultimately, I felt it was worth it because the whole point of this project was to build a solid Plex server and hardware transcoding is definitely part of that, in my opinion. But it's certainly an issue with using enterprise-grade hardware for a consumer project like this: if you're not careful you end up needing specialty parts and they don't come cheap. A fortune 500 company wouldn't think anything of this extra $200 expense, but it was basically half the cost of the entire server so it took a big bite out of my "cheaper than a Synology DiskStation" argument. Caveat emptor and all that.
 
 ### The Second Setback
 
-So, now that I had the PCIe x16 riser, all should be right with the world, right? I was excited to finally get the GPU, which had been sitting in a drawer encased in it's static-free bag for weeks now, installed.
+So, now that I had the PCIe x16 riser, all should be right with the world, right? I was excited to finally get the GPU, which had been sitting in a drawer encased in its static-free bag for weeks now, installed.
 
 When I got the machine opened back up, another roadblock revealed itself. The GeForce GTX 1050 Ti I picked out was of the "two-slot" variety of GPU, meaning it takes up two expansion slots of space in the computer's chassis.
 
@@ -101,7 +101,7 @@ Would I recommend going this route for others? Depends on how comfortable you ar
 
 It was definitely more of a hassle to get everything situated and set-up (over the course of about a month), compared to the hassle-free instant gratification of a plug-and-play specialty device.
 
-I should also note - the PowerEdge is decidedly not quiet. I had originally envisioned the LACK rack just sitting in the corner of our living room, where the LACK table had been sitting previously, but the high-pitched whine of the PowerEdge's fans drove me to ultimately move the whole shebang down to the basement, which involved running new lines for the TV and internet coax cables, and that was another part of the project that I didn't initally anticipate.
+I should also note - the PowerEdge is decidedly not quiet. I had originally envisioned the LACK rack just sitting in the corner of our living room, where the LACK table had been sitting previously, but the high-pitched whine of the PowerEdge's fans drove me to ultimately move the whole shebang down to the basement, which involved running new lines for the TV and internet coax cables, and that was another part of the project that I didn't initially anticipate.
 
 {% include figure.html filename="lack-rack-plex-nas.jpg" description="The original location, which wound up being temporary due to the noise." %}
 

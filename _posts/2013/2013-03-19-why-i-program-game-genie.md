@@ -18,13 +18,13 @@ Nothing solidified that concept in my young brain as much as the **Game Genie**,
 
 The only game I recall actually using it to cheat on was *The Legend of Zelda: Link's Awakening* for the SNES. Infinite hearts allowed my ten-year-old self to get past the difficult boss fights and go dungeon-crawling to solve the puzzles I loved without having to worry about a game over.
 
-Mostly I loved the Game Genie for it's other purpose: altering the game in ways the developers never intended, to often hilarious results. Moon Jump. Color palate switches. Debug levels. You were essentially altering the game memory at load-time and could cause all kinds of crazy side-effects.
+Mostly I loved the Game Genie for its other purpose: altering the game in ways the developers never intended, to often hilarious results. Moon Jump. Color palette switches. Debug levels. You were essentially altering the game memory at load-time and could cause all kinds of crazy side-effects.
 
 
 ![]({{ site.baseurl }}content/images/0.jpg)
 
 
-ZSNES, a Super Nintendo emulator for the PC, even let you pause your game, take note of various memory values that had changed since your last pause, and generate you own Game Genie codes.
+ZSNES, a Super Nintendo emulator for the PC, even let you pause your game, take note of various memory values that had changed since your last pause, and generate your own Game Genie codes.
 
 This was effectively a sidelong introduction to the concepts of programming for me at a young age. Altering the state of memory of the machine could affect the program as it ran. That means that there is a program. There is memory. <a href="http://en.wikipedia.org/wiki/Finite-state_machine" title="Wikipedia">There is such a thing as "state" in the machine</a>. Fascinating.
 

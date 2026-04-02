@@ -15,7 +15,7 @@ For front-end work, there's a seemingly never-ending onslaught of fancy tooling 
 
 For data persistence, there are a host of O/RMs in any given ecosystem. In the .NET world, the primary ones are [Entity Framework (by Microsoft)](https://docs.microsoft.com/en-us/aspnet/entity-framework) and [Dapper (by Stack Overflow)](https://github.com/StackExchange/Dapper). Both are great.
 
-However, for advanced scenarios where you need to drop into some raw SQL, you wind up having a big string that doesn't have any syntax highlighting, intellisense, or any of the quaility-of-life things that developers have come to expect from modern tooling.
+However, for advanced scenarios where you need to drop into some raw SQL, you wind up having a big string that doesn't have any syntax highlighting, intellisense, or any of the quality-of-life things that developers have come to expect from modern tooling.
 
 {% include figure.html filename="sql-string.png" description="Might as well be writing code in Notepad!" %}
 
@@ -23,7 +23,7 @@ However, for advanced scenarios where you need to drop into some raw SQL, you wi
 
 I prefer to keep SQL in the application code versus using stored procedures for everything, because every stored procedure is a [code smell](https://en.wikipedia.org/wiki/Code_smell). The existence of a stored procedure means you have business logic in your data layer, and every stored procedure is a production outage waiting to happen.
 
-They aren't shipped with the app code and can therefore become out of sync with the app code, and as soon as one stored procedure doesn't return the right number of columns or adds a required paramter that the app doesn't send, things are going to go boom. Ask me how I know this!
+They aren't shipped with the app code and can therefore become out of sync with the app code, and as soon as one stored procedure doesn't return the right number of columns or adds a required parameter that the app doesn't send, things are going to go boom. Ask me how I know this!
 
 Plus, the received wisdom that stored procedures are inherently faster than parameterized queries is a myth. They're only faster than non-parameterized queries that have inline dynamic data concatenated into them, but those are SQL Injection attack vectors and you should always be using parameterized queries anyhow, so we're back to stored procedures being essentially useless.
 

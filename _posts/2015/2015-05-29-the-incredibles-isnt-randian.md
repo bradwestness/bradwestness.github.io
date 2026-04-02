@@ -89,7 +89,7 @@ Helen's side. I'd call it 70/30.
 Syndrome also espouses a plan to make "no one special" by selling 
 gadgets that replicate superhero abilities, so it's again tempting 
 to think that "making everyone equal is bad" is the film's ethos 
-&mdash; it's the vilain's plan, for crying out loud &mdash; 
+&mdash; it's the villain's plan, for crying out loud &mdash; 
 this is again wilfully ignoring the details. 
 
 <div class="embed-responsive embed-responsive-16by9">
@@ -112,7 +112,7 @@ going to be able to lift a traincar no matter how much we work out).
 
 I don't know that this is an especially controversial viewpoint, 
 though, it's more just a fact. Life isn't fair.  There are child 
-prodigies. There are people who practice dilligently at things but 
+prodigies. There are people who practice diligently at things but 
 just never achieve the heights of others who have an intuitive 
 talent, or are just in the right place at the right time. 
 Think of all the hyper-technically skilled session musicians 
@@ -156,5 +156,5 @@ but having a special talent doesn't make them inherently
 *better people*, or entitle them to act purely out of self-interest. 
 
 This is the true moral of the film, and it's pretty much the 
-opposite of [Objectivism](http://en.wikipedia.org/wiki/Objectivism_(Ayn_Rand)) (which says that it's immorral to act out 
+opposite of [Objectivism](http://en.wikipedia.org/wiki/Objectivism_(Ayn_Rand)) (which says that it's immoral to act out 
 of anything *other than* pure self-interest). 

@@ -15,7 +15,7 @@ I recently upgraded my home network to be all based on Ubiquiti Unifi devices, a
 
 My first thought was that I might be able to run a little app (as a Windows Service) on my [Plex server](https://www.bradwestness.com/2020/02/01/lack-rack-plex-nas-part-1/) that checks for the presence of a set of MAC addresses on the local wifi and uses that to determine whether anyone is home or not.
 
-I wrote up a ltitle tool that used the [Windows 'ARP'](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/arp) command-line utility and parsed the results.
+I wrote up a little tool that used the [Windows 'ARP'](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/arp) command-line utility and parsed the results.
 
 {% include figure.html filename="wifi-thermostat-arp.jpg" description="Output of the ARP command on Windows." %}
 
@@ -54,7 +54,7 @@ I could've theoretically set up a custom app to do this. Honeywell has a develop
 
 Then I thought I might be able to use one of the "smart assistants" that work with the thermostat (it supports Cortana, Alexa and Google Assistant), however with the specific thermostat I have, the only commands you can give via any of those are to set the temperature to a certain point... not "set away" or "set home" (you can apparently do that with the [Ecobee](https://www.cozyhomehq.com/alexa-thermostat-commands-for-nest-honeywell-ecobee-emerson/) line of thermostats, however).
 
-So smart assistant integrations were out. Then I realized that [IFTTT](https://ifttt.com/) supports Honeywell Home as one of it's service integrations, and you can trigger an IFTTT applet by sending an e-mail to a special trigger address. We had a winner!
+So smart assistant integrations were out. Then I realized that [IFTTT](https://ifttt.com/) supports Honeywell Home as one of its service integrations, and you can trigger an IFTTT applet by sending an e-mail to a special trigger address. We had a winner!
 
 {% include figure.html filename="wifi-thermostat-ifttt-create.jpg" description="Creating an applet with an e-mail trigger in IFTTT." %}
 
@@ -135,12 +135,12 @@ Installing the service makes it available on the system, but you still have to s
 
 {% include figure.html filename="wifi-thermostat-windows-service.png" description="A wild service appears!" %}
 
-Once the service was started, I performed a highly scientific test wherein I disabled Wifi on both my and my wife's phones for a few minutes, and watched the IFTT activity screen.
+Once the service was started, I performed a highly scientific test wherein I disabled Wifi on both my and my wife's phones for a few minutes, and watched the IFTTT activity screen.
 
 {% include figure.html filename="wifi-thermostat-ifttt-activity.jpg" description="IFTTT showing activity for my applets." %}
 
 Success! My home HVAC system is now aware of when we're home or away without needing to give always-on location access to anyone.
 
-I kind of wish they offered this functinality by default, although setting up static IP addresses for the phones would probably be beyond the ken of most non-technical folk. 
+I kind of wish they offered this functionality by default, although setting up static IP addresses for the phones would probably be beyond the ken of most non-technical folk. 
 
 But, now I'm having more ideas for things that could be triggered this way, such as automatically closing or opening the garage door (if you have a smart garage door opener), or arming a home security system. The possibilities are endless!

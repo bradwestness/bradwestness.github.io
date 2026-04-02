@@ -89,7 +89,7 @@ Console.WriteLine($"Are these objects equal? {p5 == p6}.");
 // Output: Are these objects equal? True.
 ```
 
-The equality check still works becuase `AddressRec` is also a `record` and overrides it's own `Equals()` method with _by value_ comparisons, and therefore when the two `PersonRec` objects are compared, the values of each of the properties on their `Address` property are compared _by value_ as well.
+The equality check still works because `AddressRec` is also a `record` and overrides its own `Equals()` method with _by value_ comparisons, and therefore when the two `PersonRec` objects are compared, the values of each of the properties on their `Address` property are compared _by value_ as well.
 
 Let's say, however, that you need a *collection* of addresses on your person object.
 
@@ -129,7 +129,7 @@ Console.WriteLine($"Are these objects equal? {p9 == p10}.");
 
 Wait, what? It's still false?
 
-This is because, while `HashSet` includes the `SetEquals()` method, it doesn't use that as the default behavior for it's `Equals()` method (nor does it override the `==` operator).
+This is because, while `HashSet` includes the `SetEquals()` method, it doesn't use that as the default behavior for its `Equals()` method (nor does it override the `==` operator).
 
 If we want the two objects to be considered equal, we can extend `HashSet` to specify that `SetEquals()` is the default method of comparison.
 

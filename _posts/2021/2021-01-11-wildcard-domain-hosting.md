@@ -5,7 +5,7 @@ categories: [Software,Programming]
 image: content/images/domain_banner.png
 ---
 
-Despite an overflowing number of options for hosting your own blog or website these days, I still feel like the best bang for your buck is GitHub Pages (if you're a developer, that is). It's free and does SSL and you can set it up to work with a custom doamin name, something that's a "premiere" option requiring paid service at most other blogging/website platforms.
+Despite an overflowing number of options for hosting your own blog or website these days, I still feel like the best bang for your buck is GitHub Pages (if you're a developer, that is). It's free and does SSL and you can set it up to work with a custom domain name, something that's a "premiere" option requiring paid service at most other blogging/website platforms.
 
 So, I run this here site as a GitHub Pages site, and that's all well and good. But, I also have a web server running in my basement (to host Plex media), so I figure it's kind of silly to pay for Azure hosting or whatever to host various hobby projects. I should just use the server I'm already running, right?
 
