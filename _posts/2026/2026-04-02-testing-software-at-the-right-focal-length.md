@@ -15,7 +15,7 @@ In photography, focal length determines what's in your frame. Zoom in and you se
 
 A macro lens fills the entire frame with one thing. A single gear tooth. A single solder joint. Everything else is gone, not because it doesn't matter, but because right now you're not looking at it.
 
-Unit tests do the same thing. One function, one method, one class, isolated from everything around it. Dependencies get replaced with fakes (mocks, stubs, test doubles).
+Unit tests do the same thing. One function, one method, one class, isolated from everything around it. Dependencies get replaced with fakes (mocks, stubs, test doubles). If you were building a house, this is pulling a single kitchen drawer open and closed to make sure the slides work.
 
 This is where you catch the dumb stuff that would otherwise waste hours: a function that returns the wrong value for a specific input, a null reference nobody thought about, a business rule that calculates something slightly wrong. The boring bugs are the expensive ones, and unit tests are great at finding boring bugs.
 
@@ -30,7 +30,7 @@ The trade-off is real, though. A mock tells you what you *told* it to say, not w
 
 A portrait lens keeps the subject sharp but lets the world around it soften. Just enough context to know where you are without it taking over the shot. You're aware there's a background. You're not pretending it doesn't exist. But it's not what you're here for.
 
-Integration tests make the same trade. The subject under test is a cluster of things working together. Does the data layer talk to the service layer correctly? Does the message queue handler do the right thing when a message actually arrives? You're testing the seams between components, which is where a surprising number of bugs live.
+Integration tests make the same trade. The subject under test is a cluster of things working together. Does the data layer talk to the service layer correctly? Does the message queue handler do the right thing when a message actually arrives? You're testing the seams between components, which is where a surprising number of bugs live. Back to the house: this is opening all the kitchen drawers to make sure they don't collide with each other or the cabinet doors.
 
 I want to be precise about scope here, because "integration test" means something different to everyone in the room. I think it's the word "integration" itself that trips people up; it sounds like it must mean the service integrating with other real services and external dependencies. But that's closer to a readiness test, and it belongs much further out on the zoom. What I mean by integration is all the component parts of a single service interacting with *each other*. The containerized dependencies you get from .NET Aspire or Testcontainers aren't a shortcut around "real" testing; they're the design. A controlled, reproducible, ephemeral environment means your tests aren't secretly dependent on whatever another team is deploying to a shared dev database at 2am on a Thursday.
 
@@ -45,7 +45,7 @@ For .NET, **.NET Aspire** with `DistributedApplicationTestingBuilder` lets you s
 
 A telephoto lens lets you observe from a distance. You're still pointed at a specific subject, *that* building, *that* person, but you're no longer inches away. You're across the street. The world around the subject is real, not mocked or containerized.
 
-Acceptance tests work the same way. The subject under test is a specific user-facing behavior, exercised through a real interface: a browser, an API endpoint, a CLI. Does clicking *Add to Cart* actually add the item? Does the checkout flow complete? You're asking pointed questions against a running system.
+Acceptance tests work the same way. The subject under test is a specific user-facing behavior, exercised through a real interface: a browser, an API endpoint, a CLI. Does clicking *Add to Cart* actually add the item? Does the checkout flow complete? You're asking pointed questions against a running system. In the house, this is checking whether the fridge actually gets cold; it requires real wiring, a real outlet, and a real power grid.
 
 This is where you define acceptance criteria, the concrete "the product owner will sign off on this" kind, and verify them. The test is written from the outside looking in. It doesn't know or care about your internal architecture. It only knows what a user would know, and that constraint is what makes these tests valuable.
 
@@ -58,7 +58,7 @@ This is where you define acceptance criteria, the concrete "the product owner wi
 
 A wide-angle lens fits everything in the frame. Every house, every yard, every street. Nothing is cropped out.
 
-End-to-end tests do the same thing. The subject under test is the entire system, every service, every dependency, exercised the way a real user would use it. Can someone actually complete this workflow against real infrastructure? This is where you find the bugs that live in the spaces between teams: a timing issue that surfaces under real network latency, two services that each passed their own test suites but disagree on a contract, a permissions problem that only shows up in production-like environments.
+End-to-end tests do the same thing. The subject under test is the entire system, every service, every dependency, exercised the way a real user would use it. In house terms, you're running every shower, flushing every toilet, turning on every appliance, and checking that the plumbing and electrical all hold up at once. Can someone actually complete this workflow against real infrastructure? This is where you find the bugs that live in the spaces between teams: a timing issue that surfaces under real network latency, two services that each passed their own test suites but disagree on a contract, a permissions problem that only shows up in production-like environments.
 
 This is also where tests are slowest, most brittle, and hardest to diagnose. A failing end-to-end test tells you *something* is broken. It rarely tells you *what*. The automated scripts tend to be so brittle and complex that many teams just run these tests manually: a human clicking through the critical paths before a release. That's not a failure of discipline. An automated E2E suite nobody trusts is worse than a manual checklist people actually run.
 
@@ -75,6 +75,6 @@ If you do automate them, be deliberate about it. A small number of E2E tests cov
 
 Armstrong was talking about object-oriented languages, but the same trap exists in testing. Every time you reach for a real credentials file, a real external API, a real shared database when a controlled dependency would do, you're inviting the gorilla. Intentional scoping isn't a limitation. It's the whole design.
 
-The mistake isn't picking the wrong lens; it's only owning one. All unit tests? Every drawer slides perfectly and the cabinet falls apart when you assemble it. All end-to-end? Every bug requires a full-system investigation. You need both, and the stuff in between.
+The mistake isn't picking the wrong lens; it's only owning one. A house where every drawer was tested individually but nobody checked if they collide isn't ready to live in. Neither is one where the only test is turning everything on at once and seeing what blows up. You need both, and the stuff in between.
 
 Know what you're testing. Know how much of the world needs to be in the frame. Pick the right lens.
