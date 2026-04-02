@@ -126,14 +126,14 @@ and you see 500 folders for every album in your media library.
 
 ### Step 3 - Subscribe to the Share
 
-I did this by scanning the QR code from the desktop app. Then you just have to sit back and let the initial sync do it's thing. A nice feature is that you
+I did this by scanning the QR code from the desktop app. Then you just have to sit back and let the initial sync do its thing. A nice feature is that you
 can check the sync status either from your mobile device *or* from the desktop Resilio app.
 
 After the share is added to your device, hit the little "i" button and turn off "Selective Sync" for the share. This makes it so new folders will be synced automatically.
 
 ### Step 4 - Play your Music!
 
-So far I've been happiest just using [VLC for Android](https://play.google.com/store/apps/details?id=org.videolan.vlc&hl=en_GB) to play my media files. It should pick up your files automatially and display all your album art and everything. Now whenever you add new MP3s to your media folder on your desktop
+So far I've been happiest just using [VLC for Android](https://play.google.com/store/apps/details?id=org.videolan.vlc&hl=en_GB) to play my media files. It should pick up your files automatically and display all your album art and everything. Now whenever you add new MP3s to your media folder on your desktop
 (I always rip my albums directly to the OneDrive music folder using [Exact Audio Copy](http://exactaudiocopy.de/)), they'll automatically sync down to your mobile device when you're on
 wifi.
 

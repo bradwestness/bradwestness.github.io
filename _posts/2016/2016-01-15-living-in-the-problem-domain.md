@@ -53,7 +53,7 @@ the customer can only pay for a single-digit number of hours of work, and you kn
 get pulled off of that project momentarily and be asked to work on something else. 
 
 It's like asking a juggler to re-paint all the bowling pins he's juggling and also carve a few
-more without ever dropping any of the ones he's currenty got in the air. And that juggler never
+more without ever dropping any of the ones he's currently got in the air. And that juggler never
 went to school for juggling, he's actually a trained bowling pin carver, and would really
 rather just focus on that part of the operation and leave the whole juggling mess to somebody else.
 
@@ -80,7 +80,7 @@ actually ensuring quality in the software you create because you have hundreds o
 small projects. You spend all your time thinking about things that aren't really related to software
 development.
 
-I had read previously about how, as a software develolper, you want to be in a 
+I had read previously about how, as a software developer, you want to be in a 
 "[profit center](https://en.wikipedia.org/wiki/Profit_center)," and not a 
 "[cost center](https://en.wikipedia.org/wiki/Cost_centre_(business)),"
 which is true. But going even further than that, you want to be in a position

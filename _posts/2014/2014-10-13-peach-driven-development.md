@@ -32,7 +32,7 @@ So now, whenever I start a new solution, I create the following three projects:
 
 I'm not 100% sold on the name "Logic" for the middle-tier, but I do like it better than other names that I've seen for this layer, like Domain or Model ("domain" is too meaningless, "model" is overused and winds up meaning a half-dozen different things depending on where you are in the app and can cause name collisions).
 
-Obviously, there are other examples that work as well. This three-tier archetecture appears quite frequently in nature. In computer science, you're taught that anything other than 0, 1 and "n" are "magic numbers" and should never be hard-coded into a system. 
+Obviously, there are other examples that work as well. This three-tier architecture appears quite frequently in nature. In computer science, you're taught that anything other than 0, 1 and "n" are "magic numbers" and should never be hard-coded into a system. 
 
 In this case, I think that three really is magic. In fact, I'm not alone.
 

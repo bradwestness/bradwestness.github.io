@@ -4,7 +4,7 @@ title: AngularJS and the Post Graceful Degradation Era
 categories: [Software, Programming]
 ---
   
-The term "graceful degradation" refers to the idea of <a href="http://en.wikipedia.org/wiki/Graceful_degradation" target="_blank">fault tolerance</a>, that a system continues to function in the event that one or more of it's component parts fails. In web development, this concept is most commonly applied to the usage of JavaScript.
+The term "graceful degradation" refers to the idea of <a href="http://en.wikipedia.org/wiki/Graceful_degradation" target="_blank">fault tolerance</a>, that a system continues to function in the event that one or more of its component parts fails. In web development, this concept is most commonly applied to the usage of JavaScript.
 
 Generally, the conventional wisdom has been that any behavior which is enabled by JavaScript within a web application must also function in the event that the visitor doesn't have JavaScript support in their client, or in the case that they've disabled it.
 

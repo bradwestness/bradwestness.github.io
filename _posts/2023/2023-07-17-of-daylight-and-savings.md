@@ -149,7 +149,7 @@ Flights: [
 ]
 ```
 
-Phoenix is in Arizona, which doesn't observe Daylight Savings Time, so it's offset doesn't change. Chicago's does, and we now see it's set to -5 for the flight on the day when DST goes into effect. Looks good, right?
+Phoenix is in Arizona, which doesn't observe Daylight Savings Time, so its offset doesn't change. Chicago's does, and we now see it's set to -5 for the flight on the day when DST goes into effect. Looks good, right?
 
 Well, the offsets are correct, but you may notice something - that the flight on the 5th is still going to be wrong. When you apply the -5 offset to the 12:00 UTC time, you get 7 AM, but the flight is always supposed to leave at 6 AM local time. So, we're right back where we started.
 
@@ -227,7 +227,7 @@ This can also be problematic if you persist your dates as UTC times with a speci
 }
 ```
 
-Now, lets say DST is made permanent before these events actually happen. How do you handle this in your data?
+Now, let's say DST is made permanent before these events actually happen. How do you handle this in your data?
 
 Do you update all your records to subtract an hour from every UTC date that takes place between Nov 5th and March 12th and change the offset? What about parts of the country that don't observe DST already, like Arizona and bits of Indiana?
 

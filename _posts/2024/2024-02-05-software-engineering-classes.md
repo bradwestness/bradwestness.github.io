@@ -39,7 +39,7 @@ Sometimes you need to force them to put down their toys and go outside and play 
 
 ## Scout / Ranger
 
-Polymath who can be sent ahead to try out new technolgies and lay down a path that others can follow. They spot potholes and dead-ends before others fall into them.
+Polymath who can be sent ahead to try out new technologies and lay down a path that others can follow. They spot potholes and dead-ends before others fall into them.
 
 The scout writes a doc or creates a library to encourage others to use the new thing according to best practices.
 

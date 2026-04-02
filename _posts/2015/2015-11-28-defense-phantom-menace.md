@@ -26,7 +26,7 @@ actually being fought over, the space dogfights can start to feel like just an e
 of shootouts with no real stakes (and nothing to really differentiate the good guys from the
 bad guys other than that the bad guys tend to wear a lot of black).
 
-The way Senator Palpatine manipulates the minor dispute to consolildate power for himself in a time of
+The way Senator Palpatine manipulates the minor dispute to consolidate power for himself in a time of
 uncertainty is a pretty scathing critique of some of the demagogues that have managed to
 do similar things in recent history here on planet Earth. The whole series largely started out as
 a [critique of the U.S.'s involvement in the Vietnam War](http://nypost.com/2014/09/21/how-star-wars-was-secretly-george-lucas-protest-of-vietnam/), after all.
@@ -56,16 +56,16 @@ great piece of orchestral music.
 
 All the lightsaber duels in the original trilogy are more just about brute-force hacking,
 and the ones in the other prequels (especially *Episode II*) involve one of the participants
-being CGI (Yoda vs. Count Dooku, Obi Wan vs. Darth Sidious) or are again just two poeple 
+being CGI (Yoda vs. Count Dooku, Obi Wan vs. Darth Sidious) or are again just two people 
 hacking at each other (Anakin vs. Obi Wan). 
 
 I love the moment in the Darth Maul fight where all three participants are stuck between those
-blast-shield gate things and forced to pace back and forth waiting for thae gates to open,
+blast-shield gate things and forced to pace back and forth waiting for the gates to open,
 able to see each other but unable to do anything. It's such a great, unexpected and operatic sequence.
 
 ---
 
-All in all, I think *The Phantom Menace* is undeserving of it's negative reputation, and it stands
+All in all, I think *The Phantom Menace* is undeserving of its negative reputation, and it stands
 comfortably alongside the other movies in the series. It may not be quite as good as the original or *Empire
 Strikes Back*, but I think it's at least as good as *Return of the Jedi*, and if you follow the "true"
 Machete Order and skip it, I think you're missing out on a lot of the political groundwork which

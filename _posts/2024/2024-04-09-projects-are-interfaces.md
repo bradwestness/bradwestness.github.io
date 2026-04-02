@@ -85,9 +85,9 @@ C# is an object-oriented language, but the .NET team has added a lot of [functio
 
 You can reason about a method like this much easier because you can clearly trace the inputs and outputs and don't have to think about how statefulness might impact the result of a given method.
 
-{% include figure.html filename="master_and_commander_screenshot_3.gif" description="When a namespace has become polluted with lots of extenion methods, it becomes difficult to find the actual method you want to call." %}
+{% include figure.html filename="master_and_commander_screenshot_3.gif" description="When a namespace has become polluted with lots of extension methods, it becomes difficult to find the actual method you want to call." %}
 
-Making the methods `private` or `internal` also has the benefit of not _polluting_ the namespaces of the types you actually want to expose to other projects in the solution. If you've ever worked on an application that references a lot of extenion method libraries, you'll notice that it becomes hard to find the actual method you want to call when "dotting into" a particular object with Intellisense, because there are a hundred extension methods that are all broadly applicable to type `Object`, and that is sort of the opposite of a pit of success. You want it to be obvious to callers which methods they should use to do the thing they want to do with your type.
+Making the methods `private` or `internal` also has the benefit of not _polluting_ the namespaces of the types you actually want to expose to other projects in the solution. If you've ever worked on an application that references a lot of extension method libraries, you'll notice that it becomes hard to find the actual method you want to call when "dotting into" a particular object with Intellisense, because there are a hundred extension methods that are all broadly applicable to type `Object`, and that is sort of the opposite of a pit of success. You want it to be obvious to callers which methods they should use to do the thing they want to do with your type.
 
 ## Whither Tests
 

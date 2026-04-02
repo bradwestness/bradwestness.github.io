@@ -20,7 +20,7 @@ Take, for example, the [recent case of Dan Johnson](http://www.nydailynews.com/n
 a Kentucky state representative who posted racist memes comparing the Obamas to apes,
 but was carried to re-election anyway during the recent racist tide of the Trump campaign.
 
-Mark Zuckerberg, the founder and CEO of Facebok, [stated after the 2016 presidential election](http://www.recode.net/2016/11/11/13596792/facebook-fake-news-mark-zuckerberg-donald-trump) 
+Mark Zuckerberg, the founder and CEO of Facebook, [stated after the 2016 presidential election](http://www.recode.net/2016/11/11/13596792/facebook-fake-news-mark-zuckerberg-donald-trump) 
 that it's "crazy" to think that this echo-chamber had any effect on the result, which shows that
 the company has no interest in fixing it. Clicks are revenue after all, and what
 difference does it make to Facebook Corp whether those clicks come from people

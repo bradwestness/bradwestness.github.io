@@ -31,7 +31,7 @@ I do have a spare Raspberry Pi in my basement running [Home Assistant](https://w
 
 The question then is how to alert Home Assistant when I'm on a call? It doesn't really "see" my Windows-based computer by default in order to know whether I'm on a call or not.
 
-Luckly, there's a really great "agent" application for Windows called [HASS.Agent](https://hassagent.readthedocs.io/en/latest/) which will install as a [Windows service](https://en.wikipedia.org/wiki/Windows_service) (so the operating system will always ensure it stays running in the background), and enables you to configure a suite of "sensors" on your machine that will report their status to Home Assistant.
+Luckily, there's a really great "agent" application for Windows called [HASS.Agent](https://hassagent.readthedocs.io/en/latest/) which will install as a [Windows service](https://en.wikipedia.org/wiki/Windows_service) (so the operating system will always ensure it stays running in the background), and enables you to configure a suite of "sensors" on your machine that will report their status to Home Assistant.
 
 ### Setting Up MQTT in Home Assistant
 
@@ -39,7 +39,7 @@ In order for HASS.Agent to communicate with Home Assistant, you first need to ad
 
 {% include figure.html filename="on_air_light_screenshot_2.png" description="Installing the Mosquitto MQTT broker add-on in Home Assistant" %}
 
-Once the Mosquitto broker is installed, there are still a few more steps to confiure so that HASS.Agent can connect to it. First, check the "Watchdog" option, so Home Assistant will automatically restart the add-on if it crashes. then click the Start button.
+Once the Mosquitto broker is installed, there are still a few more steps to configure so that HASS.Agent can connect to it. First, check the "Watchdog" option, so Home Assistant will automatically restart the add-on if it crashes. then click the Start button.
 
 **There's still one more step to actually allow services to talk to Home Assistant via MQTT**. This one is easy to miss. Now that the MQTT service is running, go to Settings -> Devices & Services -> MQTT -> Configure.
 
@@ -95,7 +95,7 @@ Head over to Settings -> Automations in Home Assistant, and we should be able to
 
 We'll create two automations: one to turn the "On Air" light on when a call starts, and one to turn it back off when a call ends.
 
- First, the call start trigger. Hit Create Automation and then Create New Automation, and then Add Trigger. Our "ZoomActive" sensor is an "Entity" in Home Assitant speak, so we want to use an Entity State trigger for our automation. When the HASS.Agent "ZoomActive" sensor sees the watched process start, the value goes from 0 to 1, so that's how we'll configure the trigger.
+ First, the call start trigger. Hit Create Automation and then Create New Automation, and then Add Trigger. Our "ZoomActive" sensor is an "Entity" in Home Assistant speak, so we want to use an Entity State trigger for our automation. When the HASS.Agent "ZoomActive" sensor sees the watched process start, the value goes from 0 to 1, so that's how we'll configure the trigger.
 
 {% include figure.html filename="on_air_light_screenshot_10.png" description="Configuring the trigger for the 'Call Started' automation" %}
 

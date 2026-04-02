@@ -15,7 +15,7 @@ Oh sure, you could replace this blown tire with one from a tire store,
 made by a company that has been refining its designs for decades. 
 
 But I'm pretty sure the one I made on the first try out of random junk I 
-found in my yard wtihout so much as flipping through a few issues of 
+found in my yard without so much as flipping through a few issues of 
 *How to Make Tires* magazine is better. 
 
 Why? Because I am God's gift to automobile repair and everything I do is 
@@ -51,7 +51,7 @@ or else they'd be open to, at minimum, investigating existing solutions first.
 
 There's definitely value in building something to see how it's done, I have no problem
 with that. If you want to build and engine to learn how an engine works, that is
-awesome. But don't sell your customer on the idea that thier best (or only) option
+awesome. But don't sell your customer on the idea that their best (or only) option
 is your first attempt at building that engine, with no prior experience or research. 
 
 It *will* take longer and cost more than you expect, because you didn't anticipate every possible

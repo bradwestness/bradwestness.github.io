@@ -8,7 +8,7 @@ Here's a new project I just started over the weekend that I'm
 pretty excited about: it's called Dossier.NET and it's a transactional
 file management library for the .NET Framework.
 
-Why "Dossier"? Let's ask Mirriam-Webster:
+Why "Dossier"? Let's ask Merriam-Webster:
 
 > ## dos·si·er
 >
@@ -96,7 +96,7 @@ transaction before it is disposed, it will automatically roll back any changes).
 
 You can also specify a temporary directory, in which case the rollback data
 will be stored in temp files in that directory rather than in memory (useful
-if you're handing a lot of data). To do so, simply pass in a path to the
+if you're handling a lot of data). To do so, simply pass in a path to the
 desired temporary directory when creating the `FileSystemContext` object.
 
 I think this is a pretty neat way to solve this particular problem. The project

@@ -33,10 +33,10 @@ files on a page is much less costly than it was with HTTP 1.x.
 
 So it seemed I was down to rolling my own solution. This led me to researching
 [MSBuild Task Writing](https://msdn.microsoft.com/en-us/library/t9883dzc.aspx).
-The jist is this: you can create a task that runs at a specified point during
-your project's comppilation/build/publish operation. You just have to implement
+The gist is this: you can create a task that runs at a specified point during
+your project's compilation/build/publish operation. You just have to implement
 a class that inherits from the `Microsoft.Build.Utilities.Task` class and
-implements a signle method: `Execute()`. Here's what I came up with:
+implements a single method: `Execute()`. Here's what I came up with:
 
 ```csharp
 using Microsoft.Build.Utilities;
@@ -209,7 +209,7 @@ clearing their browser's cache!), and also make it easy to visually distinguish 
 files are minified or not based on the `.build.min` portion of the filename.
 
 The files are then passed through GZip compression. The trick here is that IIS's
-static file hanlder will automatically serve up the GZipped file if it exits in 
+static file handler will automatically serve up the GZipped file if it exists in 
 the same directory as the non-GZipped version. So for instance, if you have the
 following files deployed to your web server:
 
@@ -278,7 +278,7 @@ To do that, I needed to add another bit of XML to the end of my application's
 
 Note the `Exclude` attribute. I found through trial and error that without
 the exclude attribute, MSDeploy would recursively keep generating files in
-it's temp build folder until a stack overflow occurred.
+its temp build folder until a stack overflow occurred.
 
 Now your pre-minified files should get deployed along with your web app despite
 not being included in the project and not needing to be checked in to source control!

@@ -16,6 +16,6 @@ Every religion has its own version of an afterlife, but the definition of faith 
 
 The gift of being able to decide for herself what she believes. The gift of not worrying that she'll burn in torment forever if she doesn't believe a certain thing or behave according to some arcane set of rules that have little connection to her life.
 
-I will do my best to teach her empathy and compassion, virtue and kindness. I will teach her to respect the beliefs of others. But I won't pretend to know for certain what happens after we die, and I wont use the afterlife as a <a href="http://en.wikipedia.org/wiki/Damocles">Sword of Damocles</a> to scare her into being good.
+I will do my best to teach her empathy and compassion, virtue and kindness. I will teach her to respect the beliefs of others. But I won't pretend to know for certain what happens after we die, and I won't use the afterlife as a <a href="http://en.wikipedia.org/wiki/Damocles">Sword of Damocles</a> to scare her into being good.
 
 I will respond to her questions as best I can. I will ask her what she thinks. I will give the gift of honesty.

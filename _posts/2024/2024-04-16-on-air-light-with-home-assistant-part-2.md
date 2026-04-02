@@ -39,7 +39,7 @@ For my purposes, I created two presets: a "normal" one for the default state whe
 
 ### Home Assistant Setup
 
-Now that we've got the smart bulb all set up and configured, we can add it to Home Assistand and use it in our automations!
+Now that we've got the smart bulb all set up and configured, we can add it to Home Assistant and use it in our automations!
 
 One thing I've noticed with Home Assistant is you often have to restart it in order for it to notice new devices on the network, so let's do that first, by going to Settings -> Click the "..." button in the upper-right corner -> Restart Home Assistant.
 
@@ -47,7 +47,7 @@ Once Home Assistant has restarted and come back online, go to Settings -> Device
 
 {% include figure.html filename="on_air_light_adding_device.png" description="Adding the WLED device to Home Assistant" %}
 
-Here, you'll either need to enter the bulb's IP address (I'd suggest giving it a static IP on your network if you go this route), or the hostname of the device. You can actually configure the bulb's hostname in the "Wifi Prefernces" screen of the WLED app, but mine defaulted to `wled-4D6F8C.local`, so I just used that. This way if the bulb gets assigned a different IP address in the future, it won't break the Home Assistant integration.
+Here, you'll either need to enter the bulb's IP address (I'd suggest giving it a static IP on your network if you go this route), or the hostname of the device. You can actually configure the bulb's hostname in the "Wifi Preferences" screen of the WLED app, but mine defaulted to `wled-4D6F8C.local`, so I just used that. This way if the bulb gets assigned a different IP address in the future, it won't break the Home Assistant integration.
 
 > Note: If you left the device in CCT mode, this is where Home Assistant will give an error like "WLED Device 'xxxx' has a CCT channel, which is not supported by this integration', so if you get that, make sure you change the LED mode in the bulb's preferences in the WLED app and then try again.
 
@@ -145,7 +145,7 @@ action:
 mode: single
 ```
 
-> Note: I used a "building block" with **or** logic to handle multiple states of the Zoom Active sensor from HASS.Agent. If the computer is alseep or turned off, the sensor will be unavailable and the automation won't be able to get the numeric state of the sensor, so using the "or" logic ensures that all three states are covered: the sensor is unavailable, unknown, or known but in the "inactive" state.
+> Note: I used a "building block" with **or** logic to handle multiple states of the Zoom Active sensor from HASS.Agent. If the computer is asleep or turned off, the sensor will be unavailable and the automation won't be able to get the numeric state of the sensor, so using the "or" logic ensures that all three states are covered: the sensor is unavailable, unknown, or known but in the "inactive" state.
 
 ##### WLED Turned On - Zoom Active
 

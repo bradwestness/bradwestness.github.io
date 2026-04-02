@@ -6,11 +6,11 @@ image: content/images/county_stadium.jpg
 ---
 
 One of my clearest memories of going to games there as a kid. The Brewers
-were really not very good for most of my childhood, and games were sparesely attended. My 
+were really not very good for most of my childhood, and games were sparsely attended. My 
 folks would always get the cheapest tickets possible, so our ticketed seats were always in
 basically the last row of the highest nosebleed section.
 
-However, the beauty of the team being in a small market and the games being sparesly attended
+However, the beauty of the team being in a small market and the games being sparsely attended
 was that the stadium staff absolutely did not police the seating at all. My siblings and I would make a point of moving around the stadium and sitting in every section over
 the course of the game. I specifically remember making it all the way around the whole loop
 once, sitting in every section for at least an out or two.
@@ -34,4 +34,4 @@ debating with my brothers and sister about the best spot to catch a foul ball.
 Every so often, the bat would crack and the crowd would snap to attention to watch a long, loud
 out, or you'd stretch out your arm to try and catch a foul that wound up landing six sections away. You'd sing along to "Hit the Road Jack" whenever the Brewers chased the opposing starting pitcher.
 
-And if you were really lucky, you might even see Bernie take the plunge down his slide once or twice, releasing a boquet of blue and yellow balloons into the summer sky.
+And if you were really lucky, you might even see Bernie take the plunge down his slide once or twice, releasing a bouquet of blue and yellow balloons into the summer sky.

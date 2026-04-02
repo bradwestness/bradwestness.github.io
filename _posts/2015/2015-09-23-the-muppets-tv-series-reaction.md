@@ -17,7 +17,7 @@ the premiere, designed to garner interest in the show and drum up curiosity:
 
 1. Kermit and Miss Piggy have broken up in the world of this show.
 2. Kermit is now dating a new character (also a pig) named Denise.
-3. The show has a "more adult" tone (racier jokes than previous *Muppets* films or shows), including more references to the character's romantic lives, i.e. "Fozzie is dating a human woman!"
+3. The show has a "more adult" tone (racier jokes than previous *Muppets* films or shows), including more references to the characters' romantic lives, i.e. "Fozzie is dating a human woman!"
 4. The talking-head style mockumentary format, following in the recent footsteps of *The Office*, *Parks and Recreation* and *Modern Family*.
 
 How successful were each of these things? Let's break them down:
@@ -69,7 +69,7 @@ Lest we forget, there are some pretty racy jokes snuck into *The Muppet Movie,* 
 and even going back to *The Muppet Show* (the first pilot of which was called "Sex and Violence," for
 Pete's sake, and the whole of The Electric Mayhem is pretty obviously stoned at all times).
 
-Nobody wants these characters to talk explicity about sex acts or whatever, but a few double-entendres
+Nobody wants these characters to talk explicitly about sex acts or whatever, but a few double-entendres
 are far from unprecedented. The show didn't really go any further in this regard that where the lines
 have been drawn previously. The only real moment that kind of took me aback
 (and not by a "flutter of godets," mind you) was Kermit saying "My life is a bacon-wrapped hell," but the
@@ -87,7 +87,7 @@ on account of being well observed (the mother's questioning of what Fozzie eats 
 [David Cross' routine about friends' parents condescending about whether "his people" could eat oatmeal](https://www.youtube.com/watch?v=z09So1j4kpk#t=08m02s)),
 and Fozzie's complaint that his online dating profile got a lot of unexpected responses due to listing
 himself as a "bear" is the right kind of "adult" joke, allowing the viewer to click together the
-implication mentally while keeping the character's innocense intact.
+implication mentally while keeping the character's innocence intact.
 
 ### 4. The "Mockumentary" Format
 
@@ -110,7 +110,7 @@ like they did a better job differentiating the "show" that is being ostensibly p
 a late night talkshow starring Miss Piggy) from the vaudevillian theatre of *The Muppet Show*, unlike
 the short-lived *Muppets Tonight*, which was too slavish to the original show's format.
 
-I've seen people on Twitter and elsewhere complaining that the show "stole" it's format from
+I've seen people on Twitter and elsewhere complaining that the show "stole" its format from
 *30 Rock* or *The Larry Sanders Show*, and while it's true that the set-ups are very similar, those
 shows also pretty much copied *The Muppet Show* to begin with, which itself was pretty much the same
 set-up as *The Dick Van Dyke Show* (without the home-life stuff) and probably a dozen others.
@@ -124,6 +124,6 @@ In conclusion, I think there's a lot of promise in the new show, and while there
 could potentially be handled poorly depending on the direction that subsequent episodes take, I would
 advise fans to keep in mind that this was only a pilot, and a lot of great shows had pretty crappy pilots.
 This one is probably better than the *Parks and Rec* or *30 Rock* pilots, and those were both top ten
-all-time sitcoms. Give it a couple episodes to find it's footing.
+all-time sitcoms. Give it a couple episodes to find its footing.
 
 I remain, as always, cautiously optimistic.
