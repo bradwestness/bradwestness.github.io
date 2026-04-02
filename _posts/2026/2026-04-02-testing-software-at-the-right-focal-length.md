@@ -11,7 +11,7 @@ In photography, focal length determines what's in your frame. Zoom in and you se
 
 ## Unit Tests: The Macro Lens
 
-{% include figure.html filename="testing-focal-length-macro.jpg" description="One thing. Does it work?" %}
+{% include figure.html filename="testing-focal-length-macro.jpg" description="Just the veins. You're not testing the leaf — you're testing the plumbing." %}
 
 A macro lens fills the entire frame with one thing. A single gear tooth. A single solder joint. Everything else is gone — not because it doesn't matter, but because right now you're not looking at it.
 
@@ -24,7 +24,7 @@ This is where you catch the dumb stuff that would otherwise waste hours: a funct
 
 ## Integration Tests: The Portrait Lens
 
-{% include figure.html filename="testing-focal-length-portrait.jpg" description="The subject is sharp. The background is there — just not the point." %}
+{% include figure.html filename="testing-focal-length-portrait.jpg" description="The whole leaf now — stem, veins, edges all working together. The tree's back there somewhere, but it's not what you're focused on." %}
 
 A portrait lens keeps the subject sharp but lets the world around it soften — just enough context to know where you are without it taking over the shot. You're aware there's a background. You're not pretending it doesn't exist. But it's not what you're here for.
 
@@ -39,7 +39,7 @@ For .NET, **.NET Aspire** with `DistributedApplicationTestingBuilder` lets you s
 
 ## Acceptance Tests: The Telephoto Lens
 
-{% include figure.html filename="testing-focal-length-telephoto.jpg" description="Out in the real world now. Still pointed at one specific thing." %}
+{% include figure.html filename="testing-focal-length-telephoto.jpg" description="One tree, real soil, real weather. You're still pointed at a specific thing — but the environment isn't faked." %}
 
 A telephoto lens lets you observe from a distance. You're still pointed at a specific subject — *that* building, *that* person — but you're no longer inches away. You're across the street. The world around the subject is real, not mocked or containerized or controlled.
 
@@ -52,7 +52,7 @@ This is where you define acceptance criteria — actual, concrete, "the product 
 
 ## End-to-End Tests: The Wide-Angle Lens
 
-{% include figure.html filename="testing-focal-length-wide.jpg" description="Everything in the shot. Nothing cropped out." %}
+{% include figure.html filename="testing-focal-length-wide.jpg" description="The whole forest. If something's broken in here, good luck figuring out which tree it is." %}
 
 A wide-angle lens fits everything in the frame. Every house, every yard, every street. Nothing is cropped out.
 
