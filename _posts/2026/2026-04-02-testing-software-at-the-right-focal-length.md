@@ -13,7 +13,7 @@ In software testing, the term "[subject-under-test](https://en.wikipedia.org/wik
 
 ## Unit Tests: The Macro Lens
 
-{% include figure.html filename="testing-focal-length-macro.jpg" description="Just the veins. You're not testing the whole leaf, just the plumbing inside it." %}
+{% include figure.html filename="testing-focal-length-macro.jpg" description="Unit tests check the individual code paths within a class or method, everything else is abstracted away." %}
 
 A macro lens in photography is used for extreme close-ups, like zooming in on the veins of a leaf, or a single ant. This is a bit like a unit test. In this case, the subject-under-test is a single method or class. You use mocks, fakes, or stubs for literally everything not in that class. This is made easy if you're using [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection) or [inversion of control](https://en.wikipedia.org/wiki/Inversion_of_control) patterns, as you can just inject the fake versions of the subject-under-test's dependencies when running the unit tests, while the actual running service would use real versions.
 
@@ -26,7 +26,7 @@ However, because you're so zoomed in on one particular subject, there are whole 
 
 ## Integration Tests: The Portrait Lens
 
-{% include figure.html filename="testing-focal-length-portrait.jpg" description="The whole leaf now; stem, veins, edges all working together. The tree's back there somewhere, but it's not what you're focused on." %}
+{% include figure.html filename="testing-focal-length-portrait.jpg" description="Integration tests check multiple classes or methods working together in concert, even though they are all part of the same whole." %}
 
 A portrait lens in photography is just what it sounds like; it's used for portraits, and it keeps one person sharp while blurring the background a bit to ensure the viewer focuses on the subject.
 
@@ -44,7 +44,7 @@ But using ephemeral, containerized resources instead of real dependencies is sti
 
 ## Acceptance Tests: The Telephoto Lens
 
-{% include figure.html filename="testing-focal-length-telephoto.jpg" description="One tree, real soil, real weather. You're still pointed at a specific thing, but the environment isn't faked." %}
+{% include figure.html filename="testing-focal-length-telephoto.jpg" description="Acceptance tests check the whole workflow of a user-facing feature, including real dependencies." %}
 
 Telephoto lenses in photography are good for looking at things from a distance. You're starting to focus on the whole *system* and not a single service. If you're making a web application using service-oriented-architecture or domain-driven design, chances are the user performing an action in the interface actually depends on a whole host of back-end services working in concert. 
 
@@ -54,7 +54,7 @@ At this point, you're likely just pointing the tests at a real running applicati
 
 ## End-to-End Tests: The Wide-Angle Lens
 
-{% include figure.html filename="testing-focal-length-wide.jpg" description="The whole forest. If something's broken in here, good luck figuring out which tree it is." %}
+{% include figure.html filename="testing-focal-length-wide.jpg" description="End-to-end tests are the furthest level of zoom. If something's broken in here, good luck figuring out where the issue actually is." %}
 
 End-to-end tests are like using a wide-angle lens in photography, the subject-under-test is the entire ecosystem at once. All real resources, real dependencies. This is a bit like testing that all the systems of a house work together: HVAC, plumbing, weatherproofing, gas, electric, garbage pick-up, etc. 
 
