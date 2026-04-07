@@ -5,21 +5,21 @@ categories: [Software]
 image: content/images/testing-focal-length.jpg
 ---
 
-Conversations about testing tend to go sideways almost immediately. Someone says "we need more tests" and the room splits into factions: the unit test purists, the integration test pragmatists, the people who just want to click through the app in a browser and call it a day. Everyone argues about which type of test is *best*, as if that's a meaningful question. It's like a photographer arguing about whether a macro lens is better than a wide-angle. Better for *what*?
+When it comes to discussing what types of test should be in place for a software project to ensure bugs are not shipped to production, communication often breaks down when weighing the alternatives of the different types of automated tests. Everyone agrees that tests are good and that we should have them, but nobody agrees on what exactly "unit test" means versus "integration test," which tests should use mocked dependencies, and which should talk to real databases, external APIs, etc.
 
-In photography, focal length determines what's in your frame. Zoom in and you see the texture of a single leaf. Zoom out and you see the whole forest. Neither shot is wrong; they're answering different questions. Software tests work the same way. Every test has a *subject under test*, the thing you're pointing the lens at. What changes between test types isn't the rigor, it's the zoom level. How much of the system is in the frame?
+Strong opinions come out regarding which types of tests are "best" and which types are "useless," but this is a bit like a room full of photographers arguing about which lens is best and claiming all others are useless. Should you use a macro lens? A portrait lens? A telephoto lens? Really each one has its own place and it depends on what you're trying to capture in the frame.
+
+In software testing, the term "[subject-under-test](https://en.wikipedia.org/wiki/System_under_test)" refers to *what* code a given test is meant to exercise. Each type of test is a bit like using a different focal length in a camera lens, starting from extreme close-up (unit tests) to wide-angle (end-to-end and acceptance tests). Different types give you different information about the system, and the subject-under-test changes depending on how much is in frame.
 
 ## Unit Tests: The Macro Lens
 
 {% include figure.html filename="testing-focal-length-macro.jpg" description="Just the veins. You're not testing the whole leaf, just the plumbing inside it." %}
 
-A macro lens fills the entire frame with one thing. A single gear tooth. A single solder joint. Everything else is gone, not because it doesn't matter, but because right now you're not looking at it.
+A macro lens in photography is used for extreme close-ups, like zooming in on the veins of a leaf, or a single ant. This is a bit like a unit test. In this case, the subject-under-test is a single method or class. You use mocks, fakes, or stubs for literally everything not in that class. This is made easy if you're using [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection) or [inversion of control](https://en.wikipedia.org/wiki/Inversion_of_control) patterns, as you can just inject the fake versions of the subject-under-test's dependencies when running the unit tests, while the actual running service would use real versions.
 
-Unit tests do the same thing. One function, one method, one class, isolated from everything around it. Dependencies get replaced with fakes (mocks, stubs, test doubles). If you were building a house, this is pulling a single kitchen drawer open and closed to make sure the slides work.
+Unit tests work well for testing [pure functions](https://en.wikipedia.org/wiki/Pure_function) - does this function return the expected output for a given input? Does it map the properties from one object to another as expected? Does it correctly validate the input arguments to prevent bad data from entering the system? You can catch a lot of these types of bugs with unit tests. They're also the easiest to write, fastest to execute, and work well in automated test pipelines as part of a [continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) strategy.
 
-This is where you catch the dumb stuff that would otherwise waste hours: a function that returns the wrong value for a specific input, a null reference nobody thought about, a business rule that calculates something slightly wrong. The boring bugs are the expensive ones, and unit tests are great at finding boring bugs.
-
-The trade-off is real, though. A mock tells you what you *told* it to say, not what the real dependency would say. Your test might assume the cache always returns a hit, so you never discover what happens on a miss. A fake HTTP client might hand back a clean object, hiding the serialization issue that blows up when the real service returns a field you didn't expect. Unit tests verify logic in isolation, but the things they can't see are exactly the things that bite you in production.
+However, because you're so zoomed in on one particular subject, there are whole classes of issues you'll likely miss if you only use unit tests.
 
 **xUnit** is the standard framework in .NET. Pair it with **Moq** or **NSubstitute** for mocking. In Node, **Jest** or **Vitest** handle both the testing and the mocking in one package.
 
@@ -28,44 +28,39 @@ The trade-off is real, though. A mock tells you what you *told* it to say, not w
 
 {% include figure.html filename="testing-focal-length-portrait.jpg" description="The whole leaf now; stem, veins, edges all working together. The tree's back there somewhere, but it's not what you're focused on." %}
 
-A portrait lens keeps the subject sharp but lets the world around it soften. Just enough context to know where you are without it taking over the shot. You're aware there's a background. You're not pretending it doesn't exist. But it's not what you're here for.
+A portrait lens in photography is just what it sounds like; it's used for portraits, and it keeps one person sharp while blurring the background a bit to ensure the viewer focuses on the subject.
 
-Integration tests make the same trade. The subject under test is a cluster of things working together. Does the data layer talk to the service layer correctly? Does the message queue handler do the right thing when a message actually arrives? You're testing the seams between components, which is where a surprising number of bugs live. Back to the house: this is opening all the kitchen drawers to make sure they don't collide with each other or the cabinet doors.
+In software testing, this is like an integration test; we've zoomed out from a single method or single class, and the subject-under-test is now the whole service. Meanwhile, other services and external dependencies are still blurry; you can still use fakes or mocks for them. But we're testing all the components of this one service in concert: does the application code talk to the database? Does the serialization and deserialization work as expected? If you write a message to a source message queue the service reads from, do you get the expected output on the target message queue the service writes to?
 
-I want to be precise about scope here, because "integration test" means something different to everyone in the room. I think it's the word "integration" itself that trips people up; it sounds like it must mean the service integrating with other real services and external dependencies. But that's closer to a readiness test, and it belongs much further out on the zoom. What I mean by integration is all the component parts of a single service interacting with *each other*. The containerized dependencies you get from .NET Aspire or Testcontainers aren't a shortcut around "real" testing; they're the design. A controlled, reproducible, ephemeral environment means your tests aren't secretly dependent on whatever another team is deploying to a shared dev database at 2am on a Thursday.
+These kind of tests work really well with containerized dependencies like those provided by .NET Aspire or Testcontainers via Docker Compose. This way you can spin up a "clean room" version of your service using ephemeral, containerized dependencies, so you catch all the tricky bugs that only happen when you actually try to talk to a real SQL database or deserialize objects from a real cache server, but without relying on specific records existing in a real database or leaving a bunch of crufty garbage data around in locations an actual running service is reading from.
 
-This is where you catch the bugs that make you question your career: two components that work fine in isolation but pass data in incompatible formats, a database query that works against mocked data but blows up against a real schema, serialization issues that only surface when objects cross a process boundary.
+I think a lot of people get tripped up by the word "integration" here, thinking it means the tests must talk to real external dependencies, using real credentials and real over-the-wire networking. But integration in this context is just referring to the integration of the services within a single system; where a unit test checks if a single drawer in your kitchen can open and close, an integration test checks that *all* the drawers open and close without obstructing each other, but it's still not testing your neighbor's kitchen or the ones in a house three states away.
 
-For .NET, **.NET Aspire** with `DistributedApplicationTestingBuilder` lets you spin up containerized databases, queues, and whatever else you need for the duration of the test run, then tear it all down. **Testcontainers** does the same thing without the full Aspire stack. In Node, **Jest** or **Vitest** paired with Docker Compose will get you there.
+{% include figure.html filename="testing-focal-length-meme.png" description="Notice the integration test is still only testing drawers in this one kitchen, not testing the electrical grid and sewer system are hooked up and the garbage pickup comes on Tuesdays." %}
 
+Integration tests work well with [service-oriented-architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture), or [domain-driven design](https://en.wikipedia.org/wiki/Domain-driven_design). If you've got an event-driven service that creates a record when an event happens and then emits another event to a downstream topic, you can simply test the *edges* of the system by emitting events and reading from the source and target message queues, without needing to care about the exact code paths that are being executed. This means tests are much less brittle and are testing the actual integration points of the system; if these break it means you're likely to break other real downstream consumers of your data.
+
+But using ephemeral, containerized resources instead of real dependencies is still beneficial if you want to execute these tests in an automated way as part of a [continuous deployment](https://en.wikipedia.org/wiki/Continuous_deployment) strategy. You don't want to be blocked from putting out a hotfix when there's an outage because your integration tests are failing due to some unrelated issue with a service owned by another team or organization; you still want to fake anything you don't control and that isn't part of your subject-under-test; like the blurred-out background in a portrait photo.
 
 ## Acceptance Tests: The Telephoto Lens
 
 {% include figure.html filename="testing-focal-length-telephoto.jpg" description="One tree, real soil, real weather. You're still pointed at a specific thing, but the environment isn't faked." %}
 
-A telephoto lens lets you observe from a distance. You're still pointed at a specific subject, *that* building, *that* person, but you're no longer inches away. You're across the street. The world around the subject is real, not mocked or containerized.
+Telephoto lenses in photography are good for looking at things from a distance. You're starting to focus on the whole *system* and not a single service. If you're making a web application using service-oriented-architecture or domain-driven design, chances are the user performing an action in the interface actually depends on a whole host of back-end services working in concert. 
 
-Acceptance tests work the same way. The subject under test is a specific user-facing behavior, exercised through a real interface: a browser, an API endpoint, a CLI. Does clicking *Add to Cart* actually add the item? Does the checkout flow complete? You're asking pointed questions against a running system. In the house, this is checking whether the fridge actually gets cold; it requires real wiring, a real outlet, and a real power grid.
+For these sorts of tests that walk through an entire user-focused feature, scripting the activity to simulate a user of the application works well. Selenium is a classic library which will launch a headless browser to click through a web application, but Playwright is a more modern approach, which can execute natively in Node.
 
-This is where you define acceptance criteria, the concrete "the product owner will sign off on this" kind, and verify them. The test is written from the outside looking in. It doesn't know or care about your internal architecture. It only knows what a user would know, and that constraint is what makes these tests valuable.
-
-**Playwright** (`Microsoft.Playwright` for .NET, `@playwright/test` for Node) is my recommendation for UI acceptance tests. If your team writes BDD-style specifications, **Reqnroll** (the maintained fork of SpecFlow) wires Gherkin scenarios to Playwright or an HTTP client. For API-level testing in Node, **Supertest** is solid.
-
+At this point, you're likely just pointing the tests at a real running application (albeit in a non-production environment). These tests tend to be somewhat brittle and inexact; if a playwright test fails, you know there's a problem somewhere, but it may not be obvious exactly what has gone wrong, and you will likely need to go trawling through back-end logs to find the actual issue. Still, they are a good way to automate high-traffic user flows, these may be tests that you want to run on a scheduled basis or manually execute before a big release, rather than as part of your continuous integration pipeline, as they tend to be slower and more prone to false-positives.
 
 ## End-to-End Tests: The Wide-Angle Lens
 
 {% include figure.html filename="testing-focal-length-wide.jpg" description="The whole forest. If something's broken in here, good luck figuring out which tree it is." %}
 
-A wide-angle lens fits everything in the frame. Every house, every yard, every street. Nothing is cropped out.
+End-to-end tests are like using a wide-angle lens in photography, the subject-under-test is the entire ecosystem at once. All real resources, real dependencies. This is a bit like testing that all the systems of a house work together: HVAC, plumbing, weather proofing, gas, electric, garbage pick-up, etc. 
 
-End-to-end tests do the same thing. The subject under test is the entire system, every service, every dependency, exercised the way a real user would use it. In house terms, you're running every shower, flushing every toilet, turning on every appliance, and checking that the plumbing and electrical all hold up at once. Can someone actually complete this workflow against real infrastructure? This is where you find the bugs that live in the spaces between teams: a timing issue that surfaces under real network latency, two services that each passed their own test suites but disagree on a contract, a permissions problem that only shows up in production-like environments.
+These are also the slowest, most brittle tests, and hardest to diagnose when something goes wrong. A failing end-to-end test tells you *something* is broken, but doesn't tell you what. Many teams choose to run end-to-end tests manually rather than automating them, because the cost of maintaining them is so high, and they can lead to a kind of testing paralysis which saps a team of velocity as more and more time is spent updating brittle tests rather than implementing new features.
 
-This is also where tests are slowest, most brittle, and hardest to diagnose. A failing end-to-end test tells you *something* is broken. It rarely tells you *what*. The automated scripts tend to be so brittle and complex that many teams just run these tests manually: a human clicking through the critical paths before a release. That's not a failure of discipline. An automated E2E suite nobody trusts is worse than a manual checklist people actually run.
-
-If you do automate them, be deliberate about it. A small number of E2E tests covering critical paths will give you more confidence than a large suite that's constantly flaking out and training your team to ignore failures.
-
-**Playwright** and **Cypress** both work here (Cypress is Node-native with a particularly nice developer experience). If you need to layer in load or performance testing, **k6** or **Artillery** can extend the picture.
-
+If you are going to automate end-to-end tests, it's generally better to have a small number of them for mission-critical paths rather than attempting to get 100% coverage.
 
 ## Zooming In Is the Point
 
@@ -73,8 +68,6 @@ If you do automate them, be deliberate about it. A small number of E2E tests cov
 >
 > — Joe Armstrong, creator of Erlang
 
-Armstrong was talking about object-oriented languages, but the same trap exists in testing. Every time you reach for a real credentials file, a real external API, a real shared database when a controlled dependency would do, you're inviting the gorilla. Intentional scoping isn't a limitation. It's the whole design.
+Armstrong was talking about object-oriented languages, but the same trap exists in testing. Every time you reach for a real credentials file, a real external API, a real shared database when a controlled dependency would do, you've changed the subject-under-test to include the whole jungle.
 
-The mistake isn't picking the wrong lens; it's only owning one. A house where every drawer was tested individually but nobody checked if they collide isn't ready to live in. Neither is one where the only test is turning everything on at once and seeing what blows up. You need both, and the stuff in between.
-
-Know what you're testing. Know how much of the world needs to be in the frame. Pick the right lens.
+Intentional scoping isn't a limitation, it allows you to be confident about whether something works, or whether something is broken. Teams will quickly learn to ignore flaky or brittle tests that include too much scope, and then the test is actually providing negative value, as it has trained the team to ignore the test results and assume everything is fine even if there is a real issue with the changes in a release.
