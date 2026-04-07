@@ -21,7 +21,7 @@ Unit tests work well for testing [pure functions](https://en.wikipedia.org/wiki/
 
 However, because you're so zoomed in on one particular subject, there are whole classes of issues you'll likely miss if you only use unit tests.
 
-**xUnit** is the standard framework in .NET. Pair it with **Moq** or **NSubstitute** for mocking. In Node, **Jest** or **Vitest** handle both the testing and the mocking in one package.
+[xUnit](https://xunit.net/) is the standard framework in .NET. Pair it with [Moq](https://github.com/devlooped/moq) or [NSubstitute](https://nsubstitute.github.io/) for mocking. In Node, [Jest](https://jestjs.io/) or [Vitest](https://vitest.dev/) handle both the testing and the mocking in one package.
 
 
 ## Integration Tests: The Portrait Lens
@@ -32,11 +32,11 @@ A portrait lens in photography is just what it sounds like; it's used for portra
 
 In software testing, this is like an integration test; we've zoomed out from a single method or single class, and the subject-under-test is now the whole service. Meanwhile, other services and external dependencies are still blurry; you can still use fakes or mocks for them. But we're testing all the components of this one service in concert: does the application code talk to the database? Does the serialization and deserialization work as expected? If you write a message to a source message queue the service reads from, do you get the expected output on the target message queue the service writes to?
 
-These kind of tests work really well with containerized dependencies like those provided by .NET Aspire or Testcontainers via Docker Compose. This way you can spin up a "clean room" version of your service using ephemeral, containerized dependencies, so you catch all the tricky bugs that only happen when you actually try to talk to a real SQL database or deserialize objects from a real cache server, but without relying on specific records existing in a real database or leaving a bunch of crufty garbage data around in locations an actual running service is reading from.
+These kind of tests work really well with containerized dependencies like those provided by [.NET Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/), [Testcontainers](https://testcontainers.com/), or [Docker Compose](https://docs.docker.com/compose/). This way you can spin up a "clean room" version of your service using ephemeral, containerized dependencies, so you catch all the tricky bugs that only happen when you actually try to talk to a real SQL database or deserialize objects from a real cache server, but without relying on specific records existing in a real database or leaving a bunch of crufty garbage data around in locations an actual running service is reading from.
 
 I think a lot of people get tripped up by the word "integration" here, thinking it means the tests must talk to real external dependencies, using real credentials and real over-the-wire networking. But integration in this context is just referring to the integration of the services within a single system; where a unit test checks if a single drawer in your kitchen can open and close, an integration test checks that *all* the drawers open and close without obstructing each other, but it's still not testing your neighbor's kitchen or the ones in a house three states away.
 
-{% include figure.html filename="testing-focal-length-meme.png" description="Notice the integration test is still only testing drawers in this one kitchen, not testing the electrical grid and sewer system are hooked up and the garbage pickup comes on Tuesdays." %}
+{% include figure.html filename="testing-focal-length-meme.png" description="Notice the integration test would still only test the drawers in this one kitchen, not whether the electrical grid and sewer system are hooked up and the garbage pickup comes on Tuesdays. Those are acceptance or end-to-end tests." %}
 
 Integration tests work well with [service-oriented-architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture), or [domain-driven design](https://en.wikipedia.org/wiki/Domain-driven_design). If you've got an event-driven service that creates a record when an event happens and then emits another event to a downstream topic, you can simply test the *edges* of the system by emitting events and reading from the source and target message queues, without needing to care about the exact code paths that are being executed. This means tests are much less brittle and are testing the actual integration points of the system; if these break it means you're likely to break other real downstream consumers of your data.
 
@@ -48,7 +48,7 @@ But using ephemeral, containerized resources instead of real dependencies is sti
 
 Telephoto lenses in photography are good for looking at things from a distance. You're starting to focus on the whole *system* and not a single service. If you're making a web application using service-oriented-architecture or domain-driven design, chances are the user performing an action in the interface actually depends on a whole host of back-end services working in concert. 
 
-For these sorts of tests that walk through an entire user-focused feature, scripting the activity to simulate a user of the application works well. Selenium is a classic library which will launch a headless browser to click through a web application, but Playwright is a more modern approach, which can execute natively in Node.
+For these sorts of tests that walk through an entire user-focused feature, scripting the activity to simulate a user of the application works well. [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)) is a classic library which automates real browsers to click through a web application, but [Playwright](https://en.wikipedia.org/wiki/Playwright_(software)) is a more modern alternative with support for .NET, Node, Python, and Java.
 
 At this point, you're likely just pointing the tests at a real running application (albeit in a non-production environment). These tests tend to be somewhat brittle and inexact; if a playwright test fails, you know there's a problem somewhere, but it may not be obvious exactly what has gone wrong, and you will likely need to go trawling through back-end logs to find the actual issue. Still, they are a good way to automate high-traffic user flows, these may be tests that you want to run on a scheduled basis or manually execute before a big release, rather than as part of your continuous integration pipeline, as they tend to be slower and more prone to false-positives.
 
@@ -66,7 +66,7 @@ If you are going to automate end-to-end tests, it's generally better to have a s
 
 > The problem with object-oriented languages is they've got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.
 >
-> — Joe Armstrong, creator of Erlang
+> — Joe Armstrong, creator of [Erlang](https://en.wikipedia.org/wiki/Erlang_(programming_language))
 
 Armstrong was talking about object-oriented languages, but the same trap exists in testing. Every time you reach for a real credentials file, a real external API, a real shared database when a controlled dependency would do, you've changed the subject-under-test to include the whole jungle.
 
