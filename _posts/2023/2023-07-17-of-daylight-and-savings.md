@@ -3,6 +3,7 @@ layout: post
 title: Of Daylight and Savings
 categories: [Software,Programming,.NET]
 image: content/images/dali.png
+image_alt: A detail from Salvador Dali's painting The Persistence of Memory, showing melting pocket watches draped over a table edge and over a pale organic form, with ants crawling across a closed orange watch case.
 ---
 
 The "right" way to persist and transmit dates and times seems like it should be a solved problem, yet ask any three software engineers how it should be done, and you'll get three separate answers.
@@ -15,7 +16,7 @@ There's an old axiom that goes like this:
 
 I would add to that a third hard thing, which is: planning events that span across daylight savings boundaries.
 
-Some areas have gotten rid of daylight savings already, or are in the process of doing so, but as of this writing, it's still observed most of the contiguous US.
+Some areas have gotten rid of daylight savings already, or are in the process of doing so, but as of this writing, it's still observed in most of the contiguous US.
 
 The worst part about working on logistics software is that every time the DST changeover happens, you get to discover what new bugs have been implemented related to DST handling since the last time it changed.
 
@@ -69,13 +70,13 @@ The result is some engineer getting woken up in the middle of the night by someo
 
 You might read the above section and think "Hah! That foolish developer, they should've simply included the timezone in the record, then they can translate it instead of depending on a hardcoded list of offsets."
 
-If you're a .NET engineer like myself, you might use the [System.TimeZone](https://learn.microsoft.com/en-us/dotnet/api/system.timezone?view=net-7.0) names.
+If you're a .NET engineer like myself, you might reach for the Windows time zone names - the ones the old [System.TimeZone](https://learn.microsoft.com/en-us/dotnet/api/system.timezone) class exposed, and which [TimeZoneInfo](https://learn.microsoft.com/en-us/dotnet/api/system.timezoneinfo) still uses as its identifiers on Windows today.
 
-Now, System.TimeZone has been deprecated since the move to .NET Core, for a myriad of reasons. For one thing, *it doesn't include any Daylight Time zones*.
+The `System.TimeZone` class itself has been deprecated since the move to .NET Core, for a myriad of reasons, but swapping it out for `TimeZoneInfo` doesn't save you here. The naming convention is the part that bites, and that convention hasn't changed: *there are no Daylight Time zones in the list*.
 
-It has `Central Standard Time` and `Eastern Standard Time` but no `Central Daylight Time` or `Eastern Daylight Time`.
+There's `Central Standard Time` and `Eastern Standard Time`, but no `Central Daylight Time` or `Eastern Daylight Time`. The identifier `Central Standard Time` actually denotes the whole US Central zone, DST rules and all. It's simply named after one half of the year.
 
-So this is another source of bugs around DST changeovers, because there's no way to effectively communicate whether DST is in effect when using this scheme.
+So this is another source of bugs around DST changeovers, because the name you've stored claims "Standard Time" regardless of whether standard time is what's actually in effect.
 
 ```
 Flights: [
@@ -151,7 +152,7 @@ Flights: [
 
 Phoenix is in Arizona, which doesn't observe Daylight Savings Time, so its offset doesn't change. Chicago's does, and we now see it's set to -5 for the flight on the day when DST goes into effect. Looks good, right?
 
-Well, the offsets are correct, but you may notice something - that the flight on the 5th is still going to be wrong. When you apply the -5 offset to the 12:00 UTC time, you get 7 AM, but the flight is always supposed to leave at 6 AM local time. So, we're right back where we started.
+Well, the offsets are correct, but you may notice something - that the flight on the 12th is still going to be wrong. When you apply the -5 offset to the 12:00 UTC time, you get 7 AM, but the flight is always supposed to leave at 6 AM local time. So, we're right back where we started.
 
 > Note: Once again, notice that using whole numbers for the offset will break down as soon as you go international and have to contend with places that have UTC offsets on the half or quarter-hour.
 
@@ -212,9 +213,11 @@ It may seem counter-intuitive since [UTC does not observe Daylight Savings](http
 
 ## Extra Credit: Don't Get Caught in the Lurch when DST Becomes Permanent
 
-Confusingly, most of the year is already spent in "daylight savings time" (March to November, so about 9 months), while only 3 months of the year are "standard time."
+Confusingly, most of the year is already spent in "daylight savings time." In 2023 it ran from March 12th to November 5th - 238 days, or roughly eight months - which leaves only about four months of actual "standard time."
 
 The [Sunshine Protection Act](https://www.reuters.com/world/us/us-senate-approves-bill-that-would-make-daylight-savings-time-permanent-2023-2022-03-15/) proposes to make DST permanent, so for our example, Chicago's UTC offset would always be -5 and no longer change to -6 over the winter months.
+
+> Update, August 2026: the Sunshine Protection Act still hasn't been enacted. The Senate passed it by unanimous consent in March 2022, the House never brought it to a vote, and it has been reintroduced in subsequent sessions without becoming law. So this section remains hypothetical - but it's the kind of hypothetical worth designing for, because the whole point is that you don't get to choose when the rules change out from under your data.
 
 This can also be problematic if you persist your dates as UTC times with a specified local offset but no other contextual data, like this:
 
@@ -238,8 +241,8 @@ My preferred method is not to persist the UTC offset, but instead persist the [T
 ```
 {
   events: [
-    { id: 1, time: "2023-11-06T11:00:00.000Z", tzdb: "America/Chicago" },
-    { id: 2, time: "2023-11-06T12:00:00.000Z", tzdb: "America/Chicago" },
+    { id: 1, time: "2023-11-04T11:00:00.000Z", tzdb: "America/Chicago" },
+    { id: 2, time: "2023-11-05T12:00:00.000Z", tzdb: "America/Chicago" },
   ]
 }
 ```
