@@ -3,6 +3,7 @@ layout: post
 title: Organizing Your Code to Minimize the 'Blast Radius'
 categories: [Software,Programming,.NET]
 image: content/images/blast-radius.jpg
+image_alt: An illustration of a nuclear explosion, a fiery mushroom cloud rising above a spreading ring of flame.
 ---
 
 I was recently listening to an episode of the [.NET Rocks podcast with guest Steve "Ardalis" Smith](https://www.dotnetrocks.com/details/1888) and Steve articulated an issue I've tried to highlight in code reviews many times in the past in a very succinct way that I loved: you want to organize your code in such a way as to minimize the "blast radius" when you inevitably make a change.

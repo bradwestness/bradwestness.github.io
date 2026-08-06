@@ -3,6 +3,7 @@ layout: post
 title: Syncing Your Music Library with Resilio
 categories: [Software, Music]
 image: content/images/groove-music-windows-10-mobile.jpg
+image_alt: A hand holding a Nokia Lumia Windows phone showing the Groove Music now-playing screen, with St. Vincent's self-titled album art and the track 'Rattlesnake' playing.
 ---
 
 I'm a little bit of a luddite when it comes to my media library. I still

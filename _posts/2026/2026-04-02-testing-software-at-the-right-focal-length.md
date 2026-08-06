@@ -3,6 +3,7 @@ layout: post
 title: Testing Software at the Right Focal Length
 categories: [Software]
 image: content/images/testing-focal-length.jpg
+image_alt: An overhead flat-lay of camera gear on a grey wood floor, with two Canon DSLR bodies surrounded by lenses ranging from a 100mm macro to a 70-200mm telephoto, plus a shotgun microphone and a drone controller.
 ---
 
 When it comes to discussing what types of tests should be in place for a software project to ensure bugs are not shipped to production, communication often breaks down when weighing the alternatives of the different types of automated tests. Everyone agrees that tests are good and that we should have them, but nobody agrees on what exactly "unit test" means versus "integration test," which tests should use mocked dependencies, and which should talk to real databases, external APIs, etc.

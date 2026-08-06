@@ -3,6 +3,7 @@ layout: post
 title: Build Software Like a Sitcom Writers Room
 categories: [Software, TV, Personal]
 image: content/images/30-rock-writers-table.jpg
+image_alt: The writers' room from 30 Rock, where Tina Fey as Liz Lemon sits at a table strewn with newspapers, yellow legal pads, coffee mugs and water bottles, surrounded by other writers.
 ---
 
 In 2007, the [Writers Guild of America went on strike](https://en.wikipedia.org/wiki/2007%E2%80%9308_Writers_Guild_of_America_strike) for 99 days, from November 5, 2007 to February 12th, 2008. The strike had the effect of interrupting the production of TV series midway through their seasons. The writers were on strike over their lack of residuals from DVD sales, but actors and crews (being represented by separate unions) were not. Many shows were required by contract to continue filming any already-scripted episodes, but without input from the striking writers. 

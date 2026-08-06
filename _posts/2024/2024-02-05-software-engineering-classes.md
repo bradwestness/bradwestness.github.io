@@ -3,6 +3,7 @@ layout: post
 title: Software Engineering Character Classes
 categories: [Software,Programming]
 image: content/images/character_classes.jpg
+image_alt: A set of orange polyhedral dice scattered across a Dungeons and Dragons character record sheet, with the equipment and skills columns visible underneath.
 ---
 
 Much like a role-playing game, software engineers come in a variety of types, or "builds." In gaming, these are referred to as "character classes." Which are you?

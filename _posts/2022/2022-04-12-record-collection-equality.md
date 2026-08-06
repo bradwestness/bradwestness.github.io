@@ -3,6 +3,7 @@ layout: post
 title: Record Collection Equality in C#
 categories: [Software,Programming,.NET]
 image: content/images/record_collection.jpeg
+image_alt: A close-up of a vinyl record collection, with jazz LPs including Art Tatum and Miles Davis stacked upright beside a wooden box of 7-inch singles in plastic sleeves.
 ---
 
 I've seen this come up a few times at work, so I figured I'd dig in a bit and expound on how equality does and does not work with [C# 9 `record` types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/record) and collections.

@@ -3,6 +3,7 @@ layout: post
 title: Running Entity Framework Queries from Embedded Resource SQL Files with EFQueryScript
 categories: [Programming,Software]
 image: content/images/sql-resource.png
+image_alt: A .sql file named GetTop10ArtistsByPlaylistCount.sql open in Visual Studio, containing a T-SQL query that joins the Artists, Albums, Tracks and Playlist_Track tables to count playlist appearances.
 ---
 
 ## Persistence, Neglected

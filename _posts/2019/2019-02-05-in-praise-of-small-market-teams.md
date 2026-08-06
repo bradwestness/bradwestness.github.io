@@ -3,6 +3,7 @@ layout: post
 title: In Praise of Small Market Teams
 categories: [Brewers, Baseball]
 image: content/images/county_stadium.jpg
+image_alt: A low-angle view of the exterior facade of Milwaukee County Stadium, its name spelled out in tall metal letters above a row of visiting-team logo banners.
 ---
 
 One of my clearest memories of going to games there as a kid. The Brewers

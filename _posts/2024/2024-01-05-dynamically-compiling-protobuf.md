@@ -3,6 +3,7 @@ layout: post
 title: Dynamically Compiling Protobuf Schemas from Confluent Schema Registry
 categories: [Software,Programming]
 image: content/images/confluent-schema-registry.png
+image_alt: The Confluent Cloud web console for a Kafka topic named brad-bridge-target, with a 'Produce a new message' dialog open showing a key of 18 and a JSON order payload.
 ---
 
 We're using Kafka in the [Confluent Cloud](https://confluent.cloud/) platform with Protobuf schemas a lot at work, and a recent need that came up was for a testing tool which would enable our QA engineers to produce messages to our topics at will, without needing to write a bunch of code first.

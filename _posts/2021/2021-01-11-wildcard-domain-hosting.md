@@ -3,6 +3,7 @@ layout: post
 title: Hosting Wildcard Subdomains from Home for Free
 categories: [Software,Programming]
 image: content/images/domain_banner.png
+image_alt: Inside a home network rack, a UniFi switch with ethernet cables patched into a punch-down panel above a Dell rackmount server.
 ---
 
 Despite an overflowing number of options for hosting your own blog or website these days, I still feel like the best bang for your buck is GitHub Pages (if you're a developer, that is). It's free and does SSL and you can set it up to work with a custom domain name, something that's a "premiere" option requiring paid service at most other blogging/website platforms.

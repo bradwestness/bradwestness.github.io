@@ -3,6 +3,7 @@ layout: post
 title: Internal is your friend. Projects are interfaces. Oceans are battlefields.
 categories: [Software, Programming, .NET]
 image: content/images/master_and_commander_header.jpg
+image_alt: Russell Crowe as Captain Jack Aubrey in a navy dress coat, standing amid rigging ropes on a crowded ship's deck, from the film Master and Commander.
 ---
 
 In addition to the [great info about limiting the "blast radius" of your code](/2024/04/07/organizing-your-code-to-minimize-the-blast-radius/), there was a segment in [Steve Smith's recent appearance on the .NET Rocks podcast](https://www.dotnetrocks.com/details/1888) where he discussed a pattern I really like when it comes to structuring .NET code: heavily using the `internal` keyword.

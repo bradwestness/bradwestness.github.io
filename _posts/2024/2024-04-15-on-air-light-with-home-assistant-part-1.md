@@ -3,6 +3,7 @@ layout: post
 title: Creating a Smart 'On Air' Light with Home Assistant - Part 1
 categories: [Software, Programming]
 image: content/images/on_air_light_header.jpg
+image_alt: An illuminated red and white 'ON AIR' studio sign glowing against a dark perforated wall.
 ---
 
 I've been working from home full time since March of 2020 (before that I was working from home two days a week for about a decade). Personally, I love not having to commute for half an hour just to sit at a computer somewhere else, along the flexibility being remote gives me to let the dog out, throw in a load of laundry over my lunch break, and pick up and drop off my kids from school.

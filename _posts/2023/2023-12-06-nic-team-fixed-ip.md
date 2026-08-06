@@ -3,6 +3,7 @@ layout: post
 title: Assigning a Fixed IP Address to a NIC Team in Windows Server
 categories: [Software,Programming]
 image: content/images/windows-server-manager-nic-team.png
+image_alt: The Windows Server Manager Local Server properties pane for a machine named QUASAR, showing NIC Teaming enabled and the NIC Team's IPv4 address assigned by DHCP, on Windows Server 2022 Standard.
 ---
 
 Ever since setting up a [Lack Rack Plex NAS](/2020/02/01/lack-rack-plex-nas-part-1/) a few years ago (which I have since upgraded to a "real" rack),

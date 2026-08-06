@@ -3,6 +3,7 @@ layout: post
 title: Building a LACK Rack Plex NAS From a Refurbished Rackmount Server, Part 2
 categories: [Personal,Software,TV,Movies]
 image: content/images/lack-rack-basement.jpg
+image_alt: The same LACK table rack relocated to a basement against an orange-painted concrete wall, with a router and cable modem on top and the Dell server and APC UPS mounted below.
 ---
 
 In [part 1 of this blog series](https://www.bradwestness.com/2020/02/01/lack-rack-plex-nas-part-1/), I talked about the reasoning behind my decision to build a Plex server out of a refurbished Dell PowerEdge R710 server. In this second part, I will cover the process of getting the OS and GPU installed.

@@ -3,6 +3,7 @@ layout: post
 title: The Load-Bearing Spreadsheet
 categories: [Software,Programming,.NET]
 image: content/images/load_bearing_brace.png
+image_alt: The structural steel skeleton of a building under construction, with painted beams and diagonal braces bolted together at the joints.
 ---
 
 Daniel Holmes, a developer at [Bluesky](https://bsky.app) (my favorite of the emerging Twitter alternatives in the wake of the Musk-pocalypse) recently made [a post](https://bsky.app/profile/dholms.xyz/post/3k67i2ehemv2n) referencing the idea of a "load-bearing bug":

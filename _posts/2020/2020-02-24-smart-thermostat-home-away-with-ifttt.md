@@ -3,6 +3,7 @@ layout: post
 title: Better Home/Away Smart Thermostat Detection via Wifi and IFTTT
 categories: [Personal,Software,Programming]
 image: content/images/wifi-thermostat-device.jpg
+image_alt: A hallway wall with a UniFi wireless access point, its status ring lit blue, mounted above a Honeywell smart thermostat displaying 66 degrees.
 ---
 
 In 2018 I put in a smart thermostat, a Honeywell T5+, specifically. The thermostat works with an app called Honeywell Home that supports geofencing to detect when one or more users are home or away based on their device's location services data.

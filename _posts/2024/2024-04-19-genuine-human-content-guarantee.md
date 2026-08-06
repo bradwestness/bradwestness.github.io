@@ -3,6 +3,7 @@ layout: post
 title: The 100% Human Generated Content Quality Assurance Guarantee
 categories: [Software, Movies, Personal]
 image: content/images/human_generated_content_quality_assurance_guarantee.jpg
+image_alt: A badge in the style of a vintage quality-control label, reading 'Quality Assurance Guarantee, 100% Human Generated Content, no large language model or other generative AI was used in the production of this material', beside a Rosie the Riveter figure flexing her arm.
 ---
 
 In the closing credits of his 2007 movie RATATOUILLE, director Brad Bird [included a little easter egg for animators](https://www.latimes.com/archives/la-xpm-2007-jun-29-et-ratatouille29-story.html) - a "Quality Assurance Guarantee" badge in the credits which informs the viewer that "no motion capture or other performance shortcuts were used in the production of the film."

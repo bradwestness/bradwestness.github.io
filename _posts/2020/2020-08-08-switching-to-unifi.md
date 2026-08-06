@@ -3,6 +3,7 @@ layout: post
 title: Switching Your Home Network to UniFi
 categories: [Software,Programming]
 image: content/images/unifi_header.jpg
+image_alt: A product photo of three white UniFi rackmount network switches stacked together, patch cables fanning out of their ports and a small throughput display lit on each front panel.
 ---
 
 I recently switched over my home network to all [UniFi](https://store.ui.com/) based gear, and I've had several co-workers and friends ask about it, there's a bit of a learning curve to figure out what exactly you actually need to get a network put together with UniFi, so I figured I'd write up my thoughts in the form of a blog post so I can refer folks to it in the future.

@@ -3,6 +3,7 @@ layout: post
 title: Behold, the Perfect Nintendo Switch Controller
 categories: [Nintendo, Games]
 image: content/images/wizard_table.jpg
+image_alt: A purple GameCube-style wireless Nintendo Switch controller on a dark wood table, with a teal A button, red B button, yellow C-stick and gray D-pad.
 ---
 
 On this [Mar10 Day](https://www.nintendo.com/whatsnew/nintendo-powers-up-mar10-day/), I'd like to take a moment to celebrate the conclusion of an epic quest that I've been on. Namely, to find the "perfect" Nintendo Switch controller.

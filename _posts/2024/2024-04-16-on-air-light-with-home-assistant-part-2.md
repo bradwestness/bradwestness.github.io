@@ -3,6 +3,7 @@ layout: post
 title: Creating a Smart 'On Air' Light with Home Assistant - Part 2
 categories: [Software, Programming]
 image: content/images/on_air_light_on_call.jpg
+image_alt: A ceiling dome light fixture in a hallway lit half warm white and half red, casting a red glow across the wall beside it.
 ---
 
 In [part 1](/2024/04/15/on-air-light-with-home-assistant-part-1), I covered setting up [Home Assistant](https://www.home-assistant.io/) and [HASS.Agent](https://hassagent.readthedocs.io/en/latest/), so that I could trigger automations based on Zoom calls starting and ending on my PC. But for now, I just have the automation sending a notification to the Home Assistant app on my phone. In this part, I'll cover actually connecting it to an IoT-connected smart bulb.

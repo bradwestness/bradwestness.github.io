@@ -3,6 +3,7 @@ layout: post
 title: Building a LACK Rack Plex NAS From a Refurbished Rackmount Server, Part 1
 categories: [Personal,Software,TV,Movies]
 image: content/images/lack-rack-plex-nas.jpg
+image_alt: An IKEA LACK side table in a living room with a rackmount Dell server and an APC UPS bolted into its legs underneath, and wireless routers sitting on top.
 ---
 
 Last year, I invested in a Plex Premium lifetime subscription, and I really like it. Previously, I had been relying on my Roku player's built-in Media Player app to play video files stored on a network share on my PC, which it was a pain to navigate.
