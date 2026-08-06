@@ -233,7 +233,7 @@ The incorrect response, which is also the single most common shape of exception 
 /// </remarks>
 ```
 
-## Don't Write the Whole Manual
+## Don't Recreate the Whole Wiki
 
 All of which could easily curdle into a library where every method carries four hundred words of prose that nobody maintains. The test I apply before writing any of it: *would somebody competent, reading the signature, already know this?* If yes, it doesn't get written. Restating the obvious isn't free — it's the packing material that makes the actual warning hard to find.
 
