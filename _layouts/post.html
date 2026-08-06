@@ -25,14 +25,16 @@ single: true
     <section class="post-content">
         {% if page and post.image %}
             {% assign image = post.image %}
+            {% assign image_alt = post.image_alt %}
         {% elsif page and page.image %}
             {% assign image = page.image %}
+            {% assign image_alt = page.image_alt %}
         {% endif %}
         {% if image %}
             <p class="post-image">
-                <img src="/{{ image }}" alt="" class="img-fluid w-100 mw-100" />
+                <img src="/{{ image }}" alt="{{ image_alt | escape }}" class="img-fluid w-100 mw-100" />
             </p>
-        {% endif %}        
+        {% endif %}
         {{ content }}
     </section>
     <footer class="post-footer">
