@@ -6,9 +6,9 @@ image: content/images/testing-focal-length.jpg
 image_alt: An overhead flat-lay of camera gear on a grey wood floor, with two Canon DSLR bodies surrounded by lenses ranging from a 100mm macro to a 70-200mm telephoto, plus a shotgun microphone and a drone controller.
 ---
 
-When it comes to discussing what types of tests should be in place for a software project to ensure bugs are not shipped to production, communication often breaks down when weighing the alternatives of the different types of automated tests. Everyone agrees that tests are good and that we should have them, but nobody agrees on what exactly "unit test" means versus "integration test," which tests should use mocked dependencies, and which should talk to real databases, external APIs, etc.
+People generally agree that software should have automated tests. The trouble starts when you ask what kind. Nobody seems to agree on exactly what "unit test" means versus "integration test," which tests should use mocked dependencies, or which should talk to real databases and external APIs.
 
-Strong opinions come out regarding which types of tests are "best" and which types are "useless," but this is a bit like a room full of photographers arguing about which lens is best and claiming all others are useless. Should you use a macro lens? A portrait lens? A telephoto lens? Really each one has its own place and it depends on what you're trying to capture in the frame.
+People have strong opinions about which tests are "best" and which are "useless," but this is a bit like a room full of photographers trying to agree on the one correct lens. Should you use a macro lens? A portrait lens? A telephoto lens? Each one has its place; it depends on what you're trying to capture in the frame.
 
 In software testing, the term "[subject-under-test](https://en.wikipedia.org/wiki/System_under_test)" refers to *what* code a given test is meant to exercise. Each type of test is a bit like using a different focal length in a camera lens, starting from extreme close-up (unit tests) to wide-angle (end-to-end and acceptance tests). Different types give you different information about the system, and the subject-under-test changes depending on how much is in frame.
 
@@ -47,11 +47,11 @@ But using ephemeral, containerized resources instead of real dependencies is sti
 
 {% include figure.html filename="testing-focal-length-telephoto.jpg" description="Acceptance tests check the whole workflow of a user-facing feature, including real dependencies." %}
 
-Telephoto lenses in photography are good for looking at things from a distance. You're starting to focus on the whole *system* and not a single service. If you're making a web application using service-oriented-architecture or domain-driven design, chances are the user performing an action in the interface actually depends on a whole host of back-end services working in concert. 
+Telephoto lenses in photography are good for looking at things from a distance. At this focal length, the subject-under-test is the whole *system*, including several services working together. If you're making a web application using service-oriented-architecture or domain-driven design, chances are the user performing an action in the interface actually depends on a whole host of back-end services working in concert.
 
 For these sorts of tests that walk through an entire user-focused feature, scripting the activity to simulate a user of the application works well. [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)) is a classic library which automates real browsers to click through a web application, but [Playwright](https://en.wikipedia.org/wiki/Playwright_(software)) is a more modern alternative with support for .NET, Node, Python, and Java.
 
-At this point, you're likely just pointing the tests at a real running application (albeit in a non-production environment). These tests tend to be somewhat brittle and inexact; if a playwright test fails, you know there's a problem somewhere, but it may not be obvious exactly what has gone wrong, and you will likely need to go trawling through back-end logs to find the actual issue. Still, they are a good way to automate high-traffic user flows. These may be tests that you want to run on a scheduled basis or manually execute before a big release, rather than as part of your continuous integration pipeline, as they tend to be slower and more prone to false-positives.
+At this point, you're likely pointing the tests at a real running application (albeit in a non-production environment). These tests tend to be somewhat brittle and inexact; if a Playwright test fails, you know there's a problem somewhere, but it may not be obvious exactly what has gone wrong, and you will likely need to go trawling through back-end logs to find the actual issue. Still, they are a good way to automate high-traffic user flows. These may be tests that you want to run on a scheduled basis or manually execute before a big release instead of including them in your continuous integration pipeline, since they tend to be slower and more prone to false positives.
 
 ## End-to-End Tests: The Wide-Angle Lens
 
@@ -63,12 +63,12 @@ These are also the slowest, most brittle tests, and hardest to diagnose when som
 
 If you are going to automate end-to-end tests, it's generally better to have a small number of them for mission-critical paths rather than attempting to get 100% coverage.
 
-## Zooming In Is the Point
+## Keep the Subject in Frame
 
 > The problem with object-oriented languages is they've got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.
 >
 > — Joe Armstrong, creator of [Erlang](https://en.wikipedia.org/wiki/Erlang_(programming_language))
 
-Armstrong was talking about object-oriented languages, but the same trap exists in testing. Every time you reach for a real credentials file, a real external API, a real shared database when a controlled dependency would do, you've changed the subject-under-test to include the whole jungle.
+Armstrong was talking about object-oriented languages, but the same trap exists in testing. Every time you reach for a real credentials file, a real external API, or a real shared database when a controlled dependency would do, you've changed the subject-under-test to include the whole jungle.
 
-Intentional scoping isn't a limitation, it allows you to be confident about whether something works, or whether something is broken. Teams will quickly learn to ignore flaky or brittle tests that include too much scope, and then the test is actually providing negative value, as it has trained the team to ignore the test results and assume everything is fine even if there is a real issue with the changes in a release.
+Keeping the scope under control makes it much easier to tell whether something works and, when it doesn't, where the problem is. Teams quickly learn to ignore flaky tests that try to include too much of the world. Once that happens, the tests are worse than useless: they've trained everybody to assume a failure is harmless, including the one time a release really is broken.

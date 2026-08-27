@@ -1,38 +1,38 @@
 ---
 layout: post
-title: Some Assembly Required - Using Doc Comments as Agent Instructions
+title: "Some Assembly Required: Using Doc Comments as Agent Instructions"
 categories: [Software, Programming, .NET]
 image: content/images/some-assembly-required.png
 image_alt: Two panels of wordless IKEA-style assembly instructions. In the first, a figure holding the instruction booklet stands over an unassembled panel and board with a question mark above their head. In the second, the same figure phones the IKEA store for help.
 ---
 
-Anybody who has assembled IKEA furniture knows the story: a wordless booklet, a bag of cam locks, a stamped-metal [hex key](https://en.wikipedia.org/wiki/Hex_key), and a cartoon person who seems inexplicably delighted about their situation. The booklet is genuinely good at the thing it's for, which is telling you that dowel A goes in hole B.
+Anybody who has assembled IKEA furniture knows the story: a wordless booklet, a bag of cam locks, a stamped-metal [hex key](https://en.wikipedia.org/wiki/Hex_key), and a cartoon person who seems inexplicably delighted about their situation. The booklet does a pretty good job of telling you that dowel A goes in hole B.
 
 What it doesn't tell you is that you're going to want a real screwdriver for step 14, that you should assemble the thing in the room where it's actually going to live, and that if you're anchoring it to drywall, the anchors are not in the box.
 
-Then there's the other kind of failure, which is the one that really stings. You're on step 13. Both side panels are up, the shelf is standing, you're feeling pretty good about it. And there in the margin is a note: *before joining panels C and D, insert the cam locks from step 2.* The information was in the booklet the whole time. It was just behind you.
+The more irritating failure happens when you're on step 13, both side panels are up, and the shelf is finally standing. Then you notice the note in the margin: *before joining panels C and D, insert the cam locks from step 2.* The information was in the booklet, but by the time you found it you had already done the thing it was supposed to prevent.
 
-Those two gaps — between the parts in the box and the parts that aren't, and between when a warning gets written and when it gets read — are where nearly all of the pain lives. They're also, I've come to believe, exactly where you should be spending your [XML documentation comments](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/) now that a coding agent is likely to be the first thing that reads them.
+I've started thinking about [XML documentation comments](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/) in much the same way. The useful comments explain the pieces that aren't included with the library, or put a warning where somebody will see it before they make a hard-to-reverse decision. This has become more important now that a coding agent may be the first consumer to read them.
 
-To be clear about what I'm *not* arguing for: none of this is a case for hanging a usage example off every public method. The signature already tells a reader what goes in and what comes back, and an agent parses types perfectly well without any help from you. A `<summary>` that says "Gets the job name" on a property called `JobName` is pure noise, and a library full of that is how a team learns to skim past doc comments entirely — at which point the one comment that actually mattered gets skimmed past too.
+I don't think every public method needs a usage example. The signature already tells a reader what goes in and what comes back, and an agent can parse types without any help from you. A `<summary>` that says "Gets the job name" on a property called `JobName` is pure noise. Fill a library with enough of those and everybody learns to skim past the one comment that actually mattered.
 
-The comments worth writing are the ones about what somebody is going to get *wrong*. There are only two kinds: the thing they'll miss completely, and the thing they'll pick up and hold backwards. The booklet doesn't need to explain what a screw is. It needs to tell you which face of the panel goes outward — because that's the one you'll otherwise have to take apart and do again.
+I try to concentrate on what somebody is likely to get *wrong*: a required piece that lives outside the package, an easy-to-misread option, or a choice whose consequences aren't obvious from the signature. The booklet doesn't need to explain what a screw is. It needs to tell you which face of the panel goes outward, because that's the mistake that makes you take the whole thing apart again.
 
 ## Nobody Reads the Wiki
 
 When I publish an internal NuGet package, I write a README. I write a `docs/` folder. I've been known to write a whole [mkdocs](https://www.mkdocs.org/) site with a getting-started page and a troubleshooting page and everything.
 
-Then a teammate points an agent at a consumer repo and says "add a nightly cleanup job to this service," and I get to find out how much of that actually mattered.
+Then a teammate points an agent at a consumer repo and says "add a nightly cleanup job to this service," and I get to find out whether any of that documentation actually mattered.
 
-The agent has the package restored into `~/.nuget/packages`. It has my assembly. It may have my documentation XML. It has whatever the language server will tell it when it hovers a symbol. It does **not** have my wiki, and it is not going to go find it, because nothing in the consumer's repo points at it.
+The agent has the package restored into `~/.nuget/packages`, along with my assembly and possibly my documentation XML. It can see whatever the language server returns when it hovers a symbol. It usually can't see my wiki, because nothing in the consumer's repo points to it.
 
-And when somebody *does* eventually find that troubleshooting page, it is almost always the same week the thing is misbehaving in production. They read it with the incident channel open in another window, and every item on it is a step-13 note: *before deploying, you should have…* The page was right. The page was there the whole time. It just wasn't anywhere near where anybody was standing when the decision got made.
+Somebody usually finds the troubleshooting page during the same week the thing starts misbehaving in production. They read it with the incident channel open in another window, and every item on it is a step-13 note: *before deploying, you should have…* The page may have been perfectly accurate, but it wasn't anywhere near the person making the decision.
 
-That's the whole thing, really. Documentation housed anywhere else is documentation you *hope* gets read. There's no mechanism that makes it happen — no step in anyone's workflow, human or otherwise, that reliably routes through your wiki before the code gets written. Doc comments are different in kind: they ship with the code, so they can't be missed. Not "are more likely to be found" — *can't be missed*, because they arrive in the tooltip at the exact moment somebody is typing the call.
+Documentation in a separate wiki only helps if somebody remembers to go looking for it. Most workflows, human or otherwise, don't make a detour through the wiki before the code gets written. Doc comments travel with the package and appear in the tooltip while somebody is actually typing the call, which is about as good a chance as documentation ever gets to be read at the right time.
 
-That was always sort of true, and it's why we write them at all. But it used to be a convenience — a nicer tooltip, a small kindness to your future self. Now it's the difference between an agent that wires your library up correctly on the first attempt and one that writes something that compiles, passes, and quietly does nothing.
+That was always a good reason to write doc comments. Coding agents have raised the stakes a bit: the comment may determine whether the agent wires the library up correctly on its first attempt or writes something that compiles, passes its tests, and quietly does nothing.
 
-The catch, and the reason for the next section, is that "ship with the code" is conditional on about four lines of MSBuild.
+Of course, the comments only travel with the package if you turn on the relevant MSBuild settings.
 
 ## Meet Acme.Scheduler
 
@@ -46,18 +46,18 @@ services.AddOpenTelemetry()
     .AddAcmeSchedulerMetrics();                          // optional: duration, failures, misfires
 ```
 
-Four of its behaviors come up over and over below, so here they are once, in advance:
+I'll use four behaviors from this imaginary library throughout the examples:
 
 - **It fires jobs on a cron schedule**, and those expressions are evaluated in UTC.
 - **It drains on shutdown.** On `SIGTERM` it stops scheduling new runs and waits for in-flight jobs to finish.
 - **It doesn't coordinate unless you tell it to.** By default every host schedules independently; point it at a lock store and only one instance runs a given job.
 - **It reports.** Job metrics go to a [StatsD](https://en.wikipedia.org/wiki/StatsD)-style agent over a [Unix domain socket](https://en.wikipedia.org/wiki/Unix_domain_socket), with every instrument name prefixed by the owning team's name from configuration.
 
-Every one of those is a spot where the C# is the easy part and the context around it is where people get hurt. I'd wager a scheduling library you actually use has all four.
+In each case, writing the C# is pretty easy. The trouble comes from configuration or deployment details that aren't visible at the call site. I'd wager a scheduling library you actually use has some version of all four.
 
 ## Ship the Booklet
 
-Here's the part that can bite you: by default, none of your documentation ships at all. The C# compiler throws your doc comments away unless you ask it not to.
+By default, the C# compiler doesn't include your doc comments in the compiled output. You have to ask it to generate and package them.
 
 Three properties, which can either go in a .csproj file or in a `Directory.Build.props` file so they apply to every project in the folder:
 
@@ -73,9 +73,9 @@ Three properties, which can either go in a .csproj file or in a `Directory.Build
 </Project>
 ```
 
-`GenerateDocumentationFile` emits an `Acme.Scheduler.xml` next to the `.dll`, and `dotnet pack` picks it up into the package without you asking. That XML file is what IntelliSense reads, what a hover request through the [language server](https://en.wikipedia.org/wiki/Language_Server_Protocol) returns, and therefore what an agent sees when it looks at one of your methods. Leave it off and every consumer — human or otherwise — gets a bare signature and a shrug.
+`GenerateDocumentationFile` emits an `Acme.Scheduler.xml` next to the `.dll`, and `dotnet pack` picks it up automatically. That XML file is what IntelliSense reads and what a hover request through the [language server](https://en.wikipedia.org/wiki/Language_Server_Protocol) returns. If you leave it off, consumers only get the bare signature.
 
-`EmbedAllSources` with `DebugType` set to `embedded` is the one people skip. It stuffs your actual source files into the PDB, and the PDB into the assembly. Now "Go to Definition" from a consumer's editor lands on your real code — comments, whitespace, and all — instead of a decompiled stub.
+People are more likely to skip `EmbedAllSources` with `DebugType` set to `embedded`. These settings put your source files into the PDB and the PDB into the assembly. "Go to Definition" from a consumer's editor can then open the real code, including its comments, instead of a decompiled stub.
 
 That matters more than it sounds like it does, because the documentation XML only carries your `///` comments. It does not carry the ordinary `//` comments *inside* your method bodies, and those are frequently where the actual reasoning lives:
 
@@ -88,11 +88,11 @@ var nextFireUtc = this.cron.GetNextOccurrence(previousScheduledUtc);
 
 Without embedded sources, an agent that goes looking for that gets correct signatures and zero intent. With them, it gets the reason, and stops trying to "simplify" the line.
 
-> The short version: if `GenerateDocumentationFile` is off, that `<remarks>` block you spent twenty minutes on exists only on your own machine. You wrote the manual and left it on the loading dock.
+> If `GenerateDocumentationFile` is off, that `<remarks>` block you spent twenty minutes writing exists only in the source repository. It's a bit like writing the manual and leaving it on the loading dock.
 
 ## The Hardware that Isn't in the Box
 
-This is the *missed-completely* kind, and it's the category I get the most mileage out of — the one I basically never used to write.
+The comments I find most useful cover requirements that can't be included in the NuGet package. I basically never used to write these.
 
 Take the shutdown drain. `Acme.Scheduler` does the right thing on `SIGTERM`: it stops scheduling and waits for the running job to finish. Kubernetes, meanwhile, waits `terminationGracePeriodSeconds` — thirty by default — and then sends `SIGKILL` regardless of who is waiting for what.
 
@@ -155,25 +155,25 @@ The library cannot fix this, and it cannot ship the fix either. So the fix goes 
 /// </example>
 ```
 
-A few things about that.
+A few details in that example are worth pointing out.
 
-The `<![CDATA[ ... ]]>` wrapper is not decoration. Doc comments are XML, so a stray `<`, `&`, or generic type parameter — and there's an `AddJob<T>` right there in the sample — will wreck the generated file, or just silently mangle what the tooltip shows. Wrap anything with punctuation in CDATA and stop thinking about it.
+Doc comments are XML, so the `<![CDATA[ ... ]]>` wrapper matters. A stray `<`, `&`, or generic type parameter — and there's an `AddJob<T>` right there in the sample — can wreck the generated file or silently mangle the tooltip. I wrap any substantial code sample in CDATA and stop thinking about it.
 
-More importantly: notice that a Kubernetes pod spec and a `Dockerfile` line are sitting inside a C# comment. That feels wrong the first time you do it. It is, in fact, correct, because it's the only place a consumer is guaranteed to read before they use it.
+The stranger part is putting a Kubernetes pod spec and a `Dockerfile` line inside a C# comment. It felt wrong the first time I did it, but that comment is much closer to the consumer than a page in a separate documentation site.
 
-And the payoff with an agent is bigger than it is with a person. Ask an agent to "add a nightly reconciliation job using our scheduler library." It'll write a job class and a cron expression. The build will pass. The tests will pass. It will report success — and four minutes into the next 3am deploy, the job dies, because an agent cannot deduce a thirty-second grace period by reading C#. Put the pod spec in the tooltip and something different happens: it writes the job, then goes and opens the deployment manifest to check the grace period against the job it just wrote.
+This helps agents even more than it helps people. If you ask an agent to "add a nightly reconciliation job using our scheduler library," it can write a job class and a cron expression that compile and pass every test. It can't deduce a thirty-second Kubernetes grace period from the C# alone. When the pod spec is in the tooltip, the agent has enough information to open the deployment manifest and compare the grace period with the job it just wrote.
 
 ## What the Library Can't See
 
-Everything above is about instructions the package can't *ship*. There's a nastier variant: a setting inside your library whose correctness depends entirely on something outside it, where you don't even get the consolation prize of failing fast.
+Some library settings only work when the deployment is configured a certain way. These are especially unpleasant when the process can't inspect that deployment configuration and fail at startup.
 
-Coordination is the example. Out of the box, every host running `Acme.Scheduler` keeps its own schedule — which is exactly right for a single-instance service, and catastrophic the moment somebody scales the deployment to three pods. Now the nightly reconciliation runs three times. The nightly customer email goes out three times.
+Coordination is a good example. Out of the box, every host running `Acme.Scheduler` keeps its own schedule. That works fine for a single-instance service, but the nightly reconciliation runs three times as soon as somebody scales the deployment to three pods. So does the nightly customer email.
 
-And every one of those runs *succeeds*. Three green jobs, three sets of healthy metrics, no errors anywhere. Either you configure a lock store so the instances elect one owner per job, or the deployment has to stay pinned at a single replica. What you cannot do is have neither.
+Every one of those runs *succeeds*: three green jobs, three sets of healthy metrics, and no errors anywhere. You have to configure a lock store so the instances elect one owner per job, or keep the deployment pinned at a single replica.
 
-The library cannot detect which situation it's in. From inside the process there is no way to know how many replicas the deployment intends to run; the number lives in a Kubernetes `Deployment`, or an [HPA's](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) `minReplicas`, or a values file in a pipeline this assembly has never heard of. Startup validation isn't on the table. There is nothing to throw.
+The library can't detect which situation it's in. The intended number of replicas lives in a Kubernetes `Deployment`, an [HPA's](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) `minReplicas`, or a values file in a pipeline this assembly has never heard of. None of that is visible from inside the process, so startup validation can't help.
 
-So the comment has to do the whole job — and the useful move is not to describe the hazard but to *assign the work*:
+The comment should tell the consumer exactly what needs to be checked:
 
 ```csharp
 /// <para>
@@ -187,40 +187,40 @@ So the comment has to do the whole job — and the useful move is not to describ
 /// </para>
 ```
 
-Three things in there are doing work that a plain description of the hazard wouldn't.
+There are a few reasons I would write all of that instead of stopping at "this may run more than once."
 
-**It names where to look.** "Verify your infrastructure config" is useless to an agent. `replicas`, `minReplicas`, and "the deployment pipeline's values file" are grep targets. Hand an agent three concrete nouns and it will go find the file; hand it a vague gesture at "your deployment" and it will decide the C# looks fine and move on.
+**Name where to look.** "Verify your infrastructure config" doesn't give an agent much to work with. `replicas`, `minReplicas`, and "the deployment pipeline's values file" are grep targets. Concrete names give the agent a reasonable chance of finding the relevant file instead of stopping when the C# looks fine.
 
-**It says what to do when verification isn't possible.** *Or explicitly flag it for the operator to confirm.* That's the most valuable clause in the block. An agent working in a repo that doesn't even contain the manifest now has a defined move that isn't "assume it's fine," and the human gets a line in the PR description instead of a surprise several weeks later. If you write only one instruction for the agent, write the escape hatch.
+**Explain what to do when verification isn't possible.** The line about flagging it for the operator may be the most valuable part of the block. If the repo doesn't contain the manifest, the agent can mention the unresolved check in its summary or PR description. That is much more useful than silently assuming the deployment has one replica.
 
-**It names the failure mode, not just the failure.** Not "this can break," but: the autoscaler adds a pod, and every job in the system quietly starts running twice, and all of it reports success. A warning that describes *when and how* you'll find out is a warning somebody acts on.
+**Describe the failure mode.** "This can break" is easy to ignore. "The autoscaler adds a pod and every job quietly starts running twice" tells the reader when the problem happens and what to look for. Mentioning that all of the runs report success explains why the ordinary health checks won't catch it.
 
 ## Warning Labels
 
-This is the *held-backwards* kind: things a reader will find on their own and then get exactly wrong. Nothing is missing here — the method is right there in IntelliSense, the property has an obvious name, and that's the problem, because it all looks self-explanatory. Agents write code that compiles, enthusiastically, and are perfectly willing to write code that compiles and is catastrophic in production. A few patterns I now reach for:
+Other problems come from APIs that look self-explanatory but have an easy-to-miss constraint. Agents are very good at finding the obvious method in IntelliSense and writing code that compiles against it, whether or not that code is safe in production. I now use a few patterns for these cases:
 
-**Ordering requirements.** `AddAcmeSchedulerMetrics` resolves a client that `AddAcmeScheduler` registers, so it has to come second. Say that in the `<remarks>` — and then also throw an `InvalidOperationException` that names the missing call, so it's impossible to get wrong twice.
+**Ordering requirements.** `AddAcmeSchedulerMetrics` resolves a client that `AddAcmeScheduler` registers, so it has to come second. Say that in the `<remarks>`, and also throw an `InvalidOperationException` that names the missing call. The comment helps somebody write it correctly, and the exception catches anybody who doesn't.
 
-**"Not configurable, and here's why."** Anything you've deliberately made rigid needs its reasoning attached, or a well-meaning contributor (of any species) will helpfully make it flexible again. For a scheduler the obvious candidate is the one I'd want tattooed somewhere:
+**Reasons for deliberate limitations.** If you've deliberately made something rigid, explain why. Otherwise a well-meaning contributor (of any species) may helpfully make it flexible again. For a scheduler, I would put this warning anywhere cron expressions are accepted:
 
 ```csharp
 /// <para>
-/// Cron expressions are evaluated in <b>UTC</b> and that is not adjustable. A local-time schedule in a
+/// Cron expressions are always evaluated in <b>UTC</b>. A local-time schedule in a
 /// zone with daylight saving has two days a year where it is wrong and silent about it: on the
 /// spring-forward boundary a 2am job never fires at all, and on the fall-back boundary it fires twice. If a
 /// job must run at a wall-clock local time, convert in the job body and accept the shift.
 /// </para>
 ```
 
-I have [opinions about daylight saving time](/2023/07/17/of-daylight-and-savings/) that predate any of this, but the relevant part here is "wrong and silent about it." A constraint whose violation is loud can afford a short comment. A constraint whose violation is silent — twice a year, at 2am, in a way no test will ever catch — needs the whole paragraph.
+I have [opinions about daylight saving time](/2023/07/17/of-daylight-and-savings/) that predate any of this. This particular mistake happens silently, twice a year, at 2am, and is unlikely to show up in an ordinary test suite. That seems worth a whole paragraph.
 
-**Exceptions with instructions.** This is my favorite one. `Acme.Scheduler` refuses to run two copies of the same job at once, so a manual `TriggerAsync` call while a run is in flight throws `JobAlreadyRunningException`. That is not a failure. Nothing is broken; the job you asked for is, in the most literal sense, already happening.
+**Exceptions with instructions.** This is my favorite one. `Acme.Scheduler` refuses to run two copies of the same job at once, so a manual `TriggerAsync` call while a run is in flight throws `JobAlreadyRunningException`. The exception means the requested job is already in progress, so it shouldn't be handled like a failed job.
 
-The incorrect response, which is also the single most common shape of exception handling in the wild, is `catch (Exception) { logger.LogError(ex, "job failed"); alerts.Page(); }` — which turns "your long job is still going" into a pageable error, reliably, every time an operator gets impatient and clicks the button twice. So the type documents its own handling:
+A very common response is `catch (Exception) { logger.LogError(ex, "job failed"); alerts.Page(); }`. That turns an impatient double-click into a pageable error even though the original job is still running. I would document the expected handling on the exception type itself:
 
 ```csharp
 /// <remarks>
-/// <b>This is not a job failure.</b> The requested job is already in flight; nothing has gone wrong.
+/// <b>The requested job is already in flight.</b> Handle this separately from job failures.
 /// <list type="bullet">
 ///   <item><description><b>Do not alert or page on this exception.</b> Catch it specifically, separately from
 ///     real job faults, or an impatient double-click becomes an incident.</description></item>
@@ -235,34 +235,26 @@ The incorrect response, which is also the single most common shape of exception 
 
 ## Don't Recreate the Whole Wiki
 
-All of which could easily curdle into a library where every method carries four hundred words of prose that nobody maintains. The test I apply before writing any of it: *would somebody competent, reading the signature, already know this?* If yes, it doesn't get written. Restating the obvious isn't free — it's the packing material that makes the actual warning hard to find.
+Taken too far, this could produce a library where every method carries four hundred words of prose that nobody maintains. Before writing any of it, I ask: *would somebody competent already know this from reading the signature?* If so, I leave it out. Restating the obvious makes the actual warnings harder to find.
 
 Three more things keep me honest.
 
-**Prefer a throw to a sentence.** If a misconfiguration is detectable, detect it. The best doc comment is the one you can delete outright, because the registration itself now fails with `"AddAcmeSchedulerMetrics requires IAcmeTelemetryClient. Call AddAcmeScheduler(configuration) during startup."` An agent reads a failing build or test run just as happily as it reads a tooltip, and an exception message can't quietly drift out of sync with the code the way a comment can. Documentation is what's left over after you've run out of things the compiler and the constructor can enforce.
+**Prefer a throw to a sentence.** If a misconfiguration is detectable, detect it. The registration should fail with a useful message such as `"AddAcmeSchedulerMetrics requires IAcmeTelemetryClient. Call AddAcmeScheduler(configuration) during startup."` An agent can respond to a failing build or test run just as easily as it can read a tooltip, and the exception is less likely to drift away from the behavior than a comment. I save documentation for the things the compiler, constructor, or startup validation can't enforce.
 
-The corollary is the lock-store case above: when a constraint genuinely *can't* be checked from inside the process, the comment isn't a fallback for the check you didn't write. It's the only control you have, and it deserves to be written with that much weight.
+The lock-store example is why comments still matter. Since the process genuinely can't inspect the replica configuration, the warning is the only guidance the package can provide.
 
-> The furthest version of "prefer a throw" is shipping a [Roslyn analyzer](https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/) in the package, so the misuse is a red squiggle at the call site instead of a paragraph in a tooltip. Same principle — it travels with the package — except now you're depending on the consumer's editor or build actually surfacing analyzer diagnostics, which is a much softer guarantee than "the XML is in the nupkg."
+> You can take "prefer a throw" even further by shipping a [Roslyn analyzer](https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/) in the package, turning misuse into a red squiggle at the call site. It also travels with the package, although you are depending on the consumer's editor or build to surface the analyzer diagnostic.
 
 **One canonical example, referenced from everywhere else.** Overload sprawl is how doc comments rot: you write the good example six times and then update one of them. Put the full `<remarks>` and `<example>` on the primary entry point, and on the rest write `<remarks>See the <see cref="..."/> overload for the full behaviour and caveats.</remarks>` and nothing more.
 
-That rule is about *examples*, though. A hazard note is different: it belongs on every surface where somebody can actually set the value — the options property *and* the builder method that assigns it — because a consumer who never touches the one you documented gets no warning at all. Duplicate the paragraph. It's four lines, and the alternative is every job in the service running once per pod.
+That rule applies to examples. I put hazard notes on every surface where somebody can set the relevant value — the options property *and* the builder method that assigns it — because a consumer may never touch the one I happened to document first. Duplicating four lines is worthwhile when the bug would make every job run once per pod.
 
-**Document less by exposing less.** I've [banged this drum before](/2024/04/09/projects-are-interfaces/), but it lands differently now. Every `public` member is a member you owe a `<summary>` (CS1591 will make sure you remember) *and* a member an agent may decide to build on. `internal` plus `InternalsVisibleTo` for your test project keeps both the surface and the manual small. The narrower the box, the shorter the instructions.
+**Document less by exposing less.** I've [banged this drum before](/2024/04/09/projects-are-interfaces/). Every `public` member needs a `<summary>` (CS1591 will make sure you remember), and every one is something an agent may decide to build on. `internal` plus `InternalsVisibleTo` for your test project keeps both the API and its manual small.
 
-## Read the Flatpack Manual
+## Leave the Instructions with the Parts
 
-So, to recap:
+For a library package, that means enabling `GenerateDocumentationFile`, `EmbedAllSources`, and `DebugType embedded` so the comments and source make it to the consumer. It also means resisting the urge to explain every obvious property. I would rather have three useful warnings than thirty summaries that repeat their member names.
 
-- Turn on `GenerateDocumentationFile`, `EmbedAllSources`, and `DebugType embedded`, or your comments never leave your machine.
-- Don't document what the signature already says. Document the two things a reader gets wrong: what they'll miss entirely, and what they'll hold backwards.
-- Document the parts that aren't in the box — pod specs, grace periods, environment variables, `Dockerfile` lines, ordering requirements. That's the material no amount of reading your source can reveal.
-- Put a warning label on every silent failure. "Looks healthy, does nothing" is the worst outcome available, and it's the one most likely to get shipped by something that can't check a dashboard.
-- Explain the reasoning behind anything you've deliberately made rigid, or somebody will helpfully make it flexible.
-- When a setting's correctness depends on something the process can't see, name the files to go look in, and say what to do if it can't be confirmed. "Flag it for a human to verify" is a legitimate instruction, and it's the one that saves you.
-- Prefer a throw with a good message over a paragraph. Prefer a narrower public surface over both.
+The useful warnings tend to cover pod specs, grace periods, environment variables, ordering requirements, and other details that can't be inferred from the C#. If the process can detect a bad configuration, fail with a useful message. If it can't, tell the consumer where to look and what to report when the necessary file isn't available.
 
-The part that hasn't changed is who writes the instructions. An agent will assemble the bookshelf quickly, in the right room, with the correct dowels in the correct holes, and it will not stop to wonder whether the drywall anchors were in the box. Noticing that they aren't — and that the failure will be silent, and that somebody is going to page you about it at 2am — is still the job. The best you can do is leave a note where whoever comes next is standing when they need it, and be specific about what to do when they can't be sure.
-
-Happy assembling. The hex key is in the bag taped to panel B.
+A coding agent can assemble the bookshelf quickly, but somebody still has to notice that the drywall anchors aren't in the box. Put that note beside the method that needs them, where the next person or agent has a chance of seeing it before step 13.
