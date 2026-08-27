@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A Coding Agent on Every Desk: Running Qwen on Bazzite"
+description: How I built a private, self-hosted coding agent with Qwen3-Coder-Next, llama.cpp, Podman, Open WebUI, and Tailscale on a Bazzite desktop.
 categories: [Software, Programming]
 image: content/images/running-qwen-on-bazzite.jpg
 image_alt: An open black desktop computer case with an RTX graphics card and three blue-lit intake fans, sitting on a workbench.
@@ -216,7 +217,7 @@ The actual Qwen Code settings file also contains its user interface (UI) and API
 
 On a remote client, replace `localhost` with the Bazzite Tailscale hostname, for example `http://bazzite:8080/v1`.
 
-![Qwen Code running on a MacBook]({{ site.baseurl }}content/images/qwen-code-macbook.jpg)
+![Qwen Code running on a MacBook]({{ '/content/images/' | relative_url }}qwen-code-macbook.jpg)
 
 The first-start workflow is:
 
@@ -296,7 +297,7 @@ journalctl --user -fu open-webui
 
 Then browse to `http://bazzite:8081` or the machine's Tailscale address. The first local Open WebUI account created becomes the administrator, so I created that account before treating the interface as ready.
 
-![Open WebUI running on an Android phone]({{ site.baseurl }}content/images/open-webui-android.jpg)
+![Open WebUI running on an Android phone]({{ '/content/images/' | relative_url }}open-webui-android.jpg)
 
 The environment variables in the Quadlet point Open WebUI at the local `llama.cpp` server. Open WebUI also provides a useful place to enable web search. The model has no built-in connection to current events, so the interface has to execute a search and put the results into the prompt.
 

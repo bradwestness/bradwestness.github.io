@@ -1,4 +1,4 @@
 <figure class="figure w-100">
-    <img class="figure-img img-fluid rounded mx-auto d-block" src="{{ site.baseurl }}content/images/{{ include.filename }}" alt="{{ include.description | escape }}" />
+    <img class="figure-img img-fluid rounded mx-auto d-block" src="{{ '/content/images/' | append: include.filename | relative_url }}" alt="{{ include.description | escape }}" />
     <figcaption class="figure-caption text-center">{{ include.description | escape }}</figcaption>
 </figure>

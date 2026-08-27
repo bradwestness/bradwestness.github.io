@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Some Assembly Required: Using Doc Comments as Agent Instructions"
+description: How useful XML documentation comments can put constraints, caveats, and examples where coding agents will see them before making the wrong implementation choice.
 categories: [Software, Programming, .NET]
 image: content/images/some-assembly-required.png
 image_alt: Two panels of wordless IKEA-style assembly instructions. In the first, a figure holding the instruction booklet stands over an unassembled panel and board with a question mark above their head. In the second, the same figure phones the IKEA store for help.

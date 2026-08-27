@@ -15,7 +15,7 @@ single: true
             <div class="tags">
                 <i class="fa-solid fa-tag" aria-hidden="true"></i>
                 {% for category in categories %}
-                <a class="badge text-bg-secondary text-decoration-none" href="{{ site.baseurl }}/categories/#{{ category | slugify }}">{{ category }}</a>
+                <a class="badge text-bg-secondary text-decoration-none" href="{{ '/categories/' | relative_url }}#{{ category | slugify }}">{{ category }}</a>
                 {% endfor %}
             </div>
         </div>
@@ -30,7 +30,7 @@ single: true
         {% endif %}
         {% if image %}
             <p class="post-image">
-                <img src="/{{ image }}" alt="{{ image_alt | escape }}" class="img-fluid w-100" />
+                <img src="{{ image | relative_url }}" alt="{{ image_alt | escape }}" class="img-fluid w-100" />
             </p>
         {% endif %}
         {{ content }}
@@ -49,7 +49,7 @@ single: true
             </section>
         </div>
 
-        {% if page.previous.url || page.next.url %}
+        {% if page.previous.url or page.next.url %}
         <nav aria-label="Post navigation" class="d-print-none">
             <ul class="pagination">
                 {% if page.previous.url %}

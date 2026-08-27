@@ -1,11 +1,21 @@
 #
 # Blog settings
 #
+title: Brad Westness
 sitename: Brad Westness
-baseurl: https://brad.westness.cc/
-logo: content/images/caricature.jpg
+url: https://brad.westness.cc
+baseurl: ""
+logo: /content/images/caricature.jpg
 description: Wisconsinite, Software architect, Brewers baseball fan, he/him
-keywords: .NET,Software,Programming,Development,Wisconsin,Brewers,Baseball,Movies,Music
+locale: en_US
+author:
+  name: Brad Westness
+  url: https://brad.westness.cc/about/
+social:
+  name: Brad Westness
+  links:
+    - https://github.com/bradwestness
+    - https://bsky.app/profile/brad.westness.cc
 
 #
 # Jekyll settings
@@ -16,12 +26,21 @@ paginate_path: "page/:num"
 category_dir: categories
 timezone: America/Chicago
 
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-paginate
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      image:
+        path: /content/images/caricature.jpg
+        alt: A caricature of Brad Westness wearing glasses and smiling.
 
 feed:
   path: atom.xml

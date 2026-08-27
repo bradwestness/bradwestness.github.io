@@ -12,7 +12,7 @@ part I will focus on the software, both the main system software as well as some
 
 The system UI is fairly minimalist, but not in a bad way. In fact, it's pretty refreshing compared to the Wii U's overly convoluted and *sloooooow* UI. The main menu loads almost instantly, and suspending and resuming games is near instant as well.
 
-![Nintendo Switch home screen with dark theme]({{ site.baseurl }}content/images/switch_dark_theme.jpg)
+![Nintendo Switch home screen with dark theme]({{ '/content/images/' | relative_url }}switch_dark_theme.jpg)
 
 Gone are the over-the-top Miiverse integration and other distractions, and Nintendo has done a really good job of making the various menus intuitive. Everything requires several fewer clicks than it did on the Wii and Wii U.
 
@@ -42,7 +42,7 @@ The biggest caveat of the Switch as of this writing is the dearth of available g
 
 This is probably the one big negative of the experience of being an early adopter of the Switch. *1-2-Switch* should've been the *Wii Sports* for this system, showcasing the unique capabilities of the hardware in the guise of a fun party game. The incredible success of the original Wii was in large part due to word of mouth, people picking one up after having a blast goofing around with Wii Sports at a friend's house.
 
-![1-2-Switch]({{ site.baseurl }}content/images/1-2-Switch.jpg)
+![1-2-Switch]({{ '/content/images/' | relative_url }}1-2-Switch.jpg)
 
 The thing that made Wii Sports fun was that while the games were largely based around a particular capability of the hardware, they were still representative of actual sports, and you could have fun trying to beat your friend's high score, or set a new personal best. *1-2-Switch* on the other hand, feels like essentially a tech demo. The "games" are generally just a single action and don't really have any replay value. Once you play the "speed eating" game, there's little reason why you'd ever go back and play again.
 
@@ -52,7 +52,7 @@ The real problem is that *1-2-Switch* is a full price game, and should really ju
 
 *Snipperclips* is sort of the opposite of *1-2-Switch*, it's a really fun and effective way to show off the Switch, and it comes at a reduced price ($20), due to being available strictly as a digital download in the eShop. It's a fun and surprisingly deep little puzzle game, and since the main game is cooperative, it's a good way to show off the console to casual gamers and friends.
 
-![1-2-Switch]({{ site.baseurl }}content/images/snipperclips.jpg)
+![1-2-Switch]({{ '/content/images/' | relative_url }}snipperclips.jpg)
 
 The main mode consists of a series of 1 or 2 player co-operative puzzles (if playing alone you simply switch between the two characters). Each puzzle is a single "screen" and you must figure out how to achieve some deceptively simple goal by "snipping" your characters into various shapes to form tools (like a gear to turn a crank, or a basket to convey eggs or other objects around the stage), or simply match the shape of your characters to a dotted outline.
 

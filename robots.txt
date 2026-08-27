@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://www.bradwestness.com/sitemap.xml 
+Sitemap: https://brad.westness.cc/sitemap.xml

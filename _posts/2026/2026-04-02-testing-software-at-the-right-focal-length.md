@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Testing Software at the Right Focal Length
+description: A practical way to think about unit, integration, end-to-end, and acceptance tests as different focal lengths that reveal different kinds of software problems.
 categories: [Software]
 image: content/images/testing-focal-length.jpg
 image_alt: An overhead flat-lay of camera gear on a grey wood floor, with two Canon DSLR bodies surrounded by lenses ranging from a 100mm macro to a 70-200mm telephoto, plus a shotgun microphone and a drone controller.

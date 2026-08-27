@@ -2,10 +2,11 @@
 layout: default
 permalink: /categories/
 title: Categories
+description: Browse posts from Brad Westness by topic, including software, programming, baseball, music, movies, and technology.
 ---
 
 <section class="post-list">
-    {% assign sorted_categories = (site.categories | sort:0) %}
+    {% assign sorted_categories = site.categories | sort %}
     {% for category in sorted_categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div class="row">

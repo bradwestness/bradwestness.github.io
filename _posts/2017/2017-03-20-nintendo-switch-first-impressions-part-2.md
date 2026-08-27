@@ -17,7 +17,7 @@ What I'd call "connected mode" refers to playing the Switch with the Joy Con sna
 either side of the system. This is most likely how you'd play the system when not docked. The
 Switch is effectively laid out the same as the Wii U's GamePad in this mode, with some very minor differences in the locations of the various buttons.
 
-![Joy Con in connected mode]({{ site.baseurl }}content/images/joy_con_connected.jpg)
+![Joy Con in connected mode]({{ '/content/images/' | relative_url }}joy_con_connected.jpg)
 
 The control sticks are a little more "handheld-ey" than the Wii U GamePad's, which felt
 like the same kind that have been featured on Nintendo's home consoles since they were
@@ -30,7 +30,7 @@ that Nintendo used on the various 3DS incarnations.
 You can also play with the Joy Con disconnected from the system, holding one in each hand. This feels similar to how it felt to use the Wii remote + Nunchuck combination on the
 original Wii. This is a surprisingly comfortable way to play. 
 
-![Joy Con in disconnected mode]({{ site.baseurl }}content/images/joy_con_disconnected.jpg)
+![Joy Con in disconnected mode]({{ '/content/images/' | relative_url }}joy_con_disconnected.jpg)
 
 Holding the Joy Con in your palms takes away some of the "too small" feeling that you can otherwise get while they're connected if you have bigger hands like I do, since they fit snugly in your palms (note: the person in the photo above has very small hands). The sticks feel better when used this way, too, since you can hold the controllers at a more natural angle, the slightly limited range of motion of the sticks feels less noticeable.
 
@@ -43,7 +43,7 @@ The third "single player" mode for playing with both Joy Con as a unit is to use
 that the two Joy Con can be snapped onto (much like the sides of the console itself) with
 a little extra ergonomics to give them a more robust feel.
 
-![Joy Con in grip mode]({{ site.baseurl }}content/images/joy_con_grip.jpg)
+![Joy Con in grip mode]({{ '/content/images/' | relative_url }}joy_con_grip.jpg)
 
 I haven't played this way much, since I've mostly been using the Pro Controller when playing on the TV, but I think I prefer the disconnected mode anyway. The grip feels slightly flimsy, and it feels more natural to hold the Joy Con in your palms versus the angle the sticks wind up being at in the grip.
 
@@ -61,7 +61,7 @@ Wii's Virtual Console by holding a Wii remote sideways, the Joy Con can be used 
 separate controllers for multiplayer games. There are small plastic "grips" which can be
 attached in this mode to make the controllers a little more ergonomic when used horizontally.
 
-![Joy Con in NES mode]({{ site.baseurl }}content/images/joy_con_nes.jpg)
+![Joy Con in NES mode]({{ '/content/images/' | relative_url }}joy_con_nes.jpg)
 
 Whether using the left or right Joy Con, this is actually quite comfortable. I actually find
 them to be more comfortable than the horizontal Wii remote was. They have the same
@@ -78,7 +78,7 @@ will get a lot of action once Mario Kart is released.
 
 I never bothered with the Pro Controller on the Wii or Wii U, as I found it totally fine playing with the Wiimote+Nunchuck combo on the former, and the GamePad on the latter. 
 
-![Switch Pro Controller]({{ site.baseurl }}content/images/switch_pro_controller.jpg)
+![Switch Pro Controller]({{ '/content/images/' | relative_url }}switch_pro_controller.jpg)
 
 However, I read some early reports that highly recommended the Pro Controller for the Switch
 for people with larger hands, especially for long sessions such as with Zelda. I picked one

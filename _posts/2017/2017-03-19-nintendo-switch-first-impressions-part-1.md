@@ -30,7 +30,7 @@ accessories for each. I did this before Christmas in anticipation of the Switch,
 get better prices selling them during the holiday gift-buying season versus afterward. For the
 first time since I was approximately six years old, I owned no Nintendo systems or games. Dark times.
 
-![Nintendo Switch console]({{ site.baseurl }}content/images/nintendo_switch_console.jpg)
+![Nintendo Switch console]({{ '/content/images/' | relative_url }}nintendo_switch_console.jpg)
 
 The Switch itself is a sort of hybrid console/portable system. It's not quite as portable as
 a true handheld, like the various GameBoy and DS iterations over the years: the battery only
@@ -68,4 +68,3 @@ If you get a second dock, you can quickly move it between TVs if you have multip
 a second system (this is why I felt it was okay to sell both my Wii and Wii U, which were in different rooms).
 Unlike the Wii U, this is also a system-level capability, so there's no need for games to support playing
 in handheld mode on a case-by-case basis. It just works, for every game, all the time.
-

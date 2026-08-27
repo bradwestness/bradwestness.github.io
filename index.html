@@ -1,6 +1,7 @@
 ---
 layout: default
 title: .NET software development, Brewers baseball, pop culture, etc.
+description: Brad Westness writes about software architecture, .NET, self-hosting, Brewers baseball, and pop culture.
 ---
 
 {% assign index = true %}
@@ -18,7 +19,7 @@ title: .NET software development, Brewers baseball, pop culture, etc.
                 <div class="tags">
                     <i class="fa-solid fa-tag" aria-hidden="true"></i>
                     {% for category in post.categories %}
-                    <a class="badge text-bg-secondary text-decoration-none" href="{{ site.baseurl }}/categories/#{{ category | slugify }}">{{ category }}</a>
+                    <a class="badge text-bg-secondary text-decoration-none" href="{{ '/categories/' | relative_url }}#{{ category | slugify }}">{{ category }}</a>
                     {% endfor %}
                 </div>
             </div>
@@ -33,7 +34,7 @@ title: .NET software development, Brewers baseball, pop culture, etc.
                 {% if post.image and post.image.size > 0 %}
                     <div class="col-3">
                         <a class="excerpt" href="{{ post.url }}">
-                            <img src="/{{ post.image }}" class="img-thumbnail" alt="{{ post.title }}" />
+                            <img src="{{ post.image | relative_url }}" class="img-thumbnail" alt="{{ post.title }}" />
                         </a>
                     </div>
                 {% endif %}      
