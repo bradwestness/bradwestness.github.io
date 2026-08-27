@@ -1,6 +1,9 @@
 {%- assign responsive_srcset = nil -%}
-{%- assign responsive_image_key = include.src | remove_first: '/' -%}
-{%- assign responsive_image = site.data.responsive_images[responsive_image_key] -%}
+{%- assign responsive_image = site.data.responsive_images[include.src] -%}
+{%- unless responsive_image -%}
+    {%- assign responsive_image_key = include.src | remove_first: '/' -%}
+    {%- assign responsive_image = site.data.responsive_images[responsive_image_key] -%}
+{%- endunless -%}
 {%- if responsive_image -%}
     {%- capture responsive_srcset -%}
         {%- for variant in responsive_image.variants -%}
