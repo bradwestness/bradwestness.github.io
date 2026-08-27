@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Running a Local Coding Model on Bazzite
+title: "A Coding Agent on Every Desk: Running Qwen on Bazzite"
 categories: [Software, Programming]
 image: content/images/running-qwen-on-bazzite.jpg
 image_alt: An open black desktop computer case with an RTX graphics card and three blue-lit intake fans, sitting on a workbench.
@@ -13,6 +13,8 @@ I have a pretty strong do-it-yourself (DIY) streak. I wrote about it years ago i
 I was also pretty hesitant to use [large language models (LLMs)](https://developers.google.com/machine-learning/glossary/#large-language-model) in the first place. I find the thoughtless way chatbots with no clear purpose have been pushed into consumer products annoying, and I find generative art ethically problematic. Those objections haven't disappeared. Models trained on open-source code repositories feel less gross, though, and have become undeniably useful. Coding agents, which let a model inspect files and operate tools instead of only returning text, are now powerful enough to be genuinely productive for a lot of enterprise coding and general office work. At this point, denying that feels foolish.
 
 I think smaller local models are going to be sufficient for most users. Frontier models will keep pushing the boundary, and there will still be plenty of work that needs them, such as penetration testing, operating-system development, and genuinely enormous software systems. But most business applications, office work, summarization, research, and everyday coding seem well within reach of an open-weight model whose learned parameter data can be downloaded and run on hardware its owner controls.
+
+Microsoft's early ambition was ["a computer on every desk and in every home."](https://news.microsoft.com/speeches/bill-gates-2013-microsoft-research-faculty-summit/) Bill Gates later said the internal version added "running Microsoft software." I think agentic tools are approaching a similar moment. A capable coding agent on every desk becomes much more plausible when a shared open-weight model can run on a machine in the closet, without charging for every prompt or tool call.
 
 The economics are part of the appeal. I can pay for the hardware and electricity up front, avoid another recurring subscription, and stop watching a per-token meter. Source code and private documents can also stay in the house. I like owning the appliance more than renting access to it.
 
@@ -367,4 +369,8 @@ I'm pretty happy with it. The model is useful enough to keep running, the client
 
 The more interesting question is what this looks like a few years from now. I can imagine plenty of organizations putting a machine with a couple of GPUs in a rack or a closet and making a local model available to every employee. Most of the cost would be paid up front, followed by electricity and the ordinary work of maintaining another server. Within the machine's capacity, people could use it as much as they wanted without watching token budgets, allocating vendor credits, or discovering an unexpected model bill at the end of the month.
 
-Hosted frontier models will still have a place for jobs that need more capability than a small local server can provide. For everyday coding, document work, search, and summarization, though, a shared open-weight model could become as ordinary as the file server used to be. The source code and internal documents would stay inside the organization, and the finance department would know what inference costs before everyone started using it.
+Local inference could democratize agentic coding tools by making them available to a much wider group of people. A large company can absorb a frontier-model subscription or application programming interface bill. That gets harder for an individual developer, a school, a nonprofit, or a small company, particularly when an agent may make hundreds of model calls while it reads a repository, edits code, runs tests, and corrects its own mistakes. Even a modest charge per call adds up, and an unpredictable bill discourages the experimentation that helps people learn what these tools can do.
+
+A self-hosted model changes that calculation. The hardware still costs real money, but it can be bought used, upgraded a piece at a time, and shared. Once it is running, another prompt or another coding session mostly consumes time and electricity. An individual can let an agent work through a problem without wondering whether the attempt is worth another dollar, while a small organization can give the whole staff access without buying a separate seat for everyone.
+
+Hosted frontier models will still have a place for jobs that need more capability than a small local server can provide. A local server can handle the routine work and leave the paid services for the occasions that genuinely need them. For everyday coding, document work, search, and summarization, a shared open-weight model could become as ordinary as the file server used to be. The source code and internal documents would stay inside the organization, the finance department would know what inference costs before everyone started using it, and more people would get access to the tools in the first place. A coding agent on every desk no longer sounds quite so far-fetched.
