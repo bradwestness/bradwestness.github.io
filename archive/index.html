@@ -6,7 +6,7 @@ description: Browse every post from Brad Westness, organized by year.
 ---
 
 <section class="post-list">
-    {% for post in site.posts reversed %}
+    {% for post in site.posts %}
     {% capture date %}{{ post.date }}{% endcapture %}
     {% capture this_year %}{{ date | date: "%Y" }}{% endcapture %}
     {% unless year == this_year %}

@@ -5,3 +5,7 @@
 *.opendb
 .vs
 .vs/**
+node_modules/
+_site/
+_data/responsive_images.json
+content/images/generated/

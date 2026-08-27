@@ -1,4 +1,11 @@
 <figure class="figure w-100">
-    <img class="figure-img img-fluid rounded mx-auto d-block" src="{{ '/content/images/' | append: include.filename | relative_url }}" alt="{{ include.description | escape }}" />
+    {%- assign figure_path = '/content/images/' | append: include.filename -%}
+    {% include responsive-image.html
+        src=figure_path
+        alt=include.description
+        class="figure-img img-fluid rounded mx-auto d-block"
+        sizes="(min-width: 1400px) 856px, (min-width: 1200px) 736px, (min-width: 992px) 616px, (min-width: 768px) 696px, (min-width: 576px) 516px, calc(100vw - 24px)"
+        loading="lazy"
+    %}
     <figcaption class="figure-caption text-center">{{ include.description | escape }}</figcaption>
 </figure>

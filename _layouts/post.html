@@ -30,7 +30,13 @@ single: true
         {% endif %}
         {% if image %}
             <p class="post-image">
-                <img src="{{ image | relative_url }}" alt="{{ image_alt | escape }}" class="img-fluid w-100" />
+                {% include responsive-image.html
+                    src=image
+                    alt=image_alt
+                    class="img-fluid w-100"
+                    sizes="(min-width: 1400px) 856px, (min-width: 1200px) 736px, (min-width: 992px) 616px, (min-width: 768px) 696px, (min-width: 576px) 516px, calc(100vw - 24px)"
+                    fetchpriority="high"
+                %}
             </p>
         {% endif %}
         {{ content }}

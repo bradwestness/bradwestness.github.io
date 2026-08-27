@@ -34,7 +34,22 @@ description: Brad Westness writes about software architecture, .NET, self-hostin
                 {% if post.image and post.image.size > 0 %}
                     <div class="col-3">
                         <a class="excerpt" href="{{ post.url }}">
-                            <img src="{{ post.image | relative_url }}" class="img-thumbnail" alt="{{ post.title }}" />
+                            {% assign thumbnail_alt = post.image_alt | default: post.title %}
+                            {% if forloop.first %}
+                                {% assign thumbnail_loading = nil %}
+                                {% assign thumbnail_priority = "high" %}
+                            {% else %}
+                                {% assign thumbnail_loading = "lazy" %}
+                                {% assign thumbnail_priority = nil %}
+                            {% endif %}
+                            {% include responsive-image.html
+                                src=post.image
+                                alt=thumbnail_alt
+                                class="img-thumbnail"
+                                sizes="(min-width: 1400px) 196px, (min-width: 1200px) 166px, (min-width: 992px) 136px, (min-width: 768px) 156px, (min-width: 576px) 111px, calc(25vw - 24px)"
+                                loading=thumbnail_loading
+                                fetchpriority=thumbnail_priority
+                            %}
                         </a>
                     </div>
                 {% endif %}      

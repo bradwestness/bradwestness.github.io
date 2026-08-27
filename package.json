@@ -1,0 +1,10 @@
+{
+  "name": "bradwestness-github-io",
+  "private": true,
+  "scripts": {
+    "optimize-images": "node scripts/generate-responsive-images.mjs"
+  },
+  "devDependencies": {
+    "sharp": "0.35.4"
+  }
+}
