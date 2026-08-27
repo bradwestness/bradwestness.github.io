@@ -16,16 +16,14 @@ title: .NET software development, Brewers baseball, pop culture, etc.
         {% if post.categories and post.categories.size > 0 %}
             <div class="meta">
                 <div class="tags">
-                    <i class="fa-solid fa-tag"></i>
+                    <i class="fa-solid fa-tag" aria-hidden="true"></i>
                     {% for category in post.categories %}
-                    <span class="badge">
-                        <a href="{{ site.baseurl }}/categories/#{{ category | slugify }}">{{ category }}</a>
-                    </span>
+                    <a class="badge text-bg-secondary text-decoration-none" href="{{ site.baseurl }}/categories/#{{ category | slugify }}">{{ category }}</a>
                     {% endfor %}
                 </div>
             </div>
         {% endif %}
-        <section itemprop="description" class="post-item-exceprt text-justify">
+        <section itemprop="description" class="post-item-excerpt">
             <div class="row">
                 <div class="col">
                     <p class="excerpt">
@@ -34,8 +32,8 @@ title: .NET software development, Brewers baseball, pop culture, etc.
                 </div>                
                 {% if post.image and post.image.size > 0 %}
                     <div class="col-3">
-                        <a class="excerpt" class="link-light link-underline-light" href="{{ post.url }}">
-                            <img src="/{{ post.image }}" class="img-thumbnail rounded" alt="{{ post.title }}" />
+                        <a class="excerpt" href="{{ post.url }}">
+                            <img src="/{{ post.image }}" class="img-thumbnail" alt="{{ post.title }}" />
                         </a>
                     </div>
                 {% endif %}      
@@ -43,7 +41,7 @@ title: .NET software development, Brewers baseball, pop culture, etc.
         </section>
         <footer class="post-item-footer">
             <ul class="post-item-meta-list list-inline">
-                <li class="post-item-meta-item text-secondary">
+                <li class="post-item-meta-item list-inline-item text-secondary">
                     <em>{{ post.date | date_to_string }}</em>
                 </li>
             </ul>
@@ -53,17 +51,19 @@ title: .NET software development, Brewers baseball, pop culture, etc.
 </section>
 
 {% if paginator.total_pages > 1 %}
-<ul class="pagination">
-    {% if paginator.next_page %}
-    <li class="page-item">
-        <a class="page-link" href="{{ paginator.next_page_path }}">&laquo; Older Posts</a>
-    </li>
-    {% endif %}
+<nav aria-label="Blog pages">
+    <ul class="pagination">
+        {% if paginator.next_page %}
+        <li class="page-item">
+            <a class="page-link" href="{{ paginator.next_page_path }}"><span aria-hidden="true">&laquo;</span> Older Posts</a>
+        </li>
+        {% endif %}
 
-    {% if paginator.previous_page %}
-    <li class="page-item">
-        <a class="page-link" href="{{ paginator.previous_page_path }}">Newer Posts &raquo;</a>
-    </li>
-    {% endif %}
-</ul>
+        {% if paginator.previous_page %}
+        <li class="page-item">
+            <a class="page-link" href="{{ paginator.previous_page_path }}">Newer Posts <span aria-hidden="true">&raquo;</span></a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
 {% endif %}

@@ -16,9 +16,8 @@ title: Archive
     </div>
     {% endunless %}
     <div class="row">
-        <div class="col-4 text-right">
-            <a name="{{ date | date: '%Y' }}"></a>
-            <h2 id="#{{ date | date: '%Y' }}" class="year">{{ date | date: "%Y" }}</h2>
+        <div class="col-4 text-end">
+            <h2 id="{{ date | date: '%Y' }}" class="year">{{ date | date: "%Y" }}</h2>
         </div>
         <div class="col-8">
             <ul class="list-unstyled">

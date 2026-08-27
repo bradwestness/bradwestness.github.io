@@ -1,5 +1,18 @@
 ﻿(function ($) {
 
+    var darkMode = window.matchMedia("(prefers-color-scheme: dark)");
+    var setBootstrapTheme = function (colorScheme) {
+        document.documentElement.setAttribute("data-bs-theme", colorScheme.matches ? "dark" : "light");
+    };
+
+    setBootstrapTheme(darkMode);
+
+    if (darkMode.addEventListener) {
+        darkMode.addEventListener("change", setBootstrapTheme);
+    } else {
+        darkMode.addListener(setBootstrapTheme);
+    }
+
     var getCookie = function (key) {
         var cookie = key + "=";
         var decoded = decodeURIComponent(document.cookie);

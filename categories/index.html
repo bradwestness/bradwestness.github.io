@@ -9,9 +9,8 @@ title: Categories
     {% for category in sorted_categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div class="row">
-        <div class="col-4 text-right">
-            <a name="{{ category_name | slugify }}"></a>
-            <h2 id="#{{ category_name | slugify }}" class="category">{{ category_name }}</h2>
+        <div class="col-4 text-end">
+            <h2 id="{{ category_name | slugify }}" class="category">{{ category_name }}</h2>
         </div>
         <div class="col-8">
             <ul class="list-unstyled">
