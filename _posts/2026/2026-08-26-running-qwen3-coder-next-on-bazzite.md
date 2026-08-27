@@ -61,6 +61,7 @@ There are plenty of good alternatives. Llama and Mistral have broad local toolin
 | UD-Q4_K_XL | ~50 GB | Practical quality/speed starting point |
 | UD-Q6_K / Q6_K | ~66 GB | Higher weight fidelity, more CPU/RAM traffic |
 | Higher precision | Larger still | Better fidelity, increasingly impractical locally |
+{: .table .table-striped }
 
 The exact size depends on the artifact and quantization build, so check the file listing before starting a very large download. These are only the rough numbers I used for planning.
 
@@ -356,7 +357,7 @@ systemctl --user enable --now podman-auto-update.timer
 
 Quadlet does not keep the machine awake. If Bazzite suspends, the model server and Open WebUI become unreachable until the machine wakes. Since I want this machine to act as a server while it is plugged in, I disabled automatic suspend while it is running on wall power. An incoming Tailscale request isn't going to wake the GPU for me.
 
-## The Finished Shape
+## The Road Ahead
 
 I wound up with a small, private local artificial intelligence (AI) stack. Qwen Code on my work machine connects through Tailscale directly to the OpenAI-compatible `llama.cpp` server on port 8080. From a browser or Android phone, I connect to Open WebUI on port 8081, which sends its model requests to that same server.
 
