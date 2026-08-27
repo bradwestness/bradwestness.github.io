@@ -7,15 +7,25 @@ description: Browse posts from Brad Westness by topic, including software, progr
 
 <section class="post-list">
     {% assign sorted_categories = site.categories | sort %}
+    {% assign largest_category_size = 0 %}
     {% for category in sorted_categories %}
-    {% capture category_name %}{{ category | first }}{% endcapture %}
+        {% assign category_posts = category | last %}
+        {% if category_posts.size > largest_category_size %}
+            {% assign largest_category_size = category_posts.size %}
+        {% endif %}
+    {% endfor %}
+    {% for post_count in (1..largest_category_size) reversed %}
+    {% for category in sorted_categories %}
+    {% assign category_name = category | first %}
+    {% assign category_posts = category | last %}
+    {% if category_posts.size == post_count %}
     <div class="row">
         <div class="col-4 text-end">
             <h2 id="{{ category_name | slugify }}" class="category">{{ category_name }}</h2>
         </div>
         <div class="col-8">
             <ul class="list-unstyled">
-                {% for post in site.categories[category_name] %}
+                {% for post in category_posts %}
                 <li>
                     <a href="{{ post.url }}">{{ post.title }}</a>
                 </li>
@@ -23,5 +33,7 @@ description: Browse posts from Brad Westness by topic, including software, progr
             </ul>
         </div>
     </div>
+    {% endif %}
+    {% endfor %}
     {% endfor %}
 </section>
