@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hosting Wildcard Subdomains from Home for Free
-categories: [Software,Programming]
+categories: [Software, Home Lab, Infrastructure, Web Development]
 image: content/images/domain_banner.png
 image_alt: Inside a home network rack, a UniFi switch with ethernet cables patched into a punch-down panel above a Dell rackmount server.
 ---

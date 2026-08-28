@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Switching Your Home Network to UniFi
-categories: [Software,Programming]
+categories: [Software, Home Lab, Infrastructure, DIY]
 image: content/images/unifi_header.jpg
 image_alt: A product photo of three white UniFi rackmount network switches stacked together, patch cables fanning out of their ports and a small throughput display lit on each front panel.
 ---

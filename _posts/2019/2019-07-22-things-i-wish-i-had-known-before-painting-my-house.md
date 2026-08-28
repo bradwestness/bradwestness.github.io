@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Things I Wish I Had Known Before Painting My House
-categories: [Personal]
+categories: [Personal, DIY]
 image: content/images/painting.jpg
 image_alt: A small bathroom prepped for painting, with green painter's tape lining the tub surround and trim, a stepladder standing on a drop cloth, and rollers and tools piled in the bathtub.
 ---

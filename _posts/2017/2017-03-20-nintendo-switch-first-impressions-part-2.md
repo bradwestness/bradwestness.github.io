@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nintendo Switch First Impressions, Part 2
-categories: [Nintendo, Games]
+categories: [Games, Nintendo]
 ---
 
 In [Part 1](https://www.bradwestness.com/2017/03/19/nintendo-switch-first-impressions-part-1) of this series, I talked about my overall impressions of the Switch and its

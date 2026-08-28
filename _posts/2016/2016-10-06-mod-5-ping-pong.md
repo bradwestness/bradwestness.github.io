@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introducing Mod 5 - A Table Tennis Game
+categories: [Games, DIY]
 ---
 
 **Mod 5** is a game for 3 or more people that can be played using standard

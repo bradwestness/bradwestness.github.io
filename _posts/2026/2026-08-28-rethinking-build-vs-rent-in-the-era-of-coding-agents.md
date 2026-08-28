@@ -2,7 +2,7 @@
 layout: post
 title: Rethinking Build vs. Rent in the Era of Coding Agents
 description: Coding agents make it practical to replace recurring managed-service costs with reusable internal software built on proven components and cheaper infrastructure.
-categories: [Software, Programming, AI]
+categories: [Software, AI, Infrastructure, Libraries, Testing]
 image: content/images/rethinking-build-vs-rent-in-the-era-of-coding-agents.jpg
 image_alt: Two industrial robots work on a partially assembled silver car body inside an automotive factory.
 ---

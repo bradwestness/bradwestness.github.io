@@ -1,8 +1,13 @@
 ---
 layout: post
 title: Introducing Dossier.NET - A Transactional File Manipulation Library
-categories: [Software, .NET, Programming]
+description: A historical look at Dossier.NET, a decommissioned transactional file-management library for .NET.
+categories: [Software, .NET, Libraries]
 ---
+
+<div class="alert alert-warning" role="alert">
+    <strong>Historical note:</strong> Dossier.NET has been decommissioned and is no longer maintained. This post remains available for historical context. <a href="https://github.com/chinhdo/txFileManager">TxFileManager</a> provides a similar transactional file-management API, although it is also an older dependency and should be evaluated carefully before adopting it.
+</div>
 
 Here's a new project I just started over the weekend that I'm
 pretty excited about: it's called Dossier.NET and it's a transactional

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Build-time Minification of Web Assets in ASP.NET
-categories: [Software, .NET, Programming]
+categories: [Software, .NET, Web Development]
 ---
 
 For a recent project, I wanted to do build-time minification of

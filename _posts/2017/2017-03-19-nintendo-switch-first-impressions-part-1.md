@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nintendo Switch First Impressions, Part 1
-categories: [Nintendo, Games]
+categories: [Games, Nintendo]
 ---
 
 For the past decade at least, I've been a "gamer" in so much as I always play the new

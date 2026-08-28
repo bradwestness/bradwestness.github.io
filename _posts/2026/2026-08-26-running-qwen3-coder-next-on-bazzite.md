@@ -2,7 +2,7 @@
 layout: post
 title: "A Coding Agent on Every Desk: Running Qwen on Bazzite"
 description: How I built a private, self-hosted coding agent with Qwen3-Coder-Next, llama.cpp, Podman, Open WebUI, and Tailscale on a Bazzite desktop.
-categories: [Software, Programming]
+categories: [Software, AI, Home Lab, DIY]
 image: content/images/running-qwen-on-bazzite.jpg
 image_alt: An open black desktop computer case with an RTX graphics card and three blue-lit intake fans, sitting on a workbench.
 ---

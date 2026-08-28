@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Assigning a Fixed IP Address to a NIC Team in Windows Server
-categories: [Software,Programming]
+categories: [Software, Home Lab, Infrastructure]
 image: content/images/windows-server-manager-nic-team.png
 image_alt: The Windows Server Manager Local Server properties pane for a machine named QUASAR, showing NIC Teaming enabled and the NIC Team's IPv4 address assigned by DHCP, on Windows Server 2022 Standard.
 ---
@@ -48,4 +48,3 @@ Now, if you go create a fixed IP address to the new device on your router (after
 {% include figure.html filename="nic-team-plex-remote-access.png" description="My server is actually using the fixed IP address I assigned to it, wow!" %}
 
 Victory!
-

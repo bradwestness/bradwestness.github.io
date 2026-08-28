@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Record Collection Equality in C#
-categories: [Software,Programming,.NET]
+categories: [Software, .NET]
 image: content/images/record_collection.jpeg
 image_alt: A close-up of a vinyl record collection, with jazz LPs including Art Tatum and Miles Davis stacked upright beside a wooden box of 7-inch singles in plastic sleeves.
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Generating PDFs with ASP.NET Core and WKHtmlToPDF
-categories: [Software,Programming,.NET]
+categories: [Software, .NET, Web Development]
 image: content/images/wkhtmltopdf.jpg
 image_alt: A split graphic labeled HTML on the left, showing raw markup in a dark editor, and PDF on the right, showing the same Wikipedia article rendered as a PDF, with a large arrow pointing from one to the other.
 ---

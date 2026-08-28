@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Incredibles isn't Fascist or Objectivist or Whatever
-categories: [Movies, Politics]
+categories: [Film & TV, Politics]
 ---
 
 Popular consensus seems to have settled on the idea that 
@@ -157,4 +157,4 @@ but having a special talent doesn't make them inherently
 
 This is the true moral of the film, and it's pretty much the 
 opposite of [Objectivism](http://en.wikipedia.org/wiki/Objectivism_(Ayn_Rand)) (which says that it's immoral to act out 
-of anything *other than* pure self-interest). 
+of anything *other than* pure self-interest).

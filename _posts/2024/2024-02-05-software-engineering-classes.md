@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Software Engineering Character Classes
-categories: [Software,Programming]
+categories: [Software, Engineering Culture]
 image: content/images/character_classes.jpg
 image_alt: A set of orange polyhedral dice scattered across a Dungeons and Dragons character record sheet, with the equipment and skills columns visible underneath.
 ---

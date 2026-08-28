@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Of Daylight and Savings
-categories: [Software,Programming,.NET]
+categories: [Software, .NET, Data]
 image: content/images/dali.png
 image_alt: A detail from Salvador Dali's painting The Persistence of Memory, showing melting pocket watches draped over a table edge and over a pale organic form, with ants crawling across a closed orange watch case.
 ---

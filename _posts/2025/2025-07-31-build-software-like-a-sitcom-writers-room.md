@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Build Software Like a Sitcom Writers Room
-categories: [Software, TV, Personal]
+categories: [Software, Engineering Culture, Film & TV]
 image: content/images/30-rock-writers-table.jpg
 image_alt: The writers' room from 30 Rock, where Tina Fey as Liz Lemon sits at a table strewn with newspapers, yellow legal pads, coffee mugs and water bottles, surrounded by other writers.
 ---

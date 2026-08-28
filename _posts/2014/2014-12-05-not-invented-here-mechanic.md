@@ -1,13 +1,11 @@
 ---
 layout: post
 title: Not Invented Here Mechanic  
-categories: [Software, Programming]
+categories: [Software, Engineering Culture, Libraries]
 ---
   
 Here's a little thought experiment: **What if industries other than software development
-suffered from '[Not Invented Here](http://en.wikipedia.org/wiki/Not_invented_here)' as much as we do*?**
-
-####<small>* Note how "In Computing" is the only industry-specific section of the article.</small>
+suffered from '[Not Invented Here](http://en.wikipedia.org/wiki/Not_invented_here)' as much as we do?**
 
 ---
 

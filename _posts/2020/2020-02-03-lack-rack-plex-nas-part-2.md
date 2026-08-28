@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building a LACK Rack Plex NAS From a Refurbished Rackmount Server, Part 2
-categories: [Personal,Software,TV,Movies]
+categories: [Software, Home Lab, DIY]
 image: content/images/lack-rack-basement.jpg
 image_alt: The same LACK table rack relocated to a basement against an orange-painted concrete wall, with a router and cable modem on top and the Dell server and APC UPS mounted below.
 ---

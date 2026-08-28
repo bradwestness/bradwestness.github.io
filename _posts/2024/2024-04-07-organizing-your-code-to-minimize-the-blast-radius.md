@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Organizing Your Code to Minimize the 'Blast Radius'
-categories: [Software,Programming,.NET]
+categories: [Software, .NET, Architecture, Testing]
 image: content/images/blast-radius.jpg
 image_alt: An illustration of a nuclear explosion, a fiery mushroom cloud rising above a spreading ring of flame.
 ---

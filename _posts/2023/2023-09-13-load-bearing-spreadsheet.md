@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Load-Bearing Spreadsheet
-categories: [Software,Programming,.NET]
+categories: [Software, Engineering Culture, Data]
 image: content/images/load_bearing_brace.png
 image_alt: The structural steel skeleton of a building under construction, with painted beams and diagonal braces bolted together at the joints.
 ---

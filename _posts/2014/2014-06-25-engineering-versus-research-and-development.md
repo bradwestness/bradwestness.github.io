@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Engineering versus Research and Development  
-categories: [Software, Programming]
+categories: [Software, Engineering Culture]
 ---
   
 While listening to [an episode of the *.NET Rocks* podcast](http://www.dotnetrocks.com/default.aspx?showNum=996) on my commute, as is my wont, something that guest [Doc Norton](http://www.docondev.com/) said really resonated with me.
@@ -17,4 +17,4 @@ These things are all attempting to deal with the fact that the [Waterfall model]
 
 The problem is that when customers and bosses think of us as engineers running engineering projects, they expect us to be able to estimate, design, implement, and measure the success of the project as though it was an engineering project. This doesn't work because almost all projects have shifting requirements and are often never truly "finished." Your process can always be better, faster, stronger. You have the technology.
 
-Calling yourself an engineer is seductive, because it makes you sound professional and can guarantee the success of a project, but **it's a lie**. Setting expectations up front that a software *development* project is an R&D effort and not an engineering process helps set expectations on all sides as to how every aspect of the project is approached, and ultimately whether it will be a success. That's why I maintain the title of **Developer** on my resume and professional correspondence. 
+Calling yourself an engineer is seductive, because it makes you sound professional and can guarantee the success of a project, but **it's a lie**. Setting expectations up front that a software *development* project is an R&D effort and not an engineering process helps set expectations on all sides as to how every aspect of the project is approached, and ultimately whether it will be a success. That's why I maintain the title of **Developer** on my resume and professional correspondence.

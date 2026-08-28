@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Better Home/Away Smart Thermostat Detection via Wifi and IFTTT
-categories: [Personal,Software,Programming]
+categories: [Software, Home Lab, DIY]
 image: content/images/wifi-thermostat-device.jpg
 image_alt: A hallway wall with a UniFi wireless access point, its status ring lit blue, mounted above a Honeywell smart thermostat displaying 66 degrees.
 ---

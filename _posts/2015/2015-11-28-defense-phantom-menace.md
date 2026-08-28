@@ -1,7 +1,7 @@
 ---
 layout: post
 title: In Defense of The Phantom Menace
-categories: [Movies]
+categories: [Film & TV]
 ---
 
 I've been working my way through the *Star Wars* films in a modified [Machete Order](http://www.nomachetejuggling.com/2011/11/11/the-star-wars-saga-suggested-viewing-order/) to

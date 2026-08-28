@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paper Mario Party - Build Your Own Mario Party Style Board Game
-categories: [Personal,Games]
+categories: [Games, Nintendo, DIY]
 image: content/images/paper_mario_party_cover.png
 image_alt: A hand-drawn board game on butcher paper titled 'Paper Mario Party', with a grid of Item and Chance spaces, hand-cut decks of cards, paper coins and stars, and cutout Mario and Luigi heads as player tokens.
 ---

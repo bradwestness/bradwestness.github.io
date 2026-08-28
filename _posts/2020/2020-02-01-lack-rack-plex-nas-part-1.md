@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building a LACK Rack Plex NAS From a Refurbished Rackmount Server, Part 1
-categories: [Personal,Software,TV,Movies]
+categories: [Software, Home Lab, DIY]
 image: content/images/lack-rack-plex-nas.jpg
 image_alt: An IKEA LACK side table in a living room with a rackmount Dell server and an APC UPS bolted into its legs underneath, and wireless routers sitting on top.
 ---

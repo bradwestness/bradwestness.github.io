@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Internal is your friend. Projects are interfaces. Oceans are battlefields.
-categories: [Software, Programming, .NET]
+categories: [Software, .NET, Architecture]
 image: content/images/master_and_commander_header.jpg
 image_alt: Russell Crowe as Captain Jack Aubrey in a navy dress coat, standing amid rigging ropes on a crowded ship's deck, from the film Master and Commander.
 ---

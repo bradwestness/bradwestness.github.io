@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "*The Muppets* TV Series Initial Reaction"
-categories: [TV]
+categories: [Film & TV]
 ---
   
 

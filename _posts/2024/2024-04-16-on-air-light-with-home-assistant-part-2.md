@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a Smart 'On Air' Light with Home Assistant - Part 2
-categories: [Software, Programming]
+categories: [Software, Home Lab, DIY]
 image: content/images/on_air_light_on_call.jpg
 image_alt: A ceiling dome light fixture in a hallway lit half warm white and half red, casting a red glow across the wall beside it.
 ---
@@ -173,4 +173,3 @@ action:
     option: "2"
 mode: single
 ```
-

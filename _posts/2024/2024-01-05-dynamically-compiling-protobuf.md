@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dynamically Compiling Protobuf Schemas from Confluent Schema Registry
-categories: [Software,Programming]
+categories: [Software, .NET, Data, Testing]
 image: content/images/confluent-schema-registry.png
 image_alt: The Confluent Cloud web console for a Kafka topic named brad-bridge-target, with a 'Produce a new message' dialog open showing a key of 18 and a JSON order payload.
 ---

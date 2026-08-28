@@ -1,10 +1,15 @@
 ---
 layout: post
 title: Running Entity Framework Queries from Embedded Resource SQL Files with EFQueryScript
-categories: [Programming,Software]
+description: A historical look at EFQueryScript, a decommissioned library for executing embedded SQL resource files through Entity Framework.
+categories: [Software, .NET, Libraries, Data]
 image: content/images/sql-resource.png
 image_alt: A .sql file named GetTop10ArtistsByPlaylistCount.sql open in Visual Studio, containing a T-SQL query that joins the Artists, Albums, Tracks and Playlist_Track tables to count playlist appearances.
 ---
+
+<div class="alert alert-warning" role="alert">
+    <strong>Historical note:</strong> EFQueryScript and EFQueryScript.Core have been decommissioned and are no longer maintained. This post remains available for historical context. For new projects, use <a href="https://learn.microsoft.com/en-us/ef/core/querying/sql-queries">Entity Framework Core's built-in SQL-query APIs</a>; SQL files can still be stored as embedded resources when keeping queries in separate files is useful.
+</div>
 
 ## Persistence, Neglected
 
