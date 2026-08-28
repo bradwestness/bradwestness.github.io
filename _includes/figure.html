@@ -1,8 +1,9 @@
 <figure class="figure w-100">
     {%- assign figure_path = '/content/images/' | append: include.filename -%}
+    {%- assign figure_alt = include.alt | default: include.description -%}
     {% include responsive-image.html
         src=figure_path
-        alt=include.description
+        alt=figure_alt
         class="figure-img img-fluid rounded mx-auto d-block"
         sizes="(min-width: 1400px) 856px, (min-width: 1200px) 736px, (min-width: 992px) 616px, (min-width: 768px) 696px, (min-width: 576px) 516px, calc(100vw - 24px)"
         loading="lazy"

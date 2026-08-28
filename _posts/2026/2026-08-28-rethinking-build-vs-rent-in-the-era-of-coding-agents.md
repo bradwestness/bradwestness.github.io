@@ -61,6 +61,12 @@ This is why systems thinking becomes more important in the agentic coding era. W
 
 [Donella Meadows' *Thinking in Systems*](https://www.penguinrandomhouse.com/books/801035/thinking-in-systems-by-donella-meadows/) is one of the books I find myself recommending most often. Meadows describes systems in terms of stocks, flows, feedback loops, delays, resilience, and boundaries. These ideas come from systems dynamics, but they map almost suspiciously well onto event-driven software.
 
+{% include figure.html
+    filename="reading-thinking-in-systems-on-vacation.jpg"
+    alt="A copy of Donella Meadows' Thinking in Systems held in front of the ocean at sunset."
+    description="Me reading a systems thinking book on a beach in California, because I am a huge dork."
+%}
+
 A message queue is a stock. Producers create an inflow and consumers create an outflow. If messages arrive faster than consumers process them, the stock grows, no matter how elegant the consumer's dependency injection configuration is. Autoscaling is a delayed feedback loop. Retries can become a reinforcing loop: failures create more work, the added load puts pressure on the unhealthy dependency, and that pressure produces more failures. A dead-letter queue is another stock, useful only if something eventually drains it.
 
 Make those decisions explicit before asking an agent for implementation. Write down:
