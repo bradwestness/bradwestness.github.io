@@ -109,9 +109,15 @@ Those costs are receiving more scrutiny. The Associated Press recently reported 
 
 Some businesses advised by Bain & Company had seen token costs doubling almost every other month and were beginning to route ordinary tasks to cheaper models instead of using the most capable model for everything.
 
-Model routing is sensible, but it still means paying a cheaper model to do the same work ten times. A better optimization is to eliminate nine of the jobs.
+There is a place for model routing. A cheap, fast model is perfectly adequate for routine transformations with clear inputs, outputs, and tests. But treating every coding task as interchangeable token consumption misses how recently models became capable enough to do serious software engineering at all. Only the latest generation can reliably navigate an unfamiliar codebase, preserve intent across a large change, use tools, recover from failures, and reason about the consequences of a design. Those capabilities are what persuaded developers to reorganize their work around agents in the first place.
+
+It is frustrating to push developers into that new way of working and then, as soon as it becomes productive, tell them to retreat to less capable models because the tokens cost too much. The model may be cheaper per request, but the engineering work is not necessarily cheaper after a developer supplies more context, corrects more mistakes, retries failed approaches, and supervises a task the stronger model could have completed. Model capability is not a fungible commodity, and developer attention does not disappear from the bill just because it is charged to a different budget.
+
+The better response is not a blanket downgrade. It is to stop paying any model to solve the same problem repeatedly. Model routing can reduce the price of each of ten jobs; a reusable library can eliminate nine of them.
 
 When several services need the same difficult infrastructure behavior, concentrate the investment. Let the best model reason deeply about lease expiry, idempotency, shutdown, and compatibility. Run the adversarial tests, benchmark the result, review it carefully, and document it. Once those decisions live in a package, a less expensive model in a consumer repository only needs to find the package, understand its [deliberately boring public API](/2024/04/09/projects-are-interfaces/), and wire it into the application.
+
+That turns expensive-model tokens into a capital investment rather than a recurring expense. The organization is not merely buying an answer to today's prompt; it is buying a tested artifact that every future team and agent can reuse. Spend capable-model tokens where capability changes the quality of the result, preserve that result in software, and reserve cheaper models for the genuinely routine work around it.
 
 Make the shared solution easy for agents to discover. Put it in the organization's package catalog, mention it in repository instructions, and ship useful documentation with the code. I have written before about [using documentation as instructions for coding agents](/2026/08/06/some-assembly-required-using-doc-comments-as-agent-instructions/); a reusable library only saves tokens when the agent knows it exists and can understand how to use it.
 
@@ -152,7 +158,7 @@ The playbook is consistent:
 - Prove failure and recovery behavior against real disposable dependencies.
 - Ship telemetry, dashboards, alerts, runbooks, and upgrade tests with the code.
 - Put the result in a shared package with a named owner and make it discoverable to agents.
-- Spend expensive-model tokens on the reusable component, then use cheaper models to integrate it.
+- Spend capable-model tokens on the reusable component, then route routine integration work to cheaper models when the task genuinely fits them.
 
 This is not an argument for recreating databases, drivers, encryption mechanisms, security protocols, consensus algorithms, or globally distributed platforms from scratch. It is an argument for replacing recurring managed-service costs with reusable internal code where a narrow layer on cheaper commodity infrastructure can provide the behavior the organization actually uses.
 
