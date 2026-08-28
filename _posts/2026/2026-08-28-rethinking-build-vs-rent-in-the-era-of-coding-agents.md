@@ -35,7 +35,7 @@ Consider a collection of applications that need a modest subset of Elasticsearch
 
 The same logic applies to a focused Kafka bridge instead of a managed connector, or an owned job host instead of an [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview/). The point is not to recreate the underlying platform. It is to own the narrow capability that the application actually needs.
 
-Agents will still confidently misunderstand requirements and reproduce bad patterns from their training data. The response is to give them a precise work order and make them prove the result. Generated code is a draft. The system contract and acceptance tests decide whether that draft is allowed into production.
+Agents will still confidently misunderstand requirements and reproduce bad patterns from their training data. The response is to give them a precise work order and make them prove the result. [Generated code is a draft](/2025/07/31/build-software-like-a-sitcom-writers-room/). The system contract and acceptance tests decide whether that draft is allowed into production.
 
 ## Test Against the Real System
 
@@ -43,7 +43,7 @@ Imagine that you need to move messages from a Kafka topic into a database. [Conf
 
 Owning that capability means more than calling `Consume` in a loop and inserting each result into a table. You have to decide when to commit an offset, what happens when a database write succeeds but the offset commit fails, whether two deliveries of the same message produce the same result, how to handle malformed records, and how the process shuts down during a rebalance or deployment. Then you need health checks, metrics, configuration, deployment manifests, documentation, and tests for all of it.
 
-Do not ask an agent to implement that list and accept a passing unit-test suite as proof. Give it an executable definition of reliability. Have it start real Kafka and database instances with [Testcontainers](https://dotnet.testcontainers.org/), then prove what happens during duplicate delivery, malformed input, transient database failures, restarts, consumer rebalances, and interrupted shutdowns. When a test exposes a race, let the agent revise the implementation and rerun the entire suite.
+Do not ask an agent to implement that list and accept a [passing unit-test suite](/2026/04/02/testing-software-at-the-right-focal-length/) as proof. Give it an executable definition of reliability. Have it start real Kafka and database instances with [Testcontainers](https://dotnet.testcontainers.org/), then prove what happens during duplicate delivery, malformed input, transient database failures, restarts, consumer rebalances, and interrupted shutdowns. When a test exposes a race, let the agent revise the implementation and rerun the entire suite.
 
 The pattern is straightforward: build the narrow behavior you need on top of mature parts, then test the seams where their guarantees meet yours. Use established Kafka clients, PostgreSQL drivers, cryptography libraries, dependency injection frameworks, and telemetry libraries. Do not reinvent Kafka, PostgreSQL, encryption, authentication protocols, or distributed consensus. Own the small layer that translates those systems into the exact semantics your applications need.
 
@@ -105,11 +105,11 @@ Some businesses advised by Bain & Company had seen token costs doubling almost e
 
 Model routing is sensible, but it still means paying a cheaper model to do the same work ten times. A better optimization is to eliminate nine of the jobs.
 
-When several services need the same difficult infrastructure behavior, concentrate the investment. Let the best model reason deeply about lease expiry, idempotency, shutdown, and compatibility. Run the adversarial tests, benchmark the result, review it carefully, and document it. Once those decisions live in a package, a less expensive model in a consumer repository only needs to find the package, understand its deliberately boring public API, and wire it into the application.
+When several services need the same difficult infrastructure behavior, concentrate the investment. Let the best model reason deeply about lease expiry, idempotency, shutdown, and compatibility. Run the adversarial tests, benchmark the result, review it carefully, and document it. Once those decisions live in a package, a less expensive model in a consumer repository only needs to find the package, understand its [deliberately boring public API](/2024/04/09/projects-are-interfaces/), and wire it into the application.
 
 Make the shared solution easy for agents to discover. Put it in the organization's package catalog, mention it in repository instructions, and ship useful documentation with the code. I have written before about [using documentation as instructions for coding agents](/2026/08/06/some-assembly-required-using-doc-comments-as-agent-instructions/); a reusable library only saves tokens when the agent knows it exists and can understand how to use it.
 
-The useful boundary is between application policy and infrastructure mechanism. The rule for deciding *which* orders need reconciliation belongs in the application. The machinery ensuring that a reconciliation job is leased to one host, retried safely, observable, and drained during shutdown belongs in a shared component.
+The useful boundary is between [application policy and infrastructure mechanism](/2016/01/15/living-in-the-problem-domain/). The rule for deciding *which* orders need reconciliation belongs in the application. The machinery ensuring that a reconciliation job is leased to one host, retried safely, observable, and drained during shutdown belongs in a shared component.
 
 A shared library can become its own small piece of critical infrastructure:
 
@@ -131,9 +131,9 @@ A shared library can become its own small piece of critical infrastructure:
 
 The classic xkcd comic shows all of modern digital infrastructure balanced on a small project maintained by one person in Nebraska. Coding agents make that small block easier to create; they do not make the tower resting on it weigh any less.
 
-Give the shared package an owner, versioning, release notes, documentation, telemetry, and compatibility tests. Every new consumer amortizes the original investment and increases the [blast radius](/2024/04/07/organizing-your-code-to-minimize-the-blast-radius/) of a mistake. Recognize when a library has become load-bearing and maintain it accordingly.
+Give the shared package an owner, versioning, release notes, documentation, telemetry, and compatibility tests. Every new consumer amortizes the original investment and increases the [blast radius](/2024/04/07/organizing-your-code-to-minimize-the-blast-radius/) of a mistake. Recognize when a library has become [load-bearing](/2023/09/13/load-bearing-spreadsheet/) and maintain it accordingly.
 
-A good engineer knows that the best performance optimization is avoiding unnecessary work. The same principle applies to AI costs: the cheapest token is the one you never spend because the answer already exists as a reusable, tested artifact.
+A good engineer knows that the [best performance optimization is avoiding unnecessary work](/2017/11/07/the-pit-of-poor-performance-part-2/). The same principle applies to AI costs: the cheapest token is the one you never spend because the answer already exists as a reusable, tested artifact.
 
 ## Own More of the Stack
 
