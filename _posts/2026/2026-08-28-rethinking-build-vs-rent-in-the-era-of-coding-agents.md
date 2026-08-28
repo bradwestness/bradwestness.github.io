@@ -69,19 +69,20 @@ This is why systems thinking becomes more important in the agentic coding era. W
 
 A message queue is a stock. Producers create an inflow and consumers create an outflow. If messages arrive faster than consumers process them, the stock grows, no matter how elegant the consumer's dependency injection configuration is. Autoscaling is a delayed feedback loop. Retries can become a reinforcing loop: failures create more work, the added load puts pressure on the unhealthy dependency, and that pressure produces more failures. A dead-letter queue is another stock, useful only if something eventually drains it.
 
-Make those decisions explicit before asking an agent for implementation. Write down:
+This is where I think a human software architect creates the most value. The architect is responsible for thinking critically about the system as a whole: not merely whether each component is well written, but whether those components collectively solve the right problem under load and in the presence of concurrency and failure. Before asking an agent for implementation, the architect should make the important decisions explicit:
 
 - The system's purpose and boundaries.
-- Its delivery guarantee and idempotency strategy.
+- Its delivery semantics, idempotency strategy, and event ordering guarantees.
+- Its concurrency model, coordination boundaries, and potential race conditions.
 - Its important stocks, flows, feedback loops, and delays.
 - Its failure and recovery behavior.
 - Its operational signals and owner.
 
-Then ask an agent to attack that model: find ambiguous semantics, invent failure scenarios, identify unbounded stocks, and challenge assumptions. Only after the model survives that review should implementation begin.
+The human architect does not have to answer those questions alone, but they do have to bear responsibility for the answers. An agent can help attack the model: find ambiguous semantics, invent failure scenarios, identify unbounded stocks, expose race conditions, and challenge assumptions. It cannot be accountable for whether the organization chose the right system to build. Only after the model survives that review should implementation begin.
 
-This separates the expensive thinking from the abundant typing. Spending tokens on a design review before generation is far cheaper than spending them hardening the first architecture somebody happened to type into a prompt.
+This separates architectural judgment from abundant typing. Spending tokens on a design review before generation is far cheaper than spending them hardening the first architecture somebody happened to type into a prompt.
 
-Agents make it easier than ever to build the thing right. Systems thinking is how we build the right thing first.
+Agents make it easier than ever to build the thing right. The human architect's systems thinking is how we build the right thing first.
 
 ## Build for Operations
 
