@@ -8,6 +8,10 @@ image_alt: A split graphic labeled HTML on the left, showing raw markup in a dar
 
 It's the bane of every web developer's existence (perhaps I'm projecting there?), but if you work on web applications long enough - eventually, you're going to be asked to dynamically generate some PDFs.
 
+<div class="alert alert-warning" role="alert">
+    <strong>Historical note:</strong> RazorDinkToPdf has been decommissioned and is no longer maintained, and the underlying WKHtmlToPDF project has also been archived. This post remains available for historical context. For new projects, <a href="https://playwright.dev/dotnet/docs/api/class-page#page-pdf-async">Playwright for .NET can generate PDFs using Chromium</a>.
+</div>
+
 ## The Alternative Matrix
 
 There are about as many libraries for generating PDFs as there are stars in the galaxy. [PDFSharp](http://www.pdfsharp.com/PDFsharp/), [IronPDF](https://ironpdf.com/), [Aspose PDF](https://products.aspose.com/pdf/), [iText](https://itextpdf.com/), [Docotic](https://bitmiracle.com/pdf-library/), [Winnovative](https://www.winnovative-software.com/), etc. A quick search for "PDF" on NuGet.org finds over 2,700 packages, and that's just the .NET landscape.

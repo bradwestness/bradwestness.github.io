@@ -7,13 +7,13 @@ image: content/images/sql-resource.png
 image_alt: A .sql file named GetTop10ArtistsByPlaylistCount.sql open in Visual Studio, containing a T-SQL query that joins the Artists, Albums, Tracks and Playlist_Track tables to count playlist appearances.
 ---
 
-<div class="alert alert-warning" role="alert">
-    <strong>Historical note:</strong> EFQueryScript and EFQueryScript.Core have been decommissioned and are no longer maintained. This post remains available for historical context. For new projects, use <a href="https://learn.microsoft.com/en-us/ef/core/querying/sql-queries">Entity Framework Core's built-in SQL-query APIs</a>; SQL files can still be stored as embedded resources when keeping queries in separate files is useful.
-</div>
-
 ## Persistence, Neglected
 
 I've been gnawing on this bone for a long time: data persistence is perhaps the most important part of essentially any non-trivial application, and yet it's the piece that seems to get the least tooling love in many programming ecosystems.
+
+<div class="alert alert-warning" role="alert">
+    <strong>Historical note:</strong> EFQueryScript and EFQueryScript.Core have been decommissioned and are no longer maintained. This post remains available for historical context. For new projects, use <a href="https://learn.microsoft.com/en-us/ef/core/querying/sql-queries">Entity Framework Core's built-in SQL-query APIs</a>; SQL files can still be stored as embedded resources when keeping queries in separate files is useful.
+</div>
 
 I'm not talking about DBA level tooling, which is pretty uniformly great across the major database platforms, I'm talking about the actual persistence layer of getting data into and out of the database from your application.
 

@@ -5,11 +5,11 @@ description: A historical look at EPPlusEnumerable, a decommissioned .NET librar
 categories: [Software, .NET, Libraries]
 ---
 
+Let's say you're working on an ASP.NET web app and want to create a report of all users and orders. I created a little utility built on top of the excellent (and open source) [EPPlus](http://epplus.codeplex.com/) to make this as easy as possible.
+
 <div class="alert alert-warning" role="alert">
     <strong>Historical note:</strong> EPPlusEnumerable has been decommissioned and is no longer maintained. This post remains available for historical context. For new projects, <a href="https://docs.closedxml.io/en/latest/features/bulk-insert-data.html">ClosedXML can insert .NET object collections into worksheets</a>.
 </div>
-
-Let's say you're working on an ASP.NET web app and want to create a report of all users and orders. I created a little utility built on top of the excellent (and open source) [EPPlus](http://epplus.codeplex.com/) to make this as easy as possible.
 
 <pre><code class="language-csharp">
 public ActionResult DownloadReport()

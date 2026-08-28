@@ -5,13 +5,13 @@ description: A historical look at Collate.NET, a decommissioned .NET library for
 categories: [Software, .NET, Libraries, Data]
 ---
 
-<div class="alert alert-warning" role="alert">
-    <strong>Historical note:</strong> Collate.NET has been decommissioned and is no longer maintained. This post remains available for historical context. For new ASP.NET Core projects, <a href="https://github.com/Biarity/Sieve">Sieve provides filtering, sorting, and pagination over <code>IQueryable</code> data</a>.
-</div>
-
 Here's a new project I finally got put up on NuGet which is a more generalized
 version of a set of extension methods that I helped write for a project at work (note:
 this is all new code as the stuff for work was highly coupled to our code base).
+
+<div class="alert alert-warning" role="alert">
+    <strong>Historical note:</strong> Collate.NET has been decommissioned and is no longer maintained. This post remains available for historical context. For new ASP.NET Core projects, <a href="https://github.com/Biarity/Sieve">Sieve provides filtering, sorting, and pagination over <code>IQueryable</code> data</a>.
+</div>
 
 Why "Collate"? Let's ask Mirriam-Webster:
 
