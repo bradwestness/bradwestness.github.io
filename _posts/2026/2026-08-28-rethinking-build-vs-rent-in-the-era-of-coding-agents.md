@@ -69,7 +69,7 @@ This is why systems thinking becomes more important in the agentic coding era. W
 
 A message queue is a stock. Producers create an inflow and consumers create an outflow. If messages arrive faster than consumers process them, the stock grows, no matter how elegant the consumer's dependency injection configuration is. Autoscaling is a delayed feedback loop. Retries can become a reinforcing loop: failures create more work, the added load puts pressure on the unhealthy dependency, and that pressure produces more failures. A dead-letter queue is another stock, useful only if something eventually drains it.
 
-This is where I think a human software architect creates the most value. The architect is responsible for thinking critically about the system as a whole: not merely whether each component is well written, but whether those components collectively solve the right problem under load and in the presence of concurrency and failure. Before asking an agent for implementation, the architect should make the important decisions explicit:
+This is where I think a human software architect creates the most value. The architect is responsible for thinking critically about the system as a whole: not merely whether each component is well written, but whether those components collectively solve the right problem under load and in the presence of concurrency and failure. Before asking an agent for implementation, the architect should document the proposed design explicitly:
 
 - The system's purpose and boundaries.
 - Its delivery semantics, idempotency strategy, and event ordering guarantees.
@@ -78,11 +78,9 @@ This is where I think a human software architect creates the most value. The arc
 - Its failure and recovery behavior.
 - Its operational signals and owner.
 
-The human architect does not have to answer those questions alone, but they do have to bear responsibility for the answers. An agent can help attack the model: find ambiguous semantics, invent failure scenarios, identify unbounded stocks, expose race conditions, and challenge assumptions. It cannot be accountable for whether the organization chose the right system to build. Only after the model survives that review should implementation begin.
+The human architect does not have to answer those questions alone, but they do have to bear responsibility for the answers. They should turn the design into a rough collaborative artifact and [socialize it with the team](/2025/07/31/build-software-like-a-sitcom-writers-room/) while it is still easy to change. The people who will build and operate the system should have the opportunity to beat the proposal, contribute constraints, expose assumptions, and identify failure modes the architect missed. The architect remains responsible for synthesizing that feedback into a coherent design.
 
-This separates architectural judgment from abundant typing. Spending tokens on a design review before generation is far cheaper than spending them hardening the first architecture somebody happened to type into a prompt.
-
-Agents make it easier than ever to build the thing right. The human architect's systems thinking is how we build the right thing first.
+This separates architectural judgment from abundant typing. Agents make it easier than ever to build the thing right. The human architect's systems thinking is how we build the right thing first.
 
 ## Build for Operations
 
