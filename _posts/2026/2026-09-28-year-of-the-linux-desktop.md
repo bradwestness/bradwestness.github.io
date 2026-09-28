@@ -66,6 +66,8 @@ WantedBy=default.target
 
 None of it is complicated once it's written. But that's four pieces of software I'd never touched, each with its own ports, protocols, and config, and wiring them together by hand would've been way more trouble than it's worth.
 
+{% include figure.html filename="qwen_troubleshooting.png" description="Using my local Qwen model to troubleshoot a display issue on Bazzite." %}
+
 The one that best shows how this works was my displays. I switch a KVM between my home and work PCs, and when I switched back to the Bazzite machine, the displays wouldn't wake properly. The agent walked me through a series of diagnostic commands, like `sudo nvidia-xconfig`, which I ran in a separate terminal and pasted the output back from. It worked out that I needed a couple of NVIDIA kernel parameters, which on an atomic distro like Bazzite you set through `rpm-ostree` instead of editing a bootloader config:
 
 ```bash
