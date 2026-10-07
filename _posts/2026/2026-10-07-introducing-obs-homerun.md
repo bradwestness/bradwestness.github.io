@@ -27,8 +27,9 @@ The replies are almost universally unhelpful:
 2. *"Use Moonlight and Sunshine."* (Sunshine is fantastic for low-latency game streaming, but it requires a dedicated client app on the TV. That means navigating an app store, pairing game controllers, and dealing with an interface every time you just want to toss a video on the screen.)
 3. *"Sideload Kodi in developer mode on webOS or Tizen."* (Which expires every 50 days unless you run a cron job or manually re-authenticate developer sessions.)
 4. *"Open the TV's built-in web browser and type `http://192.168.1.xxx:8080`."* (Typing an IP address and port with a directional pad on a television remote is an experience designed by Dante.)
+5. *"Just use Miracast or Windows Wireless Display."* (Miracast is a peer-to-peer Wi-Fi Direct protocol designed for mirroring in the same room. My desktop PC is in my office on one side of the house, hardwired to gigabit Ethernet. The TV is in the living room on the opposite side of the house, also hardwired to Ethernet. Miracast doesn't care that both devices are on the exact same high-speed wired network—it insists on an ad-hoc wireless handshake through multiple interior walls. And even if you pull out a laptop on the coffee table to mirror over Wi-Fi, you're stuck babysitting an open machine with fans spinning, hoping it doesn't fall asleep or drain its battery, while suffering heavy compression artifacts, muddy text, and random disconnects.)
 
-Everyone on those threads wanted the exact same thing I did: I want to walk into the living room, turn on the TV, click an input or channel on the remote, and see my desktop. No apps. No sideloading. No browser address bars.
+Everyone on those threads wanted the exact same thing I did: I want to walk into the living room, turn on the TV, click an input or channel on the remote, and see my desktop. No apps. No sideloading. No browser address bars. No laptop on the coffee table.
 
 {% include figure.html 
     filename="xkcd-wisdom-of-the-ancients.png" 
