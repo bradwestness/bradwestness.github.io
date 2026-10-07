@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introducing OBS Home Run - Turn your PC into a virtual HDTV tuner"
+title: "Introducing OBS HomeRun - Turn your PC into a virtual HDTV tuner"
 description: "How a stack of three media servers, infinite buffering wheels, and TV protocol arcana led to OBS HomeRun: a 14 MB virtual HDTV tuner in Rust."
 categories: [Software, Home Lab, DIY, Rust, Linux]
 image: content/images/introducing-obs-homerun.jpg
